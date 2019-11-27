@@ -1,25 +1,10 @@
 {
-  "name": "commonly",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "bootstrap": "cmnymonorepo",
-    "build": "lerna run build",
-    "clean": "lerna run clean",
-    "test": "lerna run test"
+    "build": "lerna exec -- npm run build",
+    "clean": "lerna exec -- npm run clean",
+    "test": "lerna exec -- npm run test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/commonlyjs/commonly.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/commonlyjs/commonly/issues"
-  },
-  "homepage": "https://github.com/commonlyjs/commonly#readme",
   "devDependencies": {
     "@commonly-buildtools/build": "0.5.13",
     "@commonly-buildtools/clean": "0.5.13",
