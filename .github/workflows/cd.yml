@@ -1,0 +1,56 @@
+name: CD
+
+
+on:
+  push:
+    branches:
+      - master
+      - staging
+      - stable
+
+
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    env:
+      CI: true
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v1
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm run bootstrap
+      - name: Configure Git machine user
+        run: |
+          git config --global user.name "commonly buildbot"
+          git config --global user.email "build@commonlyjs.com"
+      - name: Checkout directly to branch
+        run: |
+          git reset --hard
+          git checkout "${GITHUB_REF:11}"
+      - name: Version
+        run: |
+          npm run version --if-present
+      - name: Push modified files to the repository
+        run: |
+          git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" HEAD:${{github.ref}} --follow-tags
+      - name: Publish to npm artifactory
+        run: |
+          npm run publish --if-present
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Synchronize branches
+        if: contains(github.ref, 'stable')
+        run: |
+          git checkout master
+          git rebase origin/stable
+          git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" HEAD:ref/head/master
