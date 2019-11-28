@@ -5,15 +5,9 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "cmnymonorepo",
-    "build": "lerna run build",
-    "clean": "lerna run clean",
-    "test": "lerna run test",
-    "version": "node node_modules/@commonly-buildtools/version",
-    "publish": "node node_modules/@commonly-buildtools/publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/commonlyjs/commonly.git"
+    "build": "lerna exec -- npm run build",
+    "clean": "lerna exec -- npm run clean",
+    "test": "lerna exec -- npm run test"
   },
   "keywords": [],
   "author": "",
