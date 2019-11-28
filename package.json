@@ -7,7 +7,9 @@
     "bootstrap": "cmnymonorepo",
     "build": "lerna exec -- npm run build",
     "clean": "lerna exec -- npm run clean",
-    "test": "lerna exec -- npm run test"
+    "test": "lerna exec -- npm run test",
+    "version": "node node_modules/@commonly-buildtools/version",
+    "publish": "node node_modules/@commonly-buildtools/publish"
   },
   "keywords": [],
   "author": "",
