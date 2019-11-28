@@ -7,7 +7,9 @@
     "bootstrap": "cmnymonorepo",
     "build": "lerna run build",
     "clean": "lerna run clean",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "version": "node node_modules/@commonly-buildtools/version",
+    "publish": "node node_modules/@commonly-buildtools/publish"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,8 @@
     "@commonly-buildtools/clean": "0.5.13",
     "@commonly-buildtools/configuration": "0.6.0",
     "@commonly-buildtools/monorepo": "0.5.13",
-    "@commonly-buildtools/test": "0.5.13"
+    "@commonly-buildtools/publish": "0.5.13",
+    "@commonly-buildtools/test": "0.5.13",
+    "@commonly-buildtools/version": "0.5.13"
   }
 }
