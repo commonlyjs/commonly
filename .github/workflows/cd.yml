@@ -58,7 +58,7 @@ jobs:
         if: contains(github.ref, 'master')
         run: |
           curl -X POST \
-               -u "commonlyjs:${{secrets.USER_GITHUB_TOKEN}}" \
+               -u "commonlyjs:${{secrets.GITHUB_API_TOKEN}}" \
                -H "Accept: application/vnd.github.everest-preview+json" \
                -d '{"event_type": "WEBSITE_DEPLOY"}' \
               "https://api.github.com/repos/commonlyjs/commonlyjs.github.io/dispatches"
