@@ -8,7 +8,8 @@
     "build": "npm run clean && cmnybuild",
     "clean": "cmnyclean",
     "test": "cmnytest",
-    "document": "cmnydocument ../../docs/reflect"
+    "document": "cmnydocument ./",
+    "prepack": "npm run build && && npm run test && npm run document"
   },
   "publishConfig": {
     "access": "public"
