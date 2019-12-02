@@ -8,6 +8,7 @@
     "build": "lerna exec -- npm run build",
     "clean": "lerna exec -- npm run clean",
     "test": "lerna exec -- npm run test",
+    "document": "lerna exec -- npm run document",
     "version": "node node_modules/@commonly-buildtools/version",
     "publish": "node node_modules/@commonly-buildtools/publish"
   },
@@ -22,6 +23,7 @@
     "@commonly-buildtools/build": "0.5.13",
     "@commonly-buildtools/clean": "0.5.13",
     "@commonly-buildtools/configuration": "0.6.0",
+    "@commonly-buildtools/document": "0.7.0-next.0",
     "@commonly-buildtools/monorepo": "0.5.13",
     "@commonly-buildtools/publish": "0.5.13",
     "@commonly-buildtools/test": "0.5.13",

@@ -54,3 +54,8 @@ jobs:
           git checkout master
           git rebase origin/stable
           git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" HEAD:ref/head/master
+      - name: Deploy commonlyjs.com website
+        if: contains(github.ref, 'master')
+        run: |
+          curl -X POST --user "commonlyjs:044e907b5760812f317216ea827edc0f5f49b2c2" "https://api.github.com/repos/commonlyjs/commonlyjs.github.io/dispatches"
+

@@ -1,0 +1,19 @@
+[
+  {
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {}
+    },
+    "examples": [
+      "mport { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
+    ],
+    "since": "1.0.0"
+  }
+]
