@@ -1,8 +1,4 @@
 {
-  "name": "commonly",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "bootstrap": "cmnymonorepo",
     "build": "lerna exec -- npm run build",
@@ -12,13 +8,6 @@
     "version": "node node_modules/@commonly-buildtools/version",
     "publish": "node node_modules/@commonly-buildtools/publish"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/commonlyjs/commonly/issues"
-  },
-  "homepage": "https://github.com/commonlyjs/commonly#readme",
   "devDependencies": {
     "@commonly-buildtools/build": "0.5.13",
     "@commonly-buildtools/clean": "0.5.13",
@@ -28,6 +17,5 @@
     "@commonly-buildtools/publish": "0.5.13",
     "@commonly-buildtools/test": "0.5.13",
     "@commonly-buildtools/version": "0.5.13"
-  },
-  "dependencies": {}
+  }
 }

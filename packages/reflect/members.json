@@ -17,7 +17,7 @@
       }
     },
     "examples": [
-      "import { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
+      "mport { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
     ],
     "metadata": {
       "source": null,
