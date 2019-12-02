@@ -53,7 +53,7 @@ jobs:
         run: |
           git checkout master
           git rebase origin/stable
-          git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" HEAD:ref/head/master
+          git push "https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git" master --force
       - name: Deploy commonlyjs.com website
         if: contains(github.ref, 'master')
         run: |
