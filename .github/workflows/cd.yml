@@ -57,5 +57,5 @@ jobs:
       - name: Deploy commonlyjs.com website
         if: contains(github.ref, 'master')
         run: |
-          curl -X POST --user "commonlyjs:044e907b5760812f317216ea827edc0f5f49b2c2" "https://api.github.com/repos/commonlyjs/commonlyjs.github.io/dispatches"
+          curl -X POST --user "commonlyjs:${{secrets.GITHUB_TOKEN}}" "https://api.github.com/repos/commonlyjs/commonlyjs.github.io/dispatches"
 
