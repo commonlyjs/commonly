@@ -1,13 +1,11 @@
 name: CD
 
-
 on:
   push:
     branches:
       - master
       - staging
       - stable
-
 
 
 jobs:
