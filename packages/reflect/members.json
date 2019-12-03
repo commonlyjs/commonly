@@ -7,22 +7,23 @@
       "parameters": [
         {
           "name": "value",
+          "type": "unknown | undefined",
           "description": "is a value to check"
         }
       ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
+        "type": "boolean",
         "description": "a boolean whether the value is an undefined or not"
       }
     },
     "examples": [
-      "mport { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
+      "import { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
     ],
     "metadata": {
       "source": null,
       "specification": null
     },
-    "description": "Check if a given value is\r\nan {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined}."
+    "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined}."
   }
 ]
