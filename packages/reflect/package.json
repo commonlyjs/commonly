@@ -9,7 +9,7 @@
     "clean": "cmnyclean",
     "test": "cmnytest",
     "document": "cmnydocument ./",
-    "prepack": "npm run build && && npm run test && npm run document"
+    "prepack": "npm run build && npm run test"
   },
   "publishConfig": {
     "access": "public"
