@@ -35,6 +35,6 @@
       "source": null,
       "specification": null
     },
-    "description": "The Primitive type represents\r a union of {@link https://developer.mozilla.org/en-US/docs/Glossary/primitive | primitive} data types.\r\nAn {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}\r\n  and a {@ link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
+    "description": "The Primitive type represents\r a union of {@link https://developer.mozilla.org/en-US/docs/Glossary/primitive | primitive} data types.\r\nAn {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}\r\n  and a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
   }
 ]

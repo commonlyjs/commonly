@@ -11,7 +11,7 @@ import Nil from "../Nil/Nil"
  *  {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number},
  *  {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint},
  *  {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}
- *  and a {@ link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}.
+ *  and a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}.
  *
  * @since 1.0.0
  */
