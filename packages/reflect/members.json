@@ -1,5 +1,358 @@
 [
   {
+    "name": "isBoolean",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | boolean",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a boolean or not"
+      }
+    },
+    "examples": [
+      " import { isBoolean } from \"@commonly/reflect\"\r\risBoolean(true)     //-> true\risBoolean(false)    //-> true\risBoolean(NaN)      //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean}."
+  },
+  {
+    "name": "isError",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Error",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is an Error or not"
+      }
+    },
+    "examples": [
+      " import { isError } from \"@commonly/reflect\"\r\risError(new Error())    //-> true\risError(TypeError())    //-> true\risError(NaN)            //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error | Error}."
+  },
+  {
+    "name": "isFunction",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | TFunction",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TFunction",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a function or not"
+      }
+    },
+    "examples": [
+      " import { isFunction } from \"@commonly/reflect\"\r\risFunction(Math.add)        //-> true\risFunction(() => void 0))   //-> true\risFunction(Math.PI)         //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/function | function}."
+  },
+  {
+    "name": "isMap",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Map",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TKey",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a Map or not"
+      }
+    },
+    "examples": [
+      " import { isMap } from \"@commonly/reflect\"\r\risMap(new Map())     //-> true\risMap(NaN)           //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map | Map}."
+  },
+  {
+    "name": "isNull",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | null",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a null or not"
+      }
+    },
+    "examples": [
+      " import { isNull } from \"@commonly/reflect\"\r\risNull(null)        //-> true\risNull(undefined)   //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null}."
+  },
+  {
+    "name": "isNumber",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | number",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a number or not"
+      }
+    },
+    "examples": [
+      " import { isNumber } from \"@commonly/reflect\"\r\risNumber(0)           //-> true\risNumber(NaN)         //-> true\risNumber(null)        //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number}."
+  },
+  {
+    "name": "isObject",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | ",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is an Object or not"
+      }
+    },
+    "examples": [
+      " import { isObject } from \"@commonly/reflect\"\r\risObject(new Object())      //-> true\risObject({})                //-> true\risObject(null)              //-> false\risObject(undefined)         //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object | Object}."
+  },
+  {
+    "name": "isPromise",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Promise",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a Promise or not"
+      }
+    },
+    "examples": [
+      " import { isPromise } from \"@commonly/reflect\"\r\risPromise(new Promise())         //-> true\risPromise(Promise.resolve())     //-> true\risPromise(NaN)                   //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise | Promise}."
+  },
+  {
+    "name": "isRegExp",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | RegExp",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a RegExp or not"
+      }
+    },
+    "examples": [
+      " import { isRegExp } from \"@commonly/reflect\"\r\risRegExp(new RegExp(\"ab+c\"))        //-> true\risRegExp(/ab+c/)                    //-> true\risRegExp(NaN)                       //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp | RegExp}."
+  },
+  {
+    "name": "isSet",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Set",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a Set or not"
+      }
+    },
+    "examples": [
+      " import { isSet } from \"@commonly/reflect\"\r\risSet(new Set())     //-> true\risSet(NaN)           //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set | Set}."
+  },
+  {
+    "name": "isString",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | string",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a string or not"
+      }
+    },
+    "examples": [
+      " import { isString } from \"@commonly/reflect\"\r\risString(\"string\")   //-> true\risString(null)       //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}."
+  },
+  {
+    "name": "isSymbol",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | symbol",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a symbol or not"
+      }
+    },
+    "examples": [
+      " import { isSymbol } from \"@commonly/reflect\"\r\risSymbol(Symbol())      //-> true\risSymbol(NaN)           //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
+  },
+  {
     "name": "isUndefined",
     "since": "1.0.0",
     "remarks": [],
