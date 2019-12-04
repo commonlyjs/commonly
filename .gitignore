@@ -1,6 +1,7 @@
 # Artifacts
 
 ## Build related
+tsconfig.tsbuildinfo
 lib
 .cache
 .tsbuildinfo
