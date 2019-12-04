@@ -1,0 +1,56 @@
+[
+  {
+    "name": "decrement",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "number",
+          "type": "number",
+          "description": "is a number to decrement by one"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "number",
+        "description": null
+      }
+    },
+    "examples": [
+      " import { decrement } from \"@commonly/math\"\r\rdecrement(7)    // -> 6\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Decrements a given number by one."
+  },
+  {
+    "name": "increment",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "number",
+          "type": "number",
+          "description": "is a number to decrement by one"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "number",
+        "description": null
+      }
+    },
+    "examples": [
+      " import { decrement } from \"@commonly/Math\"\r\rdecrement(7)    // -> 8\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Increments a given number by one."
+  }
+]
