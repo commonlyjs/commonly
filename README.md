@@ -1,20 +1,19 @@
 A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https://commonlyjs.com) to learn more.  
-![commonly](https://logoipsum.com/assets/logo/logo-2.svg "commonly")
 
-
-[!Build Status](https://github.com/commonlyjs/commonly/workflows/.github/ci/badge.svg?branch=master)
+[!Build Status](https://github.com/commonlyjs/commonly/workflows/CD/badge.svg)
 [![Dependencies](https://david-dm.org/comomnlyjs/commonly.svg)](https://david-dm.org/commonlyjs/commonly)
 
 
 
 ### Overview
-Commonly aims to be the most comprehensive JavaScript/TypeScript utility library.  
-
+Commonly aims to be the most comprehensive JavaScript/TypeScript utility library.
+ 
 Some of the functionality may seem redundant at first, but for someone striving for a [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming) they are necessary.
 
 
 
 ### Content
+* [Overview](#Overview)
 * [Installation](#Installation)
 * [Packages](#Packages)
 
@@ -101,4 +100,4 @@ is not implemented in any JavaScript runtime environment just yet.
 
 
 #### @commonly/type
-Collection of common shape definitions used in commonly, required for TypeScript projects. 
+Collection of common shape definitions used in commonly, required for TypeScript projects.  
