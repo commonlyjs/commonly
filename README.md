@@ -1,7 +1,7 @@
 A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https://commonlyjs.com) to learn more.  
 
-![Build Status](https://github.com/commonlyjs/commonly/workflows/CD/badge.svg)
-[![Dependencies](https://david-dm.org/comomnlyjs/commonly.svg)](https://david-dm.org/commonlyjs/commonly)
+![Build Status](https://github.com/commonlyjs/commonly/workflows/.github/workflows/cd.yml/badge.svg?branch=master)
+![Dependencies](https://david-dm.org/comomnlyjs/commonly.svg)
 
 
 
@@ -20,7 +20,7 @@ Some of the functionality may seem redundant at first, but for someone striving 
 
 
 ### Installation 
-To start using commonly in your project, simply install packages of your choosing.
+To start using commonly in your project, simply install packages of your choosing.  
 You can find a list of all `commonly` packages in the [packages](#Packages) section.  
 
 An example: 
