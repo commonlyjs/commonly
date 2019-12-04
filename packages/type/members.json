@@ -1,5 +1,43 @@
 [
   {
+    "name": "Identity",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "The Identity type represents a function which takes a single value as an argument and returns that value, an {@link https://en.wikipedia.org/wiki/Identity_function | identity function}."
+  },
+  {
+    "name": "Mapper",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "The Mapper type represents a function which always a single value as an argument and returns a value, a {@link https://en.wikipedia.org/wiki/Map_(higher-order_function) | mapper function}."
+  },
+  {
     "name": "Nil",
     "since": "1.0.0",
     "remarks": [],
@@ -19,6 +57,25 @@
     "description": "The Nil type represents a union of undefined and null."
   },
   {
+    "name": "Predicate",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "The Predicate type represents a function which takes a single value as an argument and returns a boolean, a {@link https://en.wikipedia.org/wiki/Predicate_(mathematical_logic) | predicate function}."
+  },
+  {
     "name": "Primitive",
     "since": "1.0.0",
     "remarks": [],
@@ -36,5 +93,24 @@
       "specification": null
     },
     "description": "The Primitive type represents\r a union of {@link https://developer.mozilla.org/en-US/docs/Glossary/primitive | primitive} data types.\r\nAn {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint},\r\n  {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}\r\n  and a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
+  },
+  {
+    "name": "Reducer",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "The Reducer type represents a function which takes an accumulator and a value and returns a value, a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function}."
   }
 ]
