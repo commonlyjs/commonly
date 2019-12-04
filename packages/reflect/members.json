@@ -125,6 +125,33 @@
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map | Map}."
   },
   {
+    "name": "isNil",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Nil",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a {@link"
+      }
+    },
+    "examples": [
+      " import { isNil } from \"@commonly/reflect\"\r\risNil(undefined)   //-> true\risNil(null)        //-> true\risNil(NaN)         //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link @commonly/type:Nil | Nil} (either an undefined or a null)."
+  },
+  {
     "name": "isNull",
     "since": "1.0.0",
     "remarks": [],
@@ -204,6 +231,33 @@
       "specification": null
     },
     "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object | Object}."
+  },
+  {
+    "name": "isPrimitive",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | Primitive",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "boolean",
+        "description": "a boolean whether the value is a {@link"
+      }
+    },
+    "examples": [
+      " import { isPrimitive } from \"@commonly/reflect\"\r\risPrimitive(undefined)   //-> true\risPrimitive(null)        //-> true\risPrimitive(NaN)         //-> true\risPrimitive([])          //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is a {@link @commonly/type:Primitive | Primitive}."
   },
   {
     "name": "isPromise",
