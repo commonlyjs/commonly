@@ -52,5 +52,57 @@
       "specification": null
     },
     "description": "Increments a given number by one."
+  },
+  {
+    "name": "maximum",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "xs",
+          "description": "is a list in which we will look for a maximum"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "number",
+        "description": null
+      }
+    },
+    "examples": [
+      " import { maximum } from \"@commonly/math\"\r\rmaximum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 8\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Finds a maximum in a given list."
+  },
+  {
+    "name": "minimum",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "xs",
+          "description": "is a list in which we will look for a maximum"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "number",
+        "description": null
+      }
+    },
+    "examples": [
+      " import { minimum } from \"@commonly/math\"\r\rminimum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 0\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Finds a minimum in a given list."
   }
 ]
