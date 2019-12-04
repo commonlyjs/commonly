@@ -1,6 +1,6 @@
 A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https://commonlyjs.com) to learn more.  
 
-[!Build Status](https://github.com/commonlyjs/commonly/workflows/CD/badge.svg)
+![Build Status](https://github.com/commonlyjs/commonly/workflows/CD/badge.svg)
 [![Dependencies](https://david-dm.org/comomnlyjs/commonly.svg)](https://david-dm.org/commonlyjs/commonly)
 
 
