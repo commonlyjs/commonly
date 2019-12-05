@@ -6,6 +6,9 @@ import Function from "../../type/Function/Function"
 
 /**
  * Partially applies a list of arguments to an f function.
+ * It's similar to a
+ *  {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method,
+ *  except it preserves *this* context.
  *
  * @since 1.0.0
  *

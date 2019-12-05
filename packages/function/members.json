@@ -1,5 +1,64 @@
 [
   {
+    "name": "negate",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "type": "Predicate",
+          "description": "is a predicate function to be negated"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Predicate",
+        "description": null
+      }
+    },
+    "examples": [
+      "import { negate } from \"@commonly/function\"\r\rconst isUnsealed = negate(Object.isSealed)\risUnsealed(window)  // -> true\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Negates a given predicate function, thus creating a new negated version of that function."
+  },
+  {
+    "name": "noop",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "_",
+          "description": "is a variadic list of parameters which are unused anyway"
+        }
+      ],
+      "typeparameters": [],
+      "returnValue": {
+        "type": "undefined",
+        "description": null
+      }
+    },
+    "examples": [
+      "import { noop } from \"@commonly/function\"\r\rnoop(1, 1, 2, 3, 5)     // -> undefined\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Always returns an undefined no matter the arguments."
+  },
+  {
     "name": "partial",
     "since": "1.0.0",
     "remarks": [],
@@ -44,6 +103,6 @@
       "source": null,
       "specification": null
     },
-    "description": "Partially applies a list of arguments to an f function."
+    "description": "Partially applies a list of arguments to an f function. It's similar to a\r\n\r{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method,\r\n  except it preserves *this* context."
   }
 ]
