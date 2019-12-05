@@ -10,7 +10,7 @@ import VariadicFunction from "./VariadicFunction/VariadicFunction"
 
 /**
  * The Function type represents the
- *  {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function | function's constructor).
+ *  {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function | function's constructor}.
  *
  * @since 1.0.0
  */
