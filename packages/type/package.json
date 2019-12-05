@@ -1,6 +1,6 @@
 {
   "name": "@commonly/type",
-  "version": "0.1.0-next.28",
+  "version": "0.1.0-next.30",
   "description": "Collection of utility types.",
   "main": "./index.js",
   "types": "./index.d.ts",
