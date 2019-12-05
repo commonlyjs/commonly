@@ -1,0 +1,34 @@
+{
+  "name": "@commonly/function",
+  "version": "0.0.0",
+  "description": "Collection of functional utilities, often higher-order functions.",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "npm run clean && cmnybuild",
+    "clean": "cmnyclean",
+    "test": "cmnytest",
+    "document": "cmnydocument ./",
+    "prepack": "npm run build && npm run test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "**/*.js",
+    "**/*.d.ts",
+    "**/*.d.ts.map"
+  ],
+  "author": "Mateusz Pietrzak",
+  "homepage": "https://github.com/commonlyjs/commonly-buildtools",
+  "repository": "https://github.com/commonlyjs/commonly-buildtools",
+  "bugs": "https://github.com/commonlyjs/commonly-buildtools/issues",
+  "license": "MIT",
+  "keywords": [
+    "commonly",
+    "function"
+  ]
+}
