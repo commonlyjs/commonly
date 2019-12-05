@@ -5,7 +5,7 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns either true of false whether the value is a RegExp or not
+ * @returns either true or false whether the value is a RegExp or not
  *
  * @example
  * ```
