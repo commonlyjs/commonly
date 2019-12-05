@@ -14,11 +14,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a boolean or not"
+        "description": "either true of false whether the value is a boolean or not"
       }
     },
     "examples": [
-      " import { isBoolean } from \"@commonly/reflect\"\r\risBoolean(true)     //-> true\risBoolean(false)    //-> true\risBoolean(NaN)      //-> false\r"
+      "import { isBoolean } from \"@commonly/reflect\"\r\risBoolean(true)     //-> true\risBoolean(false)    //-> true\risBoolean(NaN)      //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -41,11 +41,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is an Error or not"
+        "description": "either true of false whether the value is an Error or not"
       }
     },
     "examples": [
-      " import { isError } from \"@commonly/reflect\"\r\risError(new Error())    //-> true\risError(TypeError())    //-> true\risError(NaN)            //-> false\r"
+      "import { isError } from \"@commonly/reflect\"\r\risError(new Error())    //-> true\risError(TypeError())    //-> true\risError(NaN)            //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -74,11 +74,11 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a function or not"
+        "description": "either true of false whether the value is a function or not"
       }
     },
     "examples": [
-      " import { isFunction } from \"@commonly/reflect\"\r\risFunction(Math.add)        //-> true\risFunction(() => void 0))   //-> true\risFunction(Math.PI)         //-> false\r"
+      "import { isFunction } from \"@commonly/reflect\"\r\risFunction(Math.add)        //-> true\risFunction(() => void 0))   //-> true\risFunction(Math.PI)         //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -112,11 +112,11 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a Map or not"
+        "description": "either true of false whether the value is a Map or not"
       }
     },
     "examples": [
-      " import { isMap } from \"@commonly/reflect\"\r\risMap(new Map())     //-> true\risMap(NaN)           //-> false\r"
+      "import { isMap } from \"@commonly/reflect\"\r\risMap(new Map())     //-> true\risMap(NaN)           //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -139,11 +139,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a {@link"
+        "description": "either true of false whether the value is a {@link"
       }
     },
     "examples": [
-      " import { isNil } from \"@commonly/reflect\"\r\risNil(undefined)   //-> true\risNil(null)        //-> true\risNil(NaN)         //-> false\r"
+      "import { isNil } from \"@commonly/reflect\"\r\risNil(undefined)   //-> true\risNil(null)        //-> true\risNil(NaN)         //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -166,11 +166,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a null or not"
+        "description": "either true of false whether the value is a null or not"
       }
     },
     "examples": [
-      " import { isNull } from \"@commonly/reflect\"\r\risNull(null)        //-> true\risNull(undefined)   //-> false\r"
+      "import { isNull } from \"@commonly/reflect\"\r\risNull(null)        //-> true\risNull(undefined)   //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -193,11 +193,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a number or not"
+        "description": "either true of false whether the value is a number or not"
       }
     },
     "examples": [
-      " import { isNumber } from \"@commonly/reflect\"\r\risNumber(0)           //-> true\risNumber(NaN)         //-> true\risNumber(null)        //-> false\r"
+      "import { isNumber } from \"@commonly/reflect\"\r\risNumber(0)           //-> true\risNumber(NaN)         //-> true\risNumber(null)        //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -220,11 +220,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is an Object or not"
+        "description": "either true of false whether the value is an Object or not"
       }
     },
     "examples": [
-      " import { isObject } from \"@commonly/reflect\"\r\risObject(new Object())      //-> true\risObject({})                //-> true\risObject(null)              //-> false\risObject(undefined)         //-> false\r"
+      "import { isObject } from \"@commonly/reflect\"\r\risObject(new Object())      //-> true\risObject({})                //-> true\risObject(null)              //-> false\risObject(undefined)         //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -247,11 +247,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a {@link"
+        "description": "either true of false whether the value is a Primitive or not"
       }
     },
     "examples": [
-      " import { isPrimitive } from \"@commonly/reflect\"\r\risPrimitive(undefined)   //-> true\risPrimitive(null)        //-> true\risPrimitive(NaN)         //-> true\risPrimitive([])          //-> false\r"
+      "import { isPrimitive } from \"@commonly/reflect\"\r\risPrimitive(undefined)   //-> true\risPrimitive(null)        //-> true\risPrimitive(NaN)         //-> true\risPrimitive([])          //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -280,11 +280,11 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a Promise or not"
+        "description": "either true of false whether the value is a Promise or not"
       }
     },
     "examples": [
-      " import { isPromise } from \"@commonly/reflect\"\r\risPromise(new Promise())         //-> true\risPromise(Promise.resolve())     //-> true\risPromise(NaN)                   //-> false\r"
+      "import { isPromise } from \"@commonly/reflect\"\r\risPromise(new Promise())         //-> true\risPromise(Promise.resolve())     //-> true\risPromise(NaN)                   //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -307,11 +307,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a RegExp or not"
+        "description": "either true of false whether the value is a RegExp or not"
       }
     },
     "examples": [
-      " import { isRegExp } from \"@commonly/reflect\"\r\risRegExp(new RegExp(\"ab+c\"))        //-> true\risRegExp(/ab+c/)                    //-> true\risRegExp(NaN)                       //-> false\r"
+      "import { isRegExp } from \"@commonly/reflect\"\r\risRegExp(new RegExp(\"ab+c\"))        //-> true\risRegExp(/ab+c/)                    //-> true\risRegExp(NaN)                       //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -340,11 +340,11 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a Set or not"
+        "description": "either true of false whether the value is a Set or not"
       }
     },
     "examples": [
-      " import { isSet } from \"@commonly/reflect\"\r\risSet(new Set())     //-> true\risSet(NaN)           //-> false\r"
+      "import { isSet } from \"@commonly/reflect\"\r\risSet(new Set())     //-> true\risSet(NaN)           //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -367,11 +367,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a string or not"
+        "description": "either true of false whether the value is a string or not"
       }
     },
     "examples": [
-      " import { isString } from \"@commonly/reflect\"\r\risString(\"string\")   //-> true\risString(null)       //-> false\r"
+      "import { isString } from \"@commonly/reflect\"\r\risString(\"string\")   //-> true\risString(null)       //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -394,11 +394,11 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is a symbol or not"
+        "description": "either true of false whether the value is a symbol or not"
       }
     },
     "examples": [
-      " import { isSymbol } from \"@commonly/reflect\"\r\risSymbol(Symbol())      //-> true\risSymbol(NaN)           //-> false\r"
+      "import { isSymbol } from \"@commonly/reflect\"\r\risSymbol(Symbol())      //-> true\risSymbol(NaN)           //-> false\r"
     ],
     "metadata": {
       "source": null,
@@ -421,7 +421,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "a boolean whether the value is an undefined or not"
+        "description": "either true of false whether the value is an undefined or not"
       }
     },
     "examples": [

@@ -8,9 +8,9 @@
  *
  * @example
  * ```
- *  import { decrement } from "@commonly/Math"
+ * import { decrement } from "@commonly/Math"
  *
- *  decrement(7)    // -> 8
+ * decrement(7)    // -> 8
  * ```
  */
 const increment = (number: number): number =>

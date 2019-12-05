@@ -5,15 +5,15 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a Promise or not
+ * @returns either true of false whether the value is a Promise or not
  *
  * @example
  * ```
- *  import { isPromise } from "@commonly/reflect"
+ * import { isPromise } from "@commonly/reflect"
  *
- *  isPromise(new Promise())         //-> true
- *  isPromise(Promise.resolve())     //-> true
- *  isPromise(NaN)                   //-> false
+ * isPromise(new Promise())         //-> true
+ * isPromise(Promise.resolve())     //-> true
+ * isPromise(NaN)                   //-> false
  * ```
  */
 const isPromise = <TValue>(value: unknown | Promise<TValue>): value is Promise<TValue> => {

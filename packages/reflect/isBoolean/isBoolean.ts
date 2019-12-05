@@ -8,15 +8,15 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a boolean or not
+ * @returns either true of false whether the value is a boolean or not
  *
  * @example
  * ```
- *  import { isBoolean } from "@commonly/reflect"
+ * import { isBoolean } from "@commonly/reflect"
  *
- *  isBoolean(true)     //-> true
- *  isBoolean(false)    //-> true
- *  isBoolean(NaN)      //-> false
+ * isBoolean(true)     //-> true
+ * isBoolean(false)    //-> true
+ * isBoolean(NaN)      //-> false
  * ```
  */
 const isBoolean = (value: unknown | boolean): value is boolean => {

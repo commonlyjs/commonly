@@ -5,14 +5,14 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a null or not
+ * @returns either true of false whether the value is a null or not
  *
  * @example
  * ```
- *  import { isNull } from "@commonly/reflect"
+ * import { isNull } from "@commonly/reflect"
  *
- *  isNull(null)        //-> true
- *  isNull(undefined)   //-> false
+ * isNull(null)        //-> true
+ * isNull(undefined)   //-> false
  * ```
  */
 const isNull = (value: unknown | null): value is null => {

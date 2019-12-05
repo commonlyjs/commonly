@@ -17,16 +17,16 @@ import Primitive from "../../type/Primitive/Primitive"
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a {@link @commonly/type:Primitive | Primitive} or not
+ * @returns either true of false whether the value is a Primitive or not
  *
  * @example
  * ```
- *  import { isPrimitive } from "@commonly/reflect"
+ * import { isPrimitive } from "@commonly/reflect"
  *
- *  isPrimitive(undefined)   //-> true
- *  isPrimitive(null)        //-> true
- *  isPrimitive(NaN)         //-> true
- *  isPrimitive([])          //-> false
+ * isPrimitive(undefined)   //-> true
+ * isPrimitive(null)        //-> true
+ * isPrimitive(NaN)         //-> true
+ * isPrimitive([])          //-> false
  * ```
  */
 const isPrimitive = (value: unknown | Primitive): value is Primitive => {

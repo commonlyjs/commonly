@@ -5,14 +5,14 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a Map or not
+ * @returns either true of false whether the value is a Map or not
  *
  * @example
  * ```
- *  import { isMap } from "@commonly/reflect"
+ * import { isMap } from "@commonly/reflect"
  *
- *  isMap(new Map())     //-> true
- *  isMap(NaN)           //-> false
+ * isMap(new Map())     //-> true
+ * isMap(NaN)           //-> false
  * ```
  */
 const isMap = <TKey, TValue>(value: unknown | Map<TKey, TValue>): value is Map<TKey, TValue> => {

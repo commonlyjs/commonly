@@ -18,7 +18,7 @@
       }
     },
     "examples": [
-      " import { decrement } from \"@commonly/math\"\r\rdecrement(7)    // -> 6\r"
+      "import { decrement } from \"@commonly/math\"\r\rdecrement(7)    // -> 6\r"
     ],
     "metadata": {
       "source": null,
@@ -45,7 +45,7 @@
       }
     },
     "examples": [
-      " import { decrement } from \"@commonly/Math\"\r\rdecrement(7)    // -> 8\r"
+      "import { decrement } from \"@commonly/Math\"\r\rdecrement(7)    // -> 8\r"
     ],
     "metadata": {
       "source": null,
@@ -60,7 +60,7 @@
     "signature": {
       "parameters": [
         {
-          "name": "xs",
+          "name": "numbers",
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -71,7 +71,7 @@
       }
     },
     "examples": [
-      " import { maximum } from \"@commonly/math\"\r\rmaximum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 8\r"
+      "import { maximum } from \"@commonly/math\"\r\rmaximum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 8\r"
     ],
     "metadata": {
       "source": null,
@@ -86,7 +86,7 @@
     "signature": {
       "parameters": [
         {
-          "name": "xs",
+          "name": "numbers",
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -97,7 +97,7 @@
       }
     },
     "examples": [
-      " import { minimum } from \"@commonly/math\"\r\rminimum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 0\r"
+      "import { minimum } from \"@commonly/math\"\r\rminimum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 0\r"
     ],
     "metadata": {
       "source": null,

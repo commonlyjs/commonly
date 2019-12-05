@@ -8,15 +8,15 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a number or not
+ * @returns either true of false whether the value is a number or not
  *
  * @example
  * ```
- *  import { isNumber } from "@commonly/reflect"
+ * import { isNumber } from "@commonly/reflect"
  *
- *  isNumber(0)           //-> true
- *  isNumber(NaN)         //-> true
- *  isNumber(null)        //-> false
+ * isNumber(0)           //-> true
+ * isNumber(NaN)         //-> true
+ * isNumber(null)        //-> false
  * ```
  */
 const isNumber = (value: unknown | number): value is number => {

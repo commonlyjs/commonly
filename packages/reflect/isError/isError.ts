@@ -5,15 +5,15 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is an Error or not
+ * @returns either true of false whether the value is an Error or not
  *
  * @example
  * ```
- *  import { isError } from "@commonly/reflect"
+ * import { isError } from "@commonly/reflect"
  *
- *  isError(new Error())    //-> true
- *  isError(TypeError())    //-> true
- *  isError(NaN)            //-> false
+ * isError(new Error())    //-> true
+ * isError(TypeError())    //-> true
+ * isError(NaN)            //-> false
  * ```
  */
 const isError = (value: unknown | Error): value is Error => {

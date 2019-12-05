@@ -5,15 +5,15 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a RegExp or not
+ * @returns either true of false whether the value is a RegExp or not
  *
  * @example
  * ```
- *  import { isRegExp } from "@commonly/reflect"
+ * import { isRegExp } from "@commonly/reflect"
  *
- *  isRegExp(new RegExp("ab+c"))        //-> true
- *  isRegExp(/ab+c/)                    //-> true
- *  isRegExp(NaN)                       //-> false
+ * isRegExp(new RegExp("ab+c"))        //-> true
+ * isRegExp(/ab+c/)                    //-> true
+ * isRegExp(NaN)                       //-> false
  * ```
  */
 const isRegExp = (value: unknown | RegExp): value is RegExp => {

@@ -8,14 +8,14 @@
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a string or not
+ * @returns either true of false whether the value is a string or not
  *
  * @example
  * ```
- *  import { isString } from "@commonly/reflect"
+ * import { isString } from "@commonly/reflect"
  *
- *  isString("string")   //-> true
- *  isString(null)       //-> false
+ * isString("string")   //-> true
+ * isString(null)       //-> false
  * ```
  */
 const isString = (value: unknown | string): value is string => {

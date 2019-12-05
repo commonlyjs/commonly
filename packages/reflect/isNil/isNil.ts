@@ -11,15 +11,15 @@ import Nil from "../../type/Nil/Nil"
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns a boolean whether the value is a {@link @commonly/type:Nil | Nil} or not
+ * @returns either true of false whether the value is a {@link @commonly/type:Nil | Nil} or not
  *
  * @example
  * ```
- *  import { isNil } from "@commonly/reflect"
+ * import { isNil } from "@commonly/reflect"
  *
- *  isNil(undefined)   //-> true
- *  isNil(null)        //-> true
- *  isNil(NaN)         //-> false
+ * isNil(undefined)   //-> true
+ * isNil(null)        //-> true
+ * isNil(NaN)         //-> false
  * ```
  */
 const isNil = (value: unknown | Nil): value is Nil => {
