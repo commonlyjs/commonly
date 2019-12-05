@@ -1,5 +1,43 @@
 [
   {
+    "name": "curry",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "f",
+          "type": "Function.Variadic",
+          "description": "is a function to be curried"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TResult",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TParameters",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Function.Curried",
+        "description": "a curried version of an f function"
+      }
+    },
+    "examples": [
+      "import { curry } from \"@commonly/function\"\r\rconst power = curry(Math.pow)\rpower(2)(3)     // -> 8\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
+  },
+  {
     "name": "negate",
     "since": "1.0.0",
     "remarks": [],

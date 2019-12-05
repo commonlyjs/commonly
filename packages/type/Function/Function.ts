@@ -1,5 +1,4 @@
 import BinaryFunction from "./BinaryFunction/BinaryFunction"
-import CurriedFunction from "./CurriedFunction/CurriedFunction"
 import NullaryFunction from './NullaryFunction/NullaryFunction'
 import PartialFunction from "./PartialFunction/PartialFunction"
 import QuaternaryFunction from "./QuaternaryFunction/QuaternaryFunction"
@@ -42,8 +41,8 @@ namespace Function {
     export type Partial<TResult, TParameters extends unknown[], TApplied extends unknown[]> =
         PartialFunction<TResult, TParameters, TApplied>
 
-    export type Curried<TResult, TParameters> =
-        CurriedFunction<TResult, TParameters>
+    // export type Curried<TResult, TParameters> =
+    //     CurriedFunction<TResult, TParameters>
 }
 
 
