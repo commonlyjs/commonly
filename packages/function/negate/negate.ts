@@ -8,7 +8,7 @@ import Predicate from "../../type/Predicate/Predicate"
  * @since 1.0.0
  *
  * @param predicate - is a predicate function to be negated
- * @return a negated version of a predicate function
+ * @returns a negated version of a predicate function
  *
  * @example
  * ```

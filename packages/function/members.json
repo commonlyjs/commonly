@@ -20,7 +20,7 @@
       ],
       "returnValue": {
         "type": "Predicate",
-        "description": null
+        "description": "a negated version of a predicate function"
       }
     },
     "examples": [
@@ -46,7 +46,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "undefined",
-        "description": null
+        "description": "an undefined"
       }
     },
     "examples": [
@@ -93,7 +93,8 @@
         }
       ],
       "returnValue": {
-        "description": null
+        "type": "Function.Partial",
+        "description": "a partially applied f function"
       }
     },
     "examples": [

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param _ - is a variadic list of parameters which are unused anyway
- * @return an undefined
+ * @returns an undefined
  *
  * @example
  * ```

@@ -14,7 +14,7 @@ import Function from "../../type/Function/Function"
  *
  * @param f - is a function to partially apply list of arguments to
  * @param applied - is a list of arguments to be prepended to an f function
- * @return a partially applied f function
+ * @returns a partially applied f function
  *
  * @example
  * ```
