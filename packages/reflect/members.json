@@ -14,7 +14,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a boolean or not"
+        "description": "either true or false whether the value is a boolean or not"
       }
     },
     "examples": [
@@ -41,7 +41,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is an Error or not"
+        "description": "either true or false whether the value is an Error or not"
       }
     },
     "examples": [
@@ -74,7 +74,7 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a function or not"
+        "description": "either true or false whether the value is a function or not"
       }
     },
     "examples": [
@@ -112,7 +112,7 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a Map or not"
+        "description": "either true or false whether the value is a Map or not"
       }
     },
     "examples": [
@@ -139,7 +139,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a {@link"
+        "description": "either true or false whether the value is a {@link"
       }
     },
     "examples": [
@@ -166,7 +166,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a null or not"
+        "description": "either true or false whether the value is a null or not"
       }
     },
     "examples": [
@@ -193,7 +193,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a number or not"
+        "description": "either true or false whether the value is a number or not"
       }
     },
     "examples": [
@@ -220,7 +220,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is an Object or not"
+        "description": "either true or false whether the value is an Object or not"
       }
     },
     "examples": [
@@ -247,7 +247,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a Primitive or not"
+        "description": "either true or false whether the value is a Primitive or not"
       }
     },
     "examples": [
@@ -280,7 +280,7 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a Promise or not"
+        "description": "either true or false whether the value is a Promise or not"
       }
     },
     "examples": [
@@ -307,7 +307,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a RegExp or not"
+        "description": "either true or false whether the value is a RegExp or not"
       }
     },
     "examples": [
@@ -340,7 +340,7 @@
       ],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a Set or not"
+        "description": "either true or false whether the value is a Set or not"
       }
     },
     "examples": [
@@ -367,7 +367,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a string or not"
+        "description": "either true or false whether the value is a string or not"
       }
     },
     "examples": [
@@ -394,7 +394,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is a symbol or not"
+        "description": "either true or false whether the value is a symbol or not"
       }
     },
     "examples": [
@@ -421,7 +421,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true of false whether the value is an undefined or not"
+        "description": "either true or false whether the value is an undefined or not"
       }
     },
     "examples": [
