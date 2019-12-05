@@ -1,7 +1,6 @@
 {
   "extends": "@commonly-buildtools/configuration/typescript",
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "node_modules"
   ]
 }

@@ -1,5 +1,24 @@
 [
   {
+    "name": "Function",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "The Function type represents the\r {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function | function's constructor)."
+  },
+  {
     "name": "Identity",
     "since": "1.0.0",
     "remarks": [],
