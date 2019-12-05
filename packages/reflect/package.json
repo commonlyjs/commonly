@@ -1,6 +1,6 @@
 {
   "name": "@commonly/reflect",
-  "version": "0.1.0-next.14",
+  "version": "0.1.0-next.21",
   "description": "Collection of reflection utilities.",
   "main": "./index.js",
   "types": "./index.d.ts",
