@@ -3,7 +3,7 @@ import Predicate from "../../type/Predicate/Predicate"
 
 
 /**
- * Negates a given predicate function, thus creating a new negated version of that function.
+ * Negates a given {@link @commonly/type:Primitive | predicate function}, thus creating a new negated version of that function.
  *
  * @since 1.0.0
  *

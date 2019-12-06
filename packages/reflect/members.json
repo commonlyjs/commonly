@@ -259,7 +259,9 @@
   {
     "name": "isPrimitive",
     "since": "1.0.0",
-    "remarks": [],
+    "remarks": [
+      "Both can classify as a primitive, the primitive value and a primitive wrapper object."
+    ],
     "signature": {
       "parameters": [
         {

@@ -11,8 +11,7 @@ import Primitive from "../../type/Primitive/Primitive"
  * Check if a given value is
  * a {@link @commonly/type:Primitive | Primitive}.
  *
- * @remarks
- *  Both can classify as a primitive, the primitive value and a primitive wrapper object.
+ * @remark Both can classify as a primitive, the primitive value and a primitive wrapper object.
  *
  * @since 1.0.0
  *

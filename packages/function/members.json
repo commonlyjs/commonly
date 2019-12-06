@@ -74,7 +74,7 @@
       "source": null,
       "specification": null
     },
-    "description": "Negates a given predicate function, thus creating a new negated version of that function."
+    "description": "Negates a given {@link @commonly/type:Primitive | predicate function}, thus creating a new negated version of that function."
   },
   {
     "name": "noop",
