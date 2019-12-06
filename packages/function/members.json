@@ -41,6 +41,42 @@
     "description": "Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
   },
   {
+    "name": "identity",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "TValue",
+          "description": "is any given value"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "TValue",
+        "description": "a passed in value"
+      }
+    },
+    "examples": [
+      "import { identity } from \"@commonly/function\"\r\ridentity(2)     // -> 2\ridentity(3)     // -> 3\ridentity(5)     // -> 5\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "In mathematics, an identity function, also called an identity relation or identity map or identity transformation, is a function that always returns the same value that was used as its argument.\r\nThat is, for f being identity the equality f(x) = x holds for all x."
+  },
+  {
     "name": "negate",
     "since": "1.0.0",
     "remarks": [],

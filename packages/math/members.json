@@ -1,5 +1,23 @@
 [
   {
+    "name": null,
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    }
+  },
+  {
     "name": "decrement",
     "since": "1.0.0",
     "remarks": [],
@@ -28,6 +46,24 @@
       "specification": null
     },
     "description": "Decrements a given number by one."
+  },
+  {
+    "name": null,
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    }
   },
   {
     "name": "increment",
@@ -118,5 +154,41 @@
       "specification": null
     },
     "description": "Finds a minimum in a given list."
+  },
+  {
+    "name": null,
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    }
+  },
+  {
+    "name": null,
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    }
   }
 ]
