@@ -1,6 +1,6 @@
 {
   "name": "@commonly/function",
-  "version": "0.1.0-next.39",
+  "version": "0.1.0-next.40",
   "description": "Collection of functional utilities, often higher-order functions.",
   "main": "./index.js",
   "types": "./index.d.ts",
