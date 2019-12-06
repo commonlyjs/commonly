@@ -70,6 +70,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
+          "type": "number[]",
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -99,6 +100,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
+          "type": "number[]",
           "description": "is a list in which we will look for a maximum"
         }
       ],

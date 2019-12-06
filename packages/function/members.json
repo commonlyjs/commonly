@@ -10,6 +10,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
+          "type": "Function.Variadic",
           "description": "is a function to be curried"
         }
       ],
@@ -86,6 +87,7 @@
           "variadic": true,
           "defaultValue": null,
           "optional": false,
+          "type": "unknown[]",
           "description": "is a variadic list of parameters which are unused anyway"
         }
       ],
@@ -115,6 +117,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
+          "type": "Function.Variadic",
           "description": "is a function to partially apply list of arguments to"
         },
         {

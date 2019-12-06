@@ -20,7 +20,7 @@ import partial from "../partial/partial"
  * ```
  */
 const curry = <TResult, TParameters extends unknown[]>(
-    f: (...varargs: TParameters) => TResult
+    f: Function.Variadic<TResult, TParameters>
 ): Function.Curried<TResult, TParameters> => {
     const curried = (...varargs: TParameters) => {
         const partially = partial(f, ...varargs)
