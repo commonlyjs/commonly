@@ -7,7 +7,6 @@
       "parameters": [
         {
           "name": "f",
-          "type": "Function.Variadic",
           "description": "is a function to be curried"
         }
       ],
@@ -104,7 +103,6 @@
       "parameters": [
         {
           "name": "f",
-          "type": "Function.Variadic",
           "description": "is a function to partially apply list of arguments to"
         },
         {

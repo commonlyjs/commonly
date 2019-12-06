@@ -25,7 +25,7 @@ import Function from "../../type/Function/Function"
  * ```
  */
 const partial = <TResult, TParameters extends unknown[], TApplied extends unknown[]>(
-    f: Function.Variadic<TResult, TParameters>,
+    f: (...varargs: TParameters) => TResult,
     ...applied: TApplied
 ): Function.Partial<TResult, TParameters, TApplied> => {
     const combined = [ ...applied ] as TParameters
