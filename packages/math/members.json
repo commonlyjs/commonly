@@ -7,6 +7,9 @@
       "parameters": [
         {
           "name": "number",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "number",
           "description": "is a number to decrement by one"
         }
@@ -34,6 +37,9 @@
       "parameters": [
         {
           "name": "number",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "number",
           "description": "is a number to decrement by one"
         }
@@ -61,6 +67,9 @@
       "parameters": [
         {
           "name": "numbers",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -87,6 +96,9 @@
       "parameters": [
         {
           "name": "numbers",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "description": "is a list in which we will look for a maximum"
         }
       ],

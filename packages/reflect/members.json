@@ -7,6 +7,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | boolean",
           "description": "is a value to check"
         }
@@ -34,6 +37,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Error",
           "description": "is a value to check"
         }
@@ -61,6 +67,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | TFunction",
           "description": "is a value to check"
         }
@@ -94,6 +103,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Map",
           "description": "is a value to check"
         }
@@ -132,6 +144,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Nil",
           "description": "is a value to check"
         }
@@ -139,7 +154,7 @@
       "typeparameters": [],
       "returnValue": {
         "type": "boolean",
-        "description": "either true or false whether the value is a {@link"
+        "description": "either true or false whether the value is a Nil or not"
       }
     },
     "examples": [
@@ -159,6 +174,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | null",
           "description": "is a value to check"
         }
@@ -186,6 +204,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | number",
           "description": "is a value to check"
         }
@@ -213,6 +234,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | ",
           "description": "is a value to check"
         }
@@ -240,6 +264,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Primitive",
           "description": "is a value to check"
         }
@@ -267,6 +294,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Promise",
           "description": "is a value to check"
         }
@@ -300,6 +330,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | RegExp",
           "description": "is a value to check"
         }
@@ -327,6 +360,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | Set",
           "description": "is a value to check"
         }
@@ -360,6 +396,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | string",
           "description": "is a value to check"
         }
@@ -387,6 +426,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | symbol",
           "description": "is a value to check"
         }
@@ -414,6 +456,9 @@
       "parameters": [
         {
           "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "unknown | undefined",
           "description": "is a value to check"
         }

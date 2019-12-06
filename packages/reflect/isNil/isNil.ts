@@ -11,7 +11,7 @@ import Nil from "../../type/Nil/Nil"
  * @since 1.0.0
  *
  * @param value - is a value to check
- * @returns either true or false whether the value is a {@link @commonly/type:Nil | Nil} or not
+ * @returns either true or false whether the value is a Nil or not
  *
  * @example
  * ```

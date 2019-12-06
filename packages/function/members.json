@@ -7,6 +7,9 @@
       "parameters": [
         {
           "name": "f",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "description": "is a function to be curried"
         }
       ],
@@ -44,6 +47,9 @@
       "parameters": [
         {
           "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "Predicate",
           "description": "is a predicate function to be negated"
         }
@@ -77,6 +83,9 @@
       "parameters": [
         {
           "name": "_",
+          "variadic": true,
+          "defaultValue": null,
+          "optional": false,
           "description": "is a variadic list of parameters which are unused anyway"
         }
       ],
@@ -103,10 +112,16 @@
       "parameters": [
         {
           "name": "f",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "description": "is a function to partially apply list of arguments to"
         },
         {
           "name": "applied",
+          "variadic": true,
+          "defaultValue": null,
+          "optional": false,
           "type": "TApplied",
           "description": "is a list of arguments to be prepended to an f function"
         }
