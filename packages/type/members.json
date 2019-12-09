@@ -130,6 +130,6 @@
       "source": null,
       "specification": null
     },
-    "description": "The Reducer type represents a function which takes an accumulator and a value and returns a value, a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function}."
+    "description": "The Reducer type represents a function which takes an accumulator and a value and returns an updated accumulator."
   }
 ]
