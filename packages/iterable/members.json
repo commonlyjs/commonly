@@ -54,6 +54,6 @@
       "source": null,
       "specification": null
     },
-    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value\r from an iterable.  \r\n\r\nOften reduce function happens to be called a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function}\r\n  in other programming environments."
+    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable.\r Often reduce function happens to be called a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function} in other programming environments."
   }
 ]
