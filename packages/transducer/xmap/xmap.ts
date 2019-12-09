@@ -9,11 +9,11 @@ import Reducer from "../../type/Reducer/Reducer"
  * 
  * @since 1.0.0
  * 
- * @param mapper - is a mapper function
+ * @param mapper - is a mapping function
  * @param xf - is a transducer function
  * @returns a transducer function
  */
-const xmap = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, xf: Reducer<TAccumulator, TValueB>) => {
+const xmap = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, xf: Reducer<TAccumulator, TValueB>): Reducer<TAccumulator, TValueA> => {
     const transducer: Reducer<TAccumulator, TValueA> = (accumulator: TAccumulator, value: TValueA) => {
         return xf(accumulator, mapper(value))
     }
