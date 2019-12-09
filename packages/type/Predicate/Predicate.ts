@@ -4,7 +4,8 @@
  *
  * @since 1.0.0
  */
-type Predicate<TValue> = (value: TValue) => boolean
+type Predicate<TValue> =
+    (value: TValue) => boolean
 
 
 

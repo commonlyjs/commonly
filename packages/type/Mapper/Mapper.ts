@@ -4,7 +4,8 @@
  *
  * @since 1.0.0
  */
-type Mapper<TValueA, TValueB> = (value: TValueA) => TValueB
+type Mapper<TValueA, TValueB> =
+    (value: TValueA) => TValueB
 
 
 

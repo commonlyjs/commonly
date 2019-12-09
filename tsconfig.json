@@ -1,5 +1,9 @@
 {
   "extends": "@commonly-buildtools/configuration/typescript",
+  "compilerOptions": {
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  },
   "exclude": [
     "node_modules"
   ]

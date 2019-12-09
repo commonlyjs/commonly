@@ -4,7 +4,8 @@
  *
  * @since 1.0.0
  */
-type Identity<TValue> = (value: TValue) => TValue
+type Identity<TValue> =
+    (value: TValue) => TValue
 
 
 
