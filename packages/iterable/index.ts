@@ -2,6 +2,6 @@ import reduce from "./reduce/reduce"
 
 
 
-export default {
+export {
     reduce
 }
