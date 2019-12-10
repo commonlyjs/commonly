@@ -1,35 +1,24 @@
 [
   {
-    "name": "reduce",
+    "name": "into",
     "since": "1.0.0",
-    "remarks": [
-      "Often reduce function happens to be called a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function}."
-    ],
+    "remarks": [],
     "signature": {
       "parameters": [
         {
-          "name": "reducer",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Reducer",
-          "description": "is a reducer function"
+          "name": "accumulator",
+          "type": "TAccumulator",
+          "description": null
         },
         {
-          "name": "accumulator",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "TAccumulator",
-          "description": "is an initial value for an accumulator"
+          "name": "xf",
+          "type": "Transducer",
+          "description": null
         },
         {
           "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Iterable",
-          "description": "is an iterable to be reduced"
+          "description": null
         }
       ],
       "typeparameters": [
@@ -45,18 +34,34 @@
         }
       ],
       "returnValue": {
-        "type": null,
-        "description": "an accumulated value"
+        "type": "TAccumulator",
+        "description": null
       }
     },
-    "examples": [
-      "import { reduce } from \"@commonly/iterable\"\r\rreduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7\r"
-    ],
+    "examples": [],
     "metadata": {
       "source": null,
       "specification": null
     },
-    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable."
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": null,
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    }
   },
   {
     "name": "transduce",
@@ -66,33 +71,21 @@
       "parameters": [
         {
           "name": "xf",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Transducer",
           "description": null
         },
         {
           "name": "reducer",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Reducer",
           "description": null
         },
         {
           "name": "accumulator",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "TAccumulator",
           "description": null
         },
         {
           "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Iterable",
           "description": null
         }
@@ -110,7 +103,7 @@
         }
       ],
       "returnValue": {
-        "type": null,
+        "type": "TAccumulator",
         "description": null
       }
     },
