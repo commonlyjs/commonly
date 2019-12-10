@@ -21,7 +21,7 @@ import isString from "../../reflect/isString/isString"
  * empty({ x: 1, y: 1, z: 2 })  // -> {}
  * ```
  */
-const empty = <TValue>(value: TValue): TValue => {
+const empty = <TValue>(value: TValue | any): TValue => {
     switch (true) {
         case isArray(value):
             return [] as unknown as TValue

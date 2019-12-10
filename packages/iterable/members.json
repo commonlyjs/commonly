@@ -64,6 +64,47 @@
     }
   },
   {
+    "name": "seq",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "xf",
+          "type": "Transducer",
+          "description": null
+        },
+        {
+          "name": "iterable",
+          "type": "Iterable",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "TAccumulator",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "transduce",
     "since": "1.0.0",
     "remarks": [],
