@@ -1,21 +1,41 @@
 [
   {
-    "name": null,
-    "since": null,
+    "name": "add",
+    "since": "1.0.0",
     "remarks": [],
     "signature": {
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "augend",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is the first of two addends"
+        },
+        {
+          "name": "addend",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is the second of two addends"
+        }
+      ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
-        "description": null
+        "type": "number",
+        "description": "a sum"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { add } from \"@commonly/math\"\r\radd(3, 2)   // -> 5\r"
+    ],
     "metadata": {
       "source": null,
       "specification": null
-    }
+    },
+    "description": "Combines two quantities using the plus operator."
   },
   {
     "name": "decrement",
@@ -25,6 +45,9 @@
       "parameters": [
         {
           "name": "number",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "number",
           "description": "is a number to decrement by one"
         }
@@ -45,22 +68,42 @@
     "description": "Decrements a given number by one."
   },
   {
-    "name": null,
-    "since": null,
+    "name": "divide",
+    "since": "1.0.0",
     "remarks": [],
     "signature": {
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "dividend",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity that is divided by another quantity"
+        },
+        {
+          "name": "divisor",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity which divides a dividend"
+        }
+      ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
-        "description": null
+        "type": "number",
+        "description": "a quotient"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { divide } from \"@commonly/math\"\r\rdivide(3, 2)    // -> 1.5\r"
+    ],
     "metadata": {
       "source": null,
       "specification": null
-    }
+    },
+    "description": "Divides two quantities."
   },
   {
     "name": "increment",
@@ -70,6 +113,9 @@
       "parameters": [
         {
           "name": "number",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
           "type": "number",
           "description": "is a number to decrement by one"
         }
@@ -97,6 +143,10 @@
       "parameters": [
         {
           "name": "numbers",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number[]",
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -123,6 +173,10 @@
       "parameters": [
         {
           "name": "numbers",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number[]",
           "description": "is a list in which we will look for a maximum"
         }
       ],
@@ -142,39 +196,79 @@
     "description": "Finds a minimum in a given list."
   },
   {
-    "name": null,
-    "since": null,
+    "name": "multiply",
+    "since": "1.0.0",
     "remarks": [],
     "signature": {
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "multiplier",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity by which another (the multiplicand) is multiplied"
+        },
+        {
+          "name": "multiplicand",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity that is multiplied by another (the multiplier)"
+        }
+      ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
-        "description": null
+        "type": "number",
+        "description": "a product"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { multiply } from \"@commonly/math\"\r\rmultiply(3, 2)  // -> 6\r"
+    ],
     "metadata": {
       "source": null,
       "specification": null
-    }
+    },
+    "description": "Multiplies two quantities."
   },
   {
-    "name": null,
-    "since": null,
+    "name": "subtract",
+    "since": "1.0.0",
     "remarks": [],
     "signature": {
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "minuend",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity from which another (the subtrahend) is subtracted"
+        },
+        {
+          "name": "subtrahend",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a quantity which is subtracted from another (the minuend)"
+        }
+      ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
-        "description": null
+        "type": "number",
+        "description": "a difference"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { subtract } from \"@commonly/math\"\r\rsubtract(3, 2)  // -> 1\r"
+    ],
     "metadata": {
       "source": null,
       "specification": null
-    }
+    },
+    "description": "Subtracts two quantities using the minus operator."
   }
 ]
