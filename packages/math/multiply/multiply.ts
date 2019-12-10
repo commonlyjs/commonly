@@ -18,7 +18,7 @@ import curry from "../../function/curry/curry"
  * multiply(3, 2)  // -> 6
  * ```
  */
-const multiply = (multiplier: number, multiplicand: number) => {
+const multiply = (multiplier: number, multiplicand: number): number => {
     return multiplier * multiplicand
 }
 

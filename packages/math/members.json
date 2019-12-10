@@ -24,7 +24,7 @@
       ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
+        "type": "number",
         "description": "a sum"
       }
     },
@@ -92,7 +92,7 @@
       ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
+        "type": "number",
         "description": "a quotient"
       }
     },
@@ -220,7 +220,7 @@
       ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
+        "type": "number",
         "description": "a product"
       }
     },
@@ -258,7 +258,7 @@
       ],
       "typeparameters": [],
       "returnValue": {
-        "type": null,
+        "type": "number",
         "description": "a difference"
       }
     },

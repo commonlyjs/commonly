@@ -18,7 +18,7 @@ import curry from '../../function/curry/curry'
  * add(3, 2)   // -> 5
  * ```
  */
-const add = (augend: number, addend: number) => {
+const add = (augend: number, addend: number): number => {
     return augend + addend
 }
 

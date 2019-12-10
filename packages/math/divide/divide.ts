@@ -18,7 +18,7 @@ import curry from "../../function/curry/curry"
  * divide(3, 2)    // -> 1.5
  * ```
  */
-const divide = (dividend: number, divisor: number) => {
+const divide = (dividend: number, divisor: number): number => {
     return dividend / divisor
 }
 

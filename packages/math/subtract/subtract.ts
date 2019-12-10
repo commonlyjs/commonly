@@ -18,7 +18,7 @@ import curry from "../../function/curry/curry"
  * subtract(3, 2)  // -> 1
  * ```
  */
-const subtract = (minuend: number, subtrahend: number) => {
+const subtract = (minuend: number, subtrahend: number): number => {
     return minuend - subtrahend
 }
 
