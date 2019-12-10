@@ -57,5 +57,68 @@
       "specification": null
     },
     "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable."
+  },
+  {
+    "name": "transduce",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "xf",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Transducer",
+          "description": null
+        },
+        {
+          "name": "reducer",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Reducer",
+          "description": null
+        },
+        {
+          "name": "accumulator",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "TAccumulator",
+          "description": null
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
   }
 ]

@@ -7,8 +7,8 @@ import Reducer from "../Reducer/Reducer"
  * 
  * @since 1.0.0
  */
-type Transducer<TAccumulator, TValue> = Reducer<TAccumulator, TValue>
-
+type Transducer<TAccumulator, TValueA, TValueB = TValueA> = 
+    (reducer: Reducer<TAccumulator, TValueB>) => Reducer<TAccumulator, TValueA>
 
 
 export default Transducer
