@@ -1,5 +1,38 @@
 [
   {
+    "name": "isArray",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "unknown | ",
+          "description": "is a value to check"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": "either true or false whether the value is an array or not"
+      }
+    },
+    "examples": [
+      "import { isArray } from \"@commonly/reflect\"\r\risArray([])     //-> true\risArray({})      //-> false\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Glossary/array | array}."
+  },
+  {
     "name": "isBoolean",
     "since": "1.0.0",
     "remarks": [],
@@ -7,9 +40,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | boolean",
           "description": "is a value to check"
         }
@@ -37,9 +67,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Error",
           "description": "is a value to check"
         }
@@ -67,9 +94,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | TFunction",
           "description": "is a value to check"
         }
@@ -103,9 +127,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Map",
           "description": "is a value to check"
         }
@@ -144,9 +165,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Nil",
           "description": "is a value to check"
         }
@@ -174,9 +192,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | null",
           "description": "is a value to check"
         }
@@ -204,9 +219,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | number",
           "description": "is a value to check"
         }
@@ -234,9 +246,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | ",
           "description": "is a value to check"
         }
@@ -266,9 +275,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Primitive",
           "description": "is a value to check"
         }
@@ -296,9 +302,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Promise",
           "description": "is a value to check"
         }
@@ -332,9 +335,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | RegExp",
           "description": "is a value to check"
         }
@@ -362,9 +362,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | Set",
           "description": "is a value to check"
         }
@@ -398,9 +395,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | string",
           "description": "is a value to check"
         }
@@ -428,9 +422,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | symbol",
           "description": "is a value to check"
         }
@@ -458,9 +449,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "unknown | undefined",
           "description": "is a value to check"
         }

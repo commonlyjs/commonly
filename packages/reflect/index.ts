@@ -13,10 +13,12 @@ import isSet from './isSet/isSet'
 import isString from './isString/isString'
 import isSymbol from './isSymbol/isSymbol'
 import isUndefined from "./isUndefined/isUndefined"
+import isArray from './isArray/isArray'
 
 
 
 export {
+    isArray,
     isBoolean,
     isError,
     isFunction,
