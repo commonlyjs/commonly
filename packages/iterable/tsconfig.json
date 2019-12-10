@@ -12,6 +12,9 @@
       "path": "../type"
     },
     {
+      "path": "../transducer"
+    },
+    {
       "path": "../function"
     }
   ]
