@@ -1,6 +1,6 @@
 {
   "name": "@commonly/iterable",
-  "version": "0.1.0-next.56",
+  "version": "0.1.0-next.57",
   "description": "Collection of functional utilities, often higher-order functions.",
   "main": "./index.js",
   "types": "./index.d.ts",
