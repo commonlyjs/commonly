@@ -205,5 +205,41 @@
       "specification": null
     },
     "description": "Partially applies a list of arguments to an f function. It's similar to a\r\n\r{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method,\r\n  except it preserves *this* context."
+  },
+  {
+    "name": "reducer",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "accumulator",
+          "type": "TAccumulator",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Reducer",
+        "description": "a reducer"
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Provides a reducing function based on passed in accumulator, if nothing suitable is found, then it returns an identity function."
   }
 ]
