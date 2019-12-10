@@ -7,10 +7,6 @@
       "parameters": [
         {
           "name": "f",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Function.Variadic",
           "description": "is a function to be curried"
         }
       ],
@@ -27,7 +23,6 @@
         }
       ],
       "returnValue": {
-        "type": "Function.Curried",
         "description": "a curried version of an f function"
       }
     },
@@ -41,6 +36,39 @@
     "description": "Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
   },
   {
+    "name": "empty",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "TValue",
+          "description": "is an object to be emptied"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "TValue",
+        "description": "an empty object of that type"
+      }
+    },
+    "examples": [
+      "import { empty } from \"@commonly/function\"\r\rempty([ 1, 1, 2 ])           // -> []\rempty(\"112\")                 // -> \"\"\rempty({ x: 1, y: 1, z: 2 })  // -> {}\r"
+    ],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "Creates an empty value of the same type as the one passed in."
+  },
+  {
     "name": "identity",
     "since": "1.0.0",
     "remarks": [],
@@ -48,9 +76,6 @@
       "parameters": [
         {
           "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "TValue",
           "description": "is any given value"
         }
@@ -74,7 +99,7 @@
       "source": null,
       "specification": null
     },
-    "description": "In mathematics, an identity function, also called an identity relation or identity map or identity transformation, is a function that always returns the same value that was used as its argument. That is, for f being identity the equality f(x) = x holds for all x."
+    "description": "In mathematics, an identity function, also called an identity relation or identity map or identity transformation, is a function that always returns the same value that was used as its argument.\r\nThat is, for f being identity the equality f(x) = x holds for all x."
   },
   {
     "name": "negate",
@@ -84,9 +109,6 @@
       "parameters": [
         {
           "name": "predicate",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Predicate",
           "description": "is a predicate function to be negated"
         }
@@ -120,10 +142,6 @@
       "parameters": [
         {
           "name": "_",
-          "variadic": true,
-          "defaultValue": null,
-          "optional": false,
-          "type": "unknown[]",
           "description": "is a variadic list of parameters which are unused anyway"
         }
       ],
@@ -150,17 +168,10 @@
       "parameters": [
         {
           "name": "f",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Function.Variadic",
           "description": "is a function to partially apply list of arguments to"
         },
         {
           "name": "applied",
-          "variadic": true,
-          "defaultValue": null,
-          "optional": false,
           "type": "TApplied",
           "description": "is a list of arguments to be prepended to an f function"
         }
@@ -183,7 +194,6 @@
         }
       ],
       "returnValue": {
-        "type": "Function.Partial",
         "description": "a partially applied f function"
       }
     },
@@ -194,6 +204,6 @@
       "source": null,
       "specification": null
     },
-    "description": "Partially applies a list of arguments to an f function. It's similar to a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method, except it preserves *this* context."
+    "description": "Partially applies a list of arguments to an f function. It's similar to a\r\n\r{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method,\r\n  except it preserves *this* context."
   }
 ]

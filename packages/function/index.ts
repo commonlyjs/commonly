@@ -3,11 +3,13 @@ import identity from './identity/identity';
 import negate from './negate/negate';
 import partial from './partial/partial';
 import noop from './noop/noop';
+import empty from './empty/empty';
 
 
 
 export {
     curry,
+    empty,
     identity,
     negate,
     noop,
