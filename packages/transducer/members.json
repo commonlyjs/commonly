@@ -12,14 +12,6 @@
           "optional": false,
           "type": "Mapper",
           "description": "is a mapping function"
-        },
-        {
-          "name": "xf",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Reducer",
-          "description": "is a transducer function"
         }
       ],
       "typeparameters": [
@@ -40,8 +32,8 @@
         }
       ],
       "returnValue": {
-        "type": "Reducer",
-        "description": "a transducer function"
+        "type": "Transducer",
+        "description": "a transducing function"
       }
     },
     "examples": [],

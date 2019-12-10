@@ -1,6 +1,6 @@
-import curry from "../../function/curry/curry"
 import Mapper from "../../type/Mapper/Mapper"
 import Reducer from "../../type/Reducer/Reducer"
+import Transducer from "../../type/Transducer/Transducer"
 
 
 
@@ -10,17 +10,17 @@ import Reducer from "../../type/Reducer/Reducer"
  * @since 1.0.0
  * 
  * @param mapper - is a mapping function
- * @param xf - is a transducer function
- * @returns a transducer function
+ * @returns a transducing function
  */
-const xmap = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, xf: Reducer<TAccumulator, TValueB>): Reducer<TAccumulator, TValueA> => {
-    const transducer: Reducer<TAccumulator, TValueA> = (accumulator: TAccumulator, value: TValueA) => {
-        return xf(accumulator, mapper(value))
+const xmap = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>): Transducer<TAccumulator, TValueA, TValueB> => 
+    (xf: Reducer<TAccumulator, TValueB>): Reducer<TAccumulator, TValueA> => {
+        const transducer = (accumulator: TAccumulator, value: TValueA) => {
+            return xf(accumulator, mapper(value))
+        }
+    
+        return transducer
     }
 
-    return transducer
-}
 
 
-
-export default curry(xmap)
+export default xmap
