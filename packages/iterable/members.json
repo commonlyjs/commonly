@@ -46,22 +46,54 @@
     "description": "[Not yet documented]"
   },
   {
-    "name": null,
-    "since": null,
-    "remarks": [],
+    "name": "reduce",
+    "since": "1.0.0",
+    "remarks": [
+      "Often reduce function happens to be called a {@link https://en.wikipedia.org/wiki/Fold_(higher-order_function) | fold function}."
+    ],
     "signature": {
-      "parameters": [],
-      "typeparameters": [],
+      "parameters": [
+        {
+          "name": "reducer",
+          "type": "Reducer",
+          "description": "is a reducer function"
+        },
+        {
+          "name": "accumulator",
+          "type": "TAccumulator",
+          "description": "is an initial value for an accumulator"
+        },
+        {
+          "name": "iterable",
+          "type": "Iterable",
+          "description": "is an iterable to be reduced"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
       "returnValue": {
         "type": null,
-        "description": null
+        "description": "an accumulated value"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { reduce } from \"@commonly/iterable\"\r\rreduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7\r"
+    ],
     "metadata": {
       "source": null,
       "specification": null
-    }
+    },
+    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value\r from an iterable."
   },
   {
     "name": "seq",
