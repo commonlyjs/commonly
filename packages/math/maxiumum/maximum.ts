@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param numbers - is a list in which we will look for a maximum
- * @return a maximum of an xs
+ * @returns a maximum of an xs
  *
  * @example
  * ```

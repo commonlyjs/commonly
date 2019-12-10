@@ -7,9 +7,6 @@
       "parameters": [
         {
           "name": "mapper",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
           "type": "Mapper",
           "description": "is a mapping function"
         }

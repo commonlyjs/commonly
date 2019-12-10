@@ -1,5 +1,6 @@
 import Predicate from "../../type/Predicate/Predicate"
 import Reducer from "../../type/Reducer/Reducer"
+import Transducer from "../../type/Transducer/Transducer"
 
 
 
@@ -9,21 +10,21 @@ import Reducer from "../../type/Reducer/Reducer"
  * @since 1.0.0
  *
  * @param predicate - is a predicate function
- * @param xf - is a transducer function
  * @returns a transducer function
  */
-const xfilter = <TAccumulator, TValue>(predicate: Predicate<TValue>, xf: Reducer<TAccumulator, TValue>): Reducer<TAccumulator, TValue> => {
-    const transducer = (accumulator: TAccumulator, value: TValue) => {
-        if (predicate(value)) {
-            return xf(accumulator, value)
-        } else {
-            return accumulator
+const xfilter = <TAccumulator, TValue>(predicate: Predicate<TValue>): Transducer<TAccumulator, TValue> =>
+    (xf: Reducer<TAccumulator, TValue>) => {
+        const transducer = (accumulator: TAccumulator, value: TValue) => {
+            if (predicate(value)) {
+                return xf(accumulator, value)
+            } else {
+                return accumulator
+            }
         }
+
+        return transducer
     }
+
+
     
-    return transducer
-}
-
-
-
 export default xfilter

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param number - is a number to decrement by one
- * @return a decremented number by one
+ * @returns a decremented number by one
  *
  * @example
  * ```
