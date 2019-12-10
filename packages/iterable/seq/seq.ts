@@ -13,7 +13,7 @@ import into from "../into/into"
  * @param iterable
  * @returns
  */
-const seq = <TAccumulator, TValue>(xf: Transducer<TAccumulator, TValue>, iterable: Iterable<TValue>): TAccumulator => {
+const seq = <TAccumulator, TValueA, TValueB = TValueA>(xf: Transducer<TAccumulator, TValueA, TValueB>, iterable: Iterable<TValueA>): TAccumulator => {
     return into(empty<TAccumulator>(iterable), xf, iterable)
 }
 

@@ -37,13 +37,70 @@
           "extends": null
         },
         {
-          "name": "TValue",
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
           "defaultValue": null,
           "extends": null
         }
       ],
       "returnValue": {
         "type": "TAccumulator",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": "map",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "mapper",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Mapper",
+          "description": null
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": null,
         "description": null
       }
     },
@@ -94,7 +151,12 @@
           "extends": null
         },
         {
-          "name": "TValue",
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
           "defaultValue": null,
           "extends": null
         }
@@ -143,7 +205,12 @@
           "extends": null
         },
         {
-          "name": "TValue",
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
           "defaultValue": null,
           "extends": null
         }
@@ -206,7 +273,12 @@
           "extends": null
         },
         {
-          "name": "TValue",
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
           "defaultValue": null,
           "extends": null
         }

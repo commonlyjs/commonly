@@ -15,11 +15,11 @@ import reduce from "../reduce/reduce"
  * @param iterable
  * @returns
  */
-const transduce = <TAccumulator, TValue>(
-    xf: Transducer<TAccumulator, TValue>, 
-    reducer: Reducer<TAccumulator, TValue>, 
+const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
+    xf: Transducer<TAccumulator, TValueA, TValueB>, 
+    reducer: Reducer<TAccumulator, TValueB>, 
     accumulator: TAccumulator, 
-    iterable: Iterable<TValue>
+    iterable: Iterable<TValueA>
 ): TAccumulator => {
     return reduce(xf(reducer), accumulator, iterable)
 }

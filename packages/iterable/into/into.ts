@@ -14,7 +14,7 @@ import transduce from "../transduce/transduce"
  * @param iterable
  * @returns
  */
-const into = <TAccumulator, TValue>(accumulator: TAccumulator, xf: Transducer<TAccumulator, TValue>, iterable: Iterable<TValue>): TAccumulator => {
+const into = <TAccumulator, TValueA, TValueB = TValueA>(accumulator: TAccumulator, xf: Transducer<TAccumulator, TValueA, TValueB>, iterable: Iterable<TValueA>): TAccumulator => {
     return transduce(xf, reducer(accumulator), accumulator, iterable)
 }
 

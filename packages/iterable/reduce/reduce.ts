@@ -23,7 +23,7 @@ import Reducer from "../../type/Reducer/Reducer"
  * reduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7
  * ```
  */
-const reduce = <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>, accumulator: TAccumulator, iterable: Iterable<TValue>) => {
+const reduce = <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>) => {
     for (const value of iterable) {
         accumulator = reducer(accumulator, value)
     }
@@ -34,8 +34,8 @@ const reduce = <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>, ac
 
 
 export default curry(reduce) as {
-    <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>, accumulator: TAccumulator, xs: Iterable<TValue>): TAccumulator
-    <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>, accumulator: TAccumulator): (xs: Iterable<TValue>) => TAccumulator
-    <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>): (accumulator: TAccumulator, xs: Iterable<TValue>) => TAccumulator
-    <TAccumulator, TValue>(reducer: Reducer<TAccumulator, TValue>): (accumulator: TAccumulator) => (xs: Iterable<TValue>) => TAccumulator
+    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, xs: Iterable<TValueA>): TAccumulator
+    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator): (xs: Iterable<TValueA>) => TAccumulator
+    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator, xs: Iterable<TValueA>) => TAccumulator
+    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator) => (xs: Iterable<TValueA>) => TAccumulator
 }
