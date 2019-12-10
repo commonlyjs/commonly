@@ -131,5 +131,24 @@
       "specification": null
     },
     "description": "The Reducer type represents a function which takes an accumulator and a value and returns an updated accumulator."
+  },
+  {
+    "name": "Transducer",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
   }
 ]

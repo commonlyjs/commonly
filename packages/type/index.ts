@@ -5,6 +5,7 @@ import Nil from './Nil/Nil';
 import Predicate from './Predicate/Predicate';
 import Primitive from './Primitive/Primitive';
 import Reducer from './Reducer/Reducer';
+import Transducer from './Transducer/Transducer';
 
 
 
@@ -16,4 +17,5 @@ export {
     Predicate,
     Primitive,
     Reducer,
+    Transducer
 }
