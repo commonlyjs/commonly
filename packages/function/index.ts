@@ -4,6 +4,7 @@ import negate from './negate/negate';
 import partial from './partial/partial';
 import noop from './noop/noop';
 import empty from './empty/empty';
+import reduced from './reduced/reduced';
 import reducer from './reducer/reducer';
 
 
@@ -15,5 +16,6 @@ export {
     negate,
     noop,
     partial,
+    reduced,
     reducer
 }

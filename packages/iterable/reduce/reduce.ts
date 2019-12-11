@@ -1,4 +1,5 @@
 import curry from "../../function/curry/curry"
+import isReduced from "../../reflect/isReduced/isReduced"
 import Reducer from "../../type/Reducer/Reducer"
 
 
@@ -26,6 +27,11 @@ import Reducer from "../../type/Reducer/Reducer"
 const reduce = <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>) => {
     for (const value of iterable) {
         accumulator = reducer(accumulator, value)
+        
+        if (isReduced(accumulator)) {
+            accumulator = accumulator.value
+            break;
+        }
     }
 
     return accumulator

@@ -361,6 +361,40 @@
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise | Promise}."
   },
   {
+    "name": "isReduced",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "TValue | Reduced",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "boolean",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "isRegExp",
     "since": "1.0.0",
     "remarks": [],

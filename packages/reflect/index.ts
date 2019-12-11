@@ -8,6 +8,7 @@ import isNumber from './isNumber/isNumber'
 import isObject from './isObject/isObject'
 import isPrimitive from './isPrimitive/isPrimitive'
 import isPromise from './isPromise/isPromise'
+import isReduced from './isReduced/isReduced'
 import isRegExp from './isRegExp/isRegExp'
 import isSet from './isSet/isSet'
 import isString from './isString/isString'
@@ -29,6 +30,7 @@ export {
     isObject,
     isPrimitive,
     isPromise,
+    isReduced,
     isRegExp,
     isSet,
     isString,

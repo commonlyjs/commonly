@@ -233,6 +233,40 @@
     "description": "Partially applies a list of arguments to an f function. It's similar to a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind | Function.prototype.bind} method, except it preserves *this* context."
   },
   {
+    "name": "reduced",
+    "since": null,
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "TValue",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Reduced",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "reducer",
     "since": "1.0.0",
     "remarks": [],

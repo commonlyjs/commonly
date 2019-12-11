@@ -114,6 +114,25 @@
     "description": "The Primitive type represents a union of {@link https://developer.mozilla.org/en-US/docs/Glossary/primitive | primitive} data types. An {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined}, {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null}, {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean}, {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number}, {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint}, {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string} and a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
   },
   {
+    "name": "Reduced",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "Reducer",
     "since": "1.0.0",
     "remarks": [],
