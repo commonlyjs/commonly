@@ -1,3 +1,4 @@
+import completing from './completing/completing';
 import curry from './curry/curry';
 import identity from './identity/identity';
 import negate from './negate/negate';
@@ -10,6 +11,7 @@ import reducer from './reducer/reducer';
 
 
 export {
+    completing,
     curry,
     empty,
     identity,
