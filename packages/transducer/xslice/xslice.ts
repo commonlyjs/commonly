@@ -15,8 +15,8 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns
  */
 const xslice = <TAccumulator, TValue>(start: number, end: number): Transducer<TAccumulator, TValue> =>
-    (xf: Reducer<TAccumulator | Reduced<TAccumulator>, TValue>) => {
-        const transducer: Reducer<TAccumulator | Reduced<TAccumulator>, TValue> = (accumulator, value) => {
+    (xf: Reducer<TAccumulator, TValue>) => {
+        const transducer: Reducer<TAccumulator, TValue> = (accumulator, value) => {
             if (start > 0) {
                 end = end - 1
                 start = start - 1

@@ -1,4 +1,5 @@
 import filter from './filter/filter'
+import find from './find/find'
 import into from './into/into'
 import map from './map/map'
 import reduce from "./reduce/reduce"
@@ -10,6 +11,7 @@ import transduce from './transduce/transduce'
 
 export {
     filter,
+    find,
     into,
     map,
     reduce,

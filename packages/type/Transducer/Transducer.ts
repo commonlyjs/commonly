@@ -1,4 +1,4 @@
-import Reduced from "../Reduced/Reduced"
+import Completion from "../Completion/Completion"
 import Reducer from "../Reducer/Reducer"
 
 
@@ -8,8 +8,9 @@ import Reducer from "../Reducer/Reducer"
  * 
  * @since 1.0.0
  */
-type Transducer<TAccumulator, TValueA, TValueB = TValueA> = 
-    (reducer: Reducer<TAccumulator | Reduced<TAccumulator>, TValueB>) => Reducer<TAccumulator | Reduced<TAccumulator>, TValueA>
+type Transducer<TAccumulator, TValueA, TValueB = TValueA, TProduct = TAccumulator, TCompletion = TProduct, TCompletionB = TProduct> = 
+    (reducer: Reducer<TAccumulator, TValueB>) => 
+        Reducer<TAccumulator, TValueA, TProduct> & { completion: Completion<TCompletion, TCompletionB>}
 
 
 export default Transducer

@@ -1,3 +1,4 @@
+import completing from "../../function/completing/completing"
 import curry from "../../function/curry/curry"
 import isReduced from "../../reflect/isReduced/isReduced"
 import Reducer from "../../type/Reducer/Reducer"
@@ -26,15 +27,23 @@ import Reducer from "../../type/Reducer/Reducer"
  */
 const reduce = <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>) => {
     for (const value of iterable) {
-        accumulator = reducer(accumulator, value)
+        const product = reducer(accumulator, value)
         
-        if (isReduced(accumulator)) {
-            accumulator = accumulator.value
+        if (isReduced(product)) {
+            accumulator = product.value
             break;
+        } else {
+            accumulator = product
         }
     }
 
-    return accumulator
+    // @ts-ignore
+    if (reducer.completion === undefined) {
+        reducer = completing(reducer)    
+    }
+    
+    // @ts-ignore
+    return reducer.completion(accumulator)
 }
 
 

@@ -1,3 +1,4 @@
+import completing from "../../function/completing/completing"
 import Reducer from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 import reduce from "../reduce/reduce"
@@ -21,7 +22,7 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
     accumulator: TAccumulator, 
     iterable: Iterable<TValueA>
 ): TAccumulator => {
-    return reduce(xf(reducer), accumulator, iterable)
+    return reduce(xf(completing(reducer)), accumulator, iterable)
 }
 
 
