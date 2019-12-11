@@ -243,7 +243,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
-          "type": "TValue",
+          "type": "TValue | Reduced",
           "description": null
         }
       ],

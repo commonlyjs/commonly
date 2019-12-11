@@ -1,5 +1,44 @@
 [
   {
+    "name": "xfilter",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": "is a predicate function"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": "a transducer function"
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xmap",
     "since": "1.0.0",
     "remarks": [],
@@ -34,6 +73,53 @@
       "returnValue": {
         "type": "Transducer",
         "description": "a transducing function"
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": "xslice",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "start",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        },
+        {
+          "name": "end",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
       }
     },
     "examples": [],

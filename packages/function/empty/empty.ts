@@ -27,8 +27,6 @@ const empty = <TValue>(value: TValue | any): TValue => {
             return [] as unknown as TValue
         case isString(value):
             return "" as unknown as TValue
-        case isObject(value):
-            return {} as unknown as TValue
         default:
             return new ((value as unknown as object).constructor()) as unknown as TValue
     }

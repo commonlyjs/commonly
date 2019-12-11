@@ -1,9 +1,10 @@
 import filter from './filter/filter'
 import into from './into/into'
-import reduce from "./reduce/reduce"
-import transduce from './transduce/transduce'
-import seq from './seq/seq'
 import map from './map/map'
+import reduce from "./reduce/reduce"
+import seq from './seq/seq'
+import slice from './slice/slice'
+import transduce from './transduce/transduce'
 
 
 
@@ -13,5 +14,6 @@ export {
     map,
     reduce,
     seq,
+    slice,
     transduce
 }

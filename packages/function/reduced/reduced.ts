@@ -1,3 +1,4 @@
+import isReduced from "../../reflect/isReduced/isReduced"
 import Reduced from "../../type/Reduced/Reduced"
 
 
@@ -10,8 +11,12 @@ import Reduced from "../../type/Reduced/Reduced"
  * @param value
  * @returns
  */
-const reduced = <TValue>(value: TValue): Reduced<TValue> => {
-    return { reduced: true, value }
+const reduced = <TValue>(value: TValue | Reduced<TValue>): Reduced<TValue> => {
+    if (isReduced(value)) {
+        return value   
+    } else {
+        return { reduced: true, value }
+    }
 }
 
 
