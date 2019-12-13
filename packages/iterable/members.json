@@ -47,108 +47,6 @@
     "description": "[Not yet documented]"
   },
   {
-    "name": "find",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "predicate",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Predicate",
-          "description": null
-        },
-        {
-          "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Iterable",
-          "description": null
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TValue",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": "TValue",
-        "description": null
-      }
-    },
-    "examples": [],
-    "metadata": {
-      "source": null,
-      "specification": null
-    },
-    "description": "[Not yet documented]"
-  },
-  {
-    "name": "into",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "accumulator",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "TAccumulator",
-          "description": null
-        },
-        {
-          "name": "xf",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Transducer",
-          "description": null
-        },
-        {
-          "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Iterable",
-          "description": null
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TValueA",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TValueB",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": "TAccumulator",
-        "description": null
-      }
-    },
-    "examples": [],
-    "metadata": {
-      "source": null,
-      "specification": null
-    },
-    "description": "[Not yet documented]"
-  },
-  {
     "name": "map",
     "since": "1.0.0",
     "remarks": [],
@@ -189,7 +87,7 @@
         }
       ],
       "returnValue": {
-        "type": null,
+        "type": "Iterable",
         "description": null
       }
     },
@@ -251,7 +149,7 @@
         }
       ],
       "returnValue": {
-        "type": null,
+        "type": "TAccumulator",
         "description": "an accumulated value"
       }
     },
@@ -263,58 +161,6 @@
       "specification": null
     },
     "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable."
-  },
-  {
-    "name": "seq",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "xf",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Transducer",
-          "description": null
-        },
-        {
-          "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Iterable",
-          "description": null
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TValueA",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TValueB",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": "TAccumulator",
-        "description": null
-      }
-    },
-    "examples": [],
-    "metadata": {
-      "source": null,
-      "specification": null
-    },
-    "description": "[Not yet documented]"
   },
   {
     "name": "slice",
@@ -355,7 +201,54 @@
         }
       ],
       "returnValue": {
-        "type": null,
+        "type": "Iterable",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": "take",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
         "description": null
       }
     },
@@ -373,7 +266,7 @@
     "signature": {
       "parameters": [
         {
-          "name": "xf",
+          "name": "transducer",
           "variadic": false,
           "defaultValue": null,
           "optional": false,
@@ -418,6 +311,11 @@
         },
         {
           "name": "TValueB",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TProduct",
           "defaultValue": null,
           "extends": null
         }

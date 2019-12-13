@@ -1,44 +1,5 @@
 [
   {
-    "name": "completing",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "f",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "TFunction",
-          "description": null
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TFunction",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TProduct",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": null,
-        "description": null
-      }
-    },
-    "examples": [],
-    "metadata": {
-      "source": null,
-      "specification": null
-    },
-    "description": "[Not yet documented]"
-  },
-  {
     "name": "curry",
     "since": "1.0.0",
     "remarks": [],
@@ -273,7 +234,7 @@
   },
   {
     "name": "reduced",
-    "since": null,
+    "since": "1.0.0",
     "remarks": [],
     "signature": {
       "parameters": [

@@ -7,8 +7,8 @@ import Reduced from "../Reduced/Reduced"
  *
  * @since 1.0.0
  */
-type Reducer<TAccumulator, TValue, TProduct = TAccumulator> =
-    (accumulator: TAccumulator, value: TValue) => TProduct | Reduced<TProduct>
+type Reducer<TAccumulator, TValue> =
+    (accumulator: TAccumulator, value: TValue) => TAccumulator | Reduced<TAccumulator>
 
 
 

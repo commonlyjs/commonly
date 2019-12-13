@@ -12,9 +12,6 @@
       "path": "../type"
     },
     {
-      "path": "../type/Transducer/Transducer.d.ts"
-    },
-    {
       "path": "../function"
     }
   ]

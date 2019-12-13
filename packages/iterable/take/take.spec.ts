@@ -1,24 +1,24 @@
-import slice from "./slice"
+import take from "./take"
 
 
 
-describe("function slice(start, end, iterable)", () => {
+describe("function take(n, iterable)", () => {
     context("iterable is an array", () => {
         context("iterable is empty", () => {
             it("should return an empty array", () => {
                 const iterable: number[] = []
 
-                expect(slice(3, 7, iterable))
+                expect(take(7, iterable))
                     .toEqual([])
             })
         })
 
         context("iterable is not empty", () => {
             it("should return a slice of an array", () => {
-                const iterable: number[] = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+                const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
 
-                expect(slice(3, 7, iterable))
-                    .toEqual([2, 3, 5, 8])
+                expect(take(7, iterable))
+                    .toEqual([ 0, 1, 1, 2, 3, 5, 8 ])
             })
         })
     })

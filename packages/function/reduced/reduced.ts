@@ -6,7 +6,7 @@ import Reduced from "../../type/Reduced/Reduced"
 /**
  * [Not yet documented]
  *
- * @since
+ * @since 1.0.0
  *
  * @param value
  * @returns

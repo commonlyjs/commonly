@@ -18,5 +18,7 @@
     "@commonly-buildtools/test": "0.5.13",
     "@commonly-buildtools/version": "0.5.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^3.7.3"
+  }
 }

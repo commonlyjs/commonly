@@ -1,4 +1,3 @@
-import Completion from './Completion/Completion';
 import Function from './Function/Function';
 import Identity from './Identity/Identity';
 import Mapper from './Mapper/Mapper';
@@ -12,7 +11,6 @@ import Transducer from './Transducer/Transducer';
 
 
 export {
-    Completion,
     Function,
     Identity,
     Mapper,

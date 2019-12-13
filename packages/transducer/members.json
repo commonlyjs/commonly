@@ -39,45 +39,6 @@
     "description": "[Not yet documented]"
   },
   {
-    "name": "xfind",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "predicate",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Predicate",
-          "description": null
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TValue",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": "Transducer",
-        "description": null
-      }
-    },
-    "examples": [],
-    "metadata": {
-      "source": null,
-      "specification": null
-    },
-    "description": "[Not yet documented]"
-  },
-  {
     "name": "xmap",
     "since": "1.0.0",
     "remarks": [],
@@ -137,6 +98,45 @@
         },
         {
           "name": "end",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": null,
+      "specification": null
+    },
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": "xtake",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
           "variadic": false,
           "defaultValue": null,
           "optional": false,
