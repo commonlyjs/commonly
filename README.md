@@ -16,6 +16,7 @@ Some of the functionality may seem redundant at first, but for someone striving 
 * [Overview](#Overview)
 * [Installation](#Installation)
 * [Packages](#Packages)
+* [Motivation](#Motivation)
 
 
 
