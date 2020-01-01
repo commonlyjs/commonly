@@ -23,9 +23,9 @@
     "**/*.d.ts.map"
   ],
   "author": "Mateusz Pietrzak",
-  "homepage": "https://github.com/commonlyjs/commonly-buildtools",
-  "repository": "https://github.com/commonlyjs/commonly-buildtools",
-  "bugs": "https://github.com/commonlyjs/commonly-buildtools/issues",
+  "homepage": "https://github.com/commonlyjs/commonly",
+  "repository": "https://github.com/commonlyjs/commonly",
+  "bugs": "https://github.com/commonlyjs/commonly/issues",
   "license": "MIT",
   "keywords": [
     "commonly",
