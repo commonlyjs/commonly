@@ -1,14 +1,11 @@
 A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https://commonlyjs.com) to learn more.  
 
-![Build Status](https://github.com/commonlyjs/commonly/workflows/.github/workflows/cd.yml/badge.svg?branch=master)
-![Dependencies](https://david-dm.org/comomnlyjs/commonly.svg)
+![Build Status](https://github.com/commonlyjs/commonly/workflows/CD/badge.svg?branch=master)
 
 
 
 ### Overview
 Commonly aims to be the most comprehensive JavaScript/TypeScript utility library.
- 
-Some of the functionality may seem redundant at first, but for someone striving for a [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming) they are necessary.
 
 
 
