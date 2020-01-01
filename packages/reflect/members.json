@@ -30,8 +30,8 @@
       "import { isArray } from \"@commonly/reflect\"\r\risArray([])     //-> true\risArray({})      //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isArray/isArray.ts",
+      "specification": "/isArray/isArray.spec.ts"
     },
     "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Glossary/array | array}."
   },
@@ -60,8 +60,8 @@
       "import { isBoolean } from \"@commonly/reflect\"\r\risBoolean(true)     //-> true\risBoolean(false)    //-> true\risBoolean(NaN)      //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isBoolean/isBoolean.ts",
+      "specification": "/isBoolean/isBoolean.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean}."
   },
@@ -90,8 +90,8 @@
       "import { isError } from \"@commonly/reflect\"\r\risError(new Error())    //-> true\risError(TypeError())    //-> true\risError(NaN)            //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isError/isError.ts",
+      "specification": "/isError/isError.spec.ts"
     },
     "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error | Error}."
   },
@@ -126,8 +126,8 @@
       "import { isFunction } from \"@commonly/reflect\"\r\risFunction(Math.add)        //-> true\risFunction(() => void 0))   //-> true\risFunction(Math.PI)         //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isFunction/isFunction.ts",
+      "specification": "/isFunction/isFunction.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/function | function}."
   },
@@ -167,8 +167,8 @@
       "import { isMap } from \"@commonly/reflect\"\r\risMap(new Map())     //-> true\risMap(NaN)           //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isMap/isMap.ts",
+      "specification": "/isMap/isMap.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map | Map}."
   },
@@ -197,8 +197,8 @@
       "import { isNil } from \"@commonly/reflect\"\r\risNil(undefined)   //-> true\risNil(null)        //-> true\risNil(NaN)         //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isNil/isNil.ts",
+      "specification": "/isNil/isNil.spec.ts"
     },
     "description": "Check if a given value is a {@link @commonly/type:Nil | Nil} (either an undefined or a null)."
   },
@@ -227,8 +227,8 @@
       "import { isNull } from \"@commonly/reflect\"\r\risNull(null)        //-> true\risNull(undefined)   //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isNull/isNull.ts",
+      "specification": "/isNull/isNull.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null}."
   },
@@ -257,8 +257,8 @@
       "import { isNumber } from \"@commonly/reflect\"\r\risNumber(0)           //-> true\risNumber(NaN)         //-> true\risNumber(null)        //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isNumber/isNumber.ts",
+      "specification": "/isNumber/isNumber.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number}."
   },
@@ -287,8 +287,8 @@
       "import { isObject } from \"@commonly/reflect\"\r\risObject(new Object())      //-> true\risObject({})                //-> true\risObject(null)              //-> false\risObject(undefined)         //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isObject/isObject.ts",
+      "specification": "/isObject/isObject.spec.ts"
     },
     "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object | Object}."
   },
@@ -319,8 +319,8 @@
       "import { isPrimitive } from \"@commonly/reflect\"\r\risPrimitive(undefined)   //-> true\risPrimitive(null)        //-> true\risPrimitive(NaN)         //-> true\risPrimitive([])          //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isPrimitive/isPrimitive.ts",
+      "specification": "/isPrimitive/isPrimitive.spec.ts"
     },
     "description": "Check if a given value is a {@link @commonly/type:Primitive | Primitive}."
   },
@@ -355,8 +355,8 @@
       "import { isPromise } from \"@commonly/reflect\"\r\risPromise(new Promise())         //-> true\risPromise(Promise.resolve())     //-> true\risPromise(NaN)                   //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isPromise/isPromise.ts",
+      "specification": "/isPromise/isPromise.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise | Promise}."
   },
@@ -389,8 +389,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isReduced/isReduced.ts",
+      "specification": "/isReduced/isReduced.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -419,8 +419,8 @@
       "import { isRegExp } from \"@commonly/reflect\"\r\risRegExp(new RegExp(\"ab+c\"))        //-> true\risRegExp(/ab+c/)                    //-> true\risRegExp(NaN)                       //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isRegExp/isRegExp.ts",
+      "specification": "/isRegExp/isRegExp.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp | RegExp}."
   },
@@ -455,8 +455,8 @@
       "import { isSet } from \"@commonly/reflect\"\r\risSet(new Set())     //-> true\risSet(NaN)           //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isSet/isSet.ts",
+      "specification": "/isSet/isSet.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set | Set}."
   },
@@ -485,8 +485,8 @@
       "import { isString } from \"@commonly/reflect\"\r\risString(\"string\")   //-> true\risString(null)       //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isString/isString.ts",
+      "specification": "/isString/isString.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string}."
   },
@@ -515,8 +515,8 @@
       "import { isSymbol } from \"@commonly/reflect\"\r\risSymbol(Symbol())      //-> true\risSymbol(NaN)           //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isSymbol/isSymbol.ts",
+      "specification": "/isSymbol/isSymbol.spec.ts"
     },
     "description": "Check if a given value is a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
   },
@@ -545,8 +545,8 @@
       "import { isUndefined } from \"@commonly/reflect\"\r\risUndefined(undefined)   //-> true\risUndefined(null)        //-> false\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/isUndefined/isUndefined.ts",
+      "specification": "/isUndefined/isUndefined.spec.ts"
     },
     "description": "Check if a given value is an {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined}."
   }
