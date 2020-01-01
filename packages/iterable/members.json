@@ -41,8 +41,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/filter/filter.ts",
+      "specification": "/filter/filter.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -93,8 +93,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/map/map.ts",
+      "specification": "/map/map.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -157,8 +157,8 @@
       "import { reduce } from \"@commonly/iterable\"\r\rreduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/reduce/reduce.ts",
+      "specification": "/reduce/reduce.spec.ts"
     },
     "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable."
   },
@@ -207,8 +207,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/slice/slice.ts",
+      "specification": "/slice/slice.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -254,8 +254,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/take/take.ts",
+      "specification": "/take/take.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -327,8 +327,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/transduce/transduce.ts",
+      "specification": "/transduce/transduce.spec.ts"
     },
     "description": "[Not yet documented]"
   }
