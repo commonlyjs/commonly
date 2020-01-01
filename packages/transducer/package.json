@@ -1,7 +1,7 @@
 {
   "name": "@commonly/transducer",
   "version": "0.1.0-next.66",
-  "description": "Collection of functional utilities, often higher-order functions.",
+  "description": "Collection of transducing functions.",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -23,9 +23,9 @@
     "**/*.d.ts.map"
   ],
   "author": "Mateusz Pietrzak",
-  "homepage": "https://github.com/commonlyjs/commonly-buildtools",
-  "repository": "https://github.com/commonlyjs/commonly-buildtools",
-  "bugs": "https://github.com/commonlyjs/commonly-buildtools/issues",
+  "homepage": "https://commonlyjs.com",
+  "repository": "https://github.com/commonlyjs/commonly",
+  "bugs": "https://github.com/commonlyjs/commonly/issues",
   "license": "MIT",
   "keywords": [
     "commonly",
