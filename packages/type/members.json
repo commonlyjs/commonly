@@ -13,8 +13,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Function/Function.ts",
+      "specification": "/Function/Function.spec.ts"
     },
     "description": "The Function type represents the {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function | function's constructor}."
   },
@@ -32,8 +32,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Identity/Identity.ts",
+      "specification": "/Identity/Identity.spec.ts"
     },
     "description": "The Identity type represents a function which takes a single value as an argument and returns that value, an {@link https://en.wikipedia.org/wiki/Identity_function | identity function}."
   },
@@ -51,8 +51,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Mapper/Mapper.ts",
+      "specification": "/Mapper/Mapper.spec.ts"
     },
     "description": "The Mapper type represents a function which always a single value as an argument and returns a value, a {@link https://en.wikipedia.org/wiki/Map_(higher-order_function) | mapper function}."
   },
@@ -70,8 +70,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Nil/Nil.ts",
+      "specification": "/Nil/Nil.spec.ts"
     },
     "description": "The Nil type represents a union of undefined and null."
   },
@@ -89,8 +89,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Predicate/Predicate.ts",
+      "specification": "/Predicate/Predicate.spec.ts"
     },
     "description": "The Predicate type represents a function which takes a single value as an argument and returns a boolean, a {@link https://en.wikipedia.org/wiki/Predicate_(mathematical_logic) | predicate function}."
   },
@@ -108,8 +108,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Primitive/Primitive.ts",
+      "specification": "/Primitive/Primitive.spec.ts"
     },
     "description": "The Primitive type represents a union of {@link https://developer.mozilla.org/en-US/docs/Glossary/primitive | primitive} data types. An {@link https://developer.mozilla.org/en-US/docs/Glossary/undefined | undefined}, {@link https://developer.mozilla.org/en-US/docs/Glossary/null | null}, {@link https://developer.mozilla.org/en-US/docs/Glossary/boolean | boolean}, {@link https://developer.mozilla.org/en-US/docs/Glossary/number | number}, {@link https://developer.mozilla.org/en-US/docs/Glossary/bigint | bigint}, {@link https://developer.mozilla.org/en-US/docs/Glossary/string | string} and a {@link https://developer.mozilla.org/en-US/docs/Glossary/symbol | symbol}."
   },
@@ -127,8 +127,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Reduced/Reduced.ts",
+      "specification": "/Reduced/Reduced.spec.ts"
     },
     "description": "[Not yet documented]"
   },
@@ -146,8 +146,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Reducer/Reducer.ts",
+      "specification": "/Reducer/Reducer.spec.ts"
     },
     "description": "The Reducer type represents a function which takes an accumulator and a value and returns an updated accumulator."
   },
@@ -165,8 +165,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/Transducer/Transducer.ts",
+      "specification": "/Transducer/Transducer.spec.ts"
     },
     "description": "[Not yet documented]"
   }

@@ -32,8 +32,8 @@
       "import { add } from \"@commonly/math\"\r\radd(3, 2)   // -> 5\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/add/add.ts",
+      "specification": "/add/add.spec.ts"
     },
     "description": "Combines two quantities using the plus operator."
   },
@@ -62,8 +62,8 @@
       "import { decrement } from \"@commonly/math\"\r\rdecrement(7)    // -> 6\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/decrement/decrement.ts",
+      "specification": "/decrement/decrement.spec.ts"
     },
     "description": "Decrements a given number by one."
   },
@@ -100,8 +100,8 @@
       "import { divide } from \"@commonly/math\"\r\rdivide(3, 2)    // -> 1.5\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/divide/divide.ts",
+      "specification": "/divide/divide.spec.ts"
     },
     "description": "Divides two quantities."
   },
@@ -130,8 +130,8 @@
       "import { decrement } from \"@commonly/Math\"\r\rdecrement(7)    // -> 8\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/increment/increment.ts",
+      "specification": "/increment/increment.spec.ts"
     },
     "description": "Increments a given number by one."
   },
@@ -160,8 +160,8 @@
       "import { maximum } from \"@commonly/math\"\r\rmaximum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 8\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/maxiumum/maximum.ts",
+      "specification": "/maxiumum/maximum.spec.ts"
     },
     "description": "Finds a maximum in a given list."
   },
@@ -190,8 +190,8 @@
       "import { minimum } from \"@commonly/math\"\r\rminimum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 0\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/minimum/minimum.ts",
+      "specification": "/minimum/minimum.spec.ts"
     },
     "description": "Finds a minimum in a given list."
   },
@@ -228,8 +228,8 @@
       "import { multiply } from \"@commonly/math\"\r\rmultiply(3, 2)  // -> 6\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/multiply/multiply.ts",
+      "specification": "/multiply/multiply.spec.ts"
     },
     "description": "Multiplies two quantities."
   },
@@ -266,8 +266,8 @@
       "import { subtract } from \"@commonly/math\"\r\rsubtract(3, 2)  // -> 1\r"
     ],
     "metadata": {
-      "source": null,
-      "specification": null
+      "source": "/subtract/subtract.ts",
+      "specification": "/subtract/subtract.spec.ts"
     },
     "description": "Subtracts two quantities using the minus operator."
   }
