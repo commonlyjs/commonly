@@ -6,6 +6,7 @@ on:
       - master
       - staging
       - stable
+      - experimental/**
 
 
 jobs:
@@ -35,6 +36,9 @@ jobs:
         run: |
           git reset --hard
           git checkout "${GITHUB_REF:11}"
+      - name: Generate coverage report
+        run: |
+          npm run coverage
       - name: Version
         run: |
           npm run version --if-present
@@ -60,4 +64,12 @@ jobs:
                -H "Accept: application/vnd.github.everest-preview+json" \
                -d '{"event_type": "WEBSITE_DEPLOY"}' \
               "https://api.github.com/repos/commonlyjs/commonlyjs.github.io/dispatches"
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
 
