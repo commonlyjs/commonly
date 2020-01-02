@@ -4,6 +4,7 @@
     "build": "lerna exec -- npm run build",
     "clean": "lerna exec -- npm run clean",
     "test": "lerna exec -- npm run test",
+    "coverage": "cmnytest --coverage",
     "document": "lerna exec -- npm run document",
     "version": "node node_modules/@commonly-buildtools/version",
     "publish": "node node_modules/@commonly-buildtools/publish"

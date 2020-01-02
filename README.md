@@ -4,17 +4,24 @@ A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
-
 ### Overview
-Commonly aims to be the most comprehensive JavaScript/TypeScript utility library.
+#### Why Commonly?
+You can already find multiple fine libraries which provide you with a basic tooling, each is different, each seasons adds its own flavor to JavaScript.
+Commonly blends features form the latest versions of EcmaScripts with standards and concepts from those libraries together, 
+delivering you the most comprehensive set of utilities for JavaScript/TypeScript.  
 
+* Batteries included. Commonly is to be the most comprehensive JavaScript/TypeScript utility library.
+* Written and tested thoroughly in TypeScript. Coverage at 95%.
+* Comes in modular, tree shakeable packages, install and import only what you need. 
+* Designed with functional programming in mind, it will never mutate your data.
+* Extensible, every functionality's implementation is based on protocols. Meaning you can `map`, `filter` and more on immutable.js data structures or even use `add` function to sum matrices.
+* Every utility is well documented and tightly typed to enhance your experience using IDEs.
 
 
 ### Content
 * [Overview](#Overview)
 * [Installation](#Installation)
 * [Packages](#Packages)
-
 
 
 ### Installation 
@@ -42,12 +49,9 @@ console.log(
 ```
 
 
-
 ### Packages
-
 #### @commonly/function
 Collection of functional utilities, often higher-order functions.  
-
 
 #### @commonly/iterable
 Collection of common list processing utilities.  
@@ -58,16 +62,13 @@ Support for custom collections can be added by making sure that a collection imp
 * An `Iterable.iterator` from a `@commonly/protocol` package (an alias for a `Symbol.iterator` symbol, you can use it directly if you prefer) which returns an [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols) so the collection can be iterated over.
 * A `Reducible.reducer` from a `@commonly/protocol` package which returns a default reducer for the collection.
 
-
 #### @commonly/math
 Collection of common mathematics related utilities.
 
 Here you can find common operators and utilities found often in mathematics.
 
-
 #### @commonly/number
 Collection of common number related utilities. 
-
 
 #### @commonly/protocol
 Collection of protocols used internally by `commonly`.   
@@ -75,14 +76,11 @@ Collection of protocols used internally by `commonly`.
 By implementing one of those on your own data structure you can enable or alter the behaviour of the utilities.  
 Whenever a function leverages one of the protocols, it have to state so in its documentation. 
 
-
 #### @commonly/reflect
 Collection of reflection utilities. 
 
-
 #### @commonly/string
 Collection of common string related utilities.  
-
 
 #### @commonly/transducer
 Collection of common transducing functions.  
@@ -95,7 +93,6 @@ Additionally, using `@commonly/transducer` directly instead of `@commonly/iterab
 of intermediate collections in a pipeline between each step 
 as [deforestation](https://en.wikipedia.org/wiki/Deforestation_(computer_science)) 
 is not implemented in any JavaScript runtime environment just yet.
-
 
 #### @commonly/type
 Collection of common shape definitions used in commonly, required for TypeScript projects.  
