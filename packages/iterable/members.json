@@ -11,7 +11,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Predicate",
-          "description": null
+          "description": "is a predicate"
         },
         {
           "name": "iterable",
@@ -19,7 +19,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": null
+          "description": "is an iterable to be iterated over"
         }
       ],
       "typeparameters": [
@@ -36,15 +36,17 @@
       ],
       "returnValue": {
         "type": null,
-        "description": null
+        "description": "an iterable of the same type as the one given"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { filter } from \"@commonly/iterable\"\r\rfilter(x => x % 2, [ 0, 1, 1, 2, 3, 5, 8 ])      // -> [ 1, 1, 2, 3, 5 ]\r"
+    ],
     "metadata": {
       "source": "/filter/filter.ts",
       "specification": "/filter/filter.spec.ts"
     },
-    "description": "[Not yet documented]"
+    "description": "Creates a new iterable of the same type as the one given, with only values passing the given predicate function."
   },
   {
     "name": "map",
@@ -58,7 +60,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Mapper",
-          "description": null
+          "description": "is a mapping function"
         },
         {
           "name": "iterable",
@@ -66,7 +68,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": null
+          "description": "is an iterable to be iterated over"
         }
       ],
       "typeparameters": [
@@ -88,15 +90,17 @@
       ],
       "returnValue": {
         "type": "Iterable",
-        "description": null
+        "description": "an iterable of the same type as the one given"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { map } from \"@commonly/iterable\"\r\rmap(x => x * x, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 4, 9, 25, 64 ]\r"
+    ],
     "metadata": {
       "source": "/map/map.ts",
       "specification": "/map/map.spec.ts"
     },
-    "description": "[Not yet documented]"
+    "description": "Creates a new iterable of the same type as the one given, where every value is altered by a result of a given mapper function."
   },
   {
     "name": "reduce",
@@ -174,7 +178,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "number",
-          "description": null
+          "description": "is a beginning of a slice"
         },
         {
           "name": "end",
@@ -182,7 +186,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "number",
-          "description": null
+          "description": "is an end of a slice"
         },
         {
           "name": "iterable",
@@ -190,7 +194,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": null
+          "description": "is an iterable to be sliced from"
         }
       ],
       "typeparameters": [
@@ -202,15 +206,17 @@
       ],
       "returnValue": {
         "type": "Iterable",
-        "description": null
+        "description": "an iterable of the same type as the one given"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { slice } from \"@commonly/iterable\"\r\rslice(1, 5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 1, 1, 2, 3, 5 ]\r"
+    ],
     "metadata": {
       "source": "/slice/slice.ts",
       "specification": "/slice/slice.spec.ts"
     },
-    "description": "[Not yet documented]"
+    "description": "Creates a new iterable of the same type as the one given, where only values from start to end are included."
   },
   {
     "name": "take",
@@ -224,7 +230,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "number",
-          "description": null
+          "description": "is a number of elements to be taken"
         },
         {
           "name": "iterable",
@@ -232,7 +238,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": null
+          "description": "is an iterable to be taken from"
         }
       ],
       "typeparameters": [
@@ -249,15 +255,17 @@
       ],
       "returnValue": {
         "type": "Iterable",
-        "description": null
+        "description": "an iterable of the same type as the one given"
       }
     },
-    "examples": [],
+    "examples": [
+      "import { take } from \"@commonly/iterable\"\r\rtake(5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 2, 3 ]\r"
+    ],
     "metadata": {
       "source": "/take/take.ts",
       "specification": "/take/take.spec.ts"
     },
-    "description": "[Not yet documented]"
+    "description": "Creates a new iterable of the same type as the one given, where only first n values are taken."
   },
   {
     "name": "transduce",

@@ -160,8 +160,8 @@
       "import { maximum } from \"@commonly/math\"\r\rmaximum([ 0, 1, 1, 2, 3, 5, 8 ])    // -> 8\r"
     ],
     "metadata": {
-      "source": "/maxiumum/maximum.ts",
-      "specification": "/maxiumum/maximum.spec.ts"
+      "source": "/maximum/maximum.ts",
+      "specification": "/maximum/maximum.spec.ts"
     },
     "description": "Finds a maximum in a given list."
   },
