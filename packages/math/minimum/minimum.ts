@@ -14,7 +14,7 @@
  * ```
  */
 const minimum = (numbers: number[]): number => {
-    return Math.max(...numbers)
+    return Math.min(...numbers)
 }
 
 
