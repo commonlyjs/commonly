@@ -3,7 +3,7 @@
     "bootstrap": "cmnymonorepo",
     "build": "lerna exec -- npm run build",
     "clean": "lerna exec -- npm run clean",
-    "test": "lerna exec -- npm run test",
+    "test": "cmnytest",
     "coverage": "cmnytest --coverage",
     "document": "lerna exec -- npm run document",
     "version": "node node_modules/@commonly-buildtools/version",
