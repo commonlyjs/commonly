@@ -22,7 +22,7 @@ delivering you the most comprehensive set of utilities for JavaScript/TypeScript
 
 You can perform any kind of operation on any native JavaScript data structure.
 ```typescript
-import { map, reduce } from "@commonly/iterable"
+import { map } from "@commonly/iterable"
 
 const uniques = new Set()   // -> { 0, 1, 2 }
     .add(0)
@@ -41,7 +41,7 @@ import { Map } from "immutable"
 
 const source = fromEvent(document, 'click')
 const archive = reduce((archive, event) => archive.set(event.timeStamp, event),  Map(), source)
-const coords = map(([ timeStamp, event ]) => ({ x: event.clientX, y: event.clientY }), archive)
+const coords = map(([ timeStamp, event ]) => ({ x: event.clientX, y: event.clientY, ts: timeStamp }), archive)
 console.log(coords)
 ```
 
@@ -72,8 +72,7 @@ const numbers = new Queue()     // -> { 0, 1, 1, 2 }
     .enqueue(1)
     .enqueue(2)
 
-const strings = map(item => String(item), numbers)
-console.log(strings)
+const strings = map(item => String(item), numbers)      // -> { "0", "1", "1", "2" }
 ```
 
 ### Content
