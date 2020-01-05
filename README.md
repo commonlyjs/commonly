@@ -7,6 +7,7 @@ A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https
 
 
 ### Overview
+
 #### Why Commonly?
 You can already find multiple fine libraries which provide you with a basic tooling, each is different, each seasons adds its own flavor to JavaScript.
 Commonly blends features form the latest versions of EcmaScripts with standards and concepts from those libraries together, 
@@ -19,6 +20,61 @@ delivering you the most comprehensive set of utilities for JavaScript/TypeScript
 * Extensible, every functionality's implementation is based on protocols. Meaning you can `map`, `filter` and more on immutable.js data structures or even use `add` function to sum matrices.
 * Every utility is well documented and tightly typed to enhance your experience using IDEs.
 
+You can perform any kind of operation on any native JavaScript data structure.
+```typescript
+import { map, reduce } from "@commonly/iterable"
+
+const uniques = new Set()   // -> { 0, 1, 2 }
+    .add(0)
+    .add(1)
+    .add(1)
+    .add(2)
+
+map(item => item / item, uniques)   // -> { NaN, 1 }
+```
+
+And any other data structure that is added by a third party library, like RxJS or Immutable.js.
+```typescript
+import { map, reduce } from "@commonly/iterable"
+import { fromEvent } from 'rxjs'
+import { Map } from "immutable"
+
+const source = fromEvent(document, 'click')
+const archive = reduce((archive, event) => archive.set(event.timeStamp, event),  Map(), source)
+const coords = map(([ timeStamp, event ]) => ({ x: event.clientX, y: event.clientY }), archive)
+console.log(coords)
+```
+
+Also it can be easily operate on your custom data structures. 
+```typescript
+import { map } from "@commonly/iterable"
+
+class Queue {
+    state = []
+
+    enqueue(item) {
+        this.state.push(item)
+        return this
+    }
+
+    [Symbol.iterator]*() {
+        for (item in this.state) {
+            yield item
+        }
+    }
+
+    ["@@cmny/reducer"]: (accumulator, item) => accumulator.enqueue(item)
+}
+
+const numbers = new Queue()     // -> { 0, 1, 1, 2 }
+    .enqueue(0)
+    .enqueue(1)
+    .enqueue(1)
+    .enqueue(2)
+
+const strings = map(item => String(item), numbers)
+console.log(strings)
+```
 
 ### Content
 * [Overview](#Overview)
