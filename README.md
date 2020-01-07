@@ -5,7 +5,6 @@
 ---
 
 <p align="center">
-  <a href="https://commonlyjs.com"><img src=".github/assets/logo/book-storm.svg" alt="Logo" width="100" height="100" /></a>
   <h1 align="center">Commonly</h1>
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
@@ -14,9 +13,32 @@
     <br />
     <br />
     <a href="https://commonlyjs.com">Website</a>
-    ·
+    &nbsp;&nbsp;·&nbsp;&nbsp;
     <a href="https://github.com/commonlyjs/commonly/issues">Report a bug</a>
-    ·
+    &nbsp;&nbsp;·&nbsp;&nbsp;
     <a href="https://github.com/commonlyjs/commonly/issues">Request a feature</a>
   </p>
 </p>
+
+
+Table of Contents
+---------------------
+* Overview
+    * Why Commonly?
+    * What's different?
+* Getting started
+    * Installation
+    * Examples
+* Documentation
+    * Articles
+    * API reference
+    * Cookbook
+* Roadmap
+
+<img src=".github/assets/logo/book-pile.svg" 
+     width="170" height="190" align="right" hspace="12" />
+   
+   
+Overview  
+---
+Text..
