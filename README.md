@@ -4,6 +4,9 @@
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 <p align="center">
+  <a href="https://commonlyjs.com/">
+    <img src=".github/assets/logo.svg" alt="Logo" width="80" height="80"/>
+  </a>
   <h1 align="center">Commonly</h1>
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
