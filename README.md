@@ -48,13 +48,18 @@ In id lectus est. Phasellus interdum lacus sed mattis feugiat.
 Integer lacinia dictum magna, quis gravida risus lacinia et. 
 Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
  
-#### Why Commonly?
+### Why Commonly?
 Proin maximus rutrum felis, sed lobortis metus sagittis in.
 In id lectus est. Phasellus interdum lacus sed mattis feugiat.
+Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacus. 
+Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
-#### What's different?
+### What's different?
 Integer lacinia dictum magna, quis gravida risus lacinia et. 
 Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
+* Curabitur est nisl, dignissim at eros in, aliquet egestas sem. 
+* Etiam ut lacinia urna. Phasellus quis scelerisque arcu, quis fermentum mauris. 
+* Donec et ante orci. Nulla pretium commodo pellentesque.
 
 
 
@@ -67,14 +72,14 @@ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 Vestibulum condimentum vel nisl et accumsan. Etiam semper diam et luctus aliquam.
 
-#### Installation
+### Installation
 Nam faucibus quam ac accumsan consequat. Nam ac metus mattis leo lobortis rhoncus. 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 ```shell script
 npm install @commonly/math
 ```
 
-#### Examples
+### Examples
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 ```typescript
 const identity = <TValue>(value: TValue): TValue => {
@@ -95,15 +100,15 @@ Pellentesque eget risus nec enim consequat congue non id sapien.
 Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
 Curabitur dapibus a velit eu sagittis. Vivamus pretium ante eget bibendum efficitur.
 
-#### Articles
+### Articles
 Maecenas mattis turpis eget sapien cursus sodales. 
 Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
 
-#### API reference 
+### API reference 
 Pellentesque eget risus nec enim consequat congue non id sapien. 
 Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
 
-#### Cookbook
+### Cookbook
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 
@@ -113,6 +118,6 @@ Vestibulum eu leo nec purus volutpat faucibus sed quis lacus.
      width="90" height="60" align="right" hspace="15" />
 Roadmap  
 --------
-#### 1.x-next
+### 1.x-next
 * @commonly/iterable
 * @commonly/math
