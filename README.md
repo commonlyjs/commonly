@@ -13,8 +13,6 @@
     <a href="https://commonlyjs.com/api"><strong>Explore the API »</strong></a>
     <br />
     <br />
-    <a href="https://commonlyjs.com">Website</a>
-    &nbsp;&nbsp;·&nbsp;&nbsp;
     <a href="https://github.com/commonlyjs/commonly/issues">Report a bug</a>
     &nbsp;&nbsp;·&nbsp;&nbsp;
     <a href="https://github.com/commonlyjs/commonly/issues">Request a feature</a>
