@@ -1,15 +1,29 @@
-A modern utility library for JavaScript/TypeScript. Visit [commonlyjs.com](https://commonlyjs.com) to learn more.  
-
 [![Build Status](https://github.com/commonlyjs/commonly/workflows/build/badge.svg?branch=master)](https://github.com/commonlyjs/commonly/actions)
 [![Coverage Status](https://coveralls.io/repos/github/commonlyjs/commonly/badge.svg?branch=master)](https://coveralls.io/github/commonlyjs/commonly?branch=master)
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+<p align="center">
+  <h1 align="center">Commonly</h3>
+  <p align="center">
+    A modern utility library for JavaScript/TypeScript.
+    <br />
+    <a href="https://commonlyjs.com/api"><strong>Explore the API »</strong></a>
+    <br />
+    <br />
+    <a href="https://commonlyjs.com">Home Website</a>
+    ·
+    <a href="https://github.com/commonlyjs/commonly/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/commonlyjs/commonly/issues">Request Feature</a>
+  </p>
+</p>
 
-### Overview
+
+# Commonly
 
 #### Why Commonly?
-You can already find multiple fine libraries which provide you with a basic tooling, each is different, each seasons adds its own flavor to JavaScript.
+You can already find multiple fine libraries which provide you with a basic tooling, each is different, each seasons its own flavor to JavaScript.
 Commonly blends features form the latest versions of EcmaScripts with standards and concepts from those libraries together, 
 delivering you the most comprehensive set of utilities for JavaScript/TypeScript.  
 
