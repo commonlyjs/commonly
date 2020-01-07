@@ -6,7 +6,7 @@
 ---
 <br />
 <p align="center">
-  <img src=".github/assets/logo/title-alt.png" height="60" align="center" />
+  <img src=".github/assets/logo/title-alt.png" height="55" align="center" />
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
     <br />
@@ -21,7 +21,7 @@
 <br />
 
 <img src=".github/assets/logo/bookmark.svg" 
-     width="90" height="60" align="right" hspace="15" />
+     width="75" height="55" align="right" hspace="15" />
 Table of Contents
 ------------------
 * [Overview](#overview)
@@ -39,7 +39,7 @@ Table of Contents
 
 
 <img src=".github/assets/logo/potion-ball.svg" 
-     width="90" height="60" align="right" hspace="15" />
+     width="75" height="55" align="right" hspace="15" />
 Overview  
 ---------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -64,7 +64,7 @@ Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 
 
 <img src=".github/assets/logo/bindle.svg" 
-     width="90" height="60" align="right" hspace="15" />
+     width="75" height="55" align="right" hspace="15" />
 Getting started  
 ----------------
 Nam faucibus quam ac accumsan consequat. Nam ac metus mattis leo lobortis rhoncus. 
@@ -89,7 +89,7 @@ const identity = <TValue>(value: TValue): TValue => {
 
 
 <img src=".github/assets/logo/scroll-unfurled.svg" 
-     width="90" height="60" align="right" hspace="15" />
+     width="75" height="55" align="right" hspace="15" />
 Documentation  
 --------------
 Cras gravida lacus sollicitudin rutrum convallis. 
@@ -115,7 +115,7 @@ Vestibulum eu leo nec purus volutpat faucibus sed quis lacus.
 
 
 <img src=".github/assets/logo/treasure-map.svg" 
-     width="90" height="60" align="right" hspace="15" />
+     width="75" height="55" align="right" hspace="15" />
 Roadmap  
 --------
 ### 1.x-next
