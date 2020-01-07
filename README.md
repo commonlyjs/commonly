@@ -2,11 +2,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/commonlyjs/commonly/badge.svg?branch=master)](https://coveralls.io/github/commonlyjs/commonly?branch=master)
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+---
 
 <p align="center">
-  <a href="https://commonlyjs.com/">
-    <img src=".github/assets/logo.svg" alt="Logo" width="80" height="80"/>
-  </a>
+  <a href="https://commonlyjs.com"><img src=".github/assets/logo/spell-book.svg" alt="Logo" width="75" height="75" /></a>
   <h1 align="center">Commonly</h1>
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
