@@ -4,7 +4,7 @@
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 <p align="center">
-  <img src=".github/assets/logo/title.svg" height="75" align="center" />
+  <img src=".github/assets/logo/title-alt.png" height="50" align="center" />
   <hr />
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
