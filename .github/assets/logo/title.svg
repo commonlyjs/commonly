@@ -12,8 +12,9 @@
         text {
             font-family: Montserrat, sans-serif;
             font-size: 128px;
+            text-anchor: middle;
             fill: #00d1b2;
         }
     </style>
-    <text x="0" y="96">Commonly</text>
+    <text x="50%" y="96">Commonly</text>
 </svg>
