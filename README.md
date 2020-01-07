@@ -5,6 +5,7 @@
 
 <p align="center">
   <img src=".github/assets/logo/title.svg" height="75" align="center" />
+  <hr />
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
     <br />
