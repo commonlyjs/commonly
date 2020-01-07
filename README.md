@@ -4,6 +4,9 @@
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ---
 
+<img src=".github/assets/logo/bookmark.svg" 
+     width="175" height="175" align="right" hspace="15" />
+     
 <p align="center">
   <h1 align="center">Commonly</h1>
   <p align="center">
@@ -19,26 +22,24 @@
     <a href="https://github.com/commonlyjs/commonly/issues">Request a feature</a>
   </p>
 </p>
+<br />
 
 
 Table of Contents
 ---------------------
-* Overview
-    * Why Commonly?
-    * What's different?
-* Getting started
-    * Installation
-    * Examples
-* Documentation
-    * Articles
-    * API reference
-    * Cookbook
-* Roadmap
+* [Overview]()
+    * [Why Commonly?]()
+    * [What's different?]()
+* [Getting started]()
+    * [Installation]()
+    * [Examples]()
+* [Documentation]()
+    * [Articles]()
+    * [API reference]()
+    * [Cookbook]()
+* [Roadmap]()
 
-<img src=".github/assets/logo/book-pile.svg" 
-     width="170" height="190" align="right" hspace="12" />
-   
-   
+     
 Overview  
 ---
 Text..
