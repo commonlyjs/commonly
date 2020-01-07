@@ -113,9 +113,10 @@ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 
 
-
-<img src=".github/assets/logo/treasure-map.svg" 
-      height="55" align="right" hspace="15" />
+<a href="#">
+    <img src=".github/assets/logo/treasure-map.svg" 
+          height="55" align="right" hspace="15" />
+</a>
 Roadmap  
 --------
 ### 1.x-next
