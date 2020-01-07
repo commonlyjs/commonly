@@ -3,12 +3,8 @@
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-
-<img src=".github/assets/logo/bookmark.svg" 
-     width="175" height="175" align="right" hspace="25" />
-     
 <p align="center">
-  <h1 align="center">Commonly</h1>
+  <img src=".github/assets/logo/title.svg" height="75" />
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
     <br />
