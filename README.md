@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <a href="https://commonlyjs.com"><img src=".github/assets/logo/spell-book.svg" alt="Logo" width="75" height="75" /></a>
+  <a href="https://commonlyjs.com"><img src=".github/assets/logo/book-storm.svg" alt="Logo" width="100" height="100" /></a>
   <h1 align="center">Commonly</h1>
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
