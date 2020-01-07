@@ -2,10 +2,10 @@
 [![Coverage Status](https://coveralls.io/repos/github/commonlyjs/commonly/badge.svg?branch=master)](https://coveralls.io/github/commonlyjs/commonly?branch=master)
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
----
+
 
 <img src=".github/assets/logo/bookmark.svg" 
-     width="175" height="175" align="right" hspace="15" />
+     width="175" height="175" align="right" hspace="25" />
      
 <p align="center">
   <h1 align="center">Commonly</h1>
