@@ -23,9 +23,9 @@
 <br />
 
 <img src=".github/assets/logo/bookmark.svg" 
-     width="75" height="55" align="right" hspace="25" />
+     width="90" height="75" align="right" hspace="15" />
 Table of Contents
----------------------
+------------------
 * [Overview](#Overview)
     * [Why Commonly?]()
     * [What's different?]()
@@ -38,24 +38,32 @@ Table of Contents
     * [Cookbook]()
 * [Roadmap](#Roadmap)
 
-     
+
+<img src=".github/assets/logo/bookmark.svg" 
+     width="90" height="75" align="right" hspace="15" />
 Overview  
----
+---------
 Text..
 
 
+<img src=".github/assets/logo/bookmark.svg" 
+     width="90" height="75" align="right" hspace="15" />
 Getting started  
----
+----------------
 Text..
 
 
+<img src=".github/assets/logo/bookmark.svg" 
+     width="90" height="75" align="right" hspace="15" />
 Documentation  
----
+--------------
 Text..
 
 
+<img src=".github/assets/logo/bookmark.svg" 
+     width="90" height="75" align="right" hspace="15" />
 Roadmap  
----
+--------
 ### 1.x-next
 * @commonly/iterable
 * @commonly/math
