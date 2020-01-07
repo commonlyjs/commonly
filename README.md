@@ -51,7 +51,7 @@ Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 
 
 
-<img src=".github/assets/logo/bookmark.svg" 
+<img src=".github/assets/logo/bindle.svg" 
      width="90" height="60" align="right" hspace="15" />
 Getting started  
 ----------------
