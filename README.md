@@ -58,5 +58,5 @@ Text..
 Roadmap  
 ---
 ### 1.x-next
-* Foo
-* Bar
+* @commonly/iterable
+* @commonly/math
