@@ -13,10 +13,10 @@
     <a href="https://commonlyjs.com/api"><strong>Explore the API »</strong></a>
     <br />
     <br />
-    <a href="https://commonlyjs.com">Home Website</a>
+    <a href="https://commonlyjs.com">Website</a>
     ·
-    <a href="https://github.com/commonlyjs/commonly/issues">Report Bug</a>
+    <a href="https://github.com/commonlyjs/commonly/issues">Report a bug</a>
     ·
-    <a href="https://github.com/commonlyjs/commonly/issues">Request Feature</a>
+    <a href="https://github.com/commonlyjs/commonly/issues">Request a feature</a>
   </p>
 </p>
