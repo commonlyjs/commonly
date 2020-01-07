@@ -23,7 +23,7 @@
 <br />
 
 <img src=".github/assets/logo/bookmark.svg" 
-     width="90" height="75" align="right" hspace="15" />
+     width="90" height="60" align="right" hspace="15" />
 Table of Contents
 ------------------
 * [Overview](#Overview)
