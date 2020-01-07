@@ -30,7 +30,7 @@ Table of Contents
 * [Overview](#Overview)
     * [Why Commonly?]()
     * [What's different?]()
-* [Getting started](#Getting started)
+* [Getting started](#Getting-started)
     * [Installation]()
     * [Examples]()
 * [Documentation](#Documentation)
