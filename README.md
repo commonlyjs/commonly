@@ -38,7 +38,7 @@ Table of Contents
 
 
 
-<img src=".github/assets/logo/potion-ball.svg" 
+<img src=".github/assets/logo/spyglass.svg" 
      width="75" height="55" align="right" hspace="15" />
 Overview  
 ---------
