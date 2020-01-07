@@ -3,6 +3,8 @@
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+<img src=".github/assets/logo/bookmark.svg" 
+     width="150" height="225" align="right" hspace="25" />
 <p align="center">
   <img src=".github/assets/logo/title.svg" height="75" />
   <p align="center">
@@ -18,8 +20,6 @@
     <a href="https://github.com/commonlyjs/commonly/issues">Request a feature</a>
   </p>
 </p>
-<img src=".github/assets/logo/bookmark.svg" 
-     width="150" height="225" align="right" hspace="25" />
 <br />
 
 
