@@ -3,9 +3,9 @@
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+
 <p align="center">
-  <img src=".github/assets/logo/title-alt.png" height="50" align="center" />
-  <hr />
+  <img src=".github/assets/logo/title-alt.png" height="75" align="center" />
   <p align="center">
     A modern utility library for JavaScript/TypeScript.
     <br />
