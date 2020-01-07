@@ -24,17 +24,18 @@
      width="90" height="60" align="right" hspace="15" />
 Table of Contents
 ------------------
-* [Overview](#Overview)
-    * [Why Commonly?]()
+* [Overview](#overview)
+    * [Why Commonly?](#why-commonly)
     * [What's different?]()
-* [Getting started](#Getting-started)
-    * [Installation]()
-    * [Examples]()
-* [Documentation](#Documentation)
-    * [Articles]()
-    * [API reference]()
-    * [Cookbook]()
-* [Roadmap](#Roadmap)
+* [Getting started](#getting-started)
+    * [Installation](#installation)
+    * [Examples](#examples)
+* [Documentation](#documentation)
+    * [Articles](#articles)
+    * [API reference](#api-reference)
+    * [Cookbook](#cookbook)
+* [Roadmap](#roadmap)
+
 
 
 <img src=".github/assets/logo/potion-ball.svg" 
@@ -45,7 +46,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin maximus rutrum felis, sed lobortis metus sagittis in.
 In id lectus est. Phasellus interdum lacus sed mattis feugiat. 
 Integer lacinia dictum magna, quis gravida risus lacinia et. 
-Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi. 
+Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
+ 
+### Why Commonly?
+Proin maximus rutrum felis, sed lobortis metus sagittis in.
+In id lectus est. Phasellus interdum lacus sed mattis feugiat.
+
+### What's different?
+Integer lacinia dictum magna, quis gravida risus lacinia et. 
+Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 
 
 
@@ -58,11 +67,21 @@ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 Vestibulum condimentum vel nisl et accumsan. Etiam semper diam et luctus aliquam.
 
+### Installation
+Nam faucibus quam ac accumsan consequat. Nam ac metus mattis leo lobortis rhoncus. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+```shell script
+npm install @commonly/math
+```
+
+### Examples
+Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 ```typescript
 const identity = <TValue>(value: TValue): TValue => {
     return value
 }
 ```
+
 
 <img src=".github/assets/logo/scroll-unfurled.svg" 
      width="90" height="60" align="right" hspace="15" />
@@ -75,6 +94,19 @@ Nullam leo ex, ultrices id metus non, fringilla efficitur nunc.
 Pellentesque eget risus nec enim consequat congue non id sapien. 
 Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
 Curabitur dapibus a velit eu sagittis. Vivamus pretium ante eget bibendum efficitur.
+
+### Articles
+Maecenas mattis turpis eget sapien cursus sodales. 
+Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
+
+### API reference 
+Pellentesque eget risus nec enim consequat congue non id sapien. 
+Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
+
+# Cookbook
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
+
 
 
 <img src=".github/assets/logo/treasure-map.svg" 
