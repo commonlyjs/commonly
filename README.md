@@ -1,4 +1,4 @@
-<p align="left">
+<div align="left">
   <a href="https://github.com/commonlyjs/commonly/actions">
     <img src="https://github.com/commonlyjs/commonly/workflows/build/badge.svg?branch=master" alt="Build Status" />
   </a>
@@ -8,10 +8,11 @@
   <a href="https://codecov.io/gh/commonlyjs/commonly">
     <img src="https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg" alt="Codecov Status" />
   </a>
+  <a href="https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
+    <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter"  align="right" />
+  </a>
 </p>
-<a href="https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" align="right">
-  <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter" />
-</a>
+
 
 
 <br />
