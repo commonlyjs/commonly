@@ -154,6 +154,13 @@ Roadmap
         * [ ] `@commonly/iterable/slice`
         * [ ] `@commonly/iterable/take`
         * [ ] `@commonly/iterable/transduce`
+    * [ ] `@commonly/logic`
+        * [ ] `@commonly/logic/and`
+        * [ ] `@commonly/logic/nand`
+        * [ ] `@commonly/logic/not`
+        * [ ] `@commonly/logic/or`
+        * [ ] `@commonly/logic/xnor`
+        * [ ] `@commonly/logic/xor`
     * [ ] `@commonly/math`
         * [ ] `@commonly/math/add`
         * [ ] `@commonly/math/decrement`
@@ -163,6 +170,9 @@ Roadmap
         * [ ] `@commonly/math/minimum`
         * [ ] `@commonly/math/multiply`
         * [ ] `@commonly/math/subtract`
+    * [ ] `@commonly/number`
+        * [ ] `@commonly/number/clamp`
+        * [ ] `@commonly/number/random`
     * [ ] `@commonly/reflect`
         * [ ] `@commonly/reflect/isArray`
         * [ ] `@commonly/reflect/isBoolean`
@@ -207,5 +217,6 @@ Roadmap
         * [ ] `@commonly/type/Transducer`
 * [ ] Provide complete set of auxiliary packages:
     * [ ] `@commonly/async`
+        * [ ] `@commonly/async/sleep`
     * [ ] `@commonly/dom`
-    * [ ] `@commonly/io`
+    * [ ] `@commonly/fs`
