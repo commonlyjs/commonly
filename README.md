@@ -131,7 +131,7 @@ Roadmap
 --------
 ### 1.x-next
 * [ ] Automate the package publication process and a generation of the package's documentation.
-* [ ] Provide complete set of packages:
+* [ ] Provide complete set of core packages:
     * [ ] `@commonly/function`
     * [ ] `@commonly/iterable`
     * [ ] `@commonly/math`
@@ -139,3 +139,7 @@ Roadmap
     * [ ] `@commonly/string`
     * [ ] `@commonly/transducer`
     * [ ] `@commonly/type`
+* [ ] Provide complete set of auxiliary packages:
+    * [ ] `@commonly/async`
+    * [ ] `@commonly/dom`
+    * [ ] `@commonly/io`
