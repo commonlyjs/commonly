@@ -40,7 +40,7 @@
 Table of Contents
 ------------------
 <img src=".github/assets/demo/intellisense-demo.gif" 
-      height="300" align="right" hspace="15" />
+      height="300" align="right" hspace="0" />
 
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
@@ -130,5 +130,12 @@ Vestibulum eu leo nec purus volutpat faucibus sed quis lacus.
 Roadmap  
 --------
 ### 1.x-next
-* @commonly/iterable
-* @commonly/math
+* [ ] Automate the package publication process and a generation of the package's documentation.
+* [ ] Provide complete set of packages:
+    * [ ] `@commonly/function`
+    * [ ] `@commonly/iterable`
+    * [ ] `@commonly/math`
+    * [ ] `@commonly/reflect`
+    * [ ] `@commonly/string`
+    * [ ] `@commonly/transducer`
+    * [ ] `@commonly/type`
