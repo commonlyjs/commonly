@@ -134,8 +134,10 @@ Roadmap
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
         * [ ] `@commonly/data/MultiwayTree`
+        * [ ] `@commonly/data/Matrix`
         * [ ] `@commonly/data/Stack`
         * [ ] `@commonly/data/Queue`
+        * [ ] `@commonly/data/Vector`
     * [ ] `@commonly/function`
         * [ ] `@commonly/function/compose`
         * [ ] `@commonly/function/curry`
