@@ -39,8 +39,9 @@
 
 Table of Contents
 ------------------
-<img src=".github/assets/demo/intellisense.gif" 
+<img src=".github/assets/demo/intellisense-demo.gif" 
       height="300" align="right" hspace="15" />
+
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
     * [What's different?]()
