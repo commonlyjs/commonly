@@ -134,11 +134,54 @@ Roadmap
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
     * [ ] `@commonly/function`
+        * [ ] `@commonly/function/compose`
+        * [ ] `@commonly/function/curry`
+        * [ ] `@commonly/function/identity`
+        * [ ] `@commonly/function/negate`
+        * [ ] `@commonly/function/noop`
+        * [ ] `@commonly/function/partial`
+        * [ ] `@commonly/function/reduced`
+        * [ ] `@commonly/function/reducer`
     * [ ] `@commonly/iterable`
+        * [ ] `@commonly/iterable/filter`
+        * [ ] `@commonly/iterable/map`
+        * [ ] `@commonly/iterable/reduce`
+        * [ ] `@commonly/iterable/slice`
+        * [ ] `@commonly/iterable/take`
+        * [ ] `@commonly/iterable/transduce`
     * [ ] `@commonly/math`
+        * [ ] `@commonly/math/add`
+        * [ ] `@commonly/math/decrement`
+        * [ ] `@commonly/math/divide`
+        * [ ] `@commonly/math/increment`
+        * [ ] `@commonly/math/maximum`
+        * [ ] `@commonly/math/minimum`
+        * [ ] `@commonly/math/multiply`
+        * [ ] `@commonly/math/subtract`
     * [ ] `@commonly/reflect`
+        * [ ] `@commonly/reflect/isArray`
+        * [ ] `@commonly/reflect/isBoolean`
+        * [ ] `@commonly/reflect/isError`
+        * [ ] `@commonly/reflect/isFunction`
+        * [ ] `@commonly/reflect/isMap`
+        * [ ] `@commonly/reflect/isNil`
+        * [ ] `@commonly/reflect/isNull`
+        * [ ] `@commonly/reflect/isNumber`
+        * [ ] `@commonly/reflect/isObject`
+        * [ ] `@commonly/reflect/isPrimitve`
+        * [ ] `@commonly/reflect/isPromise`
+        * [ ] `@commonly/reflect/isReduced`
+        * [ ] `@commonly/reflect/isRegExp`
+        * [ ] `@commonly/reflect/isSet`
+        * [ ] `@commonly/reflect/isString`
+        * [ ] `@commonly/reflect/isSymbol`
+        * [ ] `@commonly/reflect/isUndefined`
     * [ ] `@commonly/string`
     * [ ] `@commonly/transducer`
+        * [ ] `@commonly/transducer/xfilter`
+        * [ ] `@commonly/transducer/xmap`
+        * [ ] `@commonly/transducer/xslice`
+        * [ ] `@commonly/transducer/xtake`
     * [ ] `@commonly/type`
 * [ ] Provide complete set of auxiliary packages:
     * [ ] `@commonly/async`
