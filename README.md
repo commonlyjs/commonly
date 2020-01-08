@@ -132,6 +132,7 @@ Roadmap
 ### 1.x-next
 * [ ] Automate the package publication process and a generation of the package's documentation.
 * [ ] Provide complete set of core packages:
+    * [ ] `@commonly/data`
     * [ ] `@commonly/function`
     * [ ] `@commonly/iterable`
     * [ ] `@commonly/math`
