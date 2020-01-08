@@ -143,17 +143,31 @@ Roadmap
     * [ ] `@commonly/function`
         * [ ] `@commonly/function/compose`
         * [ ] `@commonly/function/curry`
+        * [ ] `@commonly/function/debounce`
         * [ ] `@commonly/function/identity`
+        * [ ] `@commonly/function/memoize`
         * [ ] `@commonly/function/negate`
         * [ ] `@commonly/function/noop`
         * [ ] `@commonly/function/partial`
+        * [ ] `@commonly/function/pipe`
         * [ ] `@commonly/function/reduced`
         * [ ] `@commonly/function/reducer`
+        * [ ] `@commonly/function/tap`
+        * [ ] `@commonly/function/throttle`
     * [ ] `@commonly/iterable`
+        * [ ] `@commonly/iterable/chain`
+        * [ ] `@commonly/iterable/drop`
         * [ ] `@commonly/iterable/filter`
+        * [ ] `@commonly/iterable/find`
+        * [ ] `@commonly/iterable/flatten`
+        * [ ] `@commonly/iterable/head`
+        * [ ] `@commonly/iterable/includes`
+        * [ ] `@commonly/iterable/last`
         * [ ] `@commonly/iterable/map`
+        * [ ] `@commonly/iterable/nth`
         * [ ] `@commonly/iterable/reduce`
         * [ ] `@commonly/iterable/slice`
+        * [ ] `@commonly/iterable/tail`
         * [ ] `@commonly/iterable/take`
         * [ ] `@commonly/iterable/transduce`
     * [ ] `@commonly/logic`
@@ -165,12 +179,17 @@ Roadmap
         * [ ] `@commonly/logic/xor`
     * [ ] `@commonly/math`
         * [ ] `@commonly/math/add`
+        * [ ] `@commonly/math/ceil`
         * [ ] `@commonly/math/decrement`
         * [ ] `@commonly/math/divide`
+        * [ ] `@commonly/math/floor`
         * [ ] `@commonly/math/increment`
         * [ ] `@commonly/math/maximum`
+        * [ ] `@commonly/math/mean`
+        * [ ] `@commonly/math/median`
         * [ ] `@commonly/math/minimum`
         * [ ] `@commonly/math/multiply`
+        * [ ] `@commonly/math/round`
         * [ ] `@commonly/math/subtract`
     * [ ] `@commonly/number`
         * [ ] `@commonly/number/clamp`
@@ -205,9 +224,13 @@ Roadmap
         * [ ] `@commonly/string/uppercase`
         * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
+        * [ ] `@commonly/transducer/xchain`
+        * [ ] `@commonly/transducer/xdrop`
         * [ ] `@commonly/transducer/xfilter`
+        * [ ] `@commonly/transducer/xflatten`
         * [ ] `@commonly/transducer/xmap`
         * [ ] `@commonly/transducer/xslice`
+        * [ ] `@commonly/transducer/xtail`
         * [ ] `@commonly/transducer/xtake`
     * [ ] `@commonly/type`
         * [ ] `@commonly/type/Identity`
