@@ -131,6 +131,8 @@ Roadmap
 --------
 ### 1.x-next
 * [ ] Automate the package publication process and a generation of the package's documentation.
+* [ ] Update every function's JSDoc to include Damas–Hindley–Milner type signature.
+* [ ] Implement a runtime type checking for every included function based on Algorithm W.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
         * [ ] `@commonly/data/MultiwayTree`
