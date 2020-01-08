@@ -39,6 +39,8 @@
 
 Table of Contents
 ------------------
+<img src=".github/assets/demo/intellisense.gif" 
+      height="300" align="right" hspace="15" />
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
     * [What's different?]()
@@ -51,8 +53,7 @@ Table of Contents
     * [Cookbook](#cookbook)
 * [Roadmap](#roadmap)
 
-<img src=".github/assets/demo/intellisense.gif" 
-      height="55" align="right" hspace="15" />
+
 
 Overview  
 ---------
