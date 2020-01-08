@@ -9,8 +9,8 @@
     <img src="https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg" alt="Codecov Status" />
   </a>
 </p>
-<a href="https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
-  <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter" align="right" />
+<a href="https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" align="right">
+  <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter" />
 </a>
 
 
