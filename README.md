@@ -129,7 +129,7 @@ Vestibulum eu leo nec purus volutpat faucibus sed quis lacus.
 
 Roadmap  
 --------
-### 1.0.x-next
+### 1.x-next
 * [ ] Automate the package publication process and a generation of the package's documentation.
 * [ ] Update every function's JSDoc to include Damas–Hindley–Milner type signature.
 * [ ] Implement a runtime type checking for every included function based on Algorithm W.
