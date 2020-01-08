@@ -133,6 +133,9 @@ Roadmap
 * [ ] Automate the package publication process and a generation of the package's documentation.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
+        * [ ] `@commonly/data/MultiwayTree`
+        * [ ] `@commonly/data/Stack`
+        * [ ] `@commonly/data/Queue`
     * [ ] `@commonly/function`
         * [ ] `@commonly/function/compose`
         * [ ] `@commonly/function/curry`
@@ -177,12 +180,29 @@ Roadmap
         * [ ] `@commonly/reflect/isSymbol`
         * [ ] `@commonly/reflect/isUndefined`
     * [ ] `@commonly/string`
+        * [ ] `@commonly/string/camelcase`
+        * [ ] `@commonly/string/capitalize`
+        * [ ] `@commonly/string/constantcase`
+        * [ ] `@commonly/string/dashcase`
+        * [ ] `@commonly/string/lowercase`
+        * [ ] `@commonly/string/pascalcase`
+        * [ ] `@commonly/string/snakecase`
+        * [ ] `@commonly/string/traincase`
+        * [ ] `@commonly/string/uppercase`
+        * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
         * [ ] `@commonly/transducer/xfilter`
         * [ ] `@commonly/transducer/xmap`
         * [ ] `@commonly/transducer/xslice`
         * [ ] `@commonly/transducer/xtake`
     * [ ] `@commonly/type`
+        * [ ] `@commonly/type/Identity`
+        * [ ] `@commonly/type/Mapper`
+        * [ ] `@commonly/type/Predicate`
+        * [ ] `@commonly/type/Primitive`
+        * [ ] `@commonly/type/Reduced`
+        * [ ] `@commonly/type/Reducer`
+        * [ ] `@commonly/type/Transducer`
 * [ ] Provide complete set of auxiliary packages:
     * [ ] `@commonly/async`
     * [ ] `@commonly/dom`
