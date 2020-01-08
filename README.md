@@ -1,9 +1,17 @@
+<p align="left">
+  <img src="https://github.com/commonlyjs/commonly/workflows/build/badge.svg?branch=master" alt="Build Status" />
+  <img src="https://coveralls.io/repos/github/commonlyjs/commonly/badge.svg?branch=master" alt="Coverage Status" />
+  <img src="https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg" alt="Codecov Status" />
+</p>
+<p align="right">
+  <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter" />
+</p>
+
 [![Build Status](https://github.com/commonlyjs/commonly/workflows/build/badge.svg?branch=master)](https://github.com/commonlyjs/commonly/actions)
 [![Coverage Status](https://coveralls.io/repos/github/commonlyjs/commonly/badge.svg?branch=master)](https://coveralls.io/github/commonlyjs/commonly?branch=master)
 [![codecov](https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg)](https://codecov.io/gh/commonlyjs/commonly)
 [![Gitter](https://badges.gitter.im/commonlyjs/community.svg)](https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
----
 <br />
 <p align="center">
   <img src=".github/assets/logo/title-alt.png" height="55" align="center" />
@@ -20,8 +28,8 @@
 </p>
 <br />
 
-<img src=".github/assets/logo/bookmark.svg" 
-      height="55" align="right" hspace="15" />
+
+
 Table of Contents
 ------------------
 * [Overview](#overview)
