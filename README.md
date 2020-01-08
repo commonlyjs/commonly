@@ -38,8 +38,6 @@ Table of Contents
 
 
 
-<img src=".github/assets/logo/spyglass.svg" 
-      height="55" align="right" hspace="15" />
 Overview  
 ---------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -63,8 +61,6 @@ Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 
 
 
-<img src=".github/assets/logo/bindle.svg" 
-      height="55" align="right" hspace="15" />
 Getting started  
 ----------------
 Nam faucibus quam ac accumsan consequat. Nam ac metus mattis leo lobortis rhoncus. 
@@ -88,8 +84,7 @@ const identity = <TValue>(value: TValue): TValue => {
 ```
 
 
-<img src=".github/assets/logo/scroll-unfurled.svg" 
-      height="55" align="right" hspace="15" />
+
 Documentation  
 --------------
 Cras gravida lacus sollicitudin rutrum convallis. 
@@ -114,8 +109,6 @@ Vestibulum eu leo nec purus volutpat faucibus sed quis lacus.
 
 
 
-<img src=".github/assets/logo/treasure-map.svg" 
-      height="55" align="right" hspace="15" />
 Roadmap  
 --------
 ### 1.x-next
