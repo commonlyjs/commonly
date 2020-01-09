@@ -90,9 +90,9 @@ Another example is a package that may require a specific environment, like a bro
 When a package requires such, it should state so in its manifest file, a package.json, and the documentation.
 
 ### Installation
-As an example, we will install a couple of Commonly's core packages.
+As an example, we will install a couple of core packages.
 ```shell script
-npm install  @commonly/function  @commonly/iterable  @commonly/math  @commonly/number  @commonly/string
+npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/number  @commonly/string
 ```
 
 ### Examples
