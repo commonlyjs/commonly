@@ -82,9 +82,11 @@ Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 Getting started  
 ----------------
 This library comes in multiple packages, you match and choose whichever you need.  
-Some of the packages may have dependencies, often only related to the problem they are solving.
+
+Some of the packages may have dependencies, often only related to the problem they are solving.  
 An example of such is the `@commonly/type` package, from which only TypeScript users can benefit.
 Another example is a package that may require a specific environment, like a browser or a Node.js-based one.  
+
 When a package requires such, it should state so in its manifest file, a package.json, and the documentation.
 
 ### Installation
