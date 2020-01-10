@@ -16,7 +16,6 @@
   </a>
 </p>
 
-
 <br />
 <br />
 <br />
@@ -97,11 +96,8 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 **Users of TypeScript**, remember to install the `@commonly/type` package, it contains type definitions used in other packages.
 
 ### Examples
-Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
 ```typescript
-const identity = <TValue>(value: TValue): TValue => {
-    return value
-}
+// A simple example using 
 ```
 
 
@@ -120,9 +116,10 @@ Curabitur dapibus a velit eu sagittis. Vivamus pretium ante eget bibendum effici
 Maecenas mattis turpis eget sapien cursus sodales. 
 Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
 
-### API reference 
-Pellentesque eget risus nec enim consequat congue non id sapien. 
-Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
+### API reference
+Every member of our API can be found here on [api.commonlyjs.com](https://commonlyjs.com/api/).
+You can also browse `packages/<package-name>/docs/` directory if you prefer to read in a GitHub markdown format.
+Both documents are synchronized, so you will never find any to be out of date.
 
 ### Cookbook
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
