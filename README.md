@@ -122,8 +122,7 @@ You can also browse `packages/<package-name>/docs/` directory if you prefer to r
 Both documents are synchronized, so you will never find any to be out of date.
 
 ### Cookbook
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
+Whenever you find some functionality missing, look for it in our cookbook on [cookbook.commonlyjs.com](https://commonlyjs.com/cookbook/).
 
 
 
@@ -242,6 +241,5 @@ Roadmap
         * [ ] `@commonly/type/Transducer`
 * [ ] Provide complete set of auxiliary packages:
     * [ ] `@commonly/async`
-        * [ ] `@commonly/async/sleep`
     * [ ] `@commonly/dom`
     * [ ] `@commonly/fs`
