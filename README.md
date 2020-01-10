@@ -104,25 +104,19 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 
 Documentation  
 --------------
-Cras gravida lacus sollicitudin rutrum convallis. 
-Maecenas mattis turpis eget sapien cursus sodales. 
-Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
-Nullam leo ex, ultrices id metus non, fringilla efficitur nunc. 
-Pellentesque eget risus nec enim consequat congue non id sapien. 
-Aenean et luctus nulla, non mattis lacus. Pellentesque sed purus sagittis, mollis sem ac, tempus metus. 
-Curabitur dapibus a velit eu sagittis. Vivamus pretium ante eget bibendum efficitur.
+To achieve this we code clean with type annotations and inline documentation, 
+write human-readable unit tests in a behavior-driven development fashion and produce helpful content with examples.
 
 ### Articles
-Maecenas mattis turpis eget sapien cursus sodales. 
-Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
+You can find articles on more advanced usage and some exciting subjects we try to tackle on [commonlyjs.com/articles/](https://commonlyjs.com/articles/).
 
 ### API reference
-Every member of our API can be found here on [api.commonlyjs.com](https://commonlyjs.com/api/).  
+Every member of our API can be found here on [commonlyjs.com/api/](https://commonlyjs.com/api/).  
 You can also browse `packages/<package-name>/docs/` directory if you prefer to read in a GitHub markdown format.
 Both documents are synchronized, so you will never find any to be out of date.
 
 ### Cookbook
-Whenever you find some functionality missing, look for it in our cookbook on [cookbook.commonlyjs.com](https://commonlyjs.com/cookbook/).
+Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
 
 
 
