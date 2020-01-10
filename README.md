@@ -95,7 +95,7 @@ As an example, we will install a couple of core packages.
 npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/number  @commonly/string
 ```
 ##### Users of TypeScript  
-Remember to install `@commonly/type` package, it contains some of the type definitions used in other packages. 
+<small>Remember to install `@commonly/type` package, it contains some of the type definitions used in other packages.</small> 
 
 ### Examples
 Vestibulum eu leo nec purus volutpat faucibus sed quis lacus. 
