@@ -117,7 +117,7 @@ Maecenas mattis turpis eget sapien cursus sodales.
 Praesent lobortis sollicitudin nulla, ut bibendum ante blandit sit amet. 
 
 ### API reference
-Every member of our API can be found here on [api.commonlyjs.com](https://commonlyjs.com/api/).
+Every member of our API can be found here on [api.commonlyjs.com](https://commonlyjs.com/api/).  
 You can also browse `packages/<package-name>/docs/` directory if you prefer to read in a GitHub markdown format.
 Both documents are synchronized, so you will never find any to be out of date.
 
