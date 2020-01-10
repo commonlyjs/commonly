@@ -97,7 +97,16 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 
 ### Examples
 ```typescript
-// A simple example using 
+// A really simple example. 
+```
+```typescript
+// An example on how to create some missing functionality (something from a cookbook). 
+```
+```typescript
+// An example of interoperability with some popular library. 
+```
+```typescript
+// An example of interoperability with a custom data structure. 
 ```
 
 
@@ -127,6 +136,11 @@ Roadmap
 * [ ] Automate the package publication process and a generation of the package's documentation.
 * [ ] Update every function's JSDoc to include [Damas–Hindley–Milner type](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) signature.
 * [ ] Implement a runtime type checking for every included function based on [Algorithm W](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system#Algorithm_W).
+* [ ] Produce more content:
+    * [ ] Cookbook with simple recipes.
+    * [ ] Guidelines for contributors.
+    * [ ] Couple of articles:
+        * [ ] Introduction to the library.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
         * [ ] `@commonly/data/MultiwayTree`
