@@ -73,7 +73,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
-        height="275" align="right" hspace="0" />
+    height="275" align="right" hspace="0" />
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
@@ -88,11 +88,11 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 <br/>
 <p align="right">
-    <strong>Tightly typed</strong><br/>
-    <img src=".github/assets/demo/static-type-checking-demo.apng" 
-      height="275" align="left" hspace="0" />
-    Discover the API by simply typing. 
-    Every library's member is typed, do not let those silly type errors slip by.
+  <strong>Tightly typed</strong><br/>
+  <img src=".github/assets/demo/static-type-checking-demo.apng" 
+    height="275" align="left" hspace="0" />
+  Discover the API by simply typing.  
+  Every library's member is typed, do not let those silly type errors slip by.
 </p>
 <br/>
 <br/>
@@ -105,13 +105,13 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 <br/>
 <p align="left">
-    <strong>Inline documentation</strong><br/>
-    <img src=".github/assets/demo/inline-documentation-demo.apng" 
-      height="275" align="right" hspace="0" />
-    Easily learn about details of a function on the fly.
-    We carefully document our code, so you will never have to browse manually through the documentation again.
+  <strong>Inline documentation</strong><br/>
+  <img src=".github/assets/demo/inline-documentation-demo.apng" 
+    height="275" align="right" hspace="0" />
+  Easily learn about details of a function on the fly.
+  We carefully document our code, so you will never have to browse manually through the documentation again.
     
-    Whenever you feel lost, see included external resources attached as links or just try out included examples.
+  Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
 <br/>
 <br/>
