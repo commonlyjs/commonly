@@ -85,6 +85,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
+
+<br/>
 <p align="right">
     <strong>Tightly typed</strong><br/>
     <img src=".github/assets/demo/static-type-checking-demo.apng" 
@@ -111,6 +113,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     
     Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
+<br/>
 <br/>
 <br/>
 <br/>
