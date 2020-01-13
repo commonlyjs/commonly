@@ -101,8 +101,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <p align="left">
-  Inline documentation
-  ---------------------
+  <strong>Inline documentation</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
       height="275" align="right" hspace="0" />
   Easily learn about details of a function as you type.
