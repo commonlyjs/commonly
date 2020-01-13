@@ -100,10 +100,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-<img src=".github/assets/demo/inline-documentation-demo.apng" 
-    height="275" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
+  <img src=".github/assets/demo/inline-documentation-demo.apng" 
+      height="275" align="right" hspace="0" />
   Easily learn about details of a function as you type.
   We carefully document our code, so you will never have to browse manually through documentation again.
 </p>
