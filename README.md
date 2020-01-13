@@ -71,15 +71,15 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
 <p align="left">
-  <h4>Dynamic type checking</h4>
+  <strong>Dynamic type checking</strong><br/>
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
 </p>
 <p align="right">
-  <h4>Static type checking</h4>
+  <strong>Static type checking</strong><br/>
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
 </p>
 <p align="left">
-  <h4>Inline documentation</h4>
+  <strong>Inline documentation</strong><br/>
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 
