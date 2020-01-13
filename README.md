@@ -70,6 +70,8 @@ Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacu
 Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
+<img src=".github/assets/demo/inline-documentation.png" 
+    height="250" align="right" hspace="0" />
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
@@ -77,6 +79,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 <br/>
+<br/>
+<br/>
+<img src=".github/assets/demo/inline-documentation.png" 
+    height="250" align="left" hspace="0" />
 <p align="right">
   <strong>Static type checking</strong><br/>
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
@@ -84,8 +90,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 <br/>
+<br/>
+<br/>
 <img src=".github/assets/demo/inline-documentation.png" 
-    height="175" align="right" hspace="0" />
+    height="250" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
