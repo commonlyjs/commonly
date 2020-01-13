@@ -86,12 +86,11 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <p align="right">
-  <strong>Static type checking</strong><br/>
-  <img src=".github/assets/demo/static-type-checking-demo.apng" 
+    <strong>Tightly typed</strong><br/>
+    <img src=".github/assets/demo/static-type-checking-demo.apng" 
       height="275" align="left" hspace="0" />
-  In id lectus est. Phasellus interdum lacus sed mattis feugiat.
-  Proin maximus rutrum felis, sed lobortis metus sagittis in.
-  Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+    Discover the API by simply typing. 
+    Every library's member is typed, do not let those silly type errors slip by.
 </p>
 <br/>
 <br/>
@@ -101,13 +100,13 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <p align="left">
-  <strong>Inline documentation</strong><br/>
-  <img src=".github/assets/demo/inline-documentation-demo.apng" 
+    <strong>Inline documentation</strong><br/>
+    <img src=".github/assets/demo/inline-documentation-demo.apng" 
       height="275" align="right" hspace="0" />
-  Easily learn about details of a function as you type.
-  We carefully document our code, so you will never have to browse manually through the documentation again.
-  
-  Whenever you feel lost, see included external resources attached as links or just try out included examples.
+    Easily learn about details of a function on the fly.
+    We carefully document our code, so you will never have to browse manually through the documentation again.
+    
+    Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
 <br/>
 <br/>
