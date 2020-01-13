@@ -100,6 +100,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 <p align="left">
   <strong>Inline documentation</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
