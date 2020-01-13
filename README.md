@@ -92,7 +92,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   <img src=".github/assets/demo/static-type-checking-demo.apng" 
     height="275" align="left" hspace="0" />
   Discover the API by simply typing. <br />  
-  Every library's member is typed, do not let those silly type errors slip by.
+  Every library's member is strictly typed, do not let those silly type errors slip by.
+  
+  Every functional utility comes with complete type definitions.
+  No more untyped `compose`, `partial` and `curry`.
 </p>
 <br/>
 <br/>
