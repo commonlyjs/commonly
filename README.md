@@ -96,7 +96,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-<img src=".github/assets/demo/inline-documentation.png" 
+<img src=".github/assets/demo/inline-documentation-alt2.png" 
     height="275" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
