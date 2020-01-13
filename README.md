@@ -64,8 +64,10 @@ Integer lacinia dictum magna, quis gravida risus lacinia et.
 Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
 
 #### Key features
-* foo
-* bar
+* Every function is pure, they will never mutate your data.
+* Builtin interoperability with your favorite libraries.
+    * Immutable.js
+    * RxJS
  
 ### Why Commonly?
 Proin maximus rutrum felis, sed lobortis metus sagittis in.
