@@ -73,7 +73,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
-        height="275" align="left" hspace="0" />
+        height="275" align="right" hspace="0" />
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
