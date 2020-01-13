@@ -71,7 +71,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
 <p align="left">
-  <strong>Dynamic type checking</strong><br/>
+  <strong>Run-time type system</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
     height="275" align="right" hspace="0" />
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
