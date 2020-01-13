@@ -87,7 +87,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <p align="right">
   <strong>Static type checking</strong><br/>
-  <img src=".github/assets/demo/inline-documentation-demo.apng" 
+  <img src=".github/assets/demo/static-type-checking-demo.apng" 
       height="275" align="left" hspace="0" />
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
