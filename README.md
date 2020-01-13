@@ -72,7 +72,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 ### What's different?
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
-  <img src=".github/assets/demo/inline-documentation-demo.apng" 
+  <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
         height="275" align="right" hspace="0" />
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
