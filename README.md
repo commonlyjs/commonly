@@ -83,7 +83,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-<img src=".github/assets/demo/inline-documentation.png" 
+<img src=".github/assets/demo/inline-documentation-alt.png" 
     height="250" align="left" hspace="0" />
 <p align="right">
   <strong>Static type checking</strong><br/>
