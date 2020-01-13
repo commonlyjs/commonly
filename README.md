@@ -84,14 +84,14 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 <br/>
+<img src=".github/assets/demo/inline-documentation.png" 
+    height="175" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
 </p>
-<img src=".github/assets/demo/inline-documentation.png" 
-    height="175" align="right" hspace="0" />
 <br/>
 <br/>
 <br/>
