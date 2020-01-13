@@ -100,7 +100,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-<img src=".github/assets/demo/inline-documentation-alt3.png" 
+<img src=".github/assets/demo/inline-documentation-alt4.png" 
     height="300" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
