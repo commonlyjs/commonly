@@ -70,7 +70,7 @@ Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacu
 Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
-<img src=".github/assets/demo/inline-documentation.png" 
+<img src=".github/assets/demo/inline-documentation-demo.png" 
     height="300" align="right" hspace="0" />
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
@@ -100,7 +100,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-<img src=".github/assets/demo/inline-documentation.png" 
+<img src=".github/assets/demo/inline-documentation-demo.png" 
     height="300" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
