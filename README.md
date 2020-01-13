@@ -62,6 +62,10 @@ Proin maximus rutrum felis, sed lobortis metus sagittis in.
 In id lectus est. Phasellus interdum lacus sed mattis feugiat. 
 Integer lacinia dictum magna, quis gravida risus lacinia et. 
 Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
+
+#### Key features
+* foo
+* bar
  
 ### Why Commonly?
 Proin maximus rutrum felis, sed lobortis metus sagittis in.
@@ -70,11 +74,9 @@ Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacu
 Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
-Integer lacinia dictum magna, quis gravida risus lacinia et. 
-Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
-* Curabitur est nisl, dignissim at eros in, aliquet egestas sem. 
-* Etiam ut lacinia urna. Phasellus quis scelerisque arcu, quis fermentum mauris. 
-* Donec et ante orci. Nulla pretium commodo pellentesque.
+#### Dynamic type checking
+#### Static type checking
+#### Inline documentation
 
 
 
