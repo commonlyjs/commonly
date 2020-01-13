@@ -74,14 +74,19 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   <strong>Dynamic type checking</strong><br/>
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
 </p>
+<br/>
 <p align="right">
   <strong>Static type checking</strong><br/>
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
 </p>
+<br/>
 <p align="left">
   <strong>Inline documentation</strong><br/>
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+  
 </p>
+<img src=".github/assets/demo/inline-documentation.png" 
+    height="300" align="right" hspace="0" />
 
 
 
