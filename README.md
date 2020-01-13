@@ -71,7 +71,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
 <img src=".github/assets/demo/inline-documentation.png" 
-    height="250" align="right" hspace="0" />
+    height="275" align="right" hspace="0" />
 <p align="left">
   <strong>Dynamic type checking</strong><br/>
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
@@ -83,14 +83,18 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 <img src=".github/assets/demo/inline-documentation-alt.png" 
-    height="250" align="left" hspace="0" />
+    height="275" align="left" hspace="0" />
 <p align="right">
   <strong>Static type checking</strong><br/>
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
@@ -104,6 +108,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   In id lectus est. Phasellus interdum lacus sed mattis feugiat.
   Proin maximus rutrum felis, sed lobortis metus sagittis in.
 </p>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
