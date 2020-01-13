@@ -70,12 +70,18 @@ Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacu
 Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
-#### Dynamic type checking
-Proin maximus rutrum felis, sed lobortis metus sagittis in.
-#### Static type checking
-In id lectus est. Phasellus interdum lacus sed mattis feugiat.
-#### Inline documentation
-Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+<p align="left">
+  <strong>Dynamic type checking</strong>
+  Proin maximus rutrum felis, sed lobortis metus sagittis in.
+</p>
+<p align="right">
+  <strong>Static type checking</strong>
+  In id lectus est. Phasellus interdum lacus sed mattis feugiat.
+</p>
+<p align="left">
+  <strong>Inline documentation</strong>
+  Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+</p>
 
 
 
