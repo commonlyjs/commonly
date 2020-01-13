@@ -57,17 +57,11 @@ Table of Contents
 
 Overview  
 ---------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Proin maximus rutrum felis, sed lobortis metus sagittis in.
-In id lectus est. Phasellus interdum lacus sed mattis feugiat. 
-Integer lacinia dictum magna, quis gravida risus lacinia et. 
-Sed bibendum risus eu malesuada iaculis. Vivamus at ultrices nisi.
+A modern utility library for JavaScript/TypeScript.
 
 #### Key features
 * Every function is pure, they will never mutate your data.
 * Builtin interoperability with your favorite libraries.
-    * Immutable.js
-    * RxJS
  
 ### Why Commonly?
 Proin maximus rutrum felis, sed lobortis metus sagittis in.
@@ -77,8 +71,11 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 ### What's different?
 #### Dynamic type checking
+Proin maximus rutrum felis, sed lobortis metus sagittis in.
 #### Static type checking
+In id lectus est. Phasellus interdum lacus sed mattis feugiat.
 #### Inline documentation
+Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 
 
 
