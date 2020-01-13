@@ -104,9 +104,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="275" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
-  Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
-  In id lectus est. Phasellus interdum lacus sed mattis feugiat.
-  Proin maximus rutrum felis, sed lobortis metus sagittis in.
+  Easily learn about details of a function as you type.
+  We carefully document our code, so you will never have to browse manually through documentation again.
 </p>
 <br/>
 <br/>
