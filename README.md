@@ -81,6 +81,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 <img src=".github/assets/demo/inline-documentation.png" 
     height="250" align="left" hspace="0" />
 <p align="right">
@@ -92,8 +94,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
 <img src=".github/assets/demo/inline-documentation.png" 
-    height="250" align="right" hspace="0" />
+    height="275" align="right" hspace="0" />
 <p align="left">
   <strong>Inline documentation</strong><br/>
   Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
@@ -103,7 +107,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br/>
 <br/>
 <br/>
-
+<br/>
+<br/>
 
 Getting started  
 ----------------
