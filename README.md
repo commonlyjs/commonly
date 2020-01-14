@@ -93,7 +93,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="275" align="left" hspace="0" />
   Discover the API by simply typing. <br />  
   Each library's member is strictly typed, do not let those silly type errors slip by.
-  
+</p>
+<p align="right">
   Every functional utility comes with complete type definitions.
   No more untyped `compose`, `partial` and `curry`.
 </p>
@@ -108,7 +109,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="275" align="right" hspace="0" />
   Easily learn about details of a function on the fly.
   We carefully document our code, so you will never have to browse manually through the documentation again.
-    
+</p>
+<p align="left">    
   Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
 <br/>
