@@ -80,6 +80,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">  
   Evaluation is done eagerly as you provide arguments to a function individually to improve error reporting for partially applied functions.
 </p>
+<br />
+<br />
 <p align="right">
   <strong>Tightly typed</strong><br/>
   <img src=".github/assets/demo/static-type-checking-demo.apng" 
