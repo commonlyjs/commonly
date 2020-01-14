@@ -93,8 +93,10 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   Each library's member is strictly typed, do not let those silly type errors slip by.
 </p>
 <p align="right">
+
   Every functional utility comes with complete type definitions.
   No more untyped `compose`, `partial` and `curry`.
+  
 </p>
 <br />
 <br />
