@@ -94,7 +94,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 <p align="right">
 
-  Every functional utility comes with complete type definitions.
+  Every functional utility comes with complete type definitions.  
   No more untyped `compose`, `partial` and `curry`.
   
 </p>
