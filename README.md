@@ -69,7 +69,8 @@ here should be list of no ok things other libraries have:
 * would convert my data for no reason
 * would implictly mutate my data
 * not modular
-* even with modular ones there is no tree shaking making me import a single utility in a separete line..
+* even with modular ones there is no tree shaking making me import a single utility in a separete line.. (lodash.keyBy has 14KB after minification)
+* they are not lazy
 ```
 
 I wanted to have an unopinionated general-purpose utility library 
