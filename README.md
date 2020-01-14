@@ -170,7 +170,7 @@ Whenever you find some functionality missing, look for it in our cookbook on [co
 
 
 <img src=".github/assets/image/treasure-map.svg" 
-    height="50" align="right" hspace="0" />
+    height="75" align="right" hspace="0" />
     
 Roadmap  
 --------
