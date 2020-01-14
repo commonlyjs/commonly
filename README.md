@@ -96,6 +96,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br />
 <br />
 <br />
+<br />
 <p align="left">
   <strong>Inline documentation</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
@@ -106,6 +107,9 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">    
   Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
+<br />
+<br />
+<br />
 
 Getting started  
 ----------------
