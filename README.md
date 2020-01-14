@@ -169,9 +169,6 @@ Both documents are synchronized, so you will never find any to be out of date.
 Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
 
 
-<img src=".github/assets/image/treasure-map.svg" 
-    height="75" align="right" hspace="0" />
-    
 Roadmap  
 --------
 ### 1.x-next
