@@ -78,8 +78,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="250" align="right" hspace="0" />
   You are protected from common mistakes you often make by a dynamic type checking.
   An error with a detailed message will be thrown whenever either an argument is of the wrong type or you tried to apply too many of them.
-</p>
-<p align="left">  
+  <br />
+  <br />  
   Evaluation is done eagerly as you provide arguments to a function individually to improve error reporting for partially applied functions.
 </p>
 <br />
@@ -91,8 +91,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="250" align="right" hspace="0" />
   Discover the API by simply typing.  
   Each library's member is strictly typed, do not let those silly type errors slip by.
-</p>
-<p align="left">
+  <br />
+  <br />
   Every functional utility comes with complete type definitions. <br />
   No more untyped <code>compose</code>, <code>partial</code> and <code>curry</code>.
 </p>
@@ -107,8 +107,8 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
     height="250" align="right" hspace="0" />
   Easily learn about details of a function on the fly.
   We carefully document our code, so you will never have to browse manually through the documentation again.
-</p>
-<p align="left">    
+  <br />
+  <br />   
   Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
 <br />
