@@ -169,12 +169,11 @@ Both documents are synchronized, so you will never find any to be out of date.
 Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
 
 
-
-Roadmap  
---------
 <img src=".github/assets/image/treasure-map.svg" 
     height="75" align="right" hspace="0" />
-
+    
+Roadmap  
+--------
 ### 1.x-next
 * [ ] Automate the package publication process and a generation of the package's documentation.
 * [ ] Update every function's JSDoc to include [Damas–Hindley–Milner type](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) signature.
