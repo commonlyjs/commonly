@@ -58,12 +58,18 @@ Overview
  
 ### Why Commonly?
 I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
-but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.
+but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.  
+More often than not, I found 
+
+```
+here should be list of no ok things other libraries have:
+* missing or broken type definitions
+```
 
 I wanted to have an unopinionated general-purpose utility library 
 which would be so comprehensive that it could replace a standard library if one wanted to. 
 
-Here is my take on the issue, presenting Commonly.
+Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 ### Key features
 * Every function is pure, they will never mutate your data.
