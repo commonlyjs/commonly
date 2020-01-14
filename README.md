@@ -109,7 +109,6 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 </p>
 <br />
 <br />
-<br />
 
 Getting started  
 ----------------
