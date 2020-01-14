@@ -55,15 +55,6 @@ Table of Contents
 Overview  
 ---------
 > A most comprehensive modern utility library for JavaScript/TypeScript.
-
-#### Key features
-* Every function is pure, they will never mutate your data.
-* Extensible protocol-based architecture, every function is bound to work with your custom data structures.
-* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
-* Builtin interoperability with your favorite libraries.
-    * [RxJS](https://github.com/ReactiveX/rxjs)
-    * [Immutable.js](https://github.com/immutable-js/immutable-js)
-    * [Most](https://github.com/cujojs/most)
  
 ### Why Commonly?
 I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
@@ -73,6 +64,15 @@ I wanted to have an unopinionated general-purpose utility library
 which would be so comprehensive that it could replace a standard library if one wanted to. 
 
 Here is my take on the issue, presenting Commonly.
+
+#### Key features
+* Every function is pure, they will never mutate your data.
+* Extensible protocol-based architecture, every function is bound to work with your custom data structures.
+* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
+* Builtin interoperability with your favorite libraries.
+    * [RxJS](https://github.com/ReactiveX/rxjs)
+    * [Immutable.js](https://github.com/immutable-js/immutable-js)
+    * [Most](https://github.com/cujojs/most)
 
 ### What's different?
 <p align="left">
