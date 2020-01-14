@@ -74,12 +74,13 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   <strong>Run-time type system</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
     height="250" align="right" hspace="0" />
-  You are protected from common mistakes you often make by our dynamic type checking.
-  An error with a detailed message will be thrown whenever either an argument is of wrong type or you tried to apply too many of them.
+  You are protected from common mistakes you often make by a dynamic type checking.
+  An error with a detailed message will be thrown whenever either an argument is of the wrong type or you tried to apply too many of them.
 </p>
 <p align="left">  
   Evaluation is done eagerly as you provide arguments to a function individually to improve error reporting for partially applied functions.
 </p>
+<br />
 <br />
 <br />
 <p align="right">
@@ -97,6 +98,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br />
 <br />
 <br />
+<br />
 <p align="left">
   <strong>Inline documentation</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
@@ -107,6 +109,7 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">    
   Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
+<br />
 <br />
 <br />
 
