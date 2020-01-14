@@ -59,7 +59,6 @@ Overview
 ### Why Commonly?
 I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
 but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.  
-More often than not, I found 
 
 ```
 here should be list of no ok things other libraries have:
