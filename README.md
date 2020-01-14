@@ -74,9 +74,11 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   <strong>Run-time type system</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
     height="275" align="right" hspace="0" />
-  Proin maximus rutrum felis, sed lobortis metus sagittis in.
-  In id lectus est. Phasellus interdum lacus sed mattis feugiat.
-  Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+  You are protected from common mistakes you often make by our dynamic type checking.
+  An error with a detailed message will be thrown whenever either an argument is of wrong type or you tried to apply too many of them.
+</p>
+<p align="left">  
+  Evaluation is done eagerly as you provide arguments to a function individually to improve error reporting for partially applied functions.
 </p>
 <br/>
 <br/>
