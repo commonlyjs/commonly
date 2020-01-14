@@ -80,15 +80,6 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">  
   Evaluation is done eagerly as you provide arguments to a function individually to improve error reporting for partially applied functions.
 </p>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<br/>
 <p align="right">
   <strong>Tightly typed</strong><br/>
   <img src=".github/assets/demo/static-type-checking-demo.apng" 
@@ -100,11 +91,6 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
   Every functional utility comes with complete type definitions.
   No more untyped `compose`, `partial` and `curry`.
 </p>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <p align="left">
   <strong>Inline documentation</strong><br/>
   <img src=".github/assets/demo/inline-documentation-demo.apng" 
@@ -115,10 +101,6 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <p align="left">    
   Whenever you feel lost, see included external resources attached as links or just try out included examples.
 </p>
-<br/>
-<br/>
-<br/>
-<br/>
 
 Getting started  
 ----------------
