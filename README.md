@@ -54,7 +54,7 @@ Table of Contents
 
 Overview  
 ---------
-A modern utility library for JavaScript/TypeScript.
+> A most comprehensive modern utility library for JavaScript/TypeScript.
 
 #### Key features
 * Every function is pure, they will never mutate your data.
