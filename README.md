@@ -85,11 +85,11 @@ Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
 <br />
 <br />
 <br />
-<p align="right">
+<p align="left">
   <strong>Tightly typed</strong><br/>
   <img src=".github/assets/demo/static-type-checking-demo.apng" 
-    height="250" align="left" hspace="0" />
-  Discover the API by simply typing. <br />  
+    height="250" align="right" hspace="0" />
+  Discover the API by simply typing.  
   Each library's member is strictly typed, do not let those silly type errors slip by.
 </p>
 <p align="right">
