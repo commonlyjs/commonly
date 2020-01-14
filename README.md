@@ -71,6 +71,7 @@ here should be list of no ok things other libraries have:
 * not modular
 * even with modular ones there is no tree shaking making me import a single utility in a separete line.. (lodash.keyBy has 14KB after minification)
 * they are not lazy
+* overloading is not ok
 ```
 
 I wanted to have an unopinionated general-purpose utility library 
