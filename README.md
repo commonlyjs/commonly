@@ -62,6 +62,7 @@ A modern utility library for JavaScript/TypeScript.
 #### Key features
 * Every function is pure, they will never mutate your data.
 * Extensible protocol-based architecture, every function is bound to work with your custom data structures.
+* Process often overlooked data types with ease. Works with: Map, Set, HTMLCollection, NodeList and more.
 * Builtin interoperability with your favorite libraries.
     * [RxJS](https://github.com/ReactiveX/rxjs)
     * [Immutable.js](https://github.com/immutable-js/immutable-js)
