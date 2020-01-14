@@ -66,10 +66,12 @@ Overview
     * [Most](https://github.com/cujojs/most)
  
 ### Why Commonly?
-Proin maximus rutrum felis, sed lobortis metus sagittis in.
-In id lectus est. Phasellus interdum lacus sed mattis feugiat.
-Suspendisse potenti. Donec est ex, aliquam a ultrices et, placerat sit amet lacus. 
-Nam ac ultricies lacus, ac consequat lorem. Pellentesque luctus dapibus tempor.
+I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
+but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.
+
+I wanted to have an unopinionated general-purpose utility library 
+which would be so comprehensive that it could replace a standard library if one wanted to.  
+Here is my take on the issue, presenting Commonly.
 
 ### What's different?
 <p align="left">
