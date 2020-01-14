@@ -70,7 +70,8 @@ I have found a lot of libraries which try to fill the missing pieces in a standa
 but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.
 
 I wanted to have an unopinionated general-purpose utility library 
-which would be so comprehensive that it could replace a standard library if one wanted to.  
+which would be so comprehensive that it could replace a standard library if one wanted to. 
+
 Here is my take on the issue, presenting Commonly.
 
 ### What's different?
