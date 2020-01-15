@@ -79,15 +79,16 @@ which would be so comprehensive that it could replace a standard library if one 
 
 Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
+
 ### Key features
 * Every function is pure, they will never mutate your data.
 * Extensible protocol-based architecture, every function is bound to work with your custom data structures.
 * Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
 * Builtin interoperability with your favorite libraries.
-    * [RxJS](https://github.com/ReactiveX/rxjs)
-    * [Immutable.js](https://github.com/immutable-js/immutable-js)
-    * [Most](https://github.com/cujojs/most)
-
+    * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
+    * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
+  
+    
 ### What's different?
 <p align="left">
   <strong>Run-time type system</strong><br/>
