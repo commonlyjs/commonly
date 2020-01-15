@@ -22,7 +22,7 @@
 <p align="center">
   <img src=".github/assets/logo/title-alt.png" height="55" align="center" />
   <p align="center">
-    A modern utility library for JavaScript/TypeScript.
+    The most comprehensive modern utility library for JavaScript/TypeScript.
     <br />
     <a href="https://commonlyjs.com/api"><strong>Explore the API »</strong></a>
     <br />
@@ -53,9 +53,7 @@ Table of Contents
 
 
 Overview  
----------
-> A most comprehensive modern utility library for JavaScript/TypeScript.
- 
+--------- 
 ### Why Commonly?
 I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
 but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.  
