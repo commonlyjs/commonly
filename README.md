@@ -307,8 +307,8 @@ Roadmap
     * [ ] `@commonly/dom`
     * [ ] `@commonly/fs`
 * [ ] Enable interoperability with data structures from popular JavaScript libraries:
-    * [ ] Immutable data structure: [Immutable.js](https://github.com/immutable-js/immutable-js)
-    * [ ] Immutable data structure: [mori](https://github.com/swannodette/mori)
+    * [ ] Immutable: [Immutable.js](https://github.com/immutable-js/immutable-js)
+    * [ ] Immutable: [mori](https://github.com/swannodette/mori)
     * [ ] Stream/Observable: [RxJS](https://github.com/ReactiveX/rxjs)
     * [ ] Stream/Observable: [Most](https://github.com/cujojs/most)
     * [ ] Stream/Observable: [flyd](https://github.com/paldepind/flyd)
