@@ -215,22 +215,32 @@ Roadmap
         * [ ] `@commonly/function/tap`
         * [ ] `@commonly/function/throttle`
     * [ ] `@commonly/iterable`
+        * [ ] `@commonly/iterable/adjust`
+        * [ ] `@commonly/iterable/append`
         * [ ] `@commonly/iterable/chain`
         * [ ] `@commonly/iterable/concat`
         * [ ] `@commonly/iterable/drop`
+        * [ ] `@commonly/iterable/every`
         * [ ] `@commonly/iterable/filter`
         * [ ] `@commonly/iterable/find`
         * [ ] `@commonly/iterable/flatten`
         * [ ] `@commonly/iterable/head`
         * [ ] `@commonly/iterable/includes`
+        * [ ] `@commonly/iterable/insert`
         * [ ] `@commonly/iterable/last`
         * [ ] `@commonly/iterable/map`
         * [ ] `@commonly/iterable/nth`
+        * [ ] `@commonly/iterable/prepend`
         * [ ] `@commonly/iterable/reduce`
+        * [ ] `@commonly/iterable/reverse`
         * [ ] `@commonly/iterable/slice`
+        * [ ] `@commonly/iterable/some`
+        * [ ] `@commonly/iterable/sort`
         * [ ] `@commonly/iterable/tail`
         * [ ] `@commonly/iterable/take`
         * [ ] `@commonly/iterable/transduce`
+        * [ ] `@commonly/iterable/unzip`
+        * [ ] `@commonly/iterable/zip`
     * [ ] `@commonly/logic`
         * [ ] `@commonly/logic/and`
         * [ ] `@commonly/logic/nand`
@@ -249,6 +259,7 @@ Roadmap
         * [ ] `@commonly/math/mean`
         * [ ] `@commonly/math/median`
         * [ ] `@commonly/math/minimum`
+        * [ ] `@commonly/math/modulo`
         * [ ] `@commonly/math/multiply`
         * [ ] `@commonly/math/round`
         * [ ] `@commonly/math/subtract`
@@ -282,6 +293,7 @@ Roadmap
         * [ ] `@commonly/string/pascalcase`
         * [ ] `@commonly/string/snakecase`
         * [ ] `@commonly/string/traincase`
+        * [ ] `@commonly/string/trim`
         * [ ] `@commonly/string/uppercase`
         * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
