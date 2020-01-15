@@ -194,7 +194,7 @@ Roadmap
     * [ ] Guidelines for contributors.
     * [ ] Couple of articles:
         * [ ] Introduction to the library.
-* [ ] Improve stack traces for decorated functions, like `curry`, `compose` and `partial`.
+* [ ] Improve stack traces and debugging for functions decorated with `curry`, `compose` and `partial`.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
         * [ ] `@commonly/data/MultiwayTree`
