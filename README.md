@@ -73,7 +73,7 @@ here should be list of no ok things other libraries have:
 ```
 
 I wanted to have an unopinionated general-purpose utility library 
-which would be so comprehensive that it could replace a standard library if one wanted to. 
+which would be so comprehensive that it could replace a standard library if one ever really wanted to. 
 
 Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
@@ -216,6 +216,7 @@ Roadmap
         * [ ] `@commonly/function/throttle`
     * [ ] `@commonly/iterable`
         * [ ] `@commonly/iterable/chain`
+        * [ ] `@commonly/iterable/concat`
         * [ ] `@commonly/iterable/drop`
         * [ ] `@commonly/iterable/filter`
         * [ ] `@commonly/iterable/find`
