@@ -70,6 +70,7 @@ here should be list of no ok things other libraries have:
 * even with modular ones there is no tree shaking making me import a single utility in a separete line.. (lodash.keyBy has 14KB after minification)
 * they are not lazy
 * overloading is not ok
+* awful stacktraces
 ```
 
 I wanted to have an unopinionated general-purpose utility library 
@@ -193,6 +194,7 @@ Roadmap
     * [ ] Guidelines for contributors.
     * [ ] Couple of articles:
         * [ ] Introduction to the library.
+* [ ] Improve stack traces for decorated functions, like `curry`, `compose` and `partial`.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
         * [ ] `@commonly/data/MultiwayTree`
