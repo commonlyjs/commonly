@@ -182,6 +182,9 @@ Both documents are synchronized, so you will never find any to be out of date.
 ### Cookbook
 Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
 
+### Unit tests
+There's no better way to understand something in depth than to go straight into the source.  
+Implementation is clean and simple and every LOC is covered with human-readable unit tests.
 
 Roadmap  
 --------
