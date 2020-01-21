@@ -54,7 +54,9 @@ Table of Contents
 
 Overview  
 --------- 
-> Not everything is implemented yet. See what's done and what's next [here](#roadmap).
+> Keep in mind that not everything is implemented yet. Install with @next tag for the latest version of package.
+> See what's done and what's next on the [roadmap](#roadmap).
+
 ### Why Commonly?
 There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting for every project or had not any annoyances with.
 
