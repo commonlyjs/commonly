@@ -63,10 +63,11 @@ There are many attempts to expand the core API of JavaScript, but I never found 
 One annoyance I simply cannot cope with is a gimmicky API.  
 * Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
   **Spontaneous data mutation is unacceptable.**  
+* 
 
 What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
 
-I am an avid TypeScript user, so whenever I install a dependency to my project I always need to match the correct type definitions. 
+In TypeScript projects, whenever you install a dependency there's always a need to match those to the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
 
 
