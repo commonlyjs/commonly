@@ -68,7 +68,7 @@ Moreover, what often is overlooked in those libraries is the debugging experienc
 In TypeScript projects, whenever you install a dependency there's always a need to match those to the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
 
-What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
+What I wanted is to have a solid unopinionated general-purpose library without any gimmicks. 
 A standard library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
