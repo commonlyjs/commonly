@@ -142,8 +142,8 @@ const quicksort = (xs) => {
     if (xs.length < 2) {
      return xs
     } else {
-        const [ pivot, xs ] = xs
-        const [ lesser, greater ] = partition(x => x <= pivot, xs)
+        const [ pivot, ...remainder ] = xs
+        const [ lesser, greater ] = partition(x => x <= pivot, remainder)
         return pipe(
             append(quicksort(lesser)),
             append(pivot),
