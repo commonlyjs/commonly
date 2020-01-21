@@ -63,10 +63,13 @@ There are many attempts to expand the core API of JavaScript, but I never found 
 Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
 **Spontaneous data mutation is unacceptable.**
 
-What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
+Moreover, what often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
 
 In TypeScript projects, whenever you install a dependency there's always a need to match those to the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
+
+What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
+A standard library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
 ##### My notes:
@@ -77,9 +80,6 @@ Unfortunately, often those type definitions are either missing, out of date or s
 > * Discriminate other data structures than simple arrays/objects.
 > * Either it could not be tree shaken properly or was not modular at all.
 > * Eagerly evaluated meaning they're awful for data heavy applications.
-
-What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
-A standard library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
 ### Key features
