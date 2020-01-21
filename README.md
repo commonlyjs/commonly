@@ -136,7 +136,7 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 
 ### Examples
 ```typescript
-import { append, partition, pipe } from "@commonly/iterable"
+import { append, concat, partition, pipe } from "@commonly/iterable"
 
 const quicksort = (xs) => {
     if (xs.length < 2) {
@@ -144,11 +144,11 @@ const quicksort = (xs) => {
     } else {
         const [ pivot, ...remainder ] = xs
         const [ lesser, greater ] = partition(x => x <= pivot, remainder)
+
         return pipe(
             append(quicksort(lesser)),
-            append(pivot),
-            append(quicksort(greater))
-        )
+            concat(quicksort(greater))
+        )(pivot)
     }
 }
 ```
