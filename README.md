@@ -136,7 +136,21 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 
 ### Examples
 ```typescript
-// A really simple example. 
+import { append, partition, pipe } from "@commonly/iterable"
+
+const quicksort = (xs) => {
+    if (xs.length < 2) {
+     return xs
+    } else {
+        const [ pivot, xs ] = xs
+        const [ lesser, greater ] = partition(x => x <= pivot, xs)
+        return pipe(
+            append(quicksort(lesser)),
+            append(pivot),
+            append(quicksort(greater)),
+        )
+    }
+}
 ```
 ```typescript
 // An example on how to create some missing functionality (something from a cookbook). 
