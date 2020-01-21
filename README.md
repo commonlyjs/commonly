@@ -140,7 +140,7 @@ import { append, partition, pipe } from "@commonly/iterable"
 
 const quicksort = (xs) => {
     if (xs.length < 2) {
-     return xs
+        return xs
     } else {
         const [ pivot, ...remainder ] = xs
         const [ lesser, greater ] = partition(x => x <= pivot, remainder)
