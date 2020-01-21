@@ -147,7 +147,7 @@ const quicksort = (xs) => {
         return pipe(
             append(quicksort(lesser)),
             append(pivot),
-            append(quicksort(greater)),
+            append(quicksort(greater))
         )
     }
 }
