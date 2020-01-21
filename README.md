@@ -64,10 +64,6 @@ One annoyance I simply cannot cope with is a gimmicky API.
 * Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
 **Spontaneous data mutation is unacceptable.**  
 
-
-In spite of the fact that JavaScript does not support function overloading, 
-you sometimes get to see complex signatures with multiple if/else/typeof/instanceof just to emulate such language feature.
-
 I am an avid TypeScript user, so whenever I install a dependency to my project I always need to match the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
 
