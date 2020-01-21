@@ -56,8 +56,7 @@ Overview
 --------- 
 > Not everything is implemented yet. See what's done and what's next [here](#roadmap).
 ### Why Commonly?
-I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
-but I have never found any that would be fitting in every project I had or had not any annoyances with.  
+There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting for every project or had not any annoyances with.
 
 NOTES: 
 ```
@@ -74,9 +73,8 @@ here should be list of no ok things other libraries have:
 * awful stacktraces
 ```
 
-I wanted to have an unopinionated general-purpose utility library 
-which would be so comprehensive that it could replace a standard library if one ever really wanted to. 
-
+What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
+A standard library that could be easily extended by its user.  
 Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
