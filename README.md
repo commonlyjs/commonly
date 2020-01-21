@@ -64,16 +64,16 @@ One annoyance I simply cannot cope with is a gimmicky API.
 * Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
 **Spontaneous data mutation is unacceptable.**  
 
+What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
+
 I am an avid TypeScript user, so whenever I install a dependency to my project I always need to match the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
-
-What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
 
 
 ##### My notes:
 > * ~~Often missing/broken type definitions.~~
 > * ~~Awful debugging experience/bloated stacktraces.~~
-> * Would implicitly mutate my data.
+> * ~~Would implicitly mutate my data.~~
 > * Ambiguous API / heavy use of function overloading/ implicitly casts data structures for no good reason.
 > * Discriminate other data structures than simple arrays/objects.
 > * Either it could not be tree shaken properly or was not modular at all.
