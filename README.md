@@ -60,10 +60,8 @@ Overview
 ### Why Commonly?
 There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting in most of my projects or without any annoyances.
 
-One annoyance I simply cannot cope with is a gimmicky API.  
-* Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
-  **Spontaneous data mutation is unacceptable.**  
-* 
+Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
+**Spontaneous data mutation is unacceptable.**
 
 What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
 
