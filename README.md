@@ -54,9 +54,10 @@ Table of Contents
 
 Overview  
 --------- 
+> Not everything is implemented yet. See what's done and what's next [here](#roadmap).
 ### Why Commonly?
 I have found a lot of libraries which try to fill the missing pieces in a standard JavaScript API, 
-but I have never found any that would be fitting in every project I had or had not any annoyances I could live with.  
+but I have never found any that would be fitting in every project I had or had not any annoyances with.  
 
 NOTES: 
 ```
