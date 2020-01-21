@@ -74,8 +74,7 @@ here should be list of no ok things other libraries have:
 ```
 
 What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
-A standard library that could be easily extended by its user.  
-Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
+A standard library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
 ### Key features
