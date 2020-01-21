@@ -61,7 +61,7 @@ Overview
 There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting in most of my projects or without any annoyances.
 
 One annoyance I simply cannot cope with is a gimmicky API.  
-Sometimes mutation of data cannot be avoided and that's fine, but when it does it should try to be as explicit about it as possible. 
+Occasionally data mutation cannot be avoided and that's completely fine, but when it does, it should try to be as explicit about it as possible. 
 Spontaneous data mutation is unacceptable.
 In spite of the fact that JavaScript does not support function overloading, 
 you sometimes get to see complex signatures with multiple if/else/typeof/instanceof just to emulate such language feature.
