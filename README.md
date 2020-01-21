@@ -66,20 +66,14 @@ Unfortunately, often those type definitions are either missing, out of date or s
 Another often overlooked thing is debugging, this aspect of a library seems to be often out of scope, 
 most of the times stacktraces in those third party libraries happen to be just awful.
 
-NOTES: 
-```
-here should be list of no ok things other libraries have:
-* missing or broken type definitions
-* following data-last function's signatures, big deal for fp users, not that much of a deal for non fp and barerly any cons.
-* would work only on arrays/objects
-* would convert my data for no reason
-* would implictly mutate my data
-* not modular
-* even with modular ones there is no tree shaking making me import a single utility in a separete line.. (lodash.keyBy has 14KB after minification)
-* they are not lazy
-* overloading is not ok
-* awful stacktraces
-```
+##### My notes:
+> * ~~Often missing/broken type definitions.~~
+> * ~~Awful debugging experience/bloated stacktraces.~~
+> * Would implicitly mutate my data.
+> * Ambiguous API / heavy use of function overloading/ implicitly casts data structures for no good reason.
+> * Discriminate other data structures than simple arrays/objects.
+> * Either it could not be tree shaken properly or was not modular at all.
+> * Eagerly evaluated meaning they're awful for data heavy applications.
 
 What I wanted is to have an unopinionated solid general-purpose library without any gimmicks. 
 A standard library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
