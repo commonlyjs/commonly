@@ -63,8 +63,10 @@ There are many attempts to expand the core API of JavaScript, but I never found 
 I am an avid TypeScript user, so whenever I install a dependency to my project I always need to match the correct type definitions. 
 Unfortunately, often those type definitions are either missing, out of date or simply broken. 
 
-Another often overlooked thing is debugging, this aspect of a library seems to be often out of scope, 
-most of the times stacktraces in those third party libraries happen to be just awful.
+One annoyance I simply cannot cope with is a gimmicky API. Blablba...
+ 
+What often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
+
 
 ##### My notes:
 > * ~~Often missing/broken type definitions.~~
