@@ -54,8 +54,7 @@ Table of Contents
 
 Overview  
 --------- 
-> Keep in mind that not everything is implemented yet.  
-> Remember to install each package with a `@next` tag.  
+> Keep in mind that not everything is implemented yet and always install packages with a `@next` tag.  
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
