@@ -58,7 +58,13 @@ Overview
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
-There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting for every project or had not any annoyances with.
+There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting in most of my projects or without any annoyances.
+
+I am an avid TypeScript user, so whenever I install a dependency to my project I always need to match the correct type definitions. 
+Unfortunately, often those type definitions are either missing, out of date or simply broken. 
+
+Another often overlooked thing is debugging, this aspect of a library seems to be often out of scope, 
+most of the times stacktraces in those third party libraries happen to be just awful.
 
 NOTES: 
 ```
