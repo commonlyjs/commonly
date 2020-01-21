@@ -54,7 +54,8 @@ Table of Contents
 
 Overview  
 --------- 
-> Keep in mind that not everything is implemented yet. Remember to always install with @next tag for the latest version of package.  
+> Keep in mind that not everything is implemented yet.  
+> Remember to install each package with a `@next` tag ( e.g. `npm install @commonly/math@next`) as there are not stable releases just yet.  
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
