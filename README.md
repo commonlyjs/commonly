@@ -135,6 +135,7 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 **Users of TypeScript**, remember to install the `@commonly/type` package, it contains type definitions used in other packages.
 
 ### Examples
+Simplify your code.
 ```typescript
 import { flatten, partition } from "@commonly/iterable"
 
