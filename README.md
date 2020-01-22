@@ -197,6 +197,8 @@ class Vector {
     // Let us iterate over on instances of the `Vector` type.
     // Note: In this scenario we use it just to extract a vector to an array by simply spreading it.
     //       (E.g. `const [ x, y ] = v`).
+    // Note: Keep in mind that using `@commonly/protocol` package is optional.
+    //       You could easily replace any with either a string or a symbol (In this case, `Symbol.iterator`).
     [Iterable.iterator]() {
         yield this.x
         yield this.y
