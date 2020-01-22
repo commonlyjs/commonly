@@ -188,7 +188,7 @@ class Vector {
     }
 
     // You can only affect the behaviour of functions which expects a specific contract.
-    // (An exception to the rule is a decorator named `@OperatorOverload`, which allows to overload some of the operators.)
+    // (There's an exception, `@OperatorOverload` decorator allows to overload some of the operators.)
     // Let us use `add` function on instances of the `Vector` type.
     [Operand.augend](addend) {
         return new Vector(this.x + addend.x, this.y + addend.y)
