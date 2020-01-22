@@ -150,13 +150,16 @@ const quicksort = (xs) => {
 }
 ```
 ```typescript
-// An example on how to create some missing functionality (something from a cookbook). 
+// No example yet
+// To do: An example on how to create some missing functionality (something from a cookbook). 
 ```
 ```typescript
-// An example of interoperability with some popular library. 
+// No example yet
+// To do: An example of interoperability with some popular library. 
 ```
 ```typescript
-// An example of interoperability with a custom data structure. 
+// No example yet
+// To do: An example of interoperability with a custom data structure. 
 ```
 
 
