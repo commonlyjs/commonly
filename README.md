@@ -187,14 +187,15 @@ class Vector {
         this.y = sin(this.length) * value
     }
 
-    // You can only affect the behaviour of functions which expects a specific contract.
-    // (There's an exception, `@OperatorOverload` decorator allows to overload some of the operators.)
     // Let us use `add` function on instances of the `Vector` type.
+    // Note: You can only affect the behaviour of functions which expects a specific contract.
+    //       (There's an exception, `@OperatorOverload` decorator allows to overload some of the operators.)
     [Operand.augend](addend) {
         return new Vector(this.x + addend.x, this.y + addend.y)
     }
 
     // Let us iterate over on instances of the `Vector` type.
+    // Note: In this scenario we use it just to extract a vector to an array by simply spreading it (const [ x, y ] = v).
     [Iterable.iterator]() {
         yield this.x
         yield this.y
