@@ -161,7 +161,7 @@ const quicksort = (xs) => {
 //- Vector.js
 import { Iterable, Operand } from "@commonly/protocol"
 
-class Vector {
+class Vector implements Iterable, Operand {
     constructor(x, y) {
         this.x = x
         this.y = y
