@@ -158,8 +158,76 @@ const quicksort = (xs) => {
 // To do: An example of interoperability with some popular library. 
 ```
 ```typescript
-// No example yet
-// To do: An example of interoperability with a custom data structure. 
+//- Vector.js
+import { Iterable, Operand } from "@commonly/protocol"
+
+class Vector {
+    constructor(x, y) {
+        this.x = x
+        this.y = y
+    }
+    
+    get length() {
+        const { x, y } = this
+        return sqrt(x * x + y * y)
+    }
+    
+    set length(value) {
+        this.x = cos(this.angle) * value
+        this.y = sin(this.angle) * value
+    }
+    
+    get angle() {
+        const { x, y } = this
+        return atan2(y, x)
+    }
+    
+    set angle(value) {
+        this.x = cos(this.length) * value
+        this.y = sin(this.length) * value
+    }
+
+    // Let us use `add` function on instances of the `Vector` type.
+    [Operand.augend](addend) {
+        return new Vector(this.x + addend.x, this.y + addend.y)
+    }
+
+    // Let us iterate over on instances of the `Vector` type.
+    [Iterable.iterator]() {
+        yield this.x
+        yield this.y
+    }
+}
+
+
+//- Particle.js
+import { map } from "@commonly/iterable"
+import { add } from "@commonly/math"
+
+class Particle { 
+    constructor(x, y, speed, direction) {
+        this.position = new Vector(x, y)
+        this.velocity = new Vector(0, 0)
+        this.velocity.length = speed
+        this.velocity.angle = direction
+    }
+
+    update() {
+        const { position, velocity } = this
+        this.position = add(position, velocity)
+    }
+}
+
+
+//- index.js
+const hero = new Particle(0, 0, 1, 90)
+function tick() {
+    window.requestAnimationFrame(() => {
+        const [ x, y ] = hero
+        console.log(`Hero is at position { x: ${x}, y: ${y} }`)
+        tick()
+    })
+}
 ```
 
 
