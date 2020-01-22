@@ -169,22 +169,22 @@ class Vector {
     
     get length() {
         const { x, y } = this
-        return sqrt(x * x + y * y)
+        return Math.sqrt(x * x + y * y)
     }
     
     set length(value) {
-        this.x = cos(this.angle) * value
-        this.y = sin(this.angle) * value
+        this.x = Math.cos(this.angle) * value
+        this.y = Math.sin(this.angle) * value
     }
     
     get angle() {
         const { x, y } = this
-        return atan2(y, x)
+        return Math.atan2(y, x)
     }
     
     set angle(value) {
-        this.x = cos(this.length) * value
-        this.y = sin(this.length) * value
+        this.x = Math.cos(this.length) * value
+        this.y = Math.sin(this.length) * value
     }
 
     // Let us use `add` function on instances of the `Vector` type.
