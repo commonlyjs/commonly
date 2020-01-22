@@ -215,6 +215,7 @@ class Particle {
 
     update() {
         const { position, velocity } = this
+        // (The `add` function could be replaced with `+` operator only if we used an @OperatorOverload.) 
         this.position = add(position, velocity)
     }
 }
