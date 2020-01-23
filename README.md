@@ -166,26 +166,6 @@ class Vector implements Iterable, Operand {
         this.x = x
         this.y = y
     }
-    
-    get length() {
-        const { x, y } = this
-        return Math.sqrt(x * x + y * y)
-    }
-    
-    set length(value) {
-        this.x = Math.cos(this.angle) * value
-        this.y = Math.sin(this.angle) * value
-    }
-    
-    get angle() {
-        const { x, y } = this
-        return Math.atan2(y, x)
-    }
-    
-    set angle(value) {
-        this.x = Math.cos(this.length) * value
-        this.y = Math.sin(this.length) * value
-    }
 
     // Let us use `add` function on instances of the `Vector` type.
     // Note: You can only affect the behaviour of functions which expects a specific contract.
