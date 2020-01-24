@@ -232,7 +232,7 @@ Whenever you find some functionality missing, look for it in our cookbook on [co
 Roadmap  
 --------
 ### 1.x-next
-* [ ] Automate the package publication process and a generation of the package's documentation.
+* [x] Automate the package publication process and a generation of the package's documentation.
 * [ ] Update every function's JSDoc to include [Damas–Hindley–Milner type](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) signature.
 * [ ] Implement a runtime type checking for every included function based on [Algorithm W](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system#Algorithm_W).
 * [ ] Produce more content:
