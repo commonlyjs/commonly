@@ -59,7 +59,7 @@ Overview
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
-There are many attempts to expand the core API of JavaScript, but I never found any that would be fitting in most of my projects or without any annoyances.
+You can easily find another utility library expanding on the standard library, but I never found any that would fit every project I had or without any annoyances.
 
 What I wanted is to have a solid unopinionated general-purpose library without any gimmicks.  
 A general-purpose library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
