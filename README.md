@@ -73,7 +73,7 @@ A standard library that could be easily extended by its user. Here is [my take o
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
   
     
-### Finely polished
+### Built to enhance your experience
 <p align="left">
   <strong>Run-time type system</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
