@@ -169,7 +169,6 @@ class Vector implements Iterable, Operand {
 
     // Let us use `add` function on instances of the `Vector` type.
     // Note: You can only affect the behaviour of functions which expects a specific contract.
-    //       (There's an exception, `@OperatorOverload` decorator allows to overload some of the operators.)
     [Operand.augend](addend) {
         return new Vector(this.x + addend.x, this.y + addend.y)
     }
@@ -179,7 +178,7 @@ class Vector implements Iterable, Operand {
     //       (E.g. `const [ x, y ] = v`).
     // Note: Keep in mind that using `@commonly/protocol` package is optional.
     //       You could easily replace any with either a string or a symbol (In this case, `Symbol.iterator`).
-    [Iterable.iterator]() {
+    [Iterable.iterator]*() {
         yield this.x
         yield this.y
     }
@@ -199,7 +198,6 @@ class Particle {
 
     update() {
         const { position, velocity } = this
-        // Note: (The `add` function could be replaced with `+` operator only if we used an @OperatorOverload.) 
         this.position = add(position, velocity)
     }
 }
