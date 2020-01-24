@@ -41,8 +41,8 @@ Table of Contents
 ------------------
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
-    * [Key features](#key-features)
     * [Enhance your experience](#enhance-your-experience)
+    * [Key features](#key-features)
 * [Getting started](#getting-started)
     * [Installation](#installation)
     * [Examples](#examples)
@@ -66,15 +66,6 @@ What I wanted is to have a solid unopinionated general-purpose library without a
 A general-purpose library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 
-### Key features
-* Every function is pure, they will never mutate your data.
-* Extensible protocol-based architecture, every function is bound to work with your custom data structures.
-* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
-* Builtin interoperability with your favorite libraries.
-    * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
-    * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
-  
-    
 ### Enhance your experience
 <p align="left">
   <strong>Run-time type system</strong><br/>
@@ -118,6 +109,15 @@ A general-purpose library that could be easily extended by its user. Here is [my
 <br />
 <br />
 <br />
+
+
+### Key features
+* Every function is pure, they will never mutate your data.
+* Extensible protocol-based architecture, every function is bound to work with your custom data structures.
+* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
+* Builtin interoperability with your favorite libraries.
+    * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
+    * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
 
 
 
