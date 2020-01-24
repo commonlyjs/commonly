@@ -153,6 +153,7 @@ const quicksort = (xs) => {
 }
 ```
 
+Easily extend capabilities of the library with merely few lines of code.
 ```typescript
 // No example yet
 // To do: An example on how to create some missing functionality (something from a cookbook). 
