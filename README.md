@@ -152,6 +152,7 @@ const quicksort = (xs) => {
     }
 }
 ```
+
 ```typescript
 // No example yet
 // To do: An example on how to create some missing functionality (something from a cookbook). 
@@ -160,6 +161,8 @@ const quicksort = (xs) => {
 // No example yet
 // To do: An example of interoperability with some popular library. 
 ```
+
+Adjust how your own data structures interact with those functions.
 ```typescript
 //- Vector.js
 import { Operand } from "@commonly/protocol"
