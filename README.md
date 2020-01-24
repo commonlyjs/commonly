@@ -36,6 +36,7 @@
 <br />
 
 
+
 Table of Contents
 ------------------
 * [Overview](#overview)
@@ -118,6 +119,8 @@ A general-purpose library that could be easily extended by its user. Here is [my
 <br />
 <br />
 
+
+
 Getting started  
 ----------------
 This library comes in multiple packages, you match and choose whichever you need.  
@@ -160,9 +163,9 @@ const quicksort = (xs) => {
 ```
 ```typescript
 //- Vector.js
-import { Iterable, Operand } from "@commonly/protocol"
+import { Operand } from "@commonly/protocol"
 
-class Vector implements Iterable, Operand {
+class Vector implements Operand {
     constructor(x, y) {
         this.x = x
         this.y = y
@@ -172,16 +175,6 @@ class Vector implements Iterable, Operand {
     // Note: You can only affect the behaviour of functions which expects a specific contract.
     [Operand.augend](addend) {
         return new Vector(this.x + addend.x, this.y + addend.y)
-    }
-
-    // Let us iterate over on instances of the `Vector` type.
-    // Note: In this scenario we use it just to extract a vector to an array by simply spreading it.
-    //       (E.g. `const [ x, y ] = v`).
-    // Note: Keep in mind that using `@commonly/protocol` package is optional.
-    //       You could easily replace any with either a string or a symbol (In this case, `Symbol.iterator`).
-    [Iterable.iterator]*() {
-        yield this.x
-        yield this.y
     }
 }
 
@@ -205,11 +198,11 @@ class Particle {
 
 
 //- index.js
-const hero = new Particle(0, 0, 1, 90)
+const arrow = new Particle(0, 0, 1, 90)
 function tick() {
     window.requestAnimationFrame(() => {
-        const [ x, y ] = hero
-        console.log(`Hero is at position { x: ${x}, y: ${y} }`)
+        const { x, y } = arrow
+        console.log(`An arrow is at position { x: ${x}, y: ${y} }`)
         tick()
     })
 }
