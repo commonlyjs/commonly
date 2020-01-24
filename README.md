@@ -163,6 +163,8 @@ Operate on any common data structure with only a single set of API.
 ```typescript
 // No example yet
 // To do: An example of interoperability with some popular library. 
+// Libraries to include:
+//     * RxJS
 ```
 
 Adjust how your data structures interact with those functions.
