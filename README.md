@@ -157,12 +157,14 @@ const quicksort = (xs) => {
 // No example yet
 // To do: An example on how to create some missing functionality (something from a cookbook). 
 ```
+
+Operate on any common data structure with only a single set of API. 
 ```typescript
 // No example yet
 // To do: An example of interoperability with some popular library. 
 ```
 
-Adjust how your own data structures interact with those functions.
+Adjust how your data structures interact with those functions.
 ```typescript
 //- Vector.js
 import { Operand } from "@commonly/protocol"
