@@ -59,7 +59,7 @@ Overview
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
-You can easily find another utility library expanding on the standard library, but I never found any that would fit every project I had or without any annoyances.
+Commonly is a general-purpose library that expands on the JavaScript API, similar libraries do exist, but I never could be content with any.
 
 What I wanted is to have a solid unopinionated general-purpose library without any gimmicks.  
 A general-purpose library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
