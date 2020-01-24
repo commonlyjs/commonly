@@ -35,8 +35,6 @@
 <br />
 <br />
 
-
-
 Table of Contents
 ------------------
 * [Overview](#overview)
