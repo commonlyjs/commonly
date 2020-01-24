@@ -40,6 +40,7 @@ Table of Contents
 ------------------
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
+    * [Key features](#key-features)
     * [Built to enhance your experience](#built-to-enhance-your-experience)
 * [Getting started](#getting-started)
     * [Installation](#installation)
