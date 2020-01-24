@@ -41,7 +41,7 @@ Table of Contents
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
     * [Key features](#key-features)
-    * [Built to enhance your experience](#built-to-enhance-your-experience)
+    * [Enhance your experience](#enhance-your-experience)
 * [Getting started](#getting-started)
     * [Installation](#installation)
     * [Examples](#examples)
@@ -74,7 +74,7 @@ A standard library that could be easily extended by its user. Here is [my take o
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
   
     
-### Built to enhance your experience
+### Enhance your experience
 <p align="left">
   <strong>Run-time type system</strong><br/>
   <img src=".github/assets/demo/dynamic-type-checking-demo.apng" 
