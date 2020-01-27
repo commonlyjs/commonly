@@ -208,10 +208,10 @@ class Particle extends Vector implements Iterable, Reducible {
 
 
 //- index.js
-let previousWind = new Vector(Math.random(), Math.random())
+let previousWind = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
 let snowflakes = [
-    new Particle(0, 0, 1, 90),
-    new Particle(0, 0, 1, 90)
+    new Particle(0, 0),
+    new Particle(0, 0)
 ]
 
 function tick() {
