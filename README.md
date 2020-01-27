@@ -169,7 +169,7 @@ Operate on any common data structure with only a single set of API.
 
 Adjust how your data structures interact with those functions.
 ```typescript
-//- Vector.js
+//- Vector.ts
 import { Operand } from "@commonly/protocol"
 
 class Vector implements Operand {
@@ -186,23 +186,31 @@ class Vector implements Operand {
 }
 
 
-//- Particle.js
+//- Particle.ts
 import { Iterable, Reducible } from "@commonly/protocol"
 import { map } from "@commonly/iterable"
 import { add } from "@commonly/math"
 
-class Particle extends Vector implements Iterable, Reducible { 
+class Arrow extends Vector implements Iterable, Reducible { 
     constructor(x, y) {
         super(x, y)
     }
+}
+
+//- Quiver.ts
+class Quivier {
+    constructor(...arrows) {
+        this.arrows = arrows
+    }
 
     [Iterable.iterator]*() {
-        yield this.x
-        yield this.y
+        for (const arrow of arrows) {
+            yield arrow
+        }
     }
 
     [Reducible.reducer]() {
-        const reducer = (accumulator, particle) => {
+        const reducer = (quivier, arrow) => {
          
         }
     
@@ -211,19 +219,20 @@ class Particle extends Vector implements Iterable, Reducible {
 }
 
 
-//- index.js
+
+//- index.ts
 let previousWind = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
-let snowflakes = [
-    new Particle(0, 0),
-    new Particle(0, 0)
-]
+let arrows = new Quivier(
+    new Arrow(0, 0),
+    new Arrow(0, 0)
+)
 
 function tick() {
     window.requestAnimationFrame(() => {
         const wind = add(previousWind, new Vector(Math.random(), Math.random()))
-        snowflakes = map(add(wind), snowflakes)
+        arrows = map(add(wind), arrows)
         previousWind = wind    
-        for (const [ x, y ] of snowflakes) {
+        for (const [ x, y ] of arrows) {
             console.log(`A snowflake is at position { x: ${x}, y: ${y} }`)
         }
 
