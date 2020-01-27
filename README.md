@@ -187,29 +187,42 @@ class Vector implements Operand {
 
 
 //- Particle.js
+import { Iterable, Reducible } from "@commonly/protocol"
+import { map } from "@commonly/iterable"
 import { add } from "@commonly/math"
 
-class Particle { 
-    constructor(x, y, speed, direction) {
-        this.position = new Vector(x, y)
-        this.velocity = new Vector(0, 0)
-        this.velocity.length = speed
-        this.velocity.angle = direction
+class Particle extends Vector implements Iterable, Reducible { 
+    constructor(x, y) {
+        super(x, y)
     }
 
-    update() {
-        const { position, velocity } = this
-        this.position = add(position, velocity)
+    [Iterable.iterator]*() {
+        yield this.x
+        yield this.y
+    }
+
+    [Reducible.reducer]() {
+    
     }
 }
 
 
 //- index.js
-const arrow = new Particle(0, 0, 1, 90)
+let previousWind = new Vector(Math.random(), Math.random())
+let snowflakes = [
+    new Particle(0, 0, 1, 90),
+    new Particle(0, 0, 1, 90)
+]
+
 function tick() {
     window.requestAnimationFrame(() => {
-        const { x, y } = arrow
-        console.log(`An arrow is at position { x: ${x}, y: ${y} }`)
+        const wind = add(previousWind, new Vector(Math.random(), Math.random()))
+        snowflakes = map(add(wind), snowflakes)
+        previousWind = wind    
+        for (const [ x, y ] of snowflakes) {
+            console.log(`A snowflake is at position { x: ${x}, y: ${y} }`)
+        }
+
         tick()
     })
 }
