@@ -198,19 +198,23 @@ class Arrow extends Vector implements Iterable, Reducible {
 }
 
 //- Quiver.ts
-class Quivier {
+class Quiver {
     constructor(...arrows) {
         this.arrows = arrows
     }
 
+    draw() {
+        return this.arrow.pop()
+    }
+
     [Iterable.iterator]*() {
-        for (const arrow of arrows) {
+        for (const arrow of this.arrows) {
             yield arrow
         }
     }
 
     [Reducible.reducer]() {
-        const reducer = (quivier, arrow) => {
+        const reducer = (quiver, arrow) => {
          
         }
     
@@ -222,7 +226,7 @@ class Quivier {
 
 //- index.ts
 let previousWind = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
-let arrows = new Quivier(
+const quiver = new Quiver(
     new Arrow(0, 0),
     new Arrow(0, 0)
 )
