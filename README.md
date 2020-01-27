@@ -202,8 +202,8 @@ class Particle extends Vector implements Iterable, Reducible {
     }
 
     [Reducible.reducer]() {
-        const reducer = (accumulator, value) => {
-            return new Vector(value.x, value.y)
+        const reducer = (accumulator, vector) => {
+            return new Vector(vector.x, vector.y)
         }
     
         return reducer
