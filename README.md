@@ -248,7 +248,7 @@ function tick() {
 Documentation  
 --------------
 We do our best to provide you with the most complete documentation to deliver you a wonderful developer experience.  
-To achieve this we code clean with type annotations and inline documentation, 
+To achieve this we write cleansest code possible, annotate with types and write an inline documentation, 
 write human-readable unit tests in a [behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) fashion and produce helpful content with examples.
 
 ### Articles
