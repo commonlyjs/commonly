@@ -64,7 +64,7 @@ What I wanted is to have a solid unopinionated utility library without any hidde
 A toolkit library that could adjust to any codebase. Here is [my](https://imgs.xkcd.com/comics/standards.png) take on the issue, presenting Commonly.
 
 #### Key features
-* Every function is pure, they will never mutate your data.
+* Every function is pure, none will ever mutate your data.
 * Extensible protocol-based architecture, every function is bound to work with your custom data structures.
 * Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
 * Builtin interoperability with your favorite libraries.
