@@ -8,9 +8,7 @@
   <a href="https://codecov.io/gh/commonlyjs/commonly">
     <img src="https://codecov.io/gh/commonlyjs/commonly/branch/master/graph/badge.svg" alt="Codecov Status" />
   </a>
-  <a href="https://david-dm.org/commonlyjs/commonly" title="Dependencies Status">
-    <img src="https://david-dm.org/commonlyjs/commonly/status.svg"/>
-  </a>
+
   <a href="https://gitter.im/commonlyjs/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
     <img src="https://badges.gitter.im/commonlyjs/community.svg" alt="Join Gitter"  align="right" />
   </a>
@@ -62,8 +60,8 @@ Overview
 ### Why Commonly?
 Commonly is a general-purpose library that expands on the JavaScript API, similar libraries do exist, but none I could be happy with.
 
-What I wanted is to have a solid unopinionated general-purpose library without any hidden unnecessary gimmicks.  
-A toolkit library that could be easily extended by its user. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
+What I wanted is to have a solid unopinionated utility library without any hidden unnecessary gimmicks.  
+A toolkit library that could adjust to any codebase. Here is [my take on the issue](https://imgs.xkcd.com/comics/standards.png), presenting Commonly.
 
 #### Key features
 * Every function is pure, they will never mutate your data.
