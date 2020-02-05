@@ -66,7 +66,7 @@ A toolkit library that could adjust to any codebase. Here is [my](https://imgs.x
 #### Key features
 * Every function is pure, none will ever mutate your data.
 * Extensible protocol-based architecture, every function is bound to work with your custom data structures.
-* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more (+24).
+* Process often overlooked data types with ease, operate on a Map, Set, HTMLCollection, NodeList and more *(+24)*.
 * Builtin interoperability with your favorite libraries.
     * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
