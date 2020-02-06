@@ -54,7 +54,7 @@ Table of Contents
 
 Overview  
 --------- 
-> Keep in mind that not everything is implemented yet, for now only packages installed with a `@next` tag are useable.  
+> Keep in mind that not everything is implemented yet, install packages with a `@next` tag only.  
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
