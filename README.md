@@ -170,10 +170,14 @@ Adjust how your data structures interact with those functions.
 //- Vector.ts
 import { Operand } from "@commonly/protocol"
 
-class Vector implements Operand {
+export default class Vector implements Operand {
     constructor(x, y) {
         this.x = x
         this.y = y
+    }
+
+    get magnitude() {
+        return Math.sqrt(this.x * this.x + this.y * this.y)
     }
 
     // Let us use `add` function on instances of the `Vector` type.
@@ -184,24 +188,44 @@ class Vector implements Operand {
 }
 
 
-//- Particle.ts
-import { Iterable, Reducible } from "@commonly/protocol"
-import { map } from "@commonly/iterable"
-import { add } from "@commonly/math"
+//- Arrow.ts
+import Vector from "./Vector"
 
-class Arrow extends Vector implements Iterable, Reducible { 
-    constructor(x, y) {
-        super(x, y)
+export default class Arrow extends Vector { 
+    constructor() {
+        super(0, 0)
     }
 }
 
+
+//- Bow.ts
+import { add } from "@commonly/math"
+import Vector from "./Vector"
+import Arrow from "./Arrow"
+
+export default class Bow {
+    shoot(arrow: Arrow): Arrow {
+        const force = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
+        return add(arrow, force)
+    }
+}
+
+
 //- Quiver.ts
-class Quiver {
-    constructor(...arrows) {
-        this.arrows = arrows
+import { Iterable, Reducible } from "@commonly/protocol"
+import Arrow from "./Arrow"
+
+class Quiver implements Iterable, Reducible {
+    constructor() {
+        this.arrows = []
     }
 
-    draw() {
+    insert(arrow: Arrow) {
+      this.arrows.push(arrow)
+      return this
+    }
+
+    draw(): Arrow {
         return this.arrow.pop()
     }
 
@@ -213,7 +237,8 @@ class Quiver {
 
     [Reducible.reducer]() {
         const reducer = (quiver, arrow) => {
-         
+            quiver.insert(arrow)
+            return quiver
         }
     
         return reducer
@@ -221,25 +246,18 @@ class Quiver {
 }
 
 
-
 //- index.ts
-let previousWind = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
-const quiver = new Quiver(
-    new Arrow(0, 0),
-    new Arrow(0, 0)
-)
+import { map } from "@commonly/iterable"
 
-function tick() {
-    window.requestAnimationFrame(() => {
-        const wind = add(previousWind, new Vector(Math.random(), Math.random()))
-        arrows = map(add(wind), arrows)
-        previousWind = wind    
-        for (const [ x, y ] of arrows) {
-            console.log(`A snowflake is at position { x: ${x}, y: ${y} }`)
-        }
+const bow = new Bow()
+const quiver = new Quiver()
+    .insert(new Arrow())
+    .insert(new Arrow())
+    .insert(new Arrow())
 
-        tick()
-    })
+const projectiles = map(bow.shoot, quiver)
+for (const projectile of projectiles) {
+    console.log(`An ${projectile.constructor.name} projectile is flying at speed: ${projectile.magnitude}.`)
 }
 ```
 
