@@ -270,12 +270,12 @@ To achieve this we write the cleanest code possible, annotate every bit of every
 maintain human-readable unit tests in a [behavior-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) fashion and produce helpful content with examples.
 
 ### Articles
-You can find articles on more advanced usage and some exciting subjects we try to tackle on [commonlyjs.com/articles/](https://commonlyjs.com/articles/).
+You can find articles on more advanced uses on [commonlyjs.com/articles/](https://commonlyjs.com/articles/).
 
 ### API reference
 Every member of our API can be found here on [commonlyjs.com/api/](https://commonlyjs.com/api/).  
-You can also browse `packages/<package-name>/docs/` directory if you prefer to read in a GitHub markdown format.
-Both documents are synchronized, so you will never find any to be out of date.
+Alternatively you can browse `packages/<package-name>/docs/` directory if you prefer to read those in a markdown format.
+Both documents are in sync, you will never find any to be out of date.
 
 ### Cookbook
 Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
