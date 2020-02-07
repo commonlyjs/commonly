@@ -424,23 +424,3 @@ Roadmap
     * [ ] Stream/Observable: [RxJS](https://github.com/ReactiveX/rxjs)
     * [ ] Stream/Observable: [Most](https://github.com/cujojs/most)
     * [ ] Stream/Observable: [flyd](https://github.com/paldepind/flyd)
-
-
-
----
-##### My notes:
-> * ~~Often missing/broken type definitions.~~
-> * ~~Awful debugging experience/bloated stacktraces.~~
-> * ~~Would implicitly mutate my data.~~
-> * Ambiguous API / heavy use of function overloading/ implicitly casts data structures for no good reason.
-> * Discriminate other data structures than simple arrays/objects.
-> * Either it could not be tree shaken properly or was not modular at all.
-> * Eagerly evaluated meaning they're awful for data heavy applications.
-##### Scribblings:
-> Sometimes mutation of data cannot be avoided and *that's completely fine*, but when it does, it should try to be as explicit about it as possible. 
-> **Spontaneous data mutation is unacceptable.**
-
-> Moreover, what often is overlooked in those libraries is the debugging experience, stacktraces in such happen to be just awful.
-
-> In TypeScript projects, whenever you install a dependency there's always a need to match those to the correct type definitions. 
-> Unfortunately, often those type definitions are either missing, out of date or simply broken. 
