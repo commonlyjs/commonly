@@ -278,7 +278,7 @@ Alternatively you can browse `packages/<package-name>/docs/` directory if you pr
 Both documents are in sync, you will never find any to be out of date.
 
 ### Cookbook
-Whenever you find some functionality missing, look for it in our cookbook on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
+Whenever you find yourself in need of some basic functionality, try browsing our ready to copy-paste recipses on [commonlyjs.com/cookbook/](https://commonlyjs.com/cookbook/).
 
 
 
