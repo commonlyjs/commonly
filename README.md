@@ -161,6 +161,15 @@ const cx = (names, modifiers) => {
   return join(" ", classes)
 }
 
+
+const Section = ({ visible }) => {
+  return (
+    <div className={cx("section", { visible })}>
+      Foo Bar
+    </div>
+  )
+}
+
 ```
 
 #### How to operate on any common data structure with only a single set of API
