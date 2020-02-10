@@ -155,6 +155,12 @@ const quicksort = (numbers) => {
 ```typescript
 // No example yet
 // To do: An example on how to create some missing functionality (something from a cookbook). 
+
+const cx = (names, modifiers) => {
+  const classes = concat(names, keys(filter(isTruthy, modifiers)))
+  return join(" ", classes)
+}
+
 ```
 
 #### How to operate on any common data structure with only a single set of API
