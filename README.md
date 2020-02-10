@@ -141,8 +141,8 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 import { flatten, partition } from "@commonly/iterable"
 
 const quicksort = (numbers) => {
-    if (collection.length < 2) {
-        return collection
+    if (numbers.length < 2) {
+        return numbers
     } else {
         const [ pivot, ...remainder ] = numbers
         const [ lesser, greater ] = partition(number => number <= pivot, remainder)
