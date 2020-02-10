@@ -140,12 +140,12 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 ```typescript
 import { flatten, partition } from "@commonly/iterable"
 
-const quicksort = (xs) => {
-    if (xs.length < 2) {
-        return xs
+const quicksort = (numbers) => {
+    if (collection.length < 2) {
+        return collection
     } else {
-        const [ pivot, ...remainder ] = xs
-        const [ lesser, greater ] = partition(x => x <= pivot, remainder)
+        const [ pivot, ...remainder ] = numbers
+        const [ lesser, greater ] = partition(number => number <= pivot, remainder)
         return flatten([ quicksort(lesser), pivot, quicksort(greater) ])
     }
 }
