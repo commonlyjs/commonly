@@ -219,7 +219,7 @@ import Vector from "./Vector"
 import Arrow from "./Arrow"
 
 export default class Bow {
-    shoot(arrow: Arrow): Arrow {
+    shoot(arrow: Arrow) {
         const force = new Vector(Math.random() - Math.random(), Math.random() - Math.random())
         return add(arrow, force)
     }
@@ -240,7 +240,7 @@ class Quiver implements Iterable, Reducible {
       return this
     }
 
-    draw(): Arrow {
+    draw() {
         return this.arrow.pop()
     }
 
