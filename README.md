@@ -180,33 +180,20 @@ export default function Toast({ message, color, visible }) {
 
 #### How to operate on any common data structure with only a single set of API
 ```typescript
-// No example yet
-// To do: An example of interoperability with some popular library. 
-// Libraries to include:
-//     * RxJS
+import { Observable } from "rxjs"
+import { filter, map } from "@commonly/iterable"
 
-//- guessing-game.html
-<html>
-    <body>
-        Try to guess a number from 1 to 10!
-        <input type="text"/>
-    </body>
-</html>
+document.body.innerHTML = `
+    Try to guess a number from 1 to 10!
+    <input type="text" />
+`
 
+const inputValues = Observable.fromEvent(document.querySelector("input"), "change")
 
-//- guessing-game.ts
-import Rx from "rxjs"
-import { filter, map, pipe } from "@commonly/iterable"
-
-const secret = Math.floor(Math.random() * 10 + 1);
-const inputValues = Rx.Observable.fromEvent(document.querySelector("input"), "change")
-
-pipe(inputValues,
-    map(event => event.target.value),
-    filter(guess => guess === secret),
-    map(guess => window.alert("You've won!")),
-)
-
+inputValues 
+    |> map(event => event.target.value)
+    |> filter(guess => guess === Math.floor(Math.random() * 10 + 1))
+    |> map(() => window.alert("Good guess!"))
 ```
 
 #### How to adjust your data structures to interact the library
