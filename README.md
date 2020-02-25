@@ -184,6 +184,29 @@ export default function Toast({ message, color, visible }) {
 // To do: An example of interoperability with some popular library. 
 // Libraries to include:
 //     * RxJS
+
+//- guessing-game.html
+<html>
+    <body>
+        Try to guess a number from 1 to 10!
+        <input type="text"/>
+    </body>
+</html>
+
+
+//- guessing-game.ts
+import Rx from "rxjs"
+import { filter, map, pipe } from "@commonly/iterable"
+
+const secret = Math.floor(Math.random() * 10 + 1);
+const inputValues = Rx.Observable.fromEvent(document.querySelector("input"), "change")
+
+pipe(inputValues,
+    map(event => event.target.value),
+    filter(guess => guess === secret),
+    map(guess => window.alert("You've won!")),
+)
+
 ```
 
 #### How to adjust your data structures to interact the library
