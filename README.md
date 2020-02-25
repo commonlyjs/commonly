@@ -157,7 +157,7 @@ const quicksort = (numbers) => {
 import { concat, filter, join, reverse } from "@commonly/iterable"
 import { isTruthy } from "@commonly/reflect"
 
-export const classes = (...varargs) => {
+export const css = (...varargs) => {
     const [ modifiers, ...named ]: [ object, string[] ] = reverse(varargs)
     const classes = concat(named, Object.keys(filter(isTruthy, modifiers)))
     return join(" ", classes)
@@ -166,11 +166,11 @@ export const classes = (...varargs) => {
 
 //- Toast.jsx
 import React from "react"
-import { classes } from "./react-utilities"
+import { css } from "./react-utilities"
 
 export default function Toast({ message, color, visible }) {
     return (
-        <div className={classes("tooltip", `color-${color}`, { visible })}>
+        <div className={css("tooltip", `color-${color}`, { visible })}>
             It's a toast!
             Message: {message}.
         </div>
