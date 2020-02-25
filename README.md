@@ -153,11 +153,11 @@ const quicksort = (numbers) => {
 
 #### How you can extend capabilities of the library with only few lines of code
 ```typescript
-//- utilities.ts
+//- react-utilities.ts
 import { concat, filter, join, reverse } from "@commonly/iterable"
 import { isTruthy } from "@commonly/reflect"
 
-const classes = (...varargs) => {
+export const classes = (...varargs) => {
     const [ modifiers, ...named ]: [ object, string[] ] = reverse(varargs)
     const classes = concat(named, Object.keys(filter(isTruthy, modifiers)))
     return join(" ", classes)
@@ -166,7 +166,7 @@ const classes = (...varargs) => {
 
 //- Toast.jsx
 import React from "react"
-import React from "./utilities"
+import { classes } from "./react-utilities"
 
 export default function Toast({ message, color, visible }) {
     return (
