@@ -153,23 +153,29 @@ const quicksort = (numbers) => {
 
 #### How you can extend capabilities of the library with only few lines of code
 ```typescript
-// No example yet
-// To do: An example on how to create some missing functionality (something from a cookbook). 
+//- utilities.ts
+import { concat, filter, join, reverse } from "@commonly/iterable"
+import { isTruthy } from "@commonly/reflect"
 
-const cx = (names, modifiers) => {
-  const classes = concat(names, keys(filter(isTruthy, modifiers)))
-  return join(" ", classes)
+const classes = (...varargs) => {
+    const [ modifiers, ...named ]: [ object, string[] ] = reverse(varargs)
+    const classes = concat(named, Object.keys(filter(isTruthy, modifiers)))
+    return join(" ", classes)
 }
 
 
-const Section = ({ visible }) => {
-  return (
-    <div className={cx("section", { visible })}>
-      Foo Bar
-    </div>
-  )
-}
+//- Toast.jsx
+import React from "react"
+import React from "./utilities"
 
+export default function Toast({ message, color, visible }) {
+    return (
+        <div className={classes("tooltip", `color-${color}`, { visible })}>
+            It's a toast!
+            Message: {message}.
+        </div>
+    )
+}
 ```
 
 #### How to operate on any common data structure with only a single set of API
