@@ -304,5 +304,48 @@
       "specification": "/reducer/reducer.spec.ts"
     },
     "description": "Provides a reducing function based on passed in accumulator, if nothing suitable is found, then it returns an identity function."
+  },
+  {
+    "name": "tap",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "interceptor",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "description": "is a function to which the intercepted value will be provided, any value returned will be thrown away"
+        },
+        {
+          "name": "value",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "TValue",
+          "description": "is a value to be intercepted"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "TValue",
+        "description": "an intercepted value"
+      }
+    },
+    "examples": [
+      "import { tap } from \"@commonly/function\"\r\rPromise.resolve(3)\r.then(tap(alert))    // -> value `x` will be shown in the alert box, it will equal to 3\r.then(x => x * x)    // -> x is still equal to 3, chain is preserved\r.then(tap(alert))    // -> value `x` will be shown again, this time it will equal to 9\r"
+    ],
+    "metadata": {
+      "source": "/tap/tap.ts",
+      "specification": "/tap/tap.spec.ts"
+    },
+    "description": "Invokes a function on a given value and returns that value."
   }
 ]
