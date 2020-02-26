@@ -6,6 +6,7 @@ import noop from './noop/noop';
 import empty from './empty/empty';
 import reduced from './reduced/reduced';
 import reducer from './reducer/reducer';
+import tap from './tap/tap';
 
 
 
@@ -17,5 +18,6 @@ export {
     noop,
     partial,
     reduced,
-    reducer
+    reducer,
+    tap
 }
