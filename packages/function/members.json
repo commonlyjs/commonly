@@ -41,6 +41,61 @@
     "description": "Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
   },
   {
+    "name": "debounce",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "debounced",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Function.Variadic",
+          "description": "is a function to be debounced"
+        },
+        {
+          "name": "wait",
+          "variadic": false,
+          "defaultValue": "0",
+          "optional": false,
+          "description": "is a time in milliseconds to delay the next execution of the debounced function"
+        },
+        {
+          "name": "options",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "description": "is an object which further defines the behaviour of the debounced function"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TReturnValue",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TArguments",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Debounced",
+        "description": null
+      }
+    },
+    "examples": [
+      "import { debounce } from \"@commonly/function\"\r\rdocument.body.onscroll = debounce(alert, 25)     // -> A prompt will be shown only once for every time scrolling happens\r"
+    ],
+    "metadata": {
+      "source": "/debounce/debounce.ts",
+      "specification": "/debounce/debounce.spec.ts"
+    },
+    "description": "Debounces a given function."
+  },
+  {
     "name": "empty",
     "since": "1.0.0",
     "remarks": [],
