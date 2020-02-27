@@ -402,5 +402,53 @@
       "specification": "/tap/tap.spec.ts"
     },
     "description": "Invokes a function on a given value and returns that value."
+  },
+  {
+    "name": "throttle",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "throttled",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Function.Variadic",
+          "description": "is a function to be throttled"
+        },
+        {
+          "name": "wait",
+          "variadic": false,
+          "defaultValue": "0",
+          "optional": false,
+          "description": "is a time in milliseconds to delay the next execution of the throttled function"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TReturnValue",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TArguments",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Throttled",
+        "description": null
+      }
+    },
+    "examples": [
+      "import { throttle } from \"@commonly/function\"\r\rdocument.body.onscroll = throttle(alert, 1250)     // -> A prompt will be shown once every 1250 milliseconds\r"
+    ],
+    "metadata": {
+      "source": "/throttle/throttle.ts",
+      "specification": "/throttle/throttle.spec.ts"
+    },
+    "description": "Throttles a given function."
   }
 ]

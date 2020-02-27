@@ -8,6 +8,7 @@ import partial from './partial/partial';
 import reduced from './reduced/reduced';
 import reducer from './reducer/reducer';
 import tap from './tap/tap';
+import throttle from './throttle/throttle';
 
 
 
@@ -21,5 +22,6 @@ export {
     partial,
     reduced,
     reducer,
-    tap
+    tap,
+    throttle
 }
