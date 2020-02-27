@@ -9,24 +9,25 @@ export type Debounced<TReturnValue, TArguments extends unknown[]> =
 
 
 /**
- * Debounces a given function.
+ * Debounces a function postponing its execution by a `wait` time every time the function is invoked.
  *
  * @since 1.0.0
  *
  * @param debounced - is a function to be debounced
  * @param wait - is a time in milliseconds to delay the next execution of the debounced function
  * @param options - is an object which further defines the behaviour of the debounced function
+ * @returns a debounced function
  *
  * @example
  * ```
  * import { debounce } from "@commonly/function"
  *
- * document.body.onscroll = debounce(alert, 25)     // -> A prompt will be shown only once for every time scrolling happens
+ * document.body.onscroll = debounce(alert, 250)     // -> A prompt will be shown only once for every time scrolling happens
  * ```
  */
 const debounce = <TReturnValue, TArguments extends unknown[]>(
     debounced: Function.Variadic<TReturnValue, TArguments>,
-    wait = 0,
+    wait: number = 0,
     options = { maxWait: Infinity }
 ): Debounced<TReturnValue, TArguments> => {
     const state = {

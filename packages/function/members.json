@@ -59,6 +59,7 @@
           "variadic": false,
           "defaultValue": "0",
           "optional": false,
+          "type": "number",
           "description": "is a time in milliseconds to delay the next execution of the debounced function"
         },
         {
@@ -83,17 +84,17 @@
       ],
       "returnValue": {
         "type": "Debounced",
-        "description": null
+        "description": "a debounced function"
       }
     },
     "examples": [
-      "import { debounce } from \"@commonly/function\"\r\rdocument.body.onscroll = debounce(alert, 25)     // -> A prompt will be shown only once for every time scrolling happens\r"
+      "import { debounce } from \"@commonly/function\"\r\rdocument.body.onscroll = debounce(alert, 250)     // -> A prompt will be shown only once for every time scrolling happens\r"
     ],
     "metadata": {
       "source": "/debounce/debounce.ts",
       "specification": "/debounce/debounce.spec.ts"
     },
-    "description": "Debounces a given function."
+    "description": "Debounces a function postponing its execution by a `wait` time every time the function is invoked."
   },
   {
     "name": "empty",
@@ -422,6 +423,7 @@
           "variadic": false,
           "defaultValue": "0",
           "optional": false,
+          "type": "number",
           "description": "is a time in milliseconds to delay the next execution of the throttled function"
         }
       ],
@@ -439,16 +441,16 @@
       ],
       "returnValue": {
         "type": "Throttled",
-        "description": null
+        "description": "a throttled function"
       }
     },
     "examples": [
-      "import { throttle } from \"@commonly/function\"\r\rdocument.body.onscroll = throttle(alert, 1250)     // -> A prompt will be shown once every 1250 milliseconds\r"
+      "import { throttle } from \"@commonly/function\"\r\rdocument.body.onscroll = throttle(alert, 1250)     // -> A prompt will be shown once every 1250 milliseconds while scrolling\r"
     ],
     "metadata": {
       "source": "/throttle/throttle.ts",
       "specification": "/throttle/throttle.spec.ts"
     },
-    "description": "Throttles a given function."
+    "description": "Throttles a function meaning it will be executed only once per `wait` time."
   }
 ]
