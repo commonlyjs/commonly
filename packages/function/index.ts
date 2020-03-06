@@ -1,3 +1,4 @@
+import compose from './compose/compose';
 import curry from './curry/curry';
 import debounce from './debounce/debounce';
 import empty from './empty/empty';
@@ -13,6 +14,7 @@ import throttle from './throttle/throttle';
 
 
 export {
+    compose,
     curry,
     debounce,
     empty,

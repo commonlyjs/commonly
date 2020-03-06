@@ -4,7 +4,7 @@ import partial from "../partial/partial"
 
 
 /**
- * Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function.
+ * Performs a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function.
  *
  * @since 1.0.0
  *

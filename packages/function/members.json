@@ -1,5 +1,41 @@
 [
   {
+    "name": "compose",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "functions",
+          "variadic": true,
+          "defaultValue": null,
+          "optional": false,
+          "type": "undefined[]",
+          "description": "are functions to be composed"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TReturnValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Function.Variadic",
+        "description": "a composed function"
+      }
+    },
+    "examples": [
+      "import { compose } from \"@commonly/function\"\r\rconst composed = compose(String, Math.sin)\rcomposed(7)      // -> \"0.6569865987187891\"\r"
+    ],
+    "metadata": {
+      "source": "/compose/compose.ts",
+      "specification": "/compose/compose.spec.ts"
+    },
+    "description": "Performs a {@link https://en.wikipedia.org/wiki/Function_composition | function composition} of a given functions."
+  },
+  {
     "name": "curry",
     "since": "1.0.0",
     "remarks": [],
@@ -38,7 +74,7 @@
       "source": "/curry/curry.ts",
       "specification": "/curry/curry.spec.ts"
     },
-    "description": "Preforms a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
+    "description": "Performs a {@link https://en.wikipedia.org/wiki/Currying | currying} of an f function."
   },
   {
     "name": "debounce",
