@@ -1,5 +1,39 @@
 [
   {
+    "name": "xfind",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": "is a predicate function"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": "a transducer function"
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xfind/xfind.ts",
+      "specification": "/xfind/xfind.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xfilter",
     "since": "1.0.0",
     "remarks": [],
