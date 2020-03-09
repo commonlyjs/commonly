@@ -11,5 +11,13 @@ type Reducer<TAccumulator, TValue> =
     (accumulator: TAccumulator, value: TValue) => TAccumulator | Reduced<TAccumulator>
 
 
+namespace Reducer {
+    export type Completing<TAccumulator, TValue> =
+        Reducer<TAccumulator, TValue> & {
+            complete: (accumulator: TAccumulator) => TAccumulator
+        }
+}
+
+
 
 export default Reducer

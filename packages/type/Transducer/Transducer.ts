@@ -7,9 +7,9 @@ import Reducer from "../Reducer/Reducer"
  *
  * @since 1.0.0
  */
-type Transducer<TAccumulator, TValueA, TValueB = TValueA> =
-    (reducer: Reducer<TAccumulator, TValueB>) =>
-        Reducer<TAccumulator, TValueA>
+type Transducer<TValueA, TValueB = TValueA> =
+    <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValueB>) =>
+        Reducer.Completing<TAccumulator, TValueA>
 
 
 

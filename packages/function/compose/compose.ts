@@ -1,5 +1,6 @@
 import Function from "../../type/Function/Function"
 import Identity from "../../type/Identity/Identity"
+import Transducer from "../../type/Transducer/Transducer"
 import identity from "../identity/identity"
 
 
@@ -31,18 +32,34 @@ const compose = <TReturnValue>(...functions: Function.Variadic<any, any>[]): Fun
 export default compose as {
     <TValue>(): Identity<TValue>
 
+    <TValueA, TValueB = TValueA>(
+        xf: Transducer<TValueA, TValueB>
+    ): Transducer<TValueA, TValueB>
+
     <TReturnValue, TArguments extends unknown[]>(
         f: Function.Variadic<TReturnValue, TArguments>
     ): Function.Variadic<TReturnValue, TArguments>
 
-    <TReturnValue, TArguments extends unknown[], TIntermediateValue>(
+    <TValueA, TValueB = TValueA, TIntermediateValue = unknown>(
+        xg: Transducer<TValueA, TIntermediateValue>,
+        xf: Transducer<TIntermediateValue, TValueB>
+    ): Transducer<TValueA, TValueB>
+
+    <TReturnValue, TArguments extends unknown[], TIntermediateValue = unknown>(
         g: Function.Unary<TReturnValue, TIntermediateValue>,
         f: Function.Variadic<TIntermediateValue, TArguments>
     ): Function.Variadic<TReturnValue, TArguments>
 
-    <TReturnValue, TArguments extends unknown[], TIntermediateValueA, TIntermediateValueB>(
+    <TValueA, TValueB = unknown, TIntermediateValueA = unknown, TIntermediateValueB = unknown>(
+        xh: Transducer<TValueA, TIntermediateValueA>,
+        xg: Transducer<TIntermediateValueA, TIntermediateValueB>,
+        xf: Transducer<TIntermediateValueB, TValueB>,
+    ): Transducer<TValueA, TValueB>
+
+    <TReturnValue, TArguments extends unknown[], TIntermediateValueA = unknown, TIntermediateValueB = unknown>(
         h: Function.Unary<TReturnValue, TIntermediateValueB>,
         g: Function.Unary<TIntermediateValueB, TIntermediateValueA>,
         f: Function.Variadic<TIntermediateValueA, TArguments>
     ): Function.Variadic<TReturnValue, TArguments>
+
 }

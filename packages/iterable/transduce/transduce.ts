@@ -16,12 +16,20 @@ import reduce from "../reduce/reduce"
  * @returns
  */
 const transduce = <TAccumulator, TValueA, TValueB = TValueA, TProduct = TAccumulator>(
-    transducer: Transducer<TAccumulator, TValueA, TValueB>,
+    transducer: Transducer<TValueA, TValueB>,
     reducer: Reducer<TAccumulator, TValueB>,
     accumulator: TAccumulator,
     iterable: Iterable<TValueA>
 ): TAccumulator => {
-    return reduce(transducer(reducer), accumulator, iterable)
+    const completing: Reducer.Completing<TAccumulator, TValueB> = (accumulator, value) => {
+        return reducer(accumulator, value)
+    }
+
+    completing.complete = (accumulator) => {
+        return accumulator
+    }
+
+    return reduce(transducer(completing), accumulator, iterable)
 }
 
 
