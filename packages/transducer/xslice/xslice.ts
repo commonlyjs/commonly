@@ -13,9 +13,9 @@ import Transducer from "../../type/Transducer/Transducer"
  * @param end
  * @returns
  */
-const xslice = <TAccumulator, TValue>(start: number, end: number): Transducer<TAccumulator, TValue> =>
-    (reducer) => {
-        const transduced: Reducer<TAccumulator, TValue> = (accumulator, value) => {
+const xslice = <TValue>(start: number, end: number): Transducer<TValue> =>
+    <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValue>) => {
+        const transduced = (accumulator: TAccumulator, value: TValue) => {
             if (start > 0) {
                 end = end - 1
                 start = start - 1
@@ -26,6 +26,10 @@ const xslice = <TAccumulator, TValue>(start: number, end: number): Transducer<TA
             } else {
                 return reduced(accumulator)
             }
+        }
+
+        transduced.complete = (accumulator: TAccumulator) => {
+            return reducer.complete(accumulator)
         }
 
         return transduced

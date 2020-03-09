@@ -13,6 +13,9 @@
     },
     {
       "path": "../function"
+    },
+    {
+      "path": "../iterable"
     }
   ]
 }

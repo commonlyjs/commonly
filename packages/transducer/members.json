@@ -16,11 +16,6 @@
       ],
       "typeparameters": [
         {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
           "name": "TValue",
           "defaultValue": null,
           "extends": null
@@ -54,11 +49,6 @@
         }
       ],
       "typeparameters": [
-        {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
         {
           "name": "TValueA",
           "defaultValue": null,
@@ -107,11 +97,6 @@
       ],
       "typeparameters": [
         {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
           "name": "TValue",
           "defaultValue": null,
           "extends": null
@@ -145,11 +130,6 @@
         }
       ],
       "typeparameters": [
-        {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
         {
           "name": "TValue",
           "defaultValue": null,

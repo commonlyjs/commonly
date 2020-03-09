@@ -5,13 +5,13 @@ import xslice from "../xslice/xslice"
 
 /**
  * [Not yet documented]
- * 
+ *
  * @since 1.0.0
- *  
+ *
  * @param n
  * @returns
  */
-const xtake = <TAccumulator, TValue>(n: number): Transducer<TAccumulator, TValue> => {
+const xtake = <TValue>(n: number): Transducer<TValue> => {
     return xslice(0, n)
 }
 
