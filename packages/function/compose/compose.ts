@@ -1,4 +1,5 @@
 import Function from "../../type/Function/Function"
+import Identity from "../../type/Identity/Identity"
 import identity from "../identity/identity"
 
 
@@ -27,4 +28,21 @@ const compose = <TReturnValue>(...functions: Function.Variadic<any, any>[]): Fun
 
 
 
-export default compose
+export default compose as {
+    <TValue>(): Identity<TValue>
+
+    <TReturnValue, TArguments extends unknown[]>(
+        f: Function.Variadic<TReturnValue, TArguments>
+    ): Function.Variadic<TReturnValue, TArguments>
+
+    <TReturnValue, TArguments extends unknown[], TIntermediateValue>(
+        g: Function.Unary<TReturnValue, TIntermediateValue>,
+        f: Function.Variadic<TIntermediateValue, TArguments>
+    ): Function.Variadic<TReturnValue, TArguments>
+
+    <TReturnValue, TArguments extends unknown[], TIntermediateValueA, TIntermediateValueB>(
+        h: Function.Unary<TReturnValue, TIntermediateValueB>,
+        g: Function.Unary<TIntermediateValueB, TIntermediateValueA>,
+        f: Function.Variadic<TIntermediateValueA, TArguments>
+    ): Function.Variadic<TReturnValue, TArguments>
+}
