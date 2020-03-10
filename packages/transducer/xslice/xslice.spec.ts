@@ -39,14 +39,14 @@ describe("function xslice(i, j)", () => {
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
-                xmap<number | string>(String),
-                xslice(5, Infinity),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xmap<number | string, string>(String),
+                xslice(4, Infinity),
+                xfilter<string>(x => !!(Number(x) % 2))
             )
 
             it("should return an array with a single value", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "5", "13", "21" ])
+                expect(transduce(transducer, reducer, [] as string[], iterable))
+                    .toEqual([ "3", "5", "13", "21" ])
             })
         })
     })
