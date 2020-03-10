@@ -10,18 +10,11 @@ describe("function xchain(mapper)", () => {
     const previous = (n: number) => {
         let m = 5 * n * n - 4
         let x = Math.round(Math.sqrt(m))
-
         if (m != x * x) {
             m = 5 * n * n + 4
             x = Math.round(Math.sqrt(m))
         }
-
         return (x - n) / 2
-    }
-
-    const next = (n: string) => {
-        const x = Number(n) * (1 + Math.sqrt(5)) / 2
-        return Math.round(x)
     }
 
     context("transducing context is an array reduction", () => {
