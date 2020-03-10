@@ -1,4 +1,5 @@
 import xchain from "./xchain/xchain"
+import xdrop from './xdrop/xdrop'
 import xfind from "./xfind/xfind"
 import xfilter from "./xfilter/xfilter"
 import xmap from "./xmap/xmap"
@@ -11,6 +12,7 @@ import xtake from "./xtake/xtake"
 
 export {
     xchain,
+    xdrop,
     xfind,
     xfilter,
     xmap,

@@ -39,6 +39,40 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xdrop",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xdrop/xdrop.ts",
+      "specification": "/xdrop/xdrop.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xfind",
     "since": "1.0.0",
     "remarks": [],
@@ -218,6 +252,31 @@
     "metadata": {
       "source": "/xslice/xslice.ts",
       "specification": "/xslice/xslice.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
+    "name": "xtail",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xtail/xtail.ts",
+      "specification": "/xtail/xtail.spec.ts"
     },
     "description": "[Not yet documented]"
   },
