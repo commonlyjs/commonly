@@ -16,31 +16,31 @@ describe("function xtake(n)", () => {
 
         context("transducer is composed from a single transducing function", () => {
             const transducer = compose(
-                xtake<number | string>(5)
+                xtake<number | string>(4)
             )
 
             it("should return an array with a single value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "0", 1, "1", 2, "3" ])
+                    .toEqual([ "0", 1, "1", 2 ])
             })
         })
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xtake(5),
+                xtake<number | string>(4),
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
             it("should return an array with a single value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ 1, "1", "3" ])
+                    .toEqual([ 1, "1" ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xmap<number | string, string>(String),
-                xtake(4),
+                xtake<string>(4),
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
