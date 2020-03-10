@@ -6,7 +6,7 @@ import xnth from "./xnth"
 
 
 
-describe("function xnth(i, j)", () => {
+describe("function xnth(i)", () => {
     context("transducing context is an array reduction", () => {
         const iterable = [ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ]
         const reducer = <TValue>(accumulator: TValue[], value: TValue): TValue[] => {
