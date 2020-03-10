@@ -1,5 +1,44 @@
 [
   {
+    "name": "xchain",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "mapper",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Mapper",
+          "description": "is a mapping function"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": "a transducing function"
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xchain/xchain.ts",
+      "specification": "/xchain/xchain.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xfind",
     "since": "1.0.0",
     "remarks": [],
