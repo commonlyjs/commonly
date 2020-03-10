@@ -141,6 +141,31 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xhead",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xhead/xhead.ts",
+      "specification": "/xhead/xhead.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xmap",
     "since": "1.0.0",
     "remarks": [],

@@ -7,6 +7,7 @@ import xnth from "./xnth/xnth"
 import xslice from "./xslice/xslice"
 import xtail from "./xtail/xtail"
 import xtake from "./xtake/xtake"
+import xhead from './xhead/xhead'
 
 
 
@@ -15,6 +16,7 @@ export {
     xdrop,
     xfind,
     xfilter,
+    xhead,
     xmap,
     xnth,
     xslice,
