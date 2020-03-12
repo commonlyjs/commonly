@@ -27,26 +27,26 @@ describe("function xslice(i, j)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xslice(4, Infinity),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xslice<number | string>(4, Infinity),
             )
 
             it("should return an array with values starting from the fourth value to the end of an array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "3", 5, 13, "21" ])
+                    .toEqual([ 13, "21" ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
-                xmap<number | string, string>(String),
-                xslice(4, Infinity),
-                xfilter<string>(x => !!(Number(x) % 2))
+                xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(Number(x) % 2)),
+                xslice<number>(4, Infinity)
             )
 
             it("should return an array with values starting from the fourth value to the end of an array", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "3", "5", "13", "21" ])
+                    .toEqual([ 13, 21 ])
             })
         })
     })

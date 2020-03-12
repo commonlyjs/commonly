@@ -27,26 +27,26 @@ describe("function xhead()", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xhead(),
-                xfilter<number | string>(x => !(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xhead()
             )
 
             it("should return an array with a first value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "0" ])
+                    .toEqual([ 1 ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2)),
                 xhead<number>(),
-                xfilter<number>(x => !(x % 2))
             )
 
             it("should return an array with a first value", () => {
                 expect(transduce(transducer, reducer, [] as number[], iterable))
-                    .toEqual([ 0 ])
+                    .toEqual([ 1 ])
             })
         })
     })

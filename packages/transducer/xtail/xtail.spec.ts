@@ -27,26 +27,26 @@ describe("function xtail()", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xtail<number | string>(),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xtail<number | string>()
             )
 
             it("should return an array without the first value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ 1, "1", "3", 5, 13, "21" ])
+                    .toEqual([ "1", "3", 5, 13, "21" ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xmap<number | string, string>(String),
-                xtail<string>(),
-                xfilter<string>(x => !!(Number(x) % 2))
+                xfilter<string>(x => !!(Number(x) % 2)),
+                xtail<string>()
             )
 
             it("should return an array without the first value", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "1", "1", "3", "5", "13", "21" ])
+                    .toEqual([ "1", "3", "5", "13", "21" ])
             })
         })
     })

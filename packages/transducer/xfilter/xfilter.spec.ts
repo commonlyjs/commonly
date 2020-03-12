@@ -32,26 +32,26 @@ describe("function xfilter(predicate)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xfilter<number | string>(x => !!(Number(x) % 2)),
-                xmap<number | string, string>(String)
+                xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2))
             )
 
             it("should return an array without even values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "1", "1", "3", "5", "13", "21" ])
+                    .toEqual([ 1, 1, 3, 5, 13, 21 ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xslice(4, Infinity),
-                xfilter<number | string>(x => !!(Number(x) % 2)),
-                xmap<number | string, string>(String)
+                xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2))
             )
 
             it("should return an array without even values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "3", "5", "13", "21" ])
+                    .toEqual([ 3, 5, 13, 21 ])
             })
         })
     })

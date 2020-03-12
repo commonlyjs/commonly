@@ -27,26 +27,26 @@ describe("function xnth(i)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xnth(4),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xnth(4)
             )
 
             it("should return an array with a fourth value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "3" ])
+                    .toEqual([ 13 ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2)),
                 xnth<number>(4),
-                xfilter<number>(x => !!(x % 2))
             )
 
             it("should return an array with a fourth value", () => {
                 expect(transduce(transducer, reducer, [] as number[], iterable))
-                    .toEqual([ 3 ])
+                    .toEqual([ 13 ])
             })
         })
     })

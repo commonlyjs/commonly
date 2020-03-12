@@ -27,26 +27,26 @@ describe("function xdrop(n)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xdrop<number | string>(4),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xdrop<number | string>(4)
             )
 
             it("should return an array without four first values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ "3", 5, 13, "21" ])
+                    .toEqual([ 13, "21" ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xmap<number | string, string>(String),
+                xfilter<string>(x => !!(Number(x) % 2)),
                 xdrop<string>(4),
-                xfilter<string>(x => !!(Number(x) % 2))
             )
 
             it("should return an array without four first values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "3", "5", "13", "21" ])
+                    .toEqual([ "13", "21" ])
             })
         })
     })

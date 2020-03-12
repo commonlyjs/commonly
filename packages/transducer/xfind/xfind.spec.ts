@@ -32,26 +32,26 @@ describe("function xfind(predicate)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xfind<number | string>(x => !!(Number(x) % 2)),
-                xmap<number | string, string>(String)
+                xmap<number | string, number>(Number),
+                xfind<number>(x => !!(x % 2))
             )
 
             it("should return an array with a single value", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "1" ])
+                    .toEqual([ 1 ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
                 xslice(3, Infinity),
-                xfind<number | string>(x => !!(Number(x) % 2)),
-                xmap<number | string, string>(String)
+                xmap<number | string, number>(Number),
+                xfind<number>(x => !!(x % 2))
             )
 
             it("should return an array with a single value", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "3" ])
+                    .toEqual([ 3 ])
             })
         })
     })

@@ -27,26 +27,26 @@ describe("function xtake(n)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xtake<number | string>(4),
-                xfilter<number | string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xtake<number | string>(4)
             )
 
             it("should return an array with four first values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
-                    .toEqual([ 1, "1" ])
+                    .toEqual([ 1, "1", "3", 5 ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
-                xmap<number | string, string>(String),
-                xtake<string>(4),
-                xfilter<string>(x => !!(Number(x) % 2))
+                xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2)),
+                xtake<number>(4)
             )
 
             it("should return an array with four first values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "1", "1" ])
+                    .toEqual([ 1, 1, 3, 5 ])
             })
         })
     })

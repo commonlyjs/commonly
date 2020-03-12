@@ -1,6 +1,7 @@
 import compose from "../../function/compose/compose"
 import transduce from "../../iterable/transduce/transduce"
 import xfilter from "../xfilter/xfilter"
+import xmap from "../xmap/xmap"
 import xchain from "./xchain"
 import xslice from "../xslice/xslice"
 
@@ -50,26 +51,26 @@ describe("function xchain(mapper)", () => {
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
-                xchain<number | string, string>(x => [ String(previous(Number(x))), String(x) ]),
-                xfilter<string>(x => !!(Number(x) % 2))
+                xfilter<number | string>(x => !!(Number(x) % 2)),
+                xchain<number | string, string>(x => [ String(previous(Number(x))), String(x) ])
             )
 
             it("should return an array with injected values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "1", "1", "3", "5", "13", "21" ])
+                    .toEqual([ "0", "1", "3", "5", "8", "13" ])
             })
         })
 
         context("transducer is composed from three transducing functions", () => {
             const transducer = compose(
-                xslice<number | string>(2, Infinity),
-                xchain<number | string, string>(x => [ String(previous(Number(x))), String(x) ]),
-                xfilter<string>(x => !!(Number(x) % 2))
+                xmap<number | string, number>(Number),
+                xfilter<number>(x => !!(x % 2)),
+                xchain<number>(x => [ previous(x), x ])
             )
 
             it("should return an array with injected values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
-                    .toEqual([ "3", "5", "13", "21" ])
+                    .toEqual([ 0, 1, 3, 5, 8, 13 ])
             })
         })
     })
