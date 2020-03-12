@@ -6,13 +6,7 @@
   },
   "references": [
     {
-      "path": "../reflect"
-    },
-    {
       "path": "../type"
-    },
-    {
-      "path": "../function"
     },
     {
       "path": "../iterable"

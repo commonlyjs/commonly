@@ -10,12 +10,6 @@
     },
     {
       "path": "../type"
-    },
-    {
-      "path": "../iterable"
-    },
-    {
-      "path": "../math"
     }
   ]
 }
