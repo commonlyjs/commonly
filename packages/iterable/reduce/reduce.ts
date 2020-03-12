@@ -24,8 +24,12 @@ import Reducer from "../../type/Reducer/Reducer"
  * reduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7
  * ```
  */
-const reduce = <TAccumulator, TValueA, TValueB = TValueA>
-    (reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>): TAccumulator => {
+const reduce = <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>
+    (
+        reducer: Reducer<TAccumulator, TValueA, TReturnValue>,
+        accumulator: TAccumulator,
+        iterable: Iterable<TValueA>
+    ): TAccumulator | TReturnValue => {
         for (const value of iterable) {
             const product = reducer(accumulator, value)
             if (isReduced(product)) {
@@ -46,8 +50,26 @@ const reduce = <TAccumulator, TValueA, TValueB = TValueA>
 
 
 export default curry(reduce) as {
-    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, xs: Iterable<TValueA>): TAccumulator
-    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator): (xs: Iterable<TValueA>) => TAccumulator
-    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator, xs: Iterable<TValueA>) => TAccumulator
-    <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator) => (xs: Iterable<TValueA>) => TAccumulator
+    <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>(
+        reducer: Reducer<TAccumulator, TValueA>,
+        accumulator: TAccumulator,
+        xs: Iterable<TValueA>
+    ): TReturnValue
+
+    <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>(
+        reducer: Reducer<TAccumulator, TValueA>,
+        accumulator: TAccumulator
+    ): (xs: Iterable<TValueA>) =>
+        TReturnValue
+
+    <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>(
+        reducer: Reducer<TAccumulator, TValueA>
+    ): (accumulator: TAccumulator, xs: Iterable<TValueA>) =>
+        TReturnValue
+
+    <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>(
+        reducer: Reducer<TAccumulator, TValueA>
+    ): (accumulator: TAccumulator) =>
+        (xs: Iterable<TValueA>) =>
+            TReturnValue
 }

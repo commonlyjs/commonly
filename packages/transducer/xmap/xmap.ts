@@ -18,6 +18,10 @@ const xmap = <TValueA, TValueB = TValueA>(mapper: Mapper<TValueA, TValueB>): Tra
             return reducer(accumulator, mapper(value))
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             return reducer.complete(accumulator)
         }

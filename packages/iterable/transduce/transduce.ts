@@ -1,3 +1,4 @@
+import empty from "../../function/empty/empty"
 import Reducer from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 import reduce from "../reduce/reduce"
@@ -15,21 +16,25 @@ import reduce from "../reduce/reduce"
  * @param iterable
  * @returns
  */
-const transduce = <TAccumulator, TValueA, TValueB = TValueA, TProduct = TAccumulator>(
+const transduce = <TAccumulator, TValueA, TValueB = TValueA, TReturnValue = TAccumulator>(
     transducer: Transducer<TValueA, TValueB>,
     reducer: Reducer<TAccumulator, TValueB>,
     accumulator: TAccumulator,
     iterable: Iterable<TValueA>
-): TAccumulator => {
+): TReturnValue => {
     const completing = (accumulator: TAccumulator, value: TValueB) => {
         return reducer(accumulator, value)
+    }
+
+    completing.initialize = () => {
+        return empty(accumulator) as TAccumulator
     }
 
     completing.complete = (accumulator: TAccumulator) => {
         return accumulator
     }
 
-    return reduce(transducer(completing), accumulator, iterable)
+    return reduce<TAccumulator, TValueA, TValueB, TReturnValue>(transducer(completing), accumulator, iterable)
 }
 
 

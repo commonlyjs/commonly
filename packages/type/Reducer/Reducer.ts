@@ -7,10 +7,11 @@ import Reduced from "../Reduced/Reduced"
  *
  * @since 1.0.0
  */
-type Reducer<TAccumulator, TValue> =
+type Reducer<TAccumulator, TValue, TReturnValue = TAccumulator> =
     ((accumulator: TAccumulator, value: TValue) => TAccumulator | Reduced<TAccumulator>)
         & {
-            complete?: (accumulator: TAccumulator) => TAccumulator
+            initialize?: () => TAccumulator
+            complete?: (accumulator: TAccumulator | TReturnValue) => TAccumulator | TReturnValue
         }
 
 
