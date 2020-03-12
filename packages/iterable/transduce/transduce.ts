@@ -21,11 +21,11 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA, TProduct = TAccumul
     accumulator: TAccumulator,
     iterable: Iterable<TValueA>
 ): TAccumulator => {
-    const completing: Reducer.Completing<TAccumulator, TValueB> = (accumulator, value) => {
+    const completing = (accumulator: TAccumulator, value: TValueB) => {
         return reducer(accumulator, value)
     }
 
-    completing.complete = (accumulator) => {
+    completing.complete = (accumulator: TAccumulator) => {
         return accumulator
     }
 

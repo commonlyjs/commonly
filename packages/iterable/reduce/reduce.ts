@@ -36,7 +36,11 @@ const reduce = <TAccumulator, TValueA, TValueB = TValueA>
             }
         }
 
-        return accumulator
+        if (reducer.complete) {
+            return reducer.complete(accumulator)
+        } else {
+            return accumulator
+        }
     }
 
 
