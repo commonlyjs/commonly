@@ -1,5 +1,5 @@
 import Mapper from "../../type/Mapper/Mapper"
-import Reducer from "../../type/Reducer/Reducer"
+import Reducer, { Completion } from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 
 
@@ -13,7 +13,7 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns a transducing function
  */
 const xmap = <TValueA, TValueB = TValueA>(mapper: Mapper<TValueA, TValueB>): Transducer<TValueA, TValueB> =>
-    <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValueB>) => {
+    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValueB>>) => {
         const transduced = (accumulator: TAccumulator, value: TValueA) => {
             return reducer(accumulator, mapper(value))
         }

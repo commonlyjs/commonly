@@ -1,6 +1,6 @@
 import reduced from "../../function/reduced/reduced"
 import Predicate from "../../type/Predicate/Predicate"
-import Reducer from "../../type/Reducer/Reducer"
+import Reducer, { Completion } from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 
 
@@ -14,14 +14,9 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns a transducer function
  */
 const xfind = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> => {
-    return <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValue>) => {
-        const state = {
-            found: false
-        }
-
+    return <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
         const transduced = (accumulator: TAccumulator, value: TValue) => {
             if (predicate(value)) {
-                state.found = true
                 return reduced(reducer(accumulator, value))
             } else {
                 return accumulator

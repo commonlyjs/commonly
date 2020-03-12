@@ -1,9 +1,4 @@
 import reduced from "../../function/reduced/reduced"
-import Reducer from "../../type/Reducer/Reducer"
-import Transducer from "../../type/Transducer/Transducer"
-
-
-
 /**
  * [Not yet documented]
  *
@@ -14,7 +9,7 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns
  */
 const xslice = <TValue>(start: number, end: number): Transducer<TValue> =>
-    <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValue>) => {
+    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
         const transduced = (accumulator: TAccumulator, value: TValue) => {
             if (start > 0) {
                 end = end - 1
@@ -38,3 +33,8 @@ const xslice = <TValue>(start: number, end: number): Transducer<TValue> =>
 
 
 export default xslice
+import Reducer, { Completion } from "../../type/Reducer/Reducer"
+
+
+
+import Transducer from "../../type/Transducer/Transducer"

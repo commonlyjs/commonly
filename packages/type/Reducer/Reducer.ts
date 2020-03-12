@@ -8,15 +8,13 @@ import Reduced from "../Reduced/Reduced"
  * @since 1.0.0
  */
 type Reducer<TAccumulator, TValue> =
-    (accumulator: TAccumulator, value: TValue) => TAccumulator | Reduced<TAccumulator>
-
-
-namespace Reducer {
-    export type Completing<TAccumulator, TValue> =
-        Reducer<TAccumulator, TValue> & {
-            complete: (accumulator: TAccumulator) => TAccumulator
+    ((accumulator: TAccumulator, value: TValue) => TAccumulator | Reduced<TAccumulator>)
+        & {
+            complete?: (accumulator: TAccumulator) => TAccumulator
         }
-}
+
+
+export type Completion<TReducer> = TReducer & Required<TReducer>
 
 
 

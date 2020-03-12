@@ -1,7 +1,6 @@
 import isReduced from "../../reflect/isReduced/isReduced"
 import Mapper from "../../type/Mapper/Mapper"
-import Reduced from "../../type/Reduced/Reduced"
-import Reducer from "../../type/Reducer/Reducer"
+import Reducer, { Completion } from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 
 
@@ -15,7 +14,7 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns a transducing function
  */
 const xchain = <TValueA, TValueB = TValueA>(mapper: Mapper<TValueA, TValueB[]>): Transducer<TValueA, TValueB> =>
-    <TAccumulator>(reducer: Reducer.Completing<TAccumulator, TValueB>) => {
+    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValueB>>) => {
         const transduced = (accumulator: TAccumulator, value: TValueA) => {
             for (const x of mapper(value)) {
                 const product = reducer(accumulator, x)
