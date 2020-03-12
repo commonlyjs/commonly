@@ -19,7 +19,7 @@ describe("function xslice(i, j)", () => {
                 xslice<number | string>(4, Infinity)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with values starting from the fourth value to the end of an array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3", 5, "8", 13, "21", 34 ])
             })
@@ -31,7 +31,7 @@ describe("function xslice(i, j)", () => {
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with values starting from the fourth value to the end of an array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3", 5, 13, "21" ])
             })
@@ -44,7 +44,7 @@ describe("function xslice(i, j)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with values starting from the fourth value to the end of an array", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "3", "5", "13", "21" ])
             })

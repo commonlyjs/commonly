@@ -19,7 +19,7 @@ describe("function xmap(mapper)", () => {
                 xmap<number | string, string>(String)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array where every value is a string", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "0", "1", "1", "2", "3", "5", "8", "13", "21", "34" ])
             })
@@ -31,7 +31,7 @@ describe("function xmap(mapper)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array where every value is a string", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "1", "1", "3", "5", "13", "21" ])
             })
@@ -44,7 +44,7 @@ describe("function xmap(mapper)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array where every value is a string", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "3", "5", "13", "21" ])
             })

@@ -19,7 +19,7 @@ describe("function xhead()", () => {
                 xhead<number | string>()
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a first value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "0" ])
             })
@@ -31,7 +31,7 @@ describe("function xhead()", () => {
                 xfilter<number | string>(x => !(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a first value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "0" ])
             })
@@ -44,7 +44,7 @@ describe("function xhead()", () => {
                 xfilter<number>(x => !(x % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a first value", () => {
                 expect(transduce(transducer, reducer, [] as number[], iterable))
                     .toEqual([ 0 ])
             })

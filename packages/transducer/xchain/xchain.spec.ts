@@ -24,12 +24,25 @@ describe("function xchain(mapper)", () => {
             return accumulator
         }
 
+        context("iterable is a nested array", () => {
+            const iterable = [ ["1"], [2], ["5"], [13], ["34"] ]
+
+            const transducer = compose(
+                xchain<(number | string)[], number | string>(x => x)
+            )
+
+            it("should return a flat array", () => {
+                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                    .toEqual([ "1", 2, "5", 13, "34" ])
+            })
+        })
+
         context("transducer is composed from a single transducing function", () => {
             const transducer = compose(
                 xchain<number | string, string>(x => [ String(previous(Number(x))), String(x) ])
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with injected values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "0", "1", "1", "2", "3", "5", "8", "13", "21", "34" ])
             })
@@ -41,7 +54,7 @@ describe("function xchain(mapper)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with injected values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "1", "1", "3", "5", "13", "21" ])
             })
@@ -54,7 +67,7 @@ describe("function xchain(mapper)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with injected values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "3", "5", "13", "21" ])
             })

@@ -19,7 +19,7 @@ describe("function xnth(i)", () => {
                 xnth<number | string>(4)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a fourth value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3" ])
             })
@@ -31,7 +31,7 @@ describe("function xnth(i)", () => {
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a fourth value", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3" ])
             })
@@ -44,7 +44,7 @@ describe("function xnth(i)", () => {
                 xfilter<number>(x => !!(x % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with a fourth value", () => {
                 expect(transduce(transducer, reducer, [] as number[], iterable))
                     .toEqual([ 3 ])
             })

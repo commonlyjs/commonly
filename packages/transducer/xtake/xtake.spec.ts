@@ -19,7 +19,7 @@ describe("function xtake(n)", () => {
                 xtake<number | string>(4)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with four first values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "0", 1, "1", 2 ])
             })
@@ -31,7 +31,7 @@ describe("function xtake(n)", () => {
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with four first values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ 1, "1" ])
             })
@@ -44,7 +44,7 @@ describe("function xtake(n)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array with four first values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "1", "1" ])
             })

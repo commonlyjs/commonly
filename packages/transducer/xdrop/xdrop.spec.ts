@@ -19,7 +19,7 @@ describe("function xdrop(n)", () => {
                 xdrop<number | string>(4)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without four first items", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3", 5, "8", 13, "21", 34 ])
             })
@@ -31,7 +31,7 @@ describe("function xdrop(n)", () => {
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without four first values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "3", 5, 13, "21" ])
             })
@@ -44,7 +44,7 @@ describe("function xdrop(n)", () => {
                 xfilter<string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without four first values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "3", "5", "13", "21" ])
             })

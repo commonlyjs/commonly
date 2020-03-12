@@ -24,7 +24,7 @@ describe("function xfilter(predicate)", () => {
                 xfilter<number | string>(x => !!(Number(x) % 2))
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without even values", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ 1, "1", "3", 5, 13, "21" ])
             })
@@ -36,7 +36,7 @@ describe("function xfilter(predicate)", () => {
                 xmap<number | string, string>(String)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without even values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "1", "1", "3", "5", "13", "21" ])
             })
@@ -49,7 +49,7 @@ describe("function xfilter(predicate)", () => {
                 xmap<number | string, string>(String)
             )
 
-            it("should return an array with a single value", () => {
+            it("should return an array without even values", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ "3", "5", "13", "21" ])
             })
