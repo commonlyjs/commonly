@@ -432,7 +432,9 @@ Roadmap
         * [ ] `@commonly/transducer/xchain`
         * [ ] `@commonly/transducer/xdrop`
         * [ ] `@commonly/transducer/xfilter`
+        * [ ] `@commonly/transducer/xfind`
         * [ ] `@commonly/transducer/xflatten`
+        * [ ] `@commonly/transducer/xhead`
         * [ ] `@commonly/transducer/xmap`
         * [ ] `@commonly/transducer/xslice`
         * [ ] `@commonly/transducer/xtail`
