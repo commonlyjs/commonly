@@ -8,6 +8,7 @@ import xslice from "./xslice/xslice"
 import xtail from "./xtail/xtail"
 import xtake from "./xtake/xtake"
 import xhead from './xhead/xhead'
+import xtakeWhile from './xtakeWhile/xtakeWhile'
 
 
 
@@ -21,5 +22,6 @@ export {
     xnth,
     xslice,
     xtail,
-    xtake
+    xtake,
+    xtakeWhile
 }
