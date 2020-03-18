@@ -9,6 +9,7 @@ import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
 import xrepeat from './xrepeat/xrepeat'
 import xreverse from './xreverse/xreverse'
+import xsize from './xsize/xsize'
 import xslice from "./xslice/xslice"
 import xtail from "./xtail/xtail"
 import xtake from "./xtake/xtake"
@@ -30,6 +31,7 @@ export {
     xnth,
     xrepeat,
     xreverse,
+    xsize,
     xslice,
     xtail,
     xtake,

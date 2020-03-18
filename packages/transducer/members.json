@@ -382,6 +382,31 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xsize",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xsize/xsize.ts",
+      "specification": "/xsize/xsize.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xslice",
     "since": "1.0.0",
     "remarks": [],
