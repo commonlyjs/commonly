@@ -323,6 +323,40 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xrepeat",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xrepeat/xrepeat.ts",
+      "specification": "/xrepeat/xrepeat.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xreverse",
     "since": "1.0.0",
     "remarks": [],
