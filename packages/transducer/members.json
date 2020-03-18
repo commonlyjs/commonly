@@ -39,6 +39,31 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xdistinct",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xscan/xdistinct.ts",
+      "specification": "/xscan/xdistinct.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xdrop",
     "since": "1.0.0",
     "remarks": [],

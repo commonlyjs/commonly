@@ -1,4 +1,5 @@
 import xchain from "./xchain/xchain"
+import xdistinct from './xscan/xdistinct'
 import xdrop from './xdrop/xdrop'
 import xdropWhile from './xdropWhile/xdropWhile'
 import xfind from "./xfind/xfind"
@@ -17,6 +18,7 @@ import xtakeWhile from './xtakeWhile/xtakeWhile'
 
 export {
     xchain,
+    xdistinct,
     xdrop,
     xdropWhile,
     xfind,
