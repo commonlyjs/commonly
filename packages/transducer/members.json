@@ -298,6 +298,31 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xreverse",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xreverse/xreverse.ts",
+      "specification": "/xreverse/xreverse.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xslice",
     "since": "1.0.0",
     "remarks": [],

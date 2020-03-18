@@ -6,6 +6,7 @@ import xfilter from "./xfilter/xfilter"
 import xlast from './xlast/xlast'
 import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
+import xreverse from './xreverse/xreverse'
 import xslice from "./xslice/xslice"
 import xtail from "./xtail/xtail"
 import xtake from "./xtake/xtake"
@@ -24,6 +25,7 @@ export {
     xlast,
     xmap,
     xnth,
+    xreverse,
     xslice,
     xtail,
     xtake,
