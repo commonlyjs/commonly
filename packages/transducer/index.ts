@@ -1,5 +1,6 @@
 import xchain from "./xchain/xchain"
 import xdrop from './xdrop/xdrop'
+import xdropWhile from './xdropWhile/xdropWhile'
 import xfind from "./xfind/xfind"
 import xfilter from "./xfilter/xfilter"
 import xmap from "./xmap/xmap"
@@ -15,6 +16,7 @@ import xtakeWhile from './xtakeWhile/xtakeWhile'
 export {
     xchain,
     xdrop,
+    xdropWhile,
     xfind,
     xfilter,
     xhead,

@@ -73,6 +73,40 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xdropWhile",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xdropWhile/xdropWhile.ts",
+      "specification": "/xdropWhile/xdropWhile.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xfind",
     "since": "1.0.0",
     "remarks": [],
