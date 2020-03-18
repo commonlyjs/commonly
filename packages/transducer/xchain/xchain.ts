@@ -18,10 +18,10 @@ const xchain = <TValueA, TValueB = TValueA>(mapper: Mapper<TValueA, TValueB[]>):
         const transduced = (accumulator: TAccumulator, value: TValueA) => {
             for (const x of mapper(value)) {
                 const product = reducer(accumulator, x)
-                if (!isReduced(product)) {
-                    accumulator = product
-                } else {
+                if (isReduced(product)) {
                     break
+                } else {
+                    accumulator = product
                 }
             }
 

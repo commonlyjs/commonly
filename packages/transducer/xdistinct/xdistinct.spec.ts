@@ -6,7 +6,7 @@ import xdistinct from "./xdistinct"
 
 
 
-describe("function xdedupe()", () => {
+describe("function xdistinct()", () => {
     context("transducing context is an array reduction", () => {
         const iterable = [ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ]
         const reducer = <TValue>(accumulator: TValue[], value: TValue): TValue[] => {
@@ -19,7 +19,7 @@ describe("function xdedupe()", () => {
                 xdistinct<number | string>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a deduplicated array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ])
             })
@@ -31,7 +31,7 @@ describe("function xdedupe()", () => {
                 xdistinct<number | string>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a deduplicated array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ 1, "1", "3", 5, 13, "21" ])
             })
@@ -44,7 +44,7 @@ describe("function xdedupe()", () => {
                 xdistinct<number>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a deduplicated array", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ 1, 3, 5, 13, 21 ])
             })

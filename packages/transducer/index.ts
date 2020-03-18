@@ -1,5 +1,5 @@
 import xchain from "./xchain/xchain"
-import xdistinct from './xscan/xdistinct'
+import xdistinct from './xdistinct/xdistinct'
 import xdrop from './xdrop/xdrop'
 import xdropWhile from './xdropWhile/xdropWhile'
 import xfind from "./xfind/xfind"

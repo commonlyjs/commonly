@@ -19,7 +19,7 @@ describe("function xreverse()", () => {
                 xreverse<number | string>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a reversed array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ 34, "21", 13, "8", 5, "3", 2, "1", 1, "0" ])
             })
@@ -31,7 +31,7 @@ describe("function xreverse()", () => {
                 xreverse<number | string>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a reversed array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ "21", 13, 5, "3", "1", 1 ])
             })
@@ -44,7 +44,7 @@ describe("function xreverse()", () => {
                 xreverse<number>()
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a reversed array", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ 21, 13, 5, 3, 1, 1 ])
             })

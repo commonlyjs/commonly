@@ -58,8 +58,8 @@
     },
     "examples": [],
     "metadata": {
-      "source": "/xscan/xdistinct.ts",
-      "specification": "/xscan/xdistinct.spec.ts"
+      "source": "/xdistinct/xdistinct.ts",
+      "specification": "/xdistinct/xdistinct.spec.ts"
     },
     "description": "[Not yet documented]"
   },
