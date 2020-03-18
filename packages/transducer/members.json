@@ -200,6 +200,31 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xlast",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xlast/xlast.ts",
+      "specification": "/xlast/xlast.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xmap",
     "since": "1.0.0",
     "remarks": [],

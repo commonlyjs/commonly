@@ -3,6 +3,7 @@ import xdrop from './xdrop/xdrop'
 import xdropWhile from './xdropWhile/xdropWhile'
 import xfind from "./xfind/xfind"
 import xfilter from "./xfilter/xfilter"
+import xlast from './xlast/xlast'
 import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
 import xslice from "./xslice/xslice"
@@ -20,6 +21,7 @@ export {
     xfind,
     xfilter,
     xhead,
+    xlast,
     xmap,
     xnth,
     xslice,
