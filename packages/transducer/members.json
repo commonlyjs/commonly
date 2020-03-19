@@ -517,6 +517,40 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xsort",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "comparator",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Comparator",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xsort/xsort.ts",
+      "specification": "/xsort/xsort.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xtail",
     "since": "1.0.0",
     "remarks": [],

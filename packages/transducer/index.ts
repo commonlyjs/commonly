@@ -13,6 +13,7 @@ import xreverse from "./xreverse/xreverse"
 import xsize from "./xsize/xsize"
 import xslice from "./xslice/xslice"
 import xsome from "./xsome/xsome"
+import xsort from "./xsort/xsort"
 import xtail from "./xtail/xtail"
 import xtake from "./xtake/xtake"
 import xhead from "./xhead/xhead"
@@ -37,6 +38,7 @@ export {
     xsize,
     xslice,
     xsome,
+    xsort,
     xtail,
     xtake,
     xtakeWhile
