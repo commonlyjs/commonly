@@ -1,5 +1,24 @@
 [
   {
+    "name": "Comparator",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [],
+      "typeparameters": [],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/Comparator/Comparator.ts",
+      "specification": "/Comparator/Comparator.spec.ts"
+    },
+    "description": "The Comparator type represents a comparison function, which imposes a total ordering on enumerable lists."
+  },
+  {
     "name": "Function",
     "since": "1.0.0",
     "remarks": [],
