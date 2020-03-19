@@ -2,6 +2,7 @@ import xchain from "./xchain/xchain"
 import xdistinct from './xdistinct/xdistinct'
 import xdrop from './xdrop/xdrop'
 import xdropWhile from './xdropWhile/xdropWhile'
+import xevery from './xevery/xevery'
 import xfind from "./xfind/xfind"
 import xfilter from "./xfilter/xfilter"
 import xlast from './xlast/xlast'
@@ -23,6 +24,7 @@ export {
     xdistinct,
     xdrop,
     xdropWhile,
+    xevery,
     xfind,
     xfilter,
     xhead,
