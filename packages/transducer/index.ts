@@ -8,6 +8,7 @@ import xfilter from "./xfilter/xfilter"
 import xlast from "./xlast/xlast"
 import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
+import xpartition from "./xpartition/xpartition"
 import xrepeat from "./xrepeat/xrepeat"
 import xreverse from "./xreverse/xreverse"
 import xsize from "./xsize/xsize"
@@ -33,6 +34,7 @@ export {
     xlast,
     xmap,
     xnth,
+    xpartition,
     xrepeat,
     xreverse,
     xsize,

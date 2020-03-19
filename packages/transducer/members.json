@@ -357,6 +357,39 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xpartition",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xpartition/xpartition.ts",
+      "specification": "/xpartition/xpartition.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xrepeat",
     "since": "1.0.0",
     "remarks": [],
