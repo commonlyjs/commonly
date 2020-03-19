@@ -390,6 +390,44 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xpartitionBy",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "mapper",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Mapper"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TBy",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xpartitionBy/xpartitionBy.ts",
+      "specification": "/xpartitionBy/xpartitionBy.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xrepeat",
     "since": "1.0.0",
     "remarks": [],

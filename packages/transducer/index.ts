@@ -9,6 +9,7 @@ import xlast from "./xlast/xlast"
 import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
 import xpartition from "./xpartition/xpartition"
+import xpartitionBy from "./xpartitionBy/xpartitionBy"
 import xrepeat from "./xrepeat/xrepeat"
 import xreverse from "./xreverse/xreverse"
 import xsize from "./xsize/xsize"
@@ -35,6 +36,7 @@ export {
     xmap,
     xnth,
     xpartition,
+    xpartitionBy,
     xrepeat,
     xreverse,
     xsize,
