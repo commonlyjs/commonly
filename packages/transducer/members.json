@@ -483,6 +483,40 @@
     "description": "[Not yet documented]"
   },
   {
+    "name": "xsome",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Transducer",
+        "description": null
+      }
+    },
+    "examples": [],
+    "metadata": {
+      "source": "/xsome/xsome.ts",
+      "specification": "/xsome/xsome.spec.ts"
+    },
+    "description": "[Not yet documented]"
+  },
+  {
     "name": "xtail",
     "since": "1.0.0",
     "remarks": [],
