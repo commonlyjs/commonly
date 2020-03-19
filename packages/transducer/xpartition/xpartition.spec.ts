@@ -19,7 +19,7 @@ describe("function xpartition(n)", () => {
                 xpartition<number | string>(3)
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a partitioned array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ [ "0", 1, "1" ], [ 2, "3", 5 ], [ "8", 13, "21" ], [ 34 ] ])
             })
@@ -31,7 +31,7 @@ describe("function xpartition(n)", () => {
                 xpartition<number | string>(3)
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a partitioned array", () => {
                 expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
                     .toEqual([ [ 1, "1","3" ], [ 5, 13, "21" ] ])
             })
@@ -44,7 +44,7 @@ describe("function xpartition(n)", () => {
                 xpartition<number>(3)
             )
 
-            it("should return an array with four first values", () => {
+            it("should return a partitioned array", () => {
                 expect(transduce(transducer, reducer, [] as string[], iterable))
                     .toEqual([ [ 1, 1, 3 ], [ 5, 13, 21 ] ])
             })
