@@ -333,19 +333,19 @@ Roadmap
         * [ ] `@commonly/data/Queue`
         * [ ] `@commonly/data/Vector`
     * [ ] `@commonly/function`
-        * [ ] `@commonly/function/compose`
-        * [ ] `@commonly/function/curry`
-        * [ ] `@commonly/function/debounce`
-        * [ ] `@commonly/function/identity`
+        * [x] `@commonly/function/compose`
+        * [x] `@commonly/function/curry`
+        * [x] `@commonly/function/debounce`
+        * [x] `@commonly/function/identity`
         * [ ] `@commonly/function/memoize`
-        * [ ] `@commonly/function/negate`
-        * [ ] `@commonly/function/noop`
-        * [ ] `@commonly/function/partial`
+        * [x] `@commonly/function/negate`
+        * [x] `@commonly/function/noop`
+        * [x] `@commonly/function/partial`
         * [ ] `@commonly/function/pipe`
         * [ ] `@commonly/function/reduced`
         * [ ] `@commonly/function/reducer`
-        * [ ] `@commonly/function/tap`
-        * [ ] `@commonly/function/throttle`
+        * [x] `@commonly/function/tap`
+        * [x] `@commonly/function/throttle`
     * [ ] `@commonly/iterable`
         * [ ] `@commonly/iterable/adjust`
         * [ ] `@commonly/iterable/append`
@@ -381,41 +381,41 @@ Roadmap
         * [ ] `@commonly/logic/xnor`
         * [ ] `@commonly/logic/xor`
     * [ ] `@commonly/math`
-        * [ ] `@commonly/math/add`
+        * [x] `@commonly/math/add`
         * [ ] `@commonly/math/ceil`
-        * [ ] `@commonly/math/decrement`
-        * [ ] `@commonly/math/divide`
+        * [x] `@commonly/math/decrement`
+        * [x] `@commonly/math/divide`
         * [ ] `@commonly/math/floor`
-        * [ ] `@commonly/math/increment`
-        * [ ] `@commonly/math/maximum`
+        * [x] `@commonly/math/increment`
+        * [x] `@commonly/math/maximum`
         * [ ] `@commonly/math/mean`
         * [ ] `@commonly/math/median`
-        * [ ] `@commonly/math/minimum`
+        * [x] `@commonly/math/minimum`
         * [ ] `@commonly/math/modulo`
-        * [ ] `@commonly/math/multiply`
+        * [x] `@commonly/math/multiply`
         * [ ] `@commonly/math/round`
-        * [ ] `@commonly/math/subtract`
+        * [x] `@commonly/math/subtract`
     * [ ] `@commonly/number`
         * [ ] `@commonly/number/clamp`
         * [ ] `@commonly/number/random`
     * [ ] `@commonly/reflect`
-        * [ ] `@commonly/reflect/isArray`
-        * [ ] `@commonly/reflect/isBoolean`
-        * [ ] `@commonly/reflect/isError`
-        * [ ] `@commonly/reflect/isFunction`
-        * [ ] `@commonly/reflect/isMap`
-        * [ ] `@commonly/reflect/isNil`
-        * [ ] `@commonly/reflect/isNull`
-        * [ ] `@commonly/reflect/isNumber`
-        * [ ] `@commonly/reflect/isObject`
-        * [ ] `@commonly/reflect/isPrimitve`
-        * [ ] `@commonly/reflect/isPromise`
-        * [ ] `@commonly/reflect/isReduced`
-        * [ ] `@commonly/reflect/isRegExp`
-        * [ ] `@commonly/reflect/isSet`
-        * [ ] `@commonly/reflect/isString`
-        * [ ] `@commonly/reflect/isSymbol`
-        * [ ] `@commonly/reflect/isUndefined`
+        * [x] `@commonly/reflect/isArray`
+        * [x] `@commonly/reflect/isBoolean`
+        * [x] `@commonly/reflect/isError`
+        * [x] `@commonly/reflect/isFunction`
+        * [x] `@commonly/reflect/isMap`
+        * [x] `@commonly/reflect/isNil`
+        * [x] `@commonly/reflect/isNull`
+        * [x] `@commonly/reflect/isNumber`
+        * [x] `@commonly/reflect/isObject`
+        * [x] `@commonly/reflect/isPrimitve`
+        * [x] `@commonly/reflect/isPromise`
+        * [x] `@commonly/reflect/isReduced`
+        * [x] `@commonly/reflect/isRegExp`
+        * [x] `@commonly/reflect/isSet`
+        * [x] `@commonly/reflect/isString`
+        * [x] `@commonly/reflect/isSymbol`
+        * [x] `@commonly/reflect/isUndefined`
     * [ ] `@commonly/string`
         * [ ] `@commonly/string/camelcase`
         * [ ] `@commonly/string/capitalize`
@@ -429,24 +429,39 @@ Roadmap
         * [ ] `@commonly/string/uppercase`
         * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
-        * [ ] `@commonly/transducer/xchain`
-        * [ ] `@commonly/transducer/xdrop`
-        * [ ] `@commonly/transducer/xfilter`
-        * [ ] `@commonly/transducer/xfind`
+        * [x] `@commonly/transducer/xchain`
+        * [x] `@commonly/transducer/xdistinct`
+        * [x] `@commonly/transducer/xdrop`
+        * [x] `@commonly/transducer/xdropWhile`
+        * [x] `@commonly/transducer/xevery`
+        * [x] `@commonly/transducer/xfilter`
+        * [x] `@commonly/transducer/xfind`
         * [ ] `@commonly/transducer/xflatten`
-        * [ ] `@commonly/transducer/xhead`
-        * [ ] `@commonly/transducer/xmap`
-        * [ ] `@commonly/transducer/xslice`
-        * [ ] `@commonly/transducer/xtail`
-        * [ ] `@commonly/transducer/xtake`
+        * [x] `@commonly/transducer/xhead`
+        * [x] `@commonly/transducer/xlast`
+        * [x] `@commonly/transducer/xmap`
+        * [x] `@commonly/transducer/xnth`
+        * [x] `@commonly/transducer/xpartition`
+        * [x] `@commonly/transducer/xpartitionBy`
+        * [x] `@commonly/transducer/xrepeat`
+        * [x] `@commonly/transducer/xreverse`
+        * [x] `@commonly/transducer/xsize`
+        * [x] `@commonly/transducer/xslice`
+        * [x] `@commonly/transducer/xsome`
+        * [x] `@commonly/transducer/xsort`
+        * [x] `@commonly/transducer/xtail`
+        * [x] `@commonly/transducer/xtake`
+        * [x] `@commonly/transducer/xtakeWhile`
     * [ ] `@commonly/type`
-        * [ ] `@commonly/type/Identity`
-        * [ ] `@commonly/type/Mapper`
-        * [ ] `@commonly/type/Predicate`
-        * [ ] `@commonly/type/Primitive`
+        * [x] `@commonly/type/Comparator`
+        * [x] `@commonly/type/Identity`
+        * [x] `@commonly/type/Mapper`
+        * [x] `@commonly/type/Nil`
+        * [x] `@commonly/type/Predicate`
+        * [x] `@commonly/type/Primitive`
         * [ ] `@commonly/type/Reduced`
-        * [ ] `@commonly/type/Reducer`
-        * [ ] `@commonly/type/Transducer`
+        * [x] `@commonly/type/Reducer`
+        * [x] `@commonly/type/Transducer`
 * [ ] Provide complete set of auxiliary packages:
     * [ ] `@commonly/async`
     * [ ] `@commonly/dom`
