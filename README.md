@@ -327,8 +327,10 @@ Roadmap
 * [ ] Improve stack traces and debugging for functions decorated with `curry`, `compose` and `partial`.
 * [ ] Provide complete set of core packages:
     * [ ] `@commonly/data`
-        * [ ] `@commonly/data/MultiwayTree`
+        * [ ] `@commonly/data/Deque`
+        * [ ] `@commonly/data/BinaryTree`
         * [ ] `@commonly/data/Matrix`
+        * [ ] `@commonly/data/MultiwayTree`
         * [ ] `@commonly/data/Stack`
         * [ ] `@commonly/data/Queue`
         * [ ] `@commonly/data/Vector`
