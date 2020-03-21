@@ -136,7 +136,7 @@ npm install   @commonly/function  @commonly/iterable  @commonly/math  @commonly/
 **Users of TypeScript**, remember to install the `@commonly/type` package, it contains type definitions used in other packages.
 
 ### Examples
-#### How you can simplify your code with the help of this library
+#### Simplify your code with the help of a library
 ```typescript
 import { flatten, partition } from "@commonly/iterable"
 
@@ -151,7 +151,7 @@ const quicksort = (numbers) => {
 }
 ```
 
-#### How you can extend capabilities of the library with only few lines of code
+#### Extend capabilities of the library with only few lines of code
 ```typescript
 //- react-utilities.ts
 import { concat, filter, join, reverse } from "@commonly/iterable"
@@ -177,7 +177,7 @@ export default function Toast({ message, color, visible }) {
 }
 ```
 
-#### How to operate on any common data structure with only a single set of API
+#### Operate on any common data structure with only a single set of API
 ```typescript
 import { Observable } from "rxjs"
 import { filter, map } from "@commonly/iterable"
@@ -195,7 +195,7 @@ inputValues
     |> map(() => window.alert("Good guess!"))
 ```
 
-#### How to adjust your data structures to interact the library
+#### Adjust your data structures to leverage the capabilities of the library
 ```typescript
 //- Vector.ts
 import { Operand } from "@commonly/protocol"
