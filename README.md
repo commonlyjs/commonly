@@ -171,7 +171,7 @@ import { css } from "./react-utilities"
 export default function Toast({ message, color, visible }) {
     return (
         <div className={css("tooltip", `color-${color}`, { visible })}>
-            It's a toast!
+            It's a toast.
             Message: {message}.
         </div>
     )
