@@ -60,8 +60,8 @@ Overview
 ### Why Commonly?
 Commonly is a general-purpose library that expands on the JavaScript API.
 
-What I wanted is to have a solid unopinionated utility library without any hidden unnecessary gimmicks, a toolkit library that could adjust to any codebase.  
-This is [my](https://imgs.xkcd.com/comics/standards.png) take on the issue, presenting Commonly.
+What I wanted is to have a solid unopinionated utility library without any hidden unnecessary gimmicks.
+This is a toolkit library that you can adjust to any codebase.
 
 #### Key features
 * Every function is pure, none will ever mutate your data.
