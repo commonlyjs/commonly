@@ -171,7 +171,7 @@ import { css } from "./react-utilities"
 export default function Toast({ message, color, visible }) {
     return (
         <div className={css("tooltip", `color-${color}`, { visible })}>
-            It's a toast.
+            It's a toast
             Message: {message}.
         </div>
     )
@@ -316,7 +316,7 @@ Whenever you find yourself in need of some basic functionality, try browsing our
 Roadmap  
 --------
 ### 1.x-next
-* [ ] Automate the package publication process and a generation of the package's documentation.
+* [x] Automate the package publication process and a generation of the package's documentation.
 * [ ] Update every function's JSDoc to include [Damas–Hindley–Milner type](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) signature.
 * [ ] Implement a runtime type checking for every included function based on [Algorithm W](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system#Algorithm_W).
 * [ ] Produce more content:
