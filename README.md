@@ -164,15 +164,14 @@ export const css = (...varargs) => {
 }
 
 
-//- Toast.jsx
+//- Toast.tsx
 import React from "react"
 import { css } from "./react-utilities"
 
 export default function Toast({ message, color, visible }) {
     return (
         <div className={css("tooltip", `color-${color}`, { visible })}>
-            It's a toast
-            Message: {message}.
+            It's a toast: {message}. 
         </div>
     )
 }
