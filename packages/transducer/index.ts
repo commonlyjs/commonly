@@ -5,6 +5,7 @@ import xdropWhile from "./xdropWhile/xdropWhile"
 import xevery from "./xevery/xevery"
 import xfind from "./xfind/xfind"
 import xfilter from "./xfilter/xfilter"
+import xflatten from './xflatten/xflatten'
 import xlast from "./xlast/xlast"
 import xmap from "./xmap/xmap"
 import xnth from "./xnth/xnth"
@@ -31,6 +32,7 @@ export {
     xevery,
     xfilter,
     xfind,
+    xflatten,
     xhead,
     xlast,
     xmap,
