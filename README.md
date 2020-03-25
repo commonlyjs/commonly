@@ -40,6 +40,7 @@ Table of Contents
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
         * [Key features](#key-features)
+        * [Alternatives](#alternatives)
     * [Enhance your experience](#enhance-your-experience)
 * [Getting started](#getting-started)
     * [Installation](#installation)
@@ -58,10 +59,8 @@ Overview
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
-Commonly is a general-purpose library that expands on the JavaScript API.
+Commonly is an unopinionated general-purpose library that expands on the JavaScript API which you can adjust to any codebase.
 
-What I wanted is to have a solid unopinionated utility library without any hidden unnecessary gimmicks.
-This is a toolkit library that you can adjust to any codebase.
 
 #### Key features
 * Every function is pure, none will ever mutate your data.
@@ -70,6 +69,13 @@ This is a toolkit library that you can adjust to any codebase.
 * Builtin interoperability with your favorite libraries.
     * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
+
+
+#### Alternatives
+| Library            | Difference 
+| -------------      | -------------
+| Lodash/Underscore  | Content Cell 
+| Ramda              | Content Cell
 
 
 ### Enhance your experience
@@ -352,7 +358,9 @@ Roadmap
         * [ ] `@commonly/iterable/append`
         * [ ] `@commonly/iterable/chain`
         * [ ] `@commonly/iterable/concat`
+        * [ ] `@commonly/iterable/distinct`
         * [ ] `@commonly/iterable/drop`
+        * [ ] `@commonly/iterable/dropWhile`
         * [ ] `@commonly/iterable/every`
         * [ ] `@commonly/iterable/filter`
         * [ ] `@commonly/iterable/find`
@@ -363,16 +371,21 @@ Roadmap
         * [ ] `@commonly/iterable/last`
         * [ ] `@commonly/iterable/map`
         * [ ] `@commonly/iterable/nth`
+        * [ ] `@commonly/iterable/partition`
+        * [ ] `@commonly/iterable/partitionBy`
         * [ ] `@commonly/iterable/prepend`
+        * [ ] `@commonly/iterable/range`
         * [ ] `@commonly/iterable/reduce`
+        * [ ] `@commonly/iterable/repeat`
         * [ ] `@commonly/iterable/reverse`
+        * [ ] `@commonly/iterable/size`
         * [ ] `@commonly/iterable/slice`
         * [ ] `@commonly/iterable/some`
         * [ ] `@commonly/iterable/sort`
         * [ ] `@commonly/iterable/tail`
         * [ ] `@commonly/iterable/take`
+        * [ ] `@commonly/iterable/takeWhile`
         * [ ] `@commonly/iterable/transduce`
-        * [ ] `@commonly/iterable/unzip`
         * [ ] `@commonly/iterable/zip`
     * [ ] `@commonly/logic`
         * [ ] `@commonly/logic/and`
@@ -398,6 +411,7 @@ Roadmap
         * [x] `@commonly/math/subtract`
     * [ ] `@commonly/number`
         * [ ] `@commonly/number/clamp`
+        * [ ] `@commonly/number/inRange`
         * [ ] `@commonly/number/random`
     * [ ] `@commonly/reflect`
         * [x] `@commonly/reflect/isArray`
@@ -431,6 +445,7 @@ Roadmap
         * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
         * [x] `@commonly/transducer/xchain`
+        * [ ] `@commonly/transducer/xconcat`
         * [x] `@commonly/transducer/xdistinct`
         * [x] `@commonly/transducer/xdrop`
         * [x] `@commonly/transducer/xdropWhile`
@@ -444,6 +459,7 @@ Roadmap
         * [x] `@commonly/transducer/xnth`
         * [x] `@commonly/transducer/xpartition`
         * [x] `@commonly/transducer/xpartitionBy`
+        * [ ] `@commonly/transducer/xrange`
         * [x] `@commonly/transducer/xrepeat`
         * [x] `@commonly/transducer/xreverse`
         * [x] `@commonly/transducer/xsize`
