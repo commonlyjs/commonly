@@ -99,7 +99,8 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, etc.)</em>.
                 </li>
                 <li>
-                    Does not follow iteratee-first data-last approach.
+                    Does not follow iteratee-first data-last approach. <br/>
+                    This in functional programming can be helpful whenever you partially apply your functions. 
                 </li>
             </ul>
         </td>
