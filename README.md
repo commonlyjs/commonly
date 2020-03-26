@@ -152,8 +152,12 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                         Definitions from <code>@types</code> are maintained by external contributors.
                     </li>
                     <li>
-                        An object-oriented API based on a builder pattern <em>(see <code>_.chain</code> function)</em>. <br/>
+                        An object-oriented API based on a builder pattern <em>(see lodash's <code>_.chain</code> function)</em>. <br/>
                         You chain methods on an object together and end it with a `.<code>build</code>()` method.
+                    </li>
+                    <li>
+                        It operates solely on an iterator protocol of manipulated data, without acknowledging the source's shape. <br/>
+                        This means you cannot transform your structure to a shape other than an array.
                     </li>
                 </ul>
             </td>
