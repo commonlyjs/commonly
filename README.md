@@ -90,7 +90,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <td><em>Disparity</em></td>
         <td>
             <ul>
-                <li>TypeScript is not officially supported (<code>@types</code> are maintained by external contributors).</li>
+                <li>TypeScript is not officially supported. <br/>Definitions from <code>@types</code> are maintained by external contributors.</li>
                 <li>Can operate only on plain objects and arrays.</li>
             </ul>
         </td>
