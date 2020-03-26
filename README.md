@@ -109,7 +109,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         </td>
     </tr>
     <tr>
-        <th rowspan="3">Ramda/Lodash FP</th>
+        <th rowspan="3">Ramda/Rambda</th>
     </tr>
     <tr>
         <td><em>About</em></td>
