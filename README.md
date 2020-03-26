@@ -75,15 +75,14 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
 <table>
 <thead>
     <tr>
-        <th>Column 1</th>
+        <th>Library</th>
+        <th></th>
     </tr>
-    <tr>
-            <th>Column 2</th>
-        </tr>
 </thead>
 <tbody>
     <tr>
-        <td>Row 1</td>
+        <th>Lodash/Underscore</th>
+        <td>Lorem ipsum</td>
     </tr>
 </tbody>
 </table>
