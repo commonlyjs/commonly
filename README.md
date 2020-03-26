@@ -87,7 +87,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <td>A rich battle-tested utility library with many useful utilities.</td>
     </tr>
     <tr>
-        <td><em>Disparity</em></td>
+        <td><em>Dissimilarity</em></td>
         <td>
             <ul>
                 <li>
@@ -116,7 +116,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <td>A functional programming oriented utility library.</td>
     </tr>
     <tr>
-        <td><em>Disparity</em></td>
+        <td><em>Dissimilarity</em></td>
         <td>
             <ul>
                 <li>
@@ -128,7 +128,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code> etc.)</em>.
                 </li>
                 <li>
-                    Any operation performed on collection is done eagerly. 
+                    Whenever an operation is performed on a collection it is done so eagerly. 
                 </li>
                 <li>
                    Common utilities which are not related to functional programming are missing.
