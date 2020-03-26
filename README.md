@@ -84,11 +84,22 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </tr>
     <tr>
         <td>About</td>
-        <td>A rich library with many useful utilities.</td>
+        <td>A rich battle-tested library with many useful utilities.</td>
     </tr>
     <tr>
         <td>Disparity</td>
-        <td>A lot of them!</td>
+        <td>A ton!</td>
+    </tr>
+    <tr>
+        <th rowspan="3">Ramda/Rambda</th>
+    </tr>
+    <tr>
+        <td>About</td>
+        <td>A functional programming oriented utility library.</td>
+    </tr>
+    <tr>
+        <td>Disparity</td>
+        <td>A ton!</td>
     </tr>
     </tbody>
 </table>
