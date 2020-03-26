@@ -99,7 +99,9 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </tr>
     <tr>
         <td><em>Disparity</em></td>
-        <td>A ton!</td>
+        <td>
+            <ul><li>1</li><li>2</li><li>3</li></ul>
+        </td>
     </tr>
     </tbody>
 </table>
