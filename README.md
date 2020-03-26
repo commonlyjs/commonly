@@ -75,9 +75,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
 <table>
     <thead>
     <tr>
-        <th>Library</th>
-        <th></th>
-        <th></th>
+        <th colspan="3">Library</th>
     </tr>
     </thead>
     <tbody>
