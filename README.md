@@ -73,18 +73,26 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
 
 #### Alternatives
 <table>
-<thead>
+    <thead>
     <tr>
         <th>Library</th>
         <th></th>
     </tr>
-</thead>
-<tbody>
+    </thead>
+    <tbody>
     <tr>
-        <th>Lodash/Underscore</th>
-        <td>Lorem ipsum</td>
+        <td rowspan="3">Lodash</td>
+        <td></td>
     </tr>
-</tbody>
+    <tr>
+        <td>About</td>
+        <td>A rich library with many useful utilities.</td>
+    </tr>
+    <tr>
+        <td>Disparity</td>
+        <td>A lot of them!</td>
+    </tr>
+    </tbody>
 </table>
 
 ### Enhance your experience
