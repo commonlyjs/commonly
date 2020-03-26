@@ -40,7 +40,7 @@ Table of Contents
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
         * [Key features](#key-features)
-        * [Alternatives](#alternatives)
+        * [Comparision to other libraries](#comparision-to-other-libraries)
     * [Enhance your experience](#enhance-your-experience)
 * [Getting started](#getting-started)
     * [Installation](#installation)
@@ -71,7 +71,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
 
 
-#### Alternatives
+#### Comparision to other libraries
 <table>
     <thead>
     <tr>
