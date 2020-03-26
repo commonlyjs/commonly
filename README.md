@@ -84,7 +84,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </tr>
     <tr>
         <th>About</th>
-        <td>A rich battle-tested library with many useful utilities.</td>
+        <td>A rich battle-tested utility library with many useful utilities.</td>
     </tr>
     <tr>
         <th>Disparity</th>
