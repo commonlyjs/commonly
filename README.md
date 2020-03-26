@@ -83,22 +83,22 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <th rowspan="3">Lodash/Underscore</th>
     </tr>
     <tr>
-        <th>About</th>
+        <td>About</td>
         <td>A rich battle-tested utility library with many useful utilities.</td>
     </tr>
     <tr>
-        <th>Disparity</th>
+        <td>Disparity</td>
         <td>A ton!</td>
     </tr>
     <tr>
         <th rowspan="3">Ramda/Rambda</th>
     </tr>
     <tr>
-        <th>About</th>
+        <td>About</td>
         <td>A functional programming oriented utility library.</td>
     </tr>
     <tr>
-        <th>Disparity</th>
+        <td>Disparity</td>
         <td>A ton!</td>
     </tr>
     </tbody>
