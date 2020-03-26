@@ -96,7 +96,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                 </li>
                 <li>
                     Every utility is limited to operate on plain objects and arrays only. <br>
-                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>String</code>, <code>Map</code>, <code>Set</code>, <code>HTMLCollection</code>, etc.)</em>.
+                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, <code>HTMLCollection</code>, etc.)</em>.
                 </li>
             </ul>
         </td>
@@ -118,7 +118,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                 </li>
                 <li>
                     Every utility is limited to operate on plain objects and arrays only. <br>
-                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>String</code>, <code>Map</code>, <code>Set</code>, <code>HTMLCollection</code>, etc.)</em>.
+                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, <code>HTMLCollection</code>, etc.)</em>.
                 </li>
             </ul>
         </td>
