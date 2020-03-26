@@ -156,7 +156,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                         You chain methods on an object together and end it with a `.<code>build</code>()` method.
                     </li>
                     <li>
-                        Operates solely on iterators, without acknowledging the source's shape. <br/>
+                        Operates solely on iterators without acknowledging the source's shape. <br/>
                         This means you cannot transform your structure to a shape other than an array.
                     </li>
                 </ul>
