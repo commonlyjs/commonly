@@ -152,7 +152,8 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                         Definitions from <code>@types</code> are maintained by external contributors.
                     </li>
                     <li>
-                        An API it provides is based on method chaining and requires to end its chain by calling a builder's <code>build</code> method.
+                        An object-oriented API based on a builder pattern <em>(see <code>_.chain</code> function)</em>. <br/>
+                        You chain methods on an object together and end it with a `.<code>build</code>()` method.
                     </li>
                 </ul>
             </td>
