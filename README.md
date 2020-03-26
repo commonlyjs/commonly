@@ -80,7 +80,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </thead>
     <tbody>
     <tr>
-        <td rowspan="2">Lodash</td>
+        <th rowspan="2">Lodash</th>
     </tr>
     <tr>
         <td>About</td>
