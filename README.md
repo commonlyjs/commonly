@@ -72,12 +72,21 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
 
 
 #### Alternatives
-| Library               | _ 
-| -------------         | -------------
-| Lodash/Underscore     | A rich and battle-tested library with many useful utilities.  
-|                       | Does not support functional programming paradigm very well.
-| Ramda                 | An utility library supporting functional programming very well.
-|                       | 
+<table>
+<thead>
+    <tr>
+        <th>Column 1</th>
+    </tr>
+    <tr>
+            <th>Column 2</th>
+        </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Row 1</td>
+    </tr>
+</tbody>
+</table>
 
 ### Enhance your experience
 <p align="left">
