@@ -94,11 +94,11 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <th rowspan="3">Ramda/Rambda</th>
     </tr>
     <tr>
-        <td>About</td>
+        <td><em>About</em></td>
         <td>A functional programming oriented utility library.</td>
     </tr>
     <tr>
-        <td>Disparity</td>
+        <td><em>Disparity</em></td>
         <td>A ton!</td>
     </tr>
     </tbody>
