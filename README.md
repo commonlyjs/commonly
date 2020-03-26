@@ -98,6 +98,9 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     Every utility is limited to operate on plain objects and arrays only. <br>
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, etc.)</em>.
                 </li>
+                <li>
+                    Does not follow iteratee-first data-last approach.
+                </li>
             </ul>
         </td>
     </tr>
