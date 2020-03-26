@@ -88,11 +88,12 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </tr>
     <tr>
         <td><em>Disparity</em></td>
-        <ul>
-            <li>Does not support TypeScript officially.</li>
-            <li>TypeScript is not officially supported. Only definitions from <code>@types</code> are maintained.</li>
-            <li>Can operate only on plain objects and arrays.</li>
-        </ul>
+        <td>
+            <ul>
+                <li>TypeScript is not officially supported. Only definitions from <code>@types</code> are maintained.</li>
+                <li>Can operate only on plain objects and arrays.</li>
+            </ul>
+        </td>
     </tr>
     <tr>
         <th rowspan="3">Ramda/Rambda</th>
