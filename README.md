@@ -90,8 +90,14 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <td><em>Disparity</em></td>
         <td>
             <ul>
-                <li>TypeScript is not officially supported. <br/>Definitions from <code>@types</code> are maintained by external contributors.</li>
-                <li>Common operations are limited to plain objects and array. <br>No support for other iterable collections.</li>
+                <li>
+                    TypeScript is not officially supported. <br/>
+                    Definitions from <code>@types</code> are maintained by external contributors.
+                </li>
+                <li>
+                    Every utility is limited to operate on plain objects and arrays only. <br>
+                    There is no support for other iterable collections <em>(Map, Set)</em>.
+                </li>
             </ul>
         </td>
     </tr>
@@ -106,8 +112,14 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         <td><em>Disparity</em></td>
         <td>
             <ul>
-                <li>Support for TypeScript could be better.</li>
-                <li>Can operate only on plain objects and arrays.</li>
+                <li>
+                    TypeScript is not officially supported. <br/>
+                    Definitions from <code>@types</code> are maintained by external contributors.
+                </li>
+                <li>
+                    Every utility is limited to operate on plain objects and arrays only. <br>
+                    There is no support for other iterable collections <em>(Map, Set)</em>.
+                </li>
             </ul>
         </td>
     </tr>
