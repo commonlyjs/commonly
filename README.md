@@ -99,6 +99,9 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, etc.)</em>.
                 </li>
                 <li>
+                    Any operation performed on collection is done eagerly. 
+                </li>
+                <li>
                     Does not follow iteratee-first data-last approach. <br/>
                     When practising functional programming this can be helpful. 
                 </li>
@@ -123,6 +126,9 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                 <li>
                     Every utility is limited to operate on plain objects and arrays only. <br>
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code> etc.)</em>.
+                </li>
+                <li>
+                    Any operation performed on collection is done eagerly. 
                 </li>
                 <li>
                    Common utilities which are not related to functional programming are missing.
