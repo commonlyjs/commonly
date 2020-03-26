@@ -84,7 +84,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     </tr>
     <tr>
         <td><em>About</em></td>
-        <td>A rich battle-tested utility library with many useful utilities.</td>
+        <td>A rich and battle-tested utility library with many useful utilities.</td>
     </tr>
     <tr>
         <td><em>Dissimilarity</em></td>
@@ -109,11 +109,11 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
         </td>
     </tr>
     <tr>
-        <th rowspan="3">Ramda/Rambda</th>
+        <th rowspan="3">Ramda/Lodash FP</th>
     </tr>
     <tr>
         <td><em>About</em></td>
-        <td>A functional programming oriented utility library.</td>
+        <td>A functional programming oriented utility library focused on transformations of data.</td>
     </tr>
     <tr>
         <td><em>Dissimilarity</em></td>
@@ -128,14 +128,35 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code> etc.)</em>.
                 </li>
                 <li>
-                    Whenever an operation is performed on a collection it is done so eagerly. 
+                    Any operation performed on collection is done eagerly. 
                 </li>
                 <li>
-                   Common utilities which are not related to functional programming are missing.
+                    Common utilities which are not related to functional programming are missing.
                 </li>
             </ul>
         </td>
     </tr>
+     <tr>
+            <th rowspan="3">Lazy.js</th>
+        </tr>
+        <tr>
+            <td><em>About</em></td>
+            <td>A library in which manipulation of data is done lazily.</td>
+        </tr>
+        <tr>
+            <td><em>Dissimilarity</em></td>
+            <td>
+                <ul>
+                    <li>
+                        TypeScript is not officially supported. <br/>
+                        Definitions from <code>@types</code> are maintained by external contributors.
+                    </li>
+                    <li>
+                        An API it provides is based on method chaining and requires to end its chain by calling a builder's <code>build</code> method.
+                    </li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 
