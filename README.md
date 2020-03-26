@@ -100,7 +100,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                 </li>
                 <li>
                     Does not follow iteratee-first data-last approach. <br/>
-                    When practising functional programming this can be helpful, as when partially apply your functions you can define intent first and later provide the context. 
+                    When practising functional programming this can be helpful. 
                 </li>
             </ul>
         </td>
