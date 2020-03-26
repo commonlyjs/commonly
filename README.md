@@ -81,7 +81,6 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
     <tbody>
     <tr>
         <td rowspan="3">Lodash</td>
-        <td></td>
     </tr>
     <tr>
         <td>About</td>
