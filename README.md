@@ -148,7 +148,7 @@ Commonly is an unopinionated general-purpose library that expands on the JavaScr
                     </li>
                     <li>
                         An object-oriented API based on a builder pattern <em>(see <code>lodash/chain</code> function)</em>. <br/>
-                        You chain methods on an object together and end it with a <code>.build()</code> method.
+                        You chain methods together and then you end it with a <code>.build()</code> method.
                     </li>
                     <li>
                         Operates solely on iterators without acknowledging the source's shape. <br/>
