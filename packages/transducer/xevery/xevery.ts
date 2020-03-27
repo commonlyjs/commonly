@@ -24,6 +24,10 @@ const xevery = <TValue>(predicate: Predicate<TValue>): Transducer<TValue, boolea
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             const product = reducer(accumulator, state.flag)
             if (isReduced(product)) {

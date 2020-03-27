@@ -10,9 +10,9 @@ import xslice from "../xslice/xslice"
  *
  * @returns
  */
-const xhead = <TValue>(): Transducer<TValue> =>
-    xslice(0, 1)
-
+const xhead = <TValue>(): Transducer<TValue> => {
+    return xslice(0, 1)
+}
 
 
 export default xhead

@@ -22,6 +22,10 @@ const xdropWhile = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> =>
             }
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             return reducer.complete(accumulator)
         }

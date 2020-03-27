@@ -28,6 +28,10 @@ const xchain = <TValueA, TValueB = TValueA>(mapper: Mapper<TValueA, TValueB[]>):
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             return reducer.complete(accumulator)
         }

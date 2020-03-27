@@ -24,6 +24,10 @@ const xsort = <TValue>(comparator: Comparator<TValue>): Transducer<TValue> =>
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             state.buffer = state.buffer.sort(comparator)
             for (const value of state.buffer) {

@@ -22,6 +22,10 @@ const xsize = <TValue>(): Transducer<TValue, number> =>
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             const product = reducer(accumulator, state.size)
             if (isReduced(product)) {

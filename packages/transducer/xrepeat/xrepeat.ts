@@ -29,6 +29,10 @@ const xrepeat = <TValue>(n: number): Transducer<TValue> =>
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             return reducer.complete(accumulator)
         }

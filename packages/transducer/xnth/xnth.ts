@@ -11,9 +11,9 @@ import xslice from "../xslice/xslice"
  * @param i
  * @returns
  */
-const xnth = <TValue>(i: number): Transducer<TValue> =>
-    xslice(i, i + 1)
-
+const xnth = <TValue>(i: number): Transducer<TValue> => {
+    return xslice(i, i + 1)
+}
 
 
 export default xnth

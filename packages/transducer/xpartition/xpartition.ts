@@ -28,6 +28,10 @@ const xpartition = <TValue>(n: number): Transducer<TValue, TValue[]> =>
             }
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             if (state.buffer.length !== 0) {
                 const product = reducer(accumulator, state.buffer)

@@ -24,6 +24,10 @@ const xlast = <TValue>(): Transducer<TValue> =>
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             if (state.value) {
                 const product = reducer(accumulator, state.value)

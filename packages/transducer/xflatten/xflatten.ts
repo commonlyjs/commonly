@@ -30,6 +30,10 @@ const xflatten = <TValue>(): Transducer< TValue | TValue[], TValue> =>
             }
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             return reducer.complete(accumulator)
         }

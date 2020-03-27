@@ -24,6 +24,10 @@ const xreverse = <TValue>(): Transducer<TValue> =>
             return accumulator
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             for (const value of state.values) {
                 const product = reducer(accumulator, value)

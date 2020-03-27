@@ -41,6 +41,10 @@ const xpartitionBy = <TValue, TBy>(mapper: Mapper<TValue, TBy>): Transducer<TVal
             }
         }
 
+        transduced.initialize = () => {
+            return reducer.initialize()
+        }
+
         transduced.complete = (accumulator: TAccumulator) => {
             if (state.buffer.length !== 0) {
                 const product = reducer(accumulator, state.buffer)
