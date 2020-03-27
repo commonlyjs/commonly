@@ -40,6 +40,7 @@ Table of Contents
 * [Overview](#overview)
     * [Why Commonly?](#why-commonly)
         * [Key features](#key-features)
+        * [Comparision to other libraries](#comparision-to-other-libraries)
     * [Enhance your experience](#enhance-your-experience)
 * [Getting started](#getting-started)
     * [Installation](#installation)
@@ -58,10 +59,8 @@ Overview
 > See what's done and what's next on the [roadmap](#roadmap).
 
 ### Why Commonly?
-Commonly is a general-purpose library that expands on the JavaScript API.
+Commonly is an unopinionated general-purpose library that expands on the JavaScript API which you can adjust to any codebase.
 
-What I wanted is to have a solid unopinionated utility library without any hidden unnecessary gimmicks.
-This is a toolkit library that you can adjust to any codebase.
 
 #### Key features
 * Every function is pure, none will ever mutate your data.
@@ -71,6 +70,95 @@ This is a toolkit library that you can adjust to any codebase.
     * Support for Streams/Observables: [RxJS](https://github.com/ReactiveX/rxjs), [Most](https://github.com/cujojs/most), [flyd](https://github.com/paldepind/flyd).
     * Support for immutable data structures: [Immutable.js](https://github.com/immutable-js/immutable-js), [mori](https://github.com/swannodette/mori).
 
+
+#### Comparision to other libraries
+<table>
+    <tbody>
+    <tr>
+        <th rowspan="3">Lodash/Underscore</th>
+    </tr>
+    <tr>
+        <td><em>About</em></td>
+        <td>A rich and battle-tested utility library with many useful utilities.</td>
+    </tr>
+    <tr>
+        <td><em>Dissimilarity</em></td>
+        <td>
+            <ul>
+                <li>
+                    TypeScript is not officially supported. <br/>
+                    Definitions from <code>@types</code> are maintained by external contributors.
+                </li>
+                <li>
+                    Utilities are limited to operate only on plain objects and arrays. <br>
+                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code>, etc.)</em>.
+                </li>
+                <li>
+                    Any operation performed on collection is done eagerly. 
+                </li>
+                <li>
+                    Does not follow iteratee-first data-last approach. <br/>
+                    When practising functional programming this can be helpful. 
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th rowspan="3">Ramda/Rambda</th>
+    </tr>
+    <tr>
+        <td><em>About</em></td>
+        <td>A functional programming oriented utility library focused on transformations of data.</td>
+    </tr>
+    <tr>
+        <td><em>Dissimilarity</em></td>
+        <td>
+            <ul>
+                <li>
+                    TypeScript is not officially supported. <br/>
+                    Definitions from <code>@types</code> are maintained by external contributors.
+                </li>
+                <li>
+                    Utilities are limited to operate only on plain objects and arrays. <br>
+                    There is no support for other iterable collections <em>(<code>TypedArray</code>, <code>Map</code>, <code>Set</code> etc.)</em>.
+                </li>
+                <li>
+                    Any operation performed on collection is done eagerly. 
+                </li>
+                <li>
+                    Common utilities which are not related to functional programming are missing.
+                </li>
+            </ul>
+        </td>
+    </tr>
+     <tr>
+            <th rowspan="3">Lazy.js</th>
+        </tr>
+        <tr>
+            <td><em>About</em></td>
+            <td>A library in which manipulation of data is done lazily.</td>
+        </tr>
+        <tr>
+            <td><em>Dissimilarity</em></td>
+            <td>
+                <ul>
+                    <li>
+                        TypeScript is not officially supported. <br/>
+                        Definitions from <code>@types</code> are maintained by external contributors.
+                    </li>
+                    <li>
+                        An object-oriented API based on a builder pattern <em>(see <code>lodash/chain</code> function)</em>. <br/>
+                        You chain methods together and then you end it with a <code>.build()</code> method.
+                    </li>
+                    <li>
+                        Operates solely on iterators without acknowledging the source's shape. <br/>
+                        This means you cannot transform your structure to a shape other than an array.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Enhance your experience
 <p align="left">
@@ -352,7 +440,9 @@ Roadmap
         * [ ] `@commonly/iterable/append`
         * [ ] `@commonly/iterable/chain`
         * [ ] `@commonly/iterable/concat`
+        * [ ] `@commonly/iterable/distinct`
         * [ ] `@commonly/iterable/drop`
+        * [ ] `@commonly/iterable/dropWhile`
         * [ ] `@commonly/iterable/every`
         * [ ] `@commonly/iterable/filter`
         * [ ] `@commonly/iterable/find`
@@ -363,16 +453,21 @@ Roadmap
         * [ ] `@commonly/iterable/last`
         * [ ] `@commonly/iterable/map`
         * [ ] `@commonly/iterable/nth`
+        * [ ] `@commonly/iterable/partition`
+        * [ ] `@commonly/iterable/partitionBy`
         * [ ] `@commonly/iterable/prepend`
+        * [ ] `@commonly/iterable/range`
         * [ ] `@commonly/iterable/reduce`
+        * [ ] `@commonly/iterable/repeat`
         * [ ] `@commonly/iterable/reverse`
+        * [ ] `@commonly/iterable/size`
         * [ ] `@commonly/iterable/slice`
         * [ ] `@commonly/iterable/some`
         * [ ] `@commonly/iterable/sort`
         * [ ] `@commonly/iterable/tail`
         * [ ] `@commonly/iterable/take`
+        * [ ] `@commonly/iterable/takeWhile`
         * [ ] `@commonly/iterable/transduce`
-        * [ ] `@commonly/iterable/unzip`
         * [ ] `@commonly/iterable/zip`
     * [ ] `@commonly/logic`
         * [ ] `@commonly/logic/and`
@@ -398,6 +493,7 @@ Roadmap
         * [x] `@commonly/math/subtract`
     * [ ] `@commonly/number`
         * [ ] `@commonly/number/clamp`
+        * [ ] `@commonly/number/inRange`
         * [ ] `@commonly/number/random`
     * [ ] `@commonly/reflect`
         * [x] `@commonly/reflect/isArray`
@@ -431,6 +527,7 @@ Roadmap
         * [ ] `@commonly/string/words`
     * [ ] `@commonly/transducer`
         * [x] `@commonly/transducer/xchain`
+        * [ ] `@commonly/transducer/xconcat`
         * [x] `@commonly/transducer/xdistinct`
         * [x] `@commonly/transducer/xdrop`
         * [x] `@commonly/transducer/xdropWhile`
@@ -444,6 +541,7 @@ Roadmap
         * [x] `@commonly/transducer/xnth`
         * [x] `@commonly/transducer/xpartition`
         * [x] `@commonly/transducer/xpartitionBy`
+        * [ ] `@commonly/transducer/xrange`
         * [x] `@commonly/transducer/xrepeat`
         * [x] `@commonly/transducer/xreverse`
         * [x] `@commonly/transducer/xsize`
