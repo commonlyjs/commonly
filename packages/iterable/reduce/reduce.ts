@@ -26,7 +26,7 @@ import Reducer from "../../type/Reducer/Reducer"
  */
 const reduce = <TAccumulator, TValueA, TValueB = TValueA>
     (reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>): TAccumulator => {
-        for (const value of iterable) {
+    for (const value of iterable) {
             const product = reducer(accumulator, value)
             if (isReduced(product)) {
                 accumulator = product.value
@@ -45,7 +45,7 @@ const reduce = <TAccumulator, TValueA, TValueB = TValueA>
 
 
 
-export default curry(reduce) as {
+export default reduce as {
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, xs: Iterable<TValueA>): TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator): (xs: Iterable<TValueA>) => TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator, xs: Iterable<TValueA>) => TAccumulator
