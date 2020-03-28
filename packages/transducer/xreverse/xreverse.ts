@@ -1,8 +1,7 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Predicate from "../../type/Predicate/Predicate"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
-import reduced from "../../function/reduced/reduced"
+import Reducer from "../../type/Reducer/Reducer"
 import isReduced from "../../reflect/isReduced/isReduced"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -14,7 +13,7 @@ import isReduced from "../../reflect/isReduced/isReduced"
  * @returns
  */
 const xreverse = <TValue>(): Transducer<TValue> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
         const state = {
             values: [] as TValue[]
         }

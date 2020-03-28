@@ -1,8 +1,9 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import isReduced from "../../reflect/isReduced/isReduced"
 import Predicate from "../../type/Predicate/Predicate"
 import reduced from "../../function/reduced/reduced"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -15,7 +16,7 @@ import reduced from "../../function/reduced/reduced"
  * @returns
  */
 const xsome = <TValue>(predicate: Predicate<TValue>): Transducer<TValue, boolean> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, boolean>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, boolean>>) => {
         const state = {
             flag: false
         }

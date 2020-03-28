@@ -1,8 +1,8 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import isReduced from "../../reflect/isReduced/isReduced"
-import Predicate from "../../type/Predicate/Predicate"
 import Mapper from "../../type/Mapper/Mapper"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -14,7 +14,7 @@ import Mapper from "../../type/Mapper/Mapper"
  * @returns
  */
 const xpartitionBy = <TValue, TBy>(mapper: Mapper<TValue, TBy>): Transducer<TValue, TValue[]> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue[]>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue[]>>) => {
         const constants = {
             UNSET: Symbol()
         }

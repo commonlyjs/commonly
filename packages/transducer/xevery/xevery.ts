@@ -1,7 +1,8 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import isReduced from "../../reflect/isReduced/isReduced"
 import Predicate from "../../type/Predicate/Predicate"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -14,7 +15,7 @@ import Predicate from "../../type/Predicate/Predicate"
  * @returns
  */
 const xevery = <TValue>(predicate: Predicate<TValue>): Transducer<TValue, boolean> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, boolean>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, boolean>>) => {
         const state = {
             flag: true
         }

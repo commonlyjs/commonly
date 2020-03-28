@@ -20,7 +20,7 @@ describe("function xtail()", () => {
             )
 
             it("should return an array without the first value", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ 1, "1", 2, "3", 5, "8", 13, "21", 34 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xtail()", () => {
             )
 
             it("should return an array without the first value", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ "1", "3", 5, 13, "21" ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xtail()", () => {
             )
 
             it("should return an array without the first value", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ "1", "3", "5", "13", "21" ])
             })
         })

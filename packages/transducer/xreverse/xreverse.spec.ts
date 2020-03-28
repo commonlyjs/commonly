@@ -20,7 +20,7 @@ describe("function xreverse()", () => {
             )
 
             it("should return a reversed array", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ 34, "21", 13, "8", 5, "3", 2, "1", 1, "0" ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xreverse()", () => {
             )
 
             it("should return a reversed array", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ "21", 13, 5, "3", "1", 1 ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xreverse()", () => {
             )
 
             it("should return a reversed array", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ 21, 13, 5, 3, 1, 1 ])
             })
         })

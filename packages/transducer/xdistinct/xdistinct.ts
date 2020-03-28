@@ -1,5 +1,6 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -11,7 +12,7 @@ import Reducer, {Completion} from "../../type/Reducer/Reducer"
  * @returns
  */
 const xdistinct = <TValue>(): Transducer<TValue> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
         const state = {
             values: [] as TValue[]
         }

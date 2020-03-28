@@ -31,7 +31,7 @@ describe("function xflatten()", () => {
             )
 
             it("should return a flat array", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ "1", 2, "5", 13, "34" ])
             })
         })
@@ -43,7 +43,7 @@ describe("function xflatten()", () => {
             )
 
             it("should return an array with injected values", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ "1", "5", "34" ])
             })
         })
@@ -56,7 +56,7 @@ describe("function xflatten()", () => {
             )
 
             it("should return an array with injected values", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ ["1"], 2, ["5"], 13, ["34"] ])
             })
         })

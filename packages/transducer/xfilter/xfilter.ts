@@ -1,6 +1,7 @@
 import Predicate from "../../type/Predicate/Predicate"
-import Reducer, { Completion } from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -13,7 +14,7 @@ import Transducer from "../../type/Transducer/Transducer"
  * @returns a transducer function
  */
 const xfilter = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
         const transduced = (accumulator: TAccumulator, value: TValue) => {
             if (predicate(value)) {
                 return reducer(accumulator, value)

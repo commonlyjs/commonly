@@ -1,6 +1,7 @@
 import Transducer from "../../type/Transducer/Transducer"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import isReduced from "../../reflect/isReduced/isReduced"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -12,7 +13,7 @@ import isReduced from "../../reflect/isReduced/isReduced"
  * @returns
  */
 const xsize = <TValue>(): Transducer<TValue, number> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, number>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, number>>) => {
         const state = {
             size: 0
         }

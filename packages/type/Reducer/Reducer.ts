@@ -15,8 +15,5 @@ type Reducer<TAccumulator, TValue> =
         }
 
 
-export type Completion<TReducer> = TReducer & Required<TReducer>
-
-
 
 export default Reducer

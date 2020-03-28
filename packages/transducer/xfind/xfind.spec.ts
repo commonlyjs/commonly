@@ -15,7 +15,7 @@ describe("function xfind(predicate)", () => {
         }
 
         it("should return an empty array", () => {
-            expect(transduce(xfind(() => false), reducer, [] as (number | string)[], iterable))
+            expect(transduce(xfind(() => false), iterable, reducer, [] as (number | string)[]))
                 .toEqual([])
         })
 
@@ -25,7 +25,7 @@ describe("function xfind(predicate)", () => {
             )
 
             it("should return an array with a single value", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ 1 ])
             })
         })
@@ -37,7 +37,7 @@ describe("function xfind(predicate)", () => {
             )
 
             it("should return an array with a single value", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ 1 ])
             })
         })
@@ -50,7 +50,7 @@ describe("function xfind(predicate)", () => {
             )
 
             it("should return an array with a single value", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ 3 ])
             })
         })

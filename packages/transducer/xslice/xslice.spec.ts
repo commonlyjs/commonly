@@ -20,7 +20,7 @@ describe("function xslice(i, j)", () => {
             )
 
             it("should return an array with values starting from the fourth value to the end of an array", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ "3", 5, "8", 13, "21", 34 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xslice(i, j)", () => {
             )
 
             it("should return an array with values starting from the fourth value to the end of an array", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ 13, "21" ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xslice(i, j)", () => {
             )
 
             it("should return an array with values starting from the fourth value to the end of an array", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ 13, 21 ])
             })
         })

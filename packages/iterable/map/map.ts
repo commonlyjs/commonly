@@ -1,5 +1,3 @@
-import empty from "../../function/empty/empty"
-import reducer from "../../function/reducer/reducer"
 import xmap from "../../transducer/xmap/xmap"
 import Mapper from "../../type/Mapper/Mapper"
 import transduce from "../transduce/transduce"
@@ -23,7 +21,7 @@ import transduce from "../transduce/transduce"
  * ```
  */
 const map = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, iterable: Iterable<TValueA>): Iterable<TValueB> => {
-    return transduce(xmap(mapper), reducer(iterable) as any, empty(iterable), iterable)
+    return transduce(xmap(mapper), iterable)
 }
 
 

@@ -1,7 +1,8 @@
 import Transducer from "../../type/Transducer/Transducer"
 import Predicate from "../../type/Predicate/Predicate"
-import Reducer, {Completion} from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import reduced from "../../function/reduced/reduced"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -14,7 +15,7 @@ import reduced from "../../function/reduced/reduced"
  * @returns
  */
 const xtakeWhile = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
         const transduced = (accumulator: TAccumulator, value: TValue) => {
             if (predicate(value)) {
                 return reducer(accumulator, value)

@@ -1,4 +1,5 @@
-import Reducer, { Completion } from "../Reducer/Reducer"
+import Reducer from "../Reducer/Reducer"
+import Transduced from "../Transduced/Transduced"
 
 
 
@@ -8,8 +9,8 @@ import Reducer, { Completion } from "../Reducer/Reducer"
  * @since 1.0.0
  */
 type Transducer<TValueA, TValueB = TValueA> =
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValueB>>) =>
-        Completion<Reducer<TAccumulator, TValueA>>
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValueB>>) =>
+        Transduced<Reducer<TAccumulator, TValueA>>
 
 
 

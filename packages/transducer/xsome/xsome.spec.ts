@@ -20,7 +20,7 @@ describe("function xsome(predicate)", () => {
             )
 
             it("should return a single boolean", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ true ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xsome(predicate)", () => {
             )
 
             it("should return a single boolean", () => {
-                expect(transduce(transducer, reducer, [] as (number | string)[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
                     .toEqual([ false ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xsome(predicate)", () => {
             )
 
             it("should return a single boolean", () => {
-                expect(transduce(transducer, reducer, [] as string[], iterable))
+                expect(transduce(transducer, iterable, reducer, [] as string[]))
                     .toEqual([ false ])
             })
         })

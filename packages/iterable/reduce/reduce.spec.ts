@@ -2,7 +2,7 @@ import reduce from "./reduce"
 
 
 
-describe("function reduce(reducer, accumulator, iterable)", () => {
+describe("function reduce(reducing, accumulator, iterable)", () => {
     context("iterable is empty", () => {
         it("should return an accumulator", () => {
             const iterable: number[] = []

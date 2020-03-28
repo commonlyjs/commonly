@@ -1,6 +1,7 @@
-import Reducer, { Completion } from "../../type/Reducer/Reducer"
+import Reducer from "../../type/Reducer/Reducer"
 import Transducer from "../../type/Transducer/Transducer"
 import isReduced from "../../reflect/isReduced/isReduced"
+import Transduced from "../../type/Transduced/Transduced"
 
 
 
@@ -12,7 +13,7 @@ import isReduced from "../../reflect/isReduced/isReduced"
  * @returns a transducing function
  */
 const xflatten = <TValue>(): Transducer< TValue | TValue[], TValue> =>
-    <TAccumulator>(reducer: Completion<Reducer<TAccumulator, TValue>>) => {
+    <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
         const transduced = (accumulator: TAccumulator, value: TValue | TValue[]) => {
             if (Array.isArray(value)) {
                 for (const x of value) {
