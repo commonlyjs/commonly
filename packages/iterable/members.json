@@ -116,7 +116,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Reducer",
-          "description": "is a reducer function"
+          "description": "is a reducing function"
         },
         {
           "name": "accumulator",
@@ -164,7 +164,7 @@
       "source": "/reduce/reduce.ts",
       "specification": "/reduce/reduce.spec.ts"
     },
-    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducer function} to each yield value from an iterable."
+    "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducing function} to each yield value from an iterable."
   },
   {
     "name": "slice",
@@ -282,11 +282,19 @@
           "description": null
         },
         {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": null
+        },
+        {
           "name": "reducer",
           "variadic": false,
           "defaultValue": null,
           "optional": false,
-          "type": "Reducer",
+          "type": "Transduced",
           "description": null
         },
         {
@@ -295,14 +303,6 @@
           "defaultValue": null,
           "optional": false,
           "type": "TAccumulator",
-          "description": null
-        },
-        {
-          "name": "iterable",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "Iterable",
           "description": null
         }
       ],
@@ -319,11 +319,6 @@
         },
         {
           "name": "TValueB",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
-          "name": "TProduct",
           "defaultValue": null,
           "extends": null
         }
