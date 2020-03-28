@@ -1,8 +1,8 @@
 import xfilter from "../../transducer/xfilter/xfilter"
 import Predicate from "../../type/Predicate/Predicate"
 import transduce from '../transduce/transduce'
-import scalar from "../../function/reducing/scalar/scalar"
 import xfind from "../../transducer/xfind/xfind"
+import reducing from "../../function/reducing/reducing"
 
 
 
@@ -23,7 +23,7 @@ import xfind from "../../transducer/xfind/xfind"
  * ```
  */
 const find = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iterable<TValue>) => {
-    return transduce(xfind(predicate), iterable, scalar)
+    return transduce(xfind(predicate), iterable, reducing.scalar)
 }
 
 
