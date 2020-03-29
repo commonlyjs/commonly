@@ -133,42 +133,6 @@
     "description": "Debounces a function postponing its execution by a `wait` time every time the function is invoked."
   },
   {
-    "name": "empty",
-    "since": "1.0.0",
-    "remarks": [],
-    "signature": {
-      "parameters": [
-        {
-          "name": "value",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "TValue | ",
-          "description": "is an object to be emptied"
-        }
-      ],
-      "typeparameters": [
-        {
-          "name": "TValue",
-          "defaultValue": null,
-          "extends": null
-        }
-      ],
-      "returnValue": {
-        "type": "TValue",
-        "description": "an empty object of that type"
-      }
-    },
-    "examples": [
-      "import { empty } from \"@commonly/function\"\r\rempty([ 1, 1, 2 ])           // -> []\rempty(\"112\")                 // -> \"\"\rempty({ x: 1, y: 1, z: 2 })  // -> {}\r"
-    ],
-    "metadata": {
-      "source": "/empty/empty.ts",
-      "specification": "/empty/empty.spec.ts"
-    },
-    "description": "Creates an empty value of the same type as the one passed in."
-  },
-  {
     "name": "identity",
     "since": "1.0.0",
     "remarks": [],
@@ -359,7 +323,7 @@
     "description": "[Not yet documented]"
   },
   {
-    "name": "reducer",
+    "name": "reducing",
     "since": "1.0.0",
     "remarks": [],
     "signature": {
@@ -369,7 +333,7 @@
           "variadic": false,
           "defaultValue": null,
           "optional": false,
-          "type": "TAccumulator",
+          "type": "unknown",
           "description": null
         }
       ],
@@ -386,16 +350,16 @@
         }
       ],
       "returnValue": {
-        "type": "Reducer",
-        "description": "a reducer"
+        "type": "Transduced",
+        "description": "a reducing function"
       }
     },
     "examples": [],
     "metadata": {
-      "source": "/reducer/reducer.ts",
-      "specification": "/reducer/reducer.spec.ts"
+      "source": "/reducing/reducing.ts",
+      "specification": "/reducing/reducing.spec.ts"
     },
-    "description": "Provides a reducing function based on passed in accumulator, if nothing suitable is found, then it returns an identity function."
+    "description": "Provides a reducing function based on passed accumulator, if nothing suitable is found, then it returns a scalar reducer."
   },
   {
     "name": "tap",

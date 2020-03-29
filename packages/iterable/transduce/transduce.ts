@@ -31,9 +31,11 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
         return accumulator
     }
 
-    transduced.complete = (accumulator: TAccumulator) => {
-        return accumulator
-    }
+    transduced.complete = reducer.complete || (
+        (accumulator: TAccumulator) => {
+            return accumulator
+        }
+    )
 
     return reduce(transducer(transduced), accumulator, iterable)
 }
