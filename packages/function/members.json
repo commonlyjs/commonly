@@ -147,11 +147,10 @@
           "description": null
         },
         {
-          "name": "contextualize",
+          "name": "options",
           "variadic": false,
           "defaultValue": null,
           "optional": false,
-          "type": "Function.Variadic",
           "description": null
         }
       ],

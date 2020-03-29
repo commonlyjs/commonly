@@ -43,7 +43,7 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
 
 
 
-export default delegate(transduce, (_, iterable) => iterable) as {
+export default delegate(transduce, { contextualize: (_, iterable) => iterable }) as {
     <TAccumulator, TValueA, TValueB = TValueA>(
         transducer: Transducer<TValueA, TValueB>,
         iterable: Iterable<TValueA>,

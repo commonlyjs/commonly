@@ -46,7 +46,7 @@ const reduce = <TAccumulator, TValueA, TValueB = TValueA>
 
 
 
-export default reduce as {
+export default delegate(reduce, { excluded: [ Array ] }) as {
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, xs: Iterable<TValueA>): TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator): (xs: Iterable<TValueA>) => TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator, xs: Iterable<TValueA>) => TAccumulator
