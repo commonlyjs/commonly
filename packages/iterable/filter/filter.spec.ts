@@ -2,25 +2,23 @@ import filter from "./filter"
 
 
 
-describe("function map(mapper, iterable)", () => {
-    const predicate = (x: number) => !!(x % 2)
-    
+describe("function filter(predicate, iterable)", () => {
     context("iterable is an array", () => {
         context("iterable is empty", () => {
+            const iterable: (number | string)[] = []
+
             it("should return an empty array", () => {
-                const iterable: number[] = []
-                
-                expect(filter(predicate, iterable))
+                expect(filter(x => !!(Number(x) % 2), iterable))
                     .toEqual([])
             })
         })
 
         context("iterable is not empty", () => {
-            it("should return a mapped array", () => {
-                const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
+            const iterable: (number | string)[] = [ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ]
 
-                expect(filter(predicate, iterable))
-                    .toEqual([ 1, 1, 3, 5, 13, 21 ])
+            it("should return an array containing only odd values", () => {
+                expect(filter(x => !!(Number(x) % 2), iterable))
+                    .toEqual([ 1, "1", "3", 5, 13, "21" ])
             })
         })
     })
