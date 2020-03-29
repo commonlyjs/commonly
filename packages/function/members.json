@@ -153,14 +153,6 @@
           "optional": false,
           "type": "Function.Variadic",
           "description": null
-        },
-        {
-          "name": "method",
-          "variadic": false,
-          "defaultValue": null,
-          "optional": false,
-          "type": "string",
-          "description": null
         }
       ],
       "typeparameters": [
@@ -181,7 +173,7 @@
       }
     },
     "examples": [
-      "\r```@commonly"
+      "import { delegate } from \"@commonly/function\"\r"
     ],
     "metadata": {
       "source": "/delegate/delegate.ts",

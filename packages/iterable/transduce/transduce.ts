@@ -3,6 +3,7 @@ import Transduced from "../../type/Transduced/Transduced"
 import Transducer from "../../type/Transducer/Transducer"
 import reduce from "../reduce/reduce"
 import reducing from "../../function/reducing/reducing"
+import delegate from "../../function/delegate/delegate"
 
 
 
@@ -42,7 +43,7 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
 
 
 
-export default transduce as {
+export default delegate(transduce, (_, iterable) => iterable) as {
     <TAccumulator, TValueA, TValueB = TValueA>(
         transducer: Transducer<TValueA, TValueB>,
         iterable: Iterable<TValueA>,

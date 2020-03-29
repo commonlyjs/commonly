@@ -1,5 +1,6 @@
 import xslice from "../../transducer/xslice/xslice"
 import transduce from "../transduce/transduce"
+import delegate from '../../function/delegate/delegate'
 
 
 
@@ -25,4 +26,4 @@ const slice = <TValue>(start: number, end: number, iterable: Iterable<TValue>): 
 }
 
 
-export default slice
+export default delegate(slice)

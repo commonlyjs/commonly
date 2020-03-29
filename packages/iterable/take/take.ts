@@ -1,5 +1,6 @@
 import xtake from "../../transducer/xtake/xtake"
 import transduce from "../transduce/transduce"
+import delegate from "../../function/delegate/delegate"
 
 
 
@@ -25,4 +26,4 @@ const take = <TAccumulator, TValue>(n: number, iterable: Iterable<TValue>): Iter
 
 
 
-export default take
+export default delegate(take)

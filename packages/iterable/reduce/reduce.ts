@@ -1,6 +1,7 @@
 import curry from "../../function/curry/curry"
 import isReduced from "../../reflect/isReduced/isReduced"
 import Reducer from "../../type/Reducer/Reducer"
+import delegate from "../../function/delegate/delegate"
 
 
 

@@ -3,6 +3,7 @@ import Predicate from "../../type/Predicate/Predicate"
 import transduce from '../transduce/transduce'
 import xfind from "../../transducer/xfind/xfind"
 import reducing from "../../function/reducing/reducing"
+import delegate from "../../function/delegate/delegate"
 
 
 
@@ -28,4 +29,4 @@ const find = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iter
 
 
 
-export default find
+export default delegate(find)

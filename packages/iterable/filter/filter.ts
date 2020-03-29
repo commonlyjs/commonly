@@ -1,6 +1,7 @@
 import xfilter from "../../transducer/xfilter/xfilter"
 import Predicate from "../../type/Predicate/Predicate"
 import transduce from '../transduce/transduce'
+import delegate from "../../function/delegate/delegate"
 
 
 
@@ -26,4 +27,4 @@ const filter = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: It
 
 
 
-export default filter
+export default delegate(filter)

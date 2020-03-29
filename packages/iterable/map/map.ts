@@ -1,6 +1,7 @@
 import xmap from "../../transducer/xmap/xmap"
 import Mapper from "../../type/Mapper/Mapper"
 import transduce from "../transduce/transduce"
+import delegate from "../../function/delegate/delegate"
 
 
 
@@ -26,4 +27,4 @@ const map = <TAccumulator, TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, i
 
 
 
-export default map
+export default delegate(map, (mapper, iterable) => iterable)
