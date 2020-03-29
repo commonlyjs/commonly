@@ -1,6 +1,7 @@
 import compose from './compose/compose';
 import curry from './curry/curry';
 import debounce from './debounce/debounce';
+import delegate from './delegate/delegate';
 import identity from './identity/identity';
 import negate from './negate/negate';
 import noop from './noop/noop';
@@ -16,6 +17,7 @@ export {
     compose,
     curry,
     debounce,
+    delegate,
     identity,
     negate,
     noop,

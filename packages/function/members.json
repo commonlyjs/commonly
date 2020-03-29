@@ -133,6 +133,63 @@
     "description": "Debounces a function postponing its execution by a `wait` time every time the function is invoked."
   },
   {
+    "name": "delegate",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "f",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Function.Variadic",
+          "description": null
+        },
+        {
+          "name": "contextualize",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Function.Variadic",
+          "description": null
+        },
+        {
+          "name": "method",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "string",
+          "description": null
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TReturnValue",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TArguments",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": null,
+        "description": null
+      }
+    },
+    "examples": [
+      "\r```@commonly"
+    ],
+    "metadata": {
+      "source": "/delegate/delegate.ts",
+      "specification": "/delegate/delegate.spec.ts"
+    },
+    "description": "[Not documented yet]"
+  },
+  {
     "name": "identity",
     "since": "1.0.0",
     "remarks": [],
