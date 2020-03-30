@@ -25,7 +25,7 @@ const delegate = <TReturnValue, TArguments extends unknown[]>(
 ) => {
     return (...varargs: TArguments) => {
         const context = contextualize(...varargs) as { [key: string]: Function.Variadic<TReturnValue, unknown[]> }
-        if (f.name in context && !excluded.includes(context.constructor)) {
+        if (context[f.name] && !excluded.includes(context.constructor)) {
             varargs.splice(varargs.indexOf(context), 1)
             return context[f.name](...varargs)
         } else {

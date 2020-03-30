@@ -1,8 +1,9 @@
 import Reducer from "../../type/Reducer/Reducer"
 import Transduced from "../../type/Transduced/Transduced"
-import array from "./array/array"
+import pushing from "./pushing/pushing"
 import scalar from "./scalar/scalar"
-import string from "./string/string"
+import joining from "./joining/joining"
+import adding from "./adding/adding"
 
 
 
@@ -17,18 +18,21 @@ import string from "./string/string"
 const reducing = <TAccumulator, TValue>(accumulator: unknown): Transduced<Reducer<TAccumulator, TValue>> => {
     switch (true) {
         case Array.isArray(accumulator):
-            return array as Transduced<Reducer<TAccumulator, TValue>>
+            return pushing as Transduced<Reducer<TAccumulator, TValue>>
 
         case typeof accumulator === "string":
-            return string as Transduced<Reducer<TAccumulator, TValue>>
+            return joining as Transduced<Reducer<TAccumulator, TValue>>
+
+        case accumulator instanceof Set:
+            return adding as Transduced<Reducer<TAccumulator, TValue>>
 
         default:
             return scalar as Transduced<Reducer<TAccumulator, TValue>>
     }
 }
 
-reducing.pushing = array
-reducing.string = string
+reducing.pushing = pushing
+reducing.string = joining
 reducing.scalar = scalar
 
 
