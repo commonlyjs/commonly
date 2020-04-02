@@ -1,3 +1,8 @@
+/**
+ * [Not documented yet]
+ *
+ * @since 1.0.0
+ */
 interface Iterable<TValue> {
     [Symbol.iterator](): Iterator<TValue>;
 }
