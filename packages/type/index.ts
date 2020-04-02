@@ -17,13 +17,13 @@ export {
     Comparator,
     Function,
     Identity,
-    Iterable,
+    // Iterable,
     Mapper,
     Nil,
     Predicate,
     Primitive,
     Reduced,
     Reducer,
-    Reducible,
+    // Reducible,
     Transducer
 }
