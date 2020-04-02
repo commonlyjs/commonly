@@ -4,6 +4,7 @@ import pushing from "./pushing/pushing"
 import scalar from "./scalar/scalar"
 import joining from "./joining/joining"
 import adding from "./adding/adding"
+import setting from "./setting/setting"
 
 
 
@@ -25,6 +26,13 @@ const reducing = <TAccumulator, TValue>(accumulator: unknown): Transduced<Reduce
 
         case accumulator instanceof Set:
             return adding as Transduced<Reducer<TAccumulator, TValue>>
+
+        case accumulator instanceof Map:
+            return setting as Transduced<Reducer<TAccumulator, TValue>>
+
+        case "@@reducer" in (accumulator as any):
+            // console.log((accumulator as any)["@@reducer"]())
+            return (accumulator as any)["@@reducer"]() as Transduced<Reducer<TAccumulator, TValue>>
 
         default:
             return scalar as Transduced<Reducer<TAccumulator, TValue>>
