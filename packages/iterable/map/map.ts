@@ -1,8 +1,8 @@
-import Mapper from "../../type/Mapper/Mapper"
 import Iterable from "../../type/Iterable/Iterable"
+import Mapper from "../../type/Mapper/Mapper"
 import curry from "../../function/curry/curry"
-import transduce from "../transduce/transduce"
 import xmap from "../../transducer/xmap/xmap"
+import transduce from "../transduce/transduce"
 
 
 
