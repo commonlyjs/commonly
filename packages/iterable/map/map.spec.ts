@@ -1,4 +1,6 @@
 import map from "./map"
+import Iterable from "../../type/Iterable/Iterable"
+import Reducible from "../../type/Reducible/Reducible"
 
 
 
@@ -126,7 +128,7 @@ describe("function map(mapper, iterable)", () => {
             return value * value
         }
 
-        class Matrioshka<TValue> {
+        class Matrioshka<TValue> implements Iterable<TValue>, Reducible<Matrioshka<TValue>, TValue> {
             private _matrioshka: Matrioshka<TValue> | null = null
             private readonly _value: TValue | null = null
 
@@ -160,21 +162,25 @@ describe("function map(mapper, iterable)", () => {
                 }
             }
 
-            private ["@@reducer"]() {
+            public [Reducible.reducer]() {
                 const state = {
                     root: null as Matrioshka<TValue> | null
                 }
 
-                const reducer = (accumulator: Matrioshka<TValue>, value: TValue) => {
+                const reducer = (accumulator: Matrioshka<TValue>, value: TValue): Matrioshka<TValue> => {
                     accumulator.put(value)
                     const matrioshka = accumulator.next()
                     if (state.root === null) {
                         state.root = matrioshka
                     }
-                    return matrioshka
+                    if (matrioshka) {
+                        return matrioshka
+                    } else {
+                        return accumulator
+                    }
                 }
 
-                reducer.initialize = () => {
+                reducer.initialize = (): Matrioshka<TValue> => {
                     return new Matrioshka()
                 }
 
