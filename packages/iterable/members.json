@@ -73,11 +73,6 @@
       ],
       "typeparameters": [
         {
-          "name": "TAccumulator",
-          "defaultValue": null,
-          "extends": null
-        },
-        {
           "name": "TValueA",
           "defaultValue": null,
           "extends": null
@@ -94,13 +89,13 @@
       }
     },
     "examples": [
-      "import { map } from \"@commonly/iterable\"\r\rmap(x => x * x, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 4, 9, 25, 64 ]\r"
+      "import { map } from \"@commonly/iterable\"\r\rmap(x => x * x, [ 0, 1, 1, 2, 3, 5, 8 ])         // -> [ 0, 1, 1, 4, 9, 25, 64 ]\r"
     ],
     "metadata": {
       "source": "/map/map.ts",
       "specification": "/map/map.spec.ts"
     },
-    "description": "Creates a new iterable of the same type as the one given, where every value is altered by a result of a given mapper function."
+    "description": "Applies a mapper function to each element in the iterable, producing an iterable of the same type."
   },
   {
     "name": "reduce",
