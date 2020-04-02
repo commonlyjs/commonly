@@ -165,7 +165,7 @@ describe("function map(mapper, iterable)", () => {
                     root: null as Matrioshka<TValue> | null
                 }
 
-                const transduced = (accumulator: Matrioshka<TValue>, value: TValue) => {
+                const reducer = (accumulator: Matrioshka<TValue>, value: TValue) => {
                     accumulator.put(value)
                     const matrioshka = accumulator.next()
                     if (state.root === null) {
@@ -174,11 +174,11 @@ describe("function map(mapper, iterable)", () => {
                     return matrioshka
                 }
 
-                transduced.initialize = () => {
+                reducer.initialize = () => {
                     return new Matrioshka()
                 }
 
-                transduced.complete = (accumulator: Matrioshka<TValue>): Matrioshka<TValue> => {
+                reducer.complete = (accumulator: Matrioshka<TValue>): Matrioshka<TValue> => {
                     const parent = state.root
                     state.root = null
                     if (parent) {
@@ -188,7 +188,7 @@ describe("function map(mapper, iterable)", () => {
                     }
                 }
 
-                return transduced
+                return reducer
             }
         }
 
