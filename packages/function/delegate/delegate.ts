@@ -1,7 +1,6 @@
 import Function from "../../type/Function/Function"
 
 
-
 /**
  * [Not documented yet]
  *
@@ -20,20 +19,56 @@ const delegate = <TReturnValue, TArguments extends unknown[]>(
     f: Function.Variadic<TReturnValue, TArguments>,
     {
         contextualize = (...varargs: unknown[]) => varargs[varargs.length - 1],
-        excluded = [] as unknown[]
+        aliases = [] as string[],
+        excluded = [] as FunctionConstructor[]
     } = {}
 ) => {
-    return (...varargs: TArguments) => {
+    const delegation = (...varargs: TArguments): TReturnValue => {
         const context = contextualize(...varargs) as { [key: string]: Function.Variadic<TReturnValue, unknown[]> }
-        if (context[f.name] && !excluded.includes(context.constructor)) {
-            varargs.splice(varargs.indexOf(context), 1)
-            return context[f.name](...varargs)
-        } else {
-            return f(...varargs)
+        if (!excluded.some(constructor => context instanceof constructor)) {
+            for (const propertyName of [ f.name, ...aliases] ) {
+                const propertyValue = context[propertyName]
+                switch (typeof propertyValue) {
+                    case "function":
+                        return propertyValue.apply(context, varargs)
+                    case "undefined":
+                        const propertyDescriptor = Object.getOwnPropertyDescriptor(context, propertyName)
+                        if (propertyDescriptor) {
+                            return propertyDescriptor.value
+                        }
+                        break;
+                    default:
+                        return propertyValue;
+                }
+            }
         }
-    }
-}
 
+        return f(...varargs)
+    }
+
+    Object.defineProperties(delegation, {
+        name: {
+            value: f.name,
+            configurable: true,
+            enumerable: false,
+            writable: false
+        },
+        length: {
+            configurable: true,
+            enumerable: false,
+            writable: false,
+            value: f.length
+        },
+        toString: {
+            value: f.toString.bind(f),
+            configurable: true,
+            enumerable: false,
+            writable: true
+        }
+    })
+
+    return delegation
+}
 
 
 export default delegate
