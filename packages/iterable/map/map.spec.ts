@@ -1,6 +1,7 @@
-import map from "./map"
 import Iterable from "../../type/Iterable/Iterable"
 import Reducible from "../../type/Reducible/Reducible"
+import map from "./map"
+import Matrioshka from "../__fixtures__/Matrioshka"
 
 
 
@@ -115,7 +116,7 @@ describe("function map(mapper, iterable)", () => {
                     .toEqual(new Map([
                         [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
                     ]))
-                expect(map(mapper)(iterable).set(1, 1))
+                expect(map(mapper)(iterable))
                     .toEqual(new Map([
                         [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
                     ]))
@@ -126,76 +127,6 @@ describe("function map(mapper, iterable)", () => {
     context("iterable is a custom data structure", () => {
         const mapper = (value: number): number => {
             return value * value
-        }
-
-        class Matrioshka<TValue> implements Iterable<TValue>, Reducible<Matrioshka<TValue>, TValue> {
-            private _matrioshka: Matrioshka<TValue> | null = null
-            private readonly _value: TValue | null = null
-
-            constructor(values: TValue[] = []) {
-                const [ value, ...remainingValues ] = values
-
-                if (value) {
-                    this._value = value
-                }
-
-                if (remainingValues.length > 0) {
-                    this._matrioshka = new Matrioshka<TValue>(remainingValues)
-                }
-            }
-
-            public put(value: TValue): void {
-                this._matrioshka = new Matrioshka<TValue>([ value ])
-            }
-
-            public next(): Matrioshka<TValue> | null {
-                return this._matrioshka
-            }
-
-            public *[Symbol.iterator](): Iterator<TValue> {
-                if (this._value) {
-                    yield this._value
-                }
-
-                if (this._matrioshka) {
-                    yield* this._matrioshka
-                }
-            }
-
-            public [Reducible.reducer]() {
-                const state = {
-                    root: null as Matrioshka<TValue> | null
-                }
-
-                const reducer = (accumulator: Matrioshka<TValue>, value: TValue): Matrioshka<TValue> => {
-                    accumulator.put(value)
-                    const matrioshka = accumulator.next()
-                    if (state.root === null) {
-                        state.root = matrioshka
-                    }
-                    if (matrioshka) {
-                        return matrioshka
-                    } else {
-                        return accumulator
-                    }
-                }
-
-                reducer.initialize = (): Matrioshka<TValue> => {
-                    return new Matrioshka()
-                }
-
-                reducer.complete = (accumulator: Matrioshka<TValue>): Matrioshka<TValue> => {
-                    const parent = state.root
-                    state.root = null
-                    if (parent) {
-                        return parent
-                    } else {
-                        return accumulator
-                    }
-                }
-
-                return reducer
-            }
         }
 
         context("iterable is empty", () => {
