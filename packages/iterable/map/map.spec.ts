@@ -1,7 +1,5 @@
-import Iterable from "../../type/Iterable/Iterable"
-import Reducible from "../../type/Reducible/Reducible"
-import map from "./map"
 import Matrioshka from "../__fixtures__/Matrioshka"
+import map from "./map"
 
 
 
