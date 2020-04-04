@@ -201,6 +201,42 @@
     "description": "Applies a `predicate` function to each element in the `iterable`, producing an iterable of the same type with elements passing this predicate."
   },
   {
+    "name": "head",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "a first element"
+      }
+    },
+    "examples": [
+      "import { head } from \"@commonly/iterable\"\r\rhead([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 0\r"
+    ],
+    "metadata": {
+      "source": "/head/head.ts",
+      "specification": "/head/head.spec.ts"
+    },
+    "description": "Returns a first element of `iterable`."
+  },
+  {
     "name": "map",
     "since": "1.0.0",
     "remarks": [],

@@ -2,6 +2,7 @@ import chain from "./chain/chain"
 import every from "./every/every"
 import find from "./find/find"
 import filter from "./filter/filter"
+import head from "./head/head"
 import map from "./map/map"
 import nth from "./nth/nth"
 import reduce from "./reduce/reduce"
@@ -17,6 +18,7 @@ export {
     every,
     find,
     filter,
+    head,
     map,
     nth,
     reduce,
