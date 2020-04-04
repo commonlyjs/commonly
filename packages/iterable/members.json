@@ -100,7 +100,7 @@
       "source": "/every/every.ts",
       "specification": "/every/every.spec.ts"
     },
-    "description": "Creates a new iterable of the same type as the one given, with only values passing the given predicate function."
+    "description": "Applies a `predicate` function to each element in the `iterable`, returning a boolean indicating whether all of the elements passed this predicate."
   },
   {
     "name": "find",

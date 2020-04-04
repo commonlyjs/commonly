@@ -8,7 +8,8 @@ import transduce from '../transduce/transduce'
 
 
 /**
- * Creates a new iterable of the same type as the one given, with only values passing the given predicate function.
+ * Applies a `predicate` function to each element in the `iterable`,
+ *  returning a boolean indicating whether all of the elements passed this predicate.
  *
  * @since 1.0.0
  *
@@ -28,7 +29,7 @@ const every = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Ite
 }
 
 
-
+// noinspection DuplicatedCode
 export default curry(every) as unknown as {
     <TValue>(predicate: Predicate<TValue>, iterable: TValue[]): boolean
     <TValue>(predicate: Predicate<TValue>, iterable: string): boolean
