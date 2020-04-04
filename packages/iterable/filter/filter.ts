@@ -2,7 +2,6 @@ import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import xfilter from "../../transducer/xfilter/xfilter"
 import transduce from '../transduce/transduce'
-import Mapper from "../../type/Mapper/Mapper"
 import Iterable from "../../type/Iterable/Iterable"
 
 
@@ -39,11 +38,11 @@ export default curry(filter) as unknown as {
         iterable: Map<TValue[0], TValue[1]>
     ): Map<TValue[0], TValue[1]>
     <TIterable extends Iterable<unknown>>(
-        mapper: Predicate<Iterable.ExtractValue<TIterable>>,
+        predicate: Predicate<Iterable.ExtractValue<TIterable>>,
         iterable: TIterable
     ): TIterable
 
-    <TValue>(mapper: Predicate<TValue>): {
+    <TValue>(predicate: Predicate<TValue>): {
         (iterable: TValue[]): TValue[]
         (iterable: string): string
         (iterable: Set<TValue>): Set<TValue>

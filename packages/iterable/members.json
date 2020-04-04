@@ -65,7 +65,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Predicate",
-          "description": "is a predicate"
+          "description": "is a predicate function"
         },
         {
           "name": "iterable",
@@ -100,7 +100,7 @@
       "source": "/filter/filter.ts",
       "specification": "/filter/filter.spec.ts"
     },
-    "description": "Creates a new iterable of the same type as the one given, with only values passing the given predicate function."
+    "description": "Applies a `predicate` function to each element in the `iterable`, producing an iterable of the same type with elements passing this predicate."
   },
   {
     "name": "map",
