@@ -46,8 +46,10 @@ export default curry(filter) as unknown as {
         (iterable: TValue[]): TValue[]
         (iterable: string): string
         (iterable: Set<TValue>): Set<TValue>
-        (iterable: Map<unknown, unknown>): Map<TValue extends unknown[] ? TValue[0] : never,
-            TValue extends unknown[] ? TValue[1] : never>
+        (iterable: Map<unknown, unknown>): Map<
+            TValue extends unknown[] ? TValue[0] : never,
+            TValue extends unknown[] ? TValue[1] : never
+        >
         <TIterable extends Iterable<unknown>>(
             iterable: TIterable
         ): TIterable
