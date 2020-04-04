@@ -1,12 +1,13 @@
+import chain from './chain/chain'
+import every from './every/every'
 import find from './find/find'
 import filter from './filter/filter'
 import map from './map/map'
 import reduce from "./reduce/reduce"
 import slice from './slice/slice'
-import transduce from './transduce/transduce'
+import some from './some/some'
 import take from './take/take'
-import chain from './chain/chain'
-import every from './every/every'
+import transduce from './transduce/transduce'
 
 
 
@@ -18,6 +19,7 @@ export {
     map,
     reduce,
     slice,
+    some,
     take,
     transduce
 }
