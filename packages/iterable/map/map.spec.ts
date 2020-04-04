@@ -122,7 +122,7 @@ describe("function map(mapper, iterable)", () => {
         })
     })
 
-    context("iterable is a custom data structure", () => {
+    context("iterable is a custom finite iterator-based collection", () => {
         const mapper = (value: number): number => {
             return value * value
         }
@@ -130,7 +130,7 @@ describe("function map(mapper, iterable)", () => {
         context("iterable is empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka()
 
-            it("should return an empty custom data structure", () => {
+            it("should return an empty custom collection", () => {
                 expect(map(mapper, iterable))
                     .toEqual(new Matrioshka())
                 expect(map(mapper)(iterable))
@@ -141,7 +141,7 @@ describe("function map(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a custom data structure where each element is raised to the power of two", () => {
+            it("should return a custom collection where each element is raised to the power of two", () => {
                 expect(map(mapper, iterable))
                     .toEqual(new Matrioshka([ 0, 1, 1, 4, 9, 25, 64, 169 ]))
                 expect(map(mapper)(iterable))
