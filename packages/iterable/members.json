@@ -224,7 +224,7 @@
       ],
       "returnValue": {
         "type": "Iterable",
-        "description": "a first element"
+        "description": "a first element of an iterable"
       }
     },
     "examples": [
@@ -235,6 +235,42 @@
       "specification": "/head/head.spec.ts"
     },
     "description": "Returns a first element of `iterable`."
+  },
+  {
+    "name": "last",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "a last element of an iterable"
+      }
+    },
+    "examples": [
+      "import { last } from \"@commonly/iterable\"\r\rlast([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 8\r"
+    ],
+    "metadata": {
+      "source": "/last/last.ts",
+      "specification": "/last/last.spec.ts"
+    },
+    "description": "Returns a last element of `iterable`."
   },
   {
     "name": "map",
