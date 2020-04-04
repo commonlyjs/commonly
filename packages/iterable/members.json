@@ -250,6 +250,50 @@
     "description": "Applies a mapper function to each element in the iterable, producing an iterable of the same type."
   },
   {
+    "name": "nth",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "i",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a position of an element"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an nth element"
+      }
+    },
+    "examples": [
+      "import { nth } from \"@commonly/iterable\"\r\rnth(4, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> 3\r"
+    ],
+    "metadata": {
+      "source": "/nth/nth.ts",
+      "specification": "/nth/nth.spec.ts"
+    },
+    "description": "Returns an `i`-nth element of `iterable`."
+  },
+  {
     "name": "reduce",
     "since": "1.0.0",
     "remarks": [
