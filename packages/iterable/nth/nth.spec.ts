@@ -21,7 +21,7 @@ describe("function nth(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
-            it("should return a fourth value counting from zero", () => {
+            it("should return a fourth element counting from zero", () => {
                 const expected: number = 3
 
                 expect(nth(4, iterable))
@@ -49,7 +49,7 @@ describe("function nth(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: string = "011235813"
 
-            it("should return a fourth value counting from zero", () => {
+            it("should return a fourth element counting from zero", () => {
                 const expected: string = "3"
 
                 expect(nth(4, iterable))
@@ -77,7 +77,7 @@ describe("function nth(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a fourth value counting from zero", () => {
+            it("should return a fourth element counting from zero", () => {
                 const expected: number = 5
 
                 expect(nth(4, iterable))
@@ -107,7 +107,7 @@ describe("function nth(iterable)", () => {
                 [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 5 ], [ 6, 8 ], [ 7, 13 ]
             ])
 
-            it("should return a fourth value counting from zero", () => {
+            it("should return a fourth element counting from zero", () => {
                 const expected: [ number, number ] = [ 4, 3 ]
 
                 expect(nth(4, iterable))
@@ -135,7 +135,7 @@ describe("function nth(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a fourth value counting from zero", () => {
+            it("should return a fourth element counting from zero", () => {
                 const expected: number = 5
 
                 expect(nth(4, iterable))

@@ -12,7 +12,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param iterable - is an iterable to be iterated over
- * @returns a first element
+ * @returns a first element of an iterable
  *
  * @example
  * ```

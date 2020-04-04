@@ -3,7 +3,7 @@ import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xfind from "../../transducer/xfind/xfind"
-import transduce from '../transduce/transduce'
+import transduce from "../transduce/transduce"
 
 
 

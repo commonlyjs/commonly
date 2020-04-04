@@ -1,8 +1,8 @@
+import Iterable from "../../type/Iterable/Iterable"
 import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import xfilter from "../../transducer/xfilter/xfilter"
-import transduce from '../transduce/transduce'
-import Iterable from "../../type/Iterable/Iterable"
+import transduce from "../transduce/transduce"
 
 
 
@@ -33,25 +33,14 @@ export default curry(filter) as unknown as {
     <TValue>(predicate: Predicate<TValue>, iterable: TValue[]): TValue[]
     <TValue>(predicate: Predicate<TValue>, iterable: string): string
     <TValue>(predicate: Predicate<TValue>, iterable: Set<TValue>): Set<TValue>
-    <TValue extends unknown[]>(
-        predicate: Predicate<TValue>,
-        iterable: Map<TValue[0], TValue[1]>
-    ): Map<TValue[0], TValue[1]>
-    <TIterable extends Iterable<unknown>>(
-        predicate: Predicate<Iterable.ExtractValue<TIterable>>,
-        iterable: TIterable
-    ): TIterable
+    <TValue extends unknown[]>(predicate: Predicate<TValue>, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
+    <TIterable extends Iterable<unknown>>(predicate: Predicate<Iterable.ExtractValue<TIterable>>, iterable: TIterable): TIterable
 
     <TValue>(predicate: Predicate<TValue>): {
         (iterable: TValue[]): TValue[]
         (iterable: string): string
         (iterable: Set<TValue>): Set<TValue>
-        (iterable: Map<unknown, unknown>): Map<
-            TValue extends unknown[] ? TValue[0] : never,
-            TValue extends unknown[] ? TValue[1] : never
-        >
-        <TIterable extends Iterable<unknown>>(
-            iterable: TIterable
-        ): TIterable
+        (iterable: Map<unknown, unknown>): Map<TValue extends unknown[] ? TValue[0] : never, TValue extends unknown[] ? TValue[1] : never>
+        <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
     }
 }

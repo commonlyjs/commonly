@@ -32,25 +32,14 @@ export default curry(map) as unknown as {
     <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, iterable: TValueA[]): TValueB[]
     <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, iterable: string): string
     <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, iterable: Set<TValueA>): Set<TValueB>
-    <TValueA extends unknown[], TValueB extends unknown[]>(
-        mapper: Mapper<TValueA, TValueB>,
-        iterable: Map<TValueA[0], TValueA[1]>
-    ): Map<TValueB[0], TValueB[1]>
-    <TIterable extends Iterable<unknown>>(
-        mapper: Mapper<Iterable.ExtractValue<TIterable>, Iterable.ExtractValue<TIterable>>,
-        iterable: TIterable
-    ): TIterable
+    <TValueA extends unknown[], TValueB extends unknown[]>(mapper: Mapper<TValueA, TValueB>, iterable: Map<TValueA[0], TValueA[1]>): Map<TValueB[0], TValueB[1]>
+    <TIterable extends Iterable<unknown>>(mapper: Mapper<Iterable.ExtractValue<TIterable>, Iterable.ExtractValue<TIterable>>, iterable: TIterable): TIterable
 
     <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>): {
         (iterable: TValueA[]): TValueB[]
         (iterable: string): string
         (iterable: Set<TValueA>): Set<TValueB>
-        (iterable: Map<unknown, unknown>): Map<
-            TValueB extends unknown[] ? TValueB[0] : never,
-            TValueB extends unknown[] ? TValueB[1] : never
-        >
-        <TIterable extends Iterable<unknown>>(
-            iterable: TIterable
-        ): TIterable
+        (iterable: Map<unknown, unknown>): Map<TValueB extends unknown[] ? TValueB[0] : never, TValueB extends unknown[] ? TValueB[1] : never>
+        <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
     }
 }

@@ -1,8 +1,8 @@
-import transduce from "../transduce/transduce"
+import Iterable from "../../type/Iterable/Iterable"
+import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xlast from "../../transducer/xlast/xlast"
-import curry from '../../function/curry/curry'
-import Iterable from "../../type/Iterable/Iterable"
+import transduce from "../transduce/transduce"
 
 
 
@@ -24,6 +24,7 @@ import Iterable from "../../type/Iterable/Iterable"
 const last = <TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {
     return transduce(xlast(), iterable, reducing.scalar as any)
 }
+
 
 
 export default curry(last) as unknown as {

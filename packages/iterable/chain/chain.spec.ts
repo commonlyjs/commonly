@@ -89,7 +89,7 @@ describe("function chain(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return an instance of Set where each even-indexed value is raised to the power of two", () => {
+            it("should return an instance of Set where each even-indexed element is raised to the power of two", () => {
                 const expected: Set<number> = new Set([ 0, 0, 1, 1, 1, 1, 2, 4, 3, 9, 5, 25, 8, 64, 13, 169 ])
 
                 expect(chain(mapper, iterable))
@@ -123,7 +123,7 @@ describe("function chain(mapper, iterable)", () => {
                 [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 5 ], [ 6, 8 ], [ 7, 13 ]
             ])
 
-            it("should return an instance of Map where each even-indexed value is raised to the power of two", () => {
+            it("should return an instance of Map where each even-indexed element is raised to the power of two", () => {
                 const expected: Map<number, number> = new Map([
                     [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 4, 1 ], [ 3, 2 ], [ 9, 4 ], [ 4, 3 ],
                     [ 16, 9 ], [ 5, 5 ], [ 25, 25 ], [ 6, 8 ], [ 36, 64 ], [ 7, 13 ], [ 49, 169 ]
@@ -158,7 +158,7 @@ describe("function chain(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a custom collection where each value is raised to the power of two", () => {
+            it("should return a custom collection where each element is raised to the power of two", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 0, 0, 1, 1, 1, 1, 2, 4, 3, 9, 5, 25, 8, 64, 13, 169 ])
 
                 expect(chain(mapper, iterable))

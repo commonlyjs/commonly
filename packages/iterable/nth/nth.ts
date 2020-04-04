@@ -13,7 +13,7 @@ import transduce from "../transduce/transduce"
  *
  * @param i - is a position of an element
  * @param iterable - is an iterable to be iterated over
- * @returns an nth element
+ * @returns an nth element of an iterable
  *
  * @example
  * ```
