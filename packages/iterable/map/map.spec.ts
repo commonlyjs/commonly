@@ -13,21 +13,25 @@ describe("function map(mapper, iterable)", () => {
             const iterable: number[] = []
 
             it("should return an empty array", () => {
+                const expected: number[] = []
+
                 expect(map(mapper, iterable))
-                    .toEqual([])
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual([])
+                    .toEqual(expected)
             })
         })
 
         context("iterable is not empty", () => {
-            const iterable = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
+            const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
             it("should return an array where each element is raised to the power of two", () => {
+                const expected: number[] = [ 0, 1, 1, 4, 9, 25, 64, 169 ]
+
                 expect(map(mapper, iterable))
-                    .toEqual([ 0, 1, 1, 4, 9, 25, 64, 169 ])
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual([ 0, 1, 1, 4, 9, 25, 64, 169 ])
+                    .toEqual(expected)
             })
         })
     })
@@ -41,10 +45,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: string = ""
 
             it("should return an empty string", () => {
+                const expected: string = ""
+
                 expect(map(mapper, iterable))
-                    .toEqual("")
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual("")
+                    .toEqual(expected)
             })
         })
 
@@ -52,10 +58,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: string = "011235813"
 
             it("should return a string where each character is raised to the power of two", () => {
+                const expected: string = "01149256419"
+
                 expect(map(mapper, iterable))
-                    .toEqual("01149256419")
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual("01149256419")
+                    .toEqual(expected)
             })
         })
     })
@@ -69,10 +77,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: Set<number> = new Set()
 
             it("should return an empty instance of Set", () => {
+                const expected: Set<number> = new Set()
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Set())
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Set())
+                    .toEqual(expected)
             })
         })
 
@@ -80,10 +90,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return an instance of Set where each element is raised to the power of two", () => {
+                const expected: Set<number> = new Set([ 0, 1, 1, 4, 9, 25, 64, 169 ])
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Set([ 0, 1, 1, 4, 9, 25, 64, 169 ]))
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Set([ 0, 1, 1, 4, 9, 25, 64, 169 ]))
+                    .toEqual(expected)
             })
         })
     })
@@ -97,10 +109,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: Map<number, number> = new Map()
 
             it("should return an empty instance of Map", () => {
+                const expected: Map<number, number> = new Map()
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Map())
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Map())
+                    .toEqual(expected)
             })
         })
 
@@ -110,14 +124,14 @@ describe("function map(mapper, iterable)", () => {
             ])
 
             it("should return an instance of Map where each element is raised to the power of two", () => {
+                const expected: Map<number, number> = new Map([
+                    [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
+                ])
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Map([
-                        [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
-                    ]))
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Map([
-                        [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
-                    ]))
+                    .toEqual(expected)
             })
         })
     })
@@ -131,10 +145,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka()
 
             it("should return an empty custom collection", () => {
+                const expected: Matrioshka<number> = new Matrioshka()
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Matrioshka())
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Matrioshka())
+                    .toEqual(expected)
             })
         })
 
@@ -142,10 +158,12 @@ describe("function map(mapper, iterable)", () => {
             const iterable = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a custom collection where each element is raised to the power of two", () => {
+                const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 4, 9, 25, 64, 169 ])
+
                 expect(map(mapper, iterable))
-                    .toEqual(new Matrioshka([ 0, 1, 1, 4, 9, 25, 64, 169 ]))
+                    .toEqual(expected)
                 expect(map(mapper)(iterable))
-                    .toEqual(new Matrioshka([ 0, 1, 1, 4, 9, 25, 64, 169 ]))
+                    .toEqual(expected)
             })
         })
     })
