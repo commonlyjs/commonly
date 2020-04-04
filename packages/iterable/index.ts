@@ -1,3 +1,4 @@
+import find from './find/find'
 import filter from './filter/filter'
 import map from './map/map'
 import reduce from "./reduce/reduce"
@@ -10,6 +11,7 @@ import chain from './chain/chain'
 
 export {
     chain,
+    find,
     filter,
     map,
     reduce,

@@ -54,6 +54,55 @@
     "description": "Applies a mapper function to each element in the iterable, producing an iterable of the same type."
   },
   {
+    "name": "find",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": "is a predicate function"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": null,
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { find } from \"@commonly/iterable\"\r\rfind(x => x > 2, [ 0, 1, 1, 2, 3, 5, 8 ])      // -> 3\r"
+    ],
+    "metadata": {
+      "source": "/find/find.ts",
+      "specification": "/find/find.spec.ts"
+    },
+    "description": "Applies a `predicate` function to each element in the `iterable`, returning an element passing this predicate."
+  },
+  {
     "name": "filter",
     "since": "1.0.0",
     "remarks": [],
