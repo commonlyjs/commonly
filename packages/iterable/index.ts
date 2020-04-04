@@ -4,10 +4,12 @@ import reduce from "./reduce/reduce"
 import slice from './slice/slice'
 import transduce from './transduce/transduce'
 import take from './take/take'
+import chain from './chain/chain'
 
 
 
 export {
+    chain,
     filter,
     map,
     reduce,

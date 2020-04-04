@@ -1,5 +1,59 @@
 [
   {
+    "name": "chain",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "mapper",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Mapper",
+          "description": "is a mapping function"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { chain } from \"@commonly/iterable\"\r\rchain(x => [ x, x * x ], [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 0, 1, 1, 1, 1, 2, 4, 3, 9, 5, 25, 8, 64 ]\r"
+    ],
+    "metadata": {
+      "source": "/chain/chain.ts",
+      "specification": "/chain/chain.spec.ts"
+    },
+    "description": "Applies a mapper function to each element in the iterable, producing an iterable of the same type."
+  },
+  {
     "name": "filter",
     "since": "1.0.0",
     "remarks": [],
