@@ -6,11 +6,13 @@ import slice from './slice/slice'
 import transduce from './transduce/transduce'
 import take from './take/take'
 import chain from './chain/chain'
+import every from './every/every'
 
 
 
 export {
     chain,
+    every,
     find,
     filter,
     map,
