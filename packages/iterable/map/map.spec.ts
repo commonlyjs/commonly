@@ -25,7 +25,7 @@ describe("function map(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
-            it("should return an array where each element is raised to the power of two", () => {
+            it("should return an array where each value is raised to the power of two", () => {
                 const expected: number[] = [ 0, 1, 1, 4, 9, 25, 64, 169 ]
 
                 expect(map(mapper, iterable))
@@ -89,7 +89,7 @@ describe("function map(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return an instance of Set where each element is raised to the power of two", () => {
+            it("should return an instance of Set where each value is raised to the power of two", () => {
                 const expected: Set<number> = new Set([ 0, 1, 1, 4, 9, 25, 64, 169 ])
 
                 expect(map(mapper, iterable))
@@ -123,7 +123,7 @@ describe("function map(mapper, iterable)", () => {
                 [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 5 ], [ 6, 8 ], [ 7, 13 ]
             ])
 
-            it("should return an instance of Map where each element is raised to the power of two", () => {
+            it("should return an instance of Map where each value is raised to the power of two", () => {
                 const expected: Map<number, number> = new Map([
                     [ 0, 0 ], [ 1, 1 ], [ 4, 1 ], [ 9, 4 ], [ 16, 9 ], [ 25, 25 ], [ 36, 64 ], [ 49, 169 ]
                 ])
@@ -155,9 +155,9 @@ describe("function map(mapper, iterable)", () => {
         })
 
         context("iterable is not empty", () => {
-            const iterable = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
+            const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a custom collection where each element is raised to the power of two", () => {
+            it("should return a custom collection where each value is raised to the power of two", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 4, 9, 25, 64, 169 ])
 
                 expect(map(mapper, iterable))
