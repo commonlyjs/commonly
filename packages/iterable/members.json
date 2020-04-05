@@ -54,6 +54,55 @@
     "description": "Applies a mapper function to each element in the iterable, producing an iterable of the same type."
   },
   {
+    "name": "drop",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a number of elements to be dropped"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { drop } from \"@commonly/iterable\"\r\rdrop(5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 5, 8 ]\r"
+    ],
+    "metadata": {
+      "source": "/drop/drop.ts",
+      "specification": "/drop/drop.spec.ts"
+    },
+    "description": "Returns an iterable which contains a slice of all elements of given `iterable` except for the first `n` elements."
+  },
+  {
     "name": "every",
     "since": "1.0.0",
     "remarks": [],

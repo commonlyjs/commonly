@@ -1,4 +1,5 @@
 import chain from "./chain/chain"
+import drop from "./drop/drop"
 import every from "./every/every"
 import find from "./find/find"
 import filter from "./filter/filter"
@@ -17,6 +18,7 @@ import transduce from "./transduce/transduce"
 
 export {
     chain,
+    drop,
     every,
     find,
     filter,
