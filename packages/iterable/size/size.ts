@@ -7,7 +7,7 @@ import transduce from "../transduce/transduce"
 
 
 /**
- * [Not documented yet]
+ * Returns the size of the `iterable`.
  *
  * @since 1.0.0
  *
@@ -16,9 +16,9 @@ import transduce from "../transduce/transduce"
  *
  * @example
  * ```
- * import { take } from "@commonly/iterable"
+ * import { size } from "@commonly/iterable"
  *
- * take(5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 2, 3 ]
+ * size([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 7
  * ```
  */
 const size = <TAccumulator, TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {

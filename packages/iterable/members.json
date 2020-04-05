@@ -566,6 +566,47 @@
     "description": "Returns an iterable of which the order of the elements is reversed."
   },
   {
+    "name": "size",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { size } from \"@commonly/iterable\"\r\rsize([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 7\r"
+    ],
+    "metadata": {
+      "source": "/size/size.ts",
+      "specification": "/size/size.spec.ts"
+    },
+    "description": "Returns the size of the `iterable`."
+  },
+  {
     "name": "slice",
     "since": "1.0.0",
     "remarks": [],

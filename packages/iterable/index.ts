@@ -10,6 +10,7 @@ import map from "./map/map"
 import nth from "./nth/nth"
 import reduce from "./reduce/reduce"
 import reverse from "./reverse/reverse"
+import size from "./size/size"
 import slice from "./slice/slice"
 import some from "./some/some"
 import sort from "./sort/sort"
@@ -32,6 +33,7 @@ export {
     nth,
     reduce,
     reverse,
+    size,
     slice,
     some,
     sort,
