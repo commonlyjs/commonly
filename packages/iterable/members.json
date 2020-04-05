@@ -591,7 +591,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": "is an iterable to be taken from"
+          "description": "is an iterable to be iterated over"
         }
       ],
       "typeparameters": [
@@ -618,7 +618,7 @@
       "source": "/take/take.ts",
       "specification": "/take/take.spec.ts"
     },
-    "description": "Creates a new iterable of the same type as the one given, where only first n values are taken."
+    "description": "Returns an iterable which contains a slice of only the first `n` elements of given `iterable`."
   },
   {
     "name": "transduce",

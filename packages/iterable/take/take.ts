@@ -1,16 +1,17 @@
+import Iterable from "../../type/Iterable/Iterable"
+import curry from "../../function/curry/curry"
 import xtake from "../../transducer/xtake/xtake"
 import transduce from "../transduce/transduce"
-import delegate from "../../function/delegate/delegate"
 
 
 
 /**
- * Creates a new iterable of the same type as the one given, where only first n values are taken.
+ * Returns an iterable which contains a slice of only the first `n` elements of given `iterable`.
  *
  * @since 1.0.0
  *
  * @param n - is a number of elements to be taken
- * @param iterable - is an iterable to be taken from
+ * @param iterable - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -26,4 +27,10 @@ const take = <TAccumulator, TValue>(n: number, iterable: Iterable<TValue>): Iter
 
 
 
-export default delegate(take)
+export default curry(take) as unknown as {
+    <TValue>(n: number, iterable: TValue[]): TValue[]
+    <TValue>(n: number, iterable: string): string
+    <TValue>(n: number, iterable: Set<TValue>): Set<TValue>
+    <TValue extends unknown[]>(n: number, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
+    <TIterable extends Iterable<unknown>>(n: number, iterable: TIterable): TIterable
+}
