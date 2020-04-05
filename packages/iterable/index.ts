@@ -13,6 +13,7 @@ import reverse from "./reverse/reverse"
 import slice from "./slice/slice"
 import some from "./some/some"
 import take from "./take/take"
+import tail from "./tail/tail"
 import transduce from "./transduce/transduce"
 
 
@@ -33,5 +34,6 @@ export {
     slice,
     some,
     take,
+    tail,
     transduce
 }

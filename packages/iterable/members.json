@@ -716,6 +716,47 @@
     "description": "Returns an iterable which contains a slice of only the first `n` elements of given `iterable`."
   },
   {
+    "name": "tail",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { tail } from \"@commonly/iterable\"\r\rtail([ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 1, 1, 2, 3, 5, 8 ]\r"
+    ],
+    "metadata": {
+      "source": "/tail/tail.ts",
+      "specification": "/tail/tail.spec.ts"
+    },
+    "description": "Returns a tail of `iterable` as an iterable of the same type as the one given."
+  },
+  {
     "name": "transduce",
     "since": "1.0.0",
     "remarks": [],
