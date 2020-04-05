@@ -1,4 +1,5 @@
 import chain from "./chain/chain"
+import distinct from "./distinct/distinct"
 import drop from "./drop/drop"
 import every from "./every/every"
 import find from "./find/find"
@@ -18,6 +19,7 @@ import transduce from "./transduce/transduce"
 
 export {
     chain,
+    distinct,
     drop,
     every,
     find,
