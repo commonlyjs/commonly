@@ -7,6 +7,7 @@ import last from "./last/last"
 import map from "./map/map"
 import nth from "./nth/nth"
 import reduce from "./reduce/reduce"
+import reverse from "./reverse/reverse"
 import slice from "./slice/slice"
 import some from "./some/some"
 import take from "./take/take"
@@ -24,6 +25,7 @@ export {
     map,
     nth,
     reduce,
+    reverse,
     slice,
     some,
     take,

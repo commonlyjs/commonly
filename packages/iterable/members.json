@@ -430,6 +430,47 @@
     "description": "Perform a reduction on a given iterable by applying a given {@link @commonly/type:Reducer | reducing function} to each yield value from an iterable."
   },
   {
+    "name": "reverse",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { reverse } from \"@commonly/iterable\"\r\rreverse([ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 8, 5, 3, 2, 1, 1, 0 ]\r"
+    ],
+    "metadata": {
+      "source": "/reverse/reverse.ts",
+      "specification": "/reverse/reverse.spec.ts"
+    },
+    "description": "Returns an iterable of which the order of the elements is reversed."
+  },
+  {
     "name": "slice",
     "since": "1.0.0",
     "remarks": [],
