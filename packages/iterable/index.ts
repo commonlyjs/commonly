@@ -12,6 +12,7 @@ import reduce from "./reduce/reduce"
 import reverse from "./reverse/reverse"
 import slice from "./slice/slice"
 import some from "./some/some"
+import sort from "./sort/sort"
 import take from "./take/take"
 import tail from "./tail/tail"
 import transduce from "./transduce/transduce"
@@ -33,6 +34,7 @@ export {
     reverse,
     slice,
     some,
+    sort,
     take,
     tail,
     transduce

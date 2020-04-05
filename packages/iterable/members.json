@@ -667,6 +667,55 @@
     "description": "Applies a `predicate` function to each element in the `iterable`, returning a boolean indicating whether any of the elements passed this predicate."
   },
   {
+    "name": "sort",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "comparator",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Comparator",
+          "description": "is a comparator function"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { sort } from \"@commonly/iterable\"\r\rsort((a, b) => b - a, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 8, 5, 3, 2, 1, 1, 0 ]\r"
+    ],
+    "metadata": {
+      "source": "/sort/sort.ts",
+      "specification": "/sort/sort.spec.ts"
+    },
+    "description": "Returns an iterable of which the order of the elements is dictated by a `comparator` function."
+  },
+  {
     "name": "take",
     "since": "1.0.0",
     "remarks": [],
