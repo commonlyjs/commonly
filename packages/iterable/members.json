@@ -461,6 +461,55 @@
     "description": "Returns an `i`-nth element of `iterable`."
   },
   {
+    "name": "partition",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "n",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "number",
+          "description": "is a number of elements to be put into a tuple"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { partition } from \"@commonly/iterable\"\r\rpartition(2, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ [ 0, 1 ], [ 1, 2 ], [ 3, 5 ], [ 8 ] ]\r"
+    ],
+    "metadata": {
+      "source": "/partition/partition.ts",
+      "specification": "/partition/partition.spec.ts"
+    },
+    "description": "Returns a partitioned iterable into `n`-tuples."
+  },
+  {
     "name": "reduce",
     "since": "1.0.0",
     "remarks": [
