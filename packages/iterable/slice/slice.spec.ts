@@ -1,3 +1,4 @@
+import Matrioshka from "../__fixtures__/Matrioshka"
 import slice from "./slice"
 
 
@@ -5,60 +6,124 @@ import slice from "./slice"
 describe("function slice(start, end, iterable)", () => {
     context("iterable is an array", () => {
         context("iterable is empty", () => {
-            it("should return an empty array", () => {
-                const iterable: (number | string)[] = []
+            const iterable: number[] = []
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual([])
+            it("should return an empty array", () => {
+                const expected: number[] = []
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
 
         context("iterable is not empty", () => {
-            it("should return an array with values starting from the fourth value to the end of an array", () => {
-                const iterable: (number | string)[] = [ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ]
+            const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual([ "3", 5, "8", 13, "21", 34 ])
+            it("should return a slice of elements starting with the second and ending on the fifth", () => {
+                const expected: number[] = [ 0, 1, 1, 2, 3 ]
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
     })
 
     context("iterable is a string", () => {
         context("iterable is empty", () => {
-            it("should return an empty string", () => {
-                const iterable: string = ""
+            const iterable: string = ""
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual("")
+            it("should return an empty string", () => {
+                const expected: string = ""
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
 
         context("iterable is not empty", () => {
-            it("should return a string with values starting from the fourth value to the end of a string", () => {
-                const iterable: string = "0112358132134"
+            const iterable: string = "011235813"
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual("358132134")
+            it("should return a slice of elements starting with the second and ending on the fifth", () => {
+                const expected: string = "01123"
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
     })
 
-    context("iterable is a Set", () => {
+    context("iterable is an instance of Set", () => {
         context("iterable is empty", () => {
-            it("should return an empty Set", () => {
-                const iterable: Set<number | string> = new Set()
+            const iterable: Set<number> = new Set()
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual(new Set())
+            it("should return an empty instance of Set", () => {
+                const expected: Set<number> = new Set()
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
 
         context("iterable is not empty", () => {
-            it("should return a Set with values starting from the fourth value to the end of a Set", () => {
-                const iterable: Set<number | string> = new Set([ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ])
+            const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-                expect(slice(4, Infinity, iterable))
-                    .toEqual(new Set([ "3", 5, "8", 13, "21", 34 ]))
+            it("should return a slice of elements starting with the second and ending on the fifth", () => {
+                const expected: Set<number> = new Set([ 0, 1, 1, 2, 3, 5 ])
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
+            })
+        })
+    })
+
+    context("iterable is an instance of Map", () => {
+        context("iterable is empty", () => {
+            const iterable: Map<number, number> = new Map()
+
+            it("should return an empty instance of Map", () => {
+                const expected: Map<number, number> = new Map()
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
+            })
+        })
+
+        context("iterable is not empty", () => {
+            const iterable: Map<number, number> = new Map([
+                [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 5 ], [ 6, 8 ], [ 7, 13 ]
+            ])
+
+            it("should return a slice of elements starting with the second and ending on the fifth", () => {
+                const expected: Map<number, number> = new Map([
+                    [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ]
+                ])
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
+            })
+        })
+    })
+
+    context("iterable is a custom finite iterator-based collection", () => {
+        context("iterable is empty", () => {
+            const iterable: Matrioshka<number> = new Matrioshka()
+
+            it("should return an empty custom collection", () => {
+                const expected: Matrioshka<number> = new Matrioshka()
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
+            })
+        })
+
+        context("iterable is not empty", () => {
+            const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
+
+            it("should return a slice of elements starting with the second and ending on the fifth", () => {
+                const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5 ])
+
+                expect(slice(0, 5, iterable))
+                    .toEqual(expected)
             })
         })
     })

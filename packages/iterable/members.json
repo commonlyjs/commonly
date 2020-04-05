@@ -498,7 +498,7 @@
           "defaultValue": null,
           "optional": false,
           "type": "Iterable",
-          "description": "is an iterable to be sliced from"
+          "description": "is an iterable to be iterated over"
         }
       ],
       "typeparameters": [
@@ -520,7 +520,7 @@
       "source": "/slice/slice.ts",
       "specification": "/slice/slice.spec.ts"
     },
-    "description": "Creates a new iterable of the same type as the one given, where only values from start to end are included."
+    "description": "Returns an iterable which contains a slice of elements of given `iterable`."
   },
   {
     "name": "some",
