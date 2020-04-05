@@ -353,7 +353,7 @@
       ],
       "returnValue": {
         "type": "Iterable",
-        "description": "an nth element"
+        "description": "an nth element of an iterable"
       }
     },
     "examples": [

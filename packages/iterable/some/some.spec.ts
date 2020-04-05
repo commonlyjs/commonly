@@ -3,7 +3,7 @@ import some from "./some"
 
 
 
-describe("function every(predicate, iterable)", () => {
+describe("function some(predicate, iterable)", () => {
     context("iterable is an array", () => {
         const predicate = (value: number): boolean => {
             return Boolean(value % 2)
