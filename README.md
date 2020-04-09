@@ -438,36 +438,36 @@ Roadmap
     * [ ] `@commonly/iterable`
         * [ ] `@commonly/iterable/adjust`
         * [ ] `@commonly/iterable/append`
-        * [ ] `@commonly/iterable/chain`
+        * [x] `@commonly/iterable/chain`
         * [ ] `@commonly/iterable/concat`
-        * [ ] `@commonly/iterable/distinct`
-        * [ ] `@commonly/iterable/drop`
-        * [ ] `@commonly/iterable/dropWhile`
-        * [ ] `@commonly/iterable/every`
-        * [ ] `@commonly/iterable/filter`
-        * [ ] `@commonly/iterable/find`
-        * [ ] `@commonly/iterable/flatten`
-        * [ ] `@commonly/iterable/head`
+        * [x] `@commonly/iterable/distinct`
+        * [x] `@commonly/iterable/drop`
+        * [x] `@commonly/iterable/dropWhile`
+        * [x] `@commonly/iterable/every`
+        * [x] `@commonly/iterable/filter`
+        * [x] `@commonly/iterable/find`
+        * [x] `@commonly/iterable/flatten`
+        * [x] `@commonly/iterable/head`
         * [ ] `@commonly/iterable/includes`
         * [ ] `@commonly/iterable/insert`
-        * [ ] `@commonly/iterable/last`
-        * [ ] `@commonly/iterable/map`
-        * [ ] `@commonly/iterable/nth`
-        * [ ] `@commonly/iterable/partition`
-        * [ ] `@commonly/iterable/partitionBy`
+        * [x] `@commonly/iterable/last`
+        * [x] `@commonly/iterable/map`
+        * [x] `@commonly/iterable/nth`
+        * [x] `@commonly/iterable/partition`
+        * [x] `@commonly/iterable/partitionBy`
         * [ ] `@commonly/iterable/prepend`
         * [ ] `@commonly/iterable/range`
-        * [ ] `@commonly/iterable/reduce`
+        * [x] `@commonly/iterable/reduce`
         * [ ] `@commonly/iterable/repeat`
-        * [ ] `@commonly/iterable/reverse`
-        * [ ] `@commonly/iterable/size`
-        * [ ] `@commonly/iterable/slice`
-        * [ ] `@commonly/iterable/some`
-        * [ ] `@commonly/iterable/sort`
-        * [ ] `@commonly/iterable/tail`
-        * [ ] `@commonly/iterable/take`
-        * [ ] `@commonly/iterable/takeWhile`
-        * [ ] `@commonly/iterable/transduce`
+        * [x] `@commonly/iterable/reverse`
+        * [x] `@commonly/iterable/size`
+        * [x] `@commonly/iterable/slice`
+        * [x] `@commonly/iterable/some`
+        * [x] `@commonly/iterable/sort`
+        * [x] `@commonly/iterable/tail`
+        * [x] `@commonly/iterable/take`
+        * [x] `@commonly/iterable/takeWhile`
+        * [x] `@commonly/iterable/transduce`
         * [ ] `@commonly/iterable/zip`
     * [ ] `@commonly/logic`
         * [ ] `@commonly/logic/and`
@@ -534,7 +534,7 @@ Roadmap
         * [x] `@commonly/transducer/xevery`
         * [x] `@commonly/transducer/xfilter`
         * [x] `@commonly/transducer/xfind`
-        * [ ] `@commonly/transducer/xflatten`
+        * [x] `@commonly/transducer/xflatten`
         * [x] `@commonly/transducer/xhead`
         * [x] `@commonly/transducer/xlast`
         * [x] `@commonly/transducer/xmap`
