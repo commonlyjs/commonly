@@ -909,6 +909,55 @@
     "description": "Returns an iterable which contains a slice of only the first `n` elements of given `iterable`."
   },
   {
+    "name": "takeWhile",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "predicate",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Predicate",
+          "description": "is a predicate function"
+        },
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValue",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { takeWhile } from \"@commonly/iterable\"\r\rtakeWhile(value => value <= 3, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 2, 3 ]\r"
+    ],
+    "metadata": {
+      "source": "/takeWhile/takeWhile.ts",
+      "specification": "/takeWhile/takeWhile.spec.ts"
+    },
+    "description": "Returns an iterable which contains a slice of only the first `n` elements of given `iterable`."
+  },
+  {
     "name": "tail",
     "since": "1.0.0",
     "remarks": [],

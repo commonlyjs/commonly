@@ -17,6 +17,7 @@ import slice from "./slice/slice"
 import some from "./some/some"
 import sort from "./sort/sort"
 import take from "./take/take"
+import takeWhile from "./takeWhile/takeWhile"
 import tail from "./tail/tail"
 import transduce from "./transduce/transduce"
 
@@ -42,6 +43,7 @@ export {
     some,
     sort,
     take,
+    takeWhile,
     tail,
     transduce
 }
