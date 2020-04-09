@@ -130,9 +130,9 @@ describe("function partition(n, iterable)", () => {
             it("should return an empty custom collection", () => {
                 const expected: Matrioshka<number> = new Matrioshka()
 
-                expect(partition(3, iterable))
+                expect(partition(2, iterable))
                     .toEqual(expected)
-                expect(partition(3)(iterable))
+                expect(partition(2)(iterable))
                     .toEqual(expected)
             })
         })
@@ -141,11 +141,11 @@ describe("function partition(n, iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a custom collection partitioned into couples", () => {
-                const expected: Matrioshka<number[]> = new Matrioshka([ [ 0, 1, 1 ], [ 2, 3, 5 ], [ 8, 13 ] ])
+                const expected: Matrioshka<number[]> = new Matrioshka([ [ 0, 1 ], [ 1, 2 ], [ 3, 5 ], [ 8, 13 ] ])
 
-                expect(partition(3, iterable))
+                expect(partition(2, iterable))
                     .toEqual(expected)
-                expect(partition(3)(iterable))
+                expect(partition(2)(iterable))
                     .toEqual(expected)
             })
         })
