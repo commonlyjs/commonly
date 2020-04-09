@@ -6,7 +6,7 @@ import Iterable from "../../type/Iterable/Iterable"
 
 
 /**
- * Returns a partitioned iterable into `n`-tuples.
+ * Returns an iterable partitioned into `n`-tuples.
  *
  * @since 1.0.0
  *
