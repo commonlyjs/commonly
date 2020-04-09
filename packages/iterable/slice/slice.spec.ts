@@ -11,7 +11,7 @@ describe("function slice(start, end, iterable)", () => {
             it("should return an empty array", () => {
                 const expected: number[] = []
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -20,9 +20,9 @@ describe("function slice(start, end, iterable)", () => {
             const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
-                const expected: number[] = [ 0, 1, 1, 2, 3 ]
+                const expected: number[] = [ 1, 2, 3 ]
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -35,7 +35,7 @@ describe("function slice(start, end, iterable)", () => {
             it("should return an empty string", () => {
                 const expected: string = ""
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -44,9 +44,9 @@ describe("function slice(start, end, iterable)", () => {
             const iterable: string = "011235813"
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
-                const expected: string = "01123"
+                const expected: string = "123"
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -59,7 +59,7 @@ describe("function slice(start, end, iterable)", () => {
             it("should return an empty instance of Set", () => {
                 const expected: Set<number> = new Set()
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -68,9 +68,9 @@ describe("function slice(start, end, iterable)", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
-                const expected: Set<number> = new Set([ 0, 1, 1, 2, 3, 5 ])
+                const expected: Set<number> = new Set([ 2, 3, 5 ])
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -83,7 +83,7 @@ describe("function slice(start, end, iterable)", () => {
             it("should return an empty instance of Map", () => {
                 const expected: Map<number, number> = new Map()
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -95,10 +95,10 @@ describe("function slice(start, end, iterable)", () => {
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
                 const expected: Map<number, number> = new Map([
-                    [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ]
+                    [ 2, 1 ], [ 3, 2 ], [ 4, 3 ]
                 ])
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -111,7 +111,7 @@ describe("function slice(start, end, iterable)", () => {
             it("should return an empty custom collection", () => {
                 const expected: Matrioshka<number> = new Matrioshka()
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
@@ -120,9 +120,9 @@ describe("function slice(start, end, iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
-                const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3 ])
+                const expected: Matrioshka<number> = new Matrioshka([ 1, 2, 3 ])
 
-                expect(slice(0, 5, iterable))
+                expect(slice(2, 5, iterable))
                     .toEqual(expected)
             })
         })
