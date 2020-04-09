@@ -9,6 +9,7 @@ import last from "./last/last"
 import map from "./map/map"
 import nth from "./nth/nth"
 import partition from "./partition/partition"
+import partitionBy from "./partitionBy/partitionBy"
 import reduce from "./reduce/reduce"
 import reverse from "./reverse/reverse"
 import size from "./size/size"
@@ -33,6 +34,7 @@ export {
     map,
     nth,
     partition,
+    partitionBy,
     reduce,
     reverse,
     size,
