@@ -1,6 +1,7 @@
 import chain from "./chain/chain"
 import distinct from "./distinct/distinct"
 import drop from "./drop/drop"
+import dropWhile from "./dropWhile/dropWhile"
 import every from "./every/every"
 import find from "./find/find"
 import filter from "./filter/filter"
@@ -27,6 +28,7 @@ export {
     chain,
     distinct,
     drop,
+    dropWhile,
     every,
     find,
     filter,

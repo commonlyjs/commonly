@@ -16,24 +16,24 @@ describe("function xdropWhile(predicate)", () => {
 
         context("transducer is composed from a single transducing function", () => {
             const transducer = compose(
-                xdropWhile<number | string>(x => x > 7)
+                xdropWhile<number | string>(x => x < 7)
             )
 
             it("should return an array with four first values", () => {
                 expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
-                    .toEqual([ "0", 1, "1", 2, "3", 5 ])
+                    .toEqual([ "8", 13, "21", 34 ])
             })
         })
 
         context("transducer is composed from two transducing functions", () => {
             const transducer = compose(
                 xfilter<number | string>(x => !!(Number(x) % 2)),
-                xdropWhile<number | string>(x => x > 7)
+                xdropWhile<number | string>(x => x < 7)
             )
 
             it("should return an array with four first values", () => {
                 expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
-                    .toEqual([ 1, "1", "3", 5 ])
+                    .toEqual([ 13, "21" ])
             })
         })
 
@@ -41,12 +41,12 @@ describe("function xdropWhile(predicate)", () => {
             const transducer = compose(
                 xmap<number | string, number>(Number),
                 xfilter<number>(x => !!(x % 2)),
-                xdropWhile<number>(x => x > 7)
+                xdropWhile<number>(x => x < 7)
             )
 
             it("should return an array with four first values", () => {
                 expect(transduce(transducer, iterable, reducer, [] as string[]))
-                    .toEqual([ 1, 1, 3, 5 ])
+                    .toEqual([ 13, 21 ])
             })
         })
     })

@@ -15,8 +15,16 @@ import Transduced from "../../type/Transduced/Transduced"
  */
 const xdropWhile = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> =>
     <TAccumulator>(reducer: Transduced<Reducer<TAccumulator, TValue>>) => {
+        const state = {
+            dropping: true
+        }
+
         const transduced = (accumulator: TAccumulator, value: TValue) => {
-            if (predicate(value)) {
+            if (state.dropping && !predicate(value)) {
+                state.dropping = false
+            }
+
+            if (state.dropping) {
                 return accumulator
             } else {
                 return reducer(accumulator, value)
@@ -28,6 +36,7 @@ const xdropWhile = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> =>
         }
 
         transduced.complete = (accumulator: TAccumulator) => {
+            state.dropping = true
             return reducer.complete(accumulator)
         }
 
