@@ -14,7 +14,12 @@ joining.initialize = <TAccumulator extends string[]>(): TAccumulator => {
 
 joining.complete = <TAccumulator extends string[]>(accumulator: TAccumulator): TAccumulator => {
     // @ts-ignore
-    return accumulator.join("")
+    return accumulator
+        .map(string =>
+            Array.isArray(string) ?
+                string.join("") : string
+        )
+        .join("")
 }
 
 
