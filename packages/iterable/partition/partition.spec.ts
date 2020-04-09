@@ -33,10 +33,6 @@ describe("function partition(n, iterable)", () => {
     })
 
     context("iterable is a string", () => {
-        const mapper = (value: string): [ string, number ] => {
-            return [ value, Number(value) * Number(value) ]
-        }
-
         context("iterable is empty", () => {
             const iterable: string = ""
 
@@ -65,10 +61,6 @@ describe("function partition(n, iterable)", () => {
     })
 
     context("iterable is an instance of Set", () => {
-        const mapper = (value: number): [ number, number ] => {
-            return [ value, value * value ]
-        }
-
         context("iterable is empty", () => {
             const iterable: Set<number> = new Set()
 
