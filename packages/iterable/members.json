@@ -345,6 +345,52 @@
     "description": "Applies a `predicate` function to each element in the `iterable`, producing an iterable of the same type with elements passing this predicate."
   },
   {
+    "name": "flatten",
+    "since": "1.0.0",
+    "remarks": [],
+    "signature": {
+      "parameters": [
+        {
+          "name": "iterable",
+          "variadic": false,
+          "defaultValue": null,
+          "optional": false,
+          "type": "Iterable",
+          "description": "is an iterable to be iterated over"
+        }
+      ],
+      "typeparameters": [
+        {
+          "name": "TAccumulator",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueA",
+          "defaultValue": null,
+          "extends": null
+        },
+        {
+          "name": "TValueB",
+          "defaultValue": null,
+          "extends": null
+        }
+      ],
+      "returnValue": {
+        "type": "Iterable",
+        "description": "an iterable of the same type as the one given"
+      }
+    },
+    "examples": [
+      "import { flatten } from \"@commonly/iterable\"\r\rflatten([ 0, [ 1 ], [ 1, 2 ], [ 3 , 5, 8 ] ])     // -> [ 0, 1, 1, 2, 3, 5, 8 ]\r"
+    ],
+    "metadata": {
+      "source": "/flatten/flatten.ts",
+      "specification": "/flatten/flatten.spec.ts"
+    },
+    "description": "Returns a flattened iterable."
+  },
+  {
     "name": "head",
     "since": "1.0.0",
     "remarks": [],

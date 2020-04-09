@@ -5,6 +5,7 @@ import dropWhile from "./dropWhile/dropWhile"
 import every from "./every/every"
 import find from "./find/find"
 import filter from "./filter/filter"
+import flatten from "./flatten/flatten"
 import head from "./head/head"
 import last from "./last/last"
 import map from "./map/map"
@@ -32,6 +33,7 @@ export {
     every,
     find,
     filter,
+    flatten,
     head,
     last,
     map,
