@@ -8,9 +8,9 @@ class Matrioshka<TValue> implements Iterable<TValue>, Reducible<Matrioshka<TValu
     private readonly _value: TValue | null = null
 
     constructor(values: TValue[] = []) {
-        const [ value, ...remainingValues ] = values
+        const [ value = null, ...remainingValues ] = values
 
-        if (value) {
+        if (value !== null) {
             this._value = value
         }
 
@@ -28,11 +28,11 @@ class Matrioshka<TValue> implements Iterable<TValue>, Reducible<Matrioshka<TValu
     }
 
     public *[Symbol.iterator](): Iterator<TValue> {
-        if (this._value) {
+        if (this._value != null) {
             yield this._value
         }
 
-        if (this._matrioshka) {
+        if (this._matrioshka != null) {
             yield* this._matrioshka
         }
     }

@@ -120,7 +120,7 @@ describe("function take(n, iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a slice of iterable containing only the first five elements", () => {
-                const expected: Matrioshka<number> = new Matrioshka([ 8, 13 ])
+                const expected: Matrioshka<number> = new Matrioshka([ 5, 8, 13 ])
 
                 expect(drop(5, iterable))
                     .toEqual(expected)

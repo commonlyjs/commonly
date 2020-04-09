@@ -120,7 +120,7 @@ describe("function tail(iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a tail of iterable", () => {
-                const expected: Matrioshka<number> = new Matrioshka([ 1, 2, 3, 5, 8, 13 ])
+                const expected: Matrioshka<number> = new Matrioshka([ 1, 1, 2, 3, 5, 8, 13 ])
 
                 expect(tail(iterable))
                     .toEqual(expected)

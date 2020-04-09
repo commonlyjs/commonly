@@ -118,7 +118,7 @@ describe("function head(iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a first element", () => {
-                const expected: number = 1
+                const expected: number = 0
 
                 expect(head(iterable))
                     .toEqual(expected)

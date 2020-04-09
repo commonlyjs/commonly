@@ -120,7 +120,7 @@ describe("function slice(start, end, iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a slice of elements starting with the second and ending on the fifth", () => {
-                const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5 ])
+                const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3 ])
 
                 expect(slice(0, 5, iterable))
                     .toEqual(expected)

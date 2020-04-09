@@ -136,7 +136,7 @@ describe("function nth(iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a fourth element counting from zero", () => {
-                const expected: number = 5
+                const expected: number = 3
 
                 expect(nth(4, iterable))
                     .toEqual(expected)

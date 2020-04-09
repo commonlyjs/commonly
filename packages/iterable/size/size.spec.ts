@@ -118,7 +118,7 @@ describe("function size(iterable)", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
             it("should return a size of an iterable", () => {
-                const expected: number = 7
+                const expected: number = 8
 
                 expect(size(iterable))
                     .toEqual(expected)
