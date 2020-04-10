@@ -13,6 +13,12 @@ describe("function slice(start, end, iterable)", () => {
 
                 expect(slice(2, 5, iterable))
                     .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -23,6 +29,12 @@ describe("function slice(start, end, iterable)", () => {
                 const expected: number[] = [ 1, 2, 3 ]
 
                 expect(slice(2, 5, iterable))
+                    .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -37,6 +49,12 @@ describe("function slice(start, end, iterable)", () => {
 
                 expect(slice(2, 5, iterable))
                     .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -47,6 +65,12 @@ describe("function slice(start, end, iterable)", () => {
                 const expected: string = "123"
 
                 expect(slice(2, 5, iterable))
+                    .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -61,6 +85,12 @@ describe("function slice(start, end, iterable)", () => {
 
                 expect(slice(2, 5, iterable))
                     .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -71,6 +101,12 @@ describe("function slice(start, end, iterable)", () => {
                 const expected: Set<number> = new Set([ 2, 3, 5 ])
 
                 expect(slice(2, 5, iterable))
+                    .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -84,6 +120,12 @@ describe("function slice(start, end, iterable)", () => {
                 const expected: Map<number, number> = new Map()
 
                 expect(slice(2, 5, iterable))
+                    .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -100,6 +142,12 @@ describe("function slice(start, end, iterable)", () => {
 
                 expect(slice(2, 5, iterable))
                     .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
+                    .toEqual(expected)
             })
         })
     })
@@ -113,6 +161,12 @@ describe("function slice(start, end, iterable)", () => {
 
                 expect(slice(2, 5, iterable))
                     .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -123,6 +177,12 @@ describe("function slice(start, end, iterable)", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 1, 2, 3 ])
 
                 expect(slice(2, 5, iterable))
+                    .toEqual(expected)
+                expect(slice(2, 5)(iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5, iterable))
+                    .toEqual(expected)
+                expect(slice(2)(5)(iterable))
                     .toEqual(expected)
             })
         })
