@@ -30,7 +30,7 @@ const slice = <TValue>(start: number, end: number, iterable: Iterable<TValue>): 
 
 export default curry(slice) as unknown as {
     <TValue>(start: number, end: number, iterable: TValue[]): TValue[]
-    <TValue>(start: number, end: number, iterable: string): string
+    (start: number, end: number, iterable: string): string
     <TValue>(start: number, end: number, iterable: Set<TValue>): Set<TValue>
     <TValue extends unknown[]>(start: number, end: number, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
     <TIterable extends Iterable<unknown>>(start: number, end: number, iterable: TIterable): TIterable
