@@ -12,7 +12,7 @@ describe("function chain(mapper, iterable)", () => {
         context("iterable is empty", () => {
             const iterable: number[] = []
 
-            it("should return an empty array", () => {
+            it("should return an empty iterable", () => {
                 const expected: number[] = []
 
                 expect(chain(mapper, iterable))
@@ -25,7 +25,7 @@ describe("function chain(mapper, iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
-            it("should return an array where each even-indexed element is raised to the power of two", () => {
+            it("should return an iterable where each even-indexed element is raised to the power of two", () => {/************************************/
                 const expected: number[] = [ 0, 0, 1, 1, 1, 1, 2, 4, 3, 9, 5, 25, 8, 64, 13, 169 ]
 
                 expect(chain(mapper, iterable))
@@ -102,7 +102,7 @@ describe("function chain(mapper, iterable)", () => {
 
     context("iterable is an instance of Map", () => {
         const mapper = ([ key, value ]: [ number, number ]): [ number, number ][] => {
-            return [ [ key, value ],  [ key * key, value * value ] ]
+            return [ [ key, value ], [ key * key, value * value ] ]
         }
 
         context("iterable is empty", () => {
