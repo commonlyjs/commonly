@@ -37,7 +37,7 @@ export default curry(slice) as unknown as {
 
     (start: number, end: number): {
         <TValue>(iterable: TValue[]): TValue[]
-        <TValue>(iterable: string): string
+        (iterable: string): string
         <TValue>(iterable: Set<TValue>): Set<TValue>
         <TValue extends unknown[]>(iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
         <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
@@ -45,14 +45,14 @@ export default curry(slice) as unknown as {
 
     (start: number): {
         <TValue>(end: number, iterable: TValue[]): TValue[]
-        <TValue>(end: number, iterable: string): string
+        (end: number, iterable: string): string
         <TValue>(end: number, iterable: Set<TValue>): Set<TValue>
         <TValue extends unknown[]>(end: number, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
         <TIterable extends Iterable<unknown>>(end: number, iterable: TIterable): TIterable
 
         (end: number): {
             <TValue>(iterable: TValue[]): TValue[]
-            <TValue>(iterable: string): string
+            (iterable: string): string
             <TValue>(iterable: Set<TValue>): Set<TValue>
             <TValue extends unknown[]>(iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
             <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
