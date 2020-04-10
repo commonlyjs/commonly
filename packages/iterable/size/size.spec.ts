@@ -19,7 +19,7 @@ describe("function size(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: number[] = [ 0, 1, 1, 2, 3, 5, 8, 13 ]
 
-            it("should return a size of an iterable", () => {
+            it("should return a size of the iterable", () => {
                 const expected: number = 8
 
                 expect(size(iterable))
@@ -43,7 +43,7 @@ describe("function size(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: string = "011235813"
 
-            it("should return a size of an iterable", () => {
+            it("should return a size of the iterable", () => {
                 const expected: number = 9
 
                 expect(size(iterable))
@@ -67,7 +67,7 @@ describe("function size(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Set<number> = new Set([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a size of an iterable", () => {
+            it("should return a size of the iterable", () => {
                 const expected: number = 7
 
                 expect(size(iterable))
@@ -93,7 +93,7 @@ describe("function size(iterable)", () => {
                 [ 0, 0 ], [ 1, 1 ], [ 2, 1 ], [ 3, 2 ], [ 4, 3 ], [ 5, 5 ], [ 6, 8 ], [ 7, 13 ]
             ])
 
-            it("should return a size of an iterable", () => {
+            it("should return a size of the iterable", () => {
                 const expected: number = 8
 
                 expect(size(iterable))
@@ -102,7 +102,7 @@ describe("function size(iterable)", () => {
         })
     })
 
-    context("iterable is a custom finite iterator-based collection", () => {
+    context("iterable is an iterator-based collection", () => {
         context("iterable is empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka()
 
@@ -117,7 +117,7 @@ describe("function size(iterable)", () => {
         context("iterable is not empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3, 5, 8, 13 ])
 
-            it("should return a size of an iterable", () => {
+            it("should return a size of the iterable", () => {
                 const expected: number = 8
 
                 expect(size(iterable))

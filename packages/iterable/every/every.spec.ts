@@ -134,7 +134,7 @@ describe("function every(predicate, iterable)", () => {
         })
     })
 
-    context("iterable is a custom finite iterator-based collection", () => {
+    context("iterable is an iterator-based collection", () => {
         const predicate = (value: number): boolean => {
             return Boolean(value % 2)
         }

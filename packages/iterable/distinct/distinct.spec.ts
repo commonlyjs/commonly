@@ -8,7 +8,7 @@ describe("function distinct(iterable)", () => {
         context("iterable is empty", () => {
             const iterable: number[] = []
 
-            it("should return an empty array", () => {
+            it("should return an empty iterable", () => {
                 const expected: number[] = []
 
                 expect(distinct(iterable))
@@ -32,7 +32,7 @@ describe("function distinct(iterable)", () => {
         context("iterable is empty", () => {
             const iterable: string = ""
 
-            it("should return an empty string", () => {
+            it("should return an empty iterable", () => {
                 const expected: string = ""
 
                 expect(distinct(iterable))
@@ -56,7 +56,7 @@ describe("function distinct(iterable)", () => {
         context("iterable is empty", () => {
             const iterable: Set<number> = new Set()
 
-            it("should return an empty instance of Set", () => {
+            it("should return an empty iterable", () => {
                 const expected: Set<number> = new Set()
 
                 expect(distinct(iterable))
@@ -80,7 +80,7 @@ describe("function distinct(iterable)", () => {
         context("iterable is empty", () => {
             const iterable: Map<number, number> = new Map()
 
-            it("should return an empty instance of Map", () => {
+            it("should return an empty iterable", () => {
                 const expected: Map<number, number> = new Map()
 
                 expect(distinct(iterable))
@@ -104,11 +104,11 @@ describe("function distinct(iterable)", () => {
         })
     })
 
-    context("iterable is a custom finite iterator-based collection", () => {
+    context("iterable is an iterator-based collection", () => {
         context("iterable is empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka()
 
-            it("should return an empty custom collection", () => {
+            it("should return an empty iterable", () => {
                 const expected: Matrioshka<number> = new Matrioshka()
 
                 expect(distinct(iterable))

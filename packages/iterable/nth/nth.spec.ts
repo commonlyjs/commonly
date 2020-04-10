@@ -118,7 +118,7 @@ describe("function nth(iterable)", () => {
         })
     })
 
-    context("iterable is a custom finite iterator-based collection", () => {
+    context("iterable is an iterator-based collection", () => {
         context("iterable is empty", () => {
             const iterable: Matrioshka<number> = new Matrioshka()
 
