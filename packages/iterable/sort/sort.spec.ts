@@ -17,6 +17,8 @@ describe("function sort(comparator, iterable)", () => {
 
                 expect(sort(comparator, iterable))
                     .toEqual(expected)
+                expect(sort(comparator)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -27,6 +29,8 @@ describe("function sort(comparator, iterable)", () => {
                 const expected: number[] = [ 13, 8, 5, 3, 2, 1, 1, 0 ]
 
                 expect(sort(comparator, iterable))
+                    .toEqual(expected)
+                expect(sort(comparator)(iterable))
                     .toEqual(expected)
             })
         })
@@ -45,6 +49,8 @@ describe("function sort(comparator, iterable)", () => {
 
                 expect(sort(comparator, iterable))
                     .toEqual(expected)
+                expect(sort(comparator)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -55,6 +61,8 @@ describe("function sort(comparator, iterable)", () => {
                 const expected: string = "853321110"
 
                 expect(sort(comparator, iterable))
+                    .toEqual(expected)
+                expect(sort(comparator)(iterable))
                     .toEqual(expected)
             })
         })
@@ -73,6 +81,8 @@ describe("function sort(comparator, iterable)", () => {
 
                 expect(sort(comparator, iterable))
                     .toEqual(expected)
+                expect(sort(comparator)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -83,6 +93,8 @@ describe("function sort(comparator, iterable)", () => {
                 const expected: Set<number> = new Set([ 13, 8, 5, 3, 2, 1, 1, 0 ])
 
                 expect(sort(comparator, iterable))
+                    .toEqual(expected)
+                expect(sort(comparator)(iterable))
                     .toEqual(expected)
             })
         })
@@ -101,6 +113,8 @@ describe("function sort(comparator, iterable)", () => {
 
                 expect(sort(comparator, iterable))
                     .toEqual(expected)
+                expect(sort(comparator)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -115,6 +129,8 @@ describe("function sort(comparator, iterable)", () => {
                 ])
 
                 expect(sort(comparator, iterable))
+                    .toEqual(expected)
+                expect(sort(comparator)(iterable))
                     .toEqual(expected)
             })
         })
@@ -133,6 +149,8 @@ describe("function sort(comparator, iterable)", () => {
 
                 expect(sort(comparator, iterable))
                     .toEqual(expected)
+                expect(sort(comparator)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -143,6 +161,8 @@ describe("function sort(comparator, iterable)", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 13, 8, 5, 3, 2, 1, 1, 0 ])
 
                 expect(sort(comparator, iterable))
+                    .toEqual(expected)
+                expect(sort(comparator)(iterable))
                     .toEqual(expected)
             })
         })

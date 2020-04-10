@@ -33,4 +33,12 @@ export default curry(drop) as unknown as {
     <TValue>(n: number, iterable: Set<TValue>): Set<TValue>
     <TValue extends unknown[]>(n: number, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
     <TIterable extends Iterable<unknown>>(n: number, iterable: TIterable): TIterable
+
+    (n: number): {
+        <TValue>(iterable: TValue[]): TValue[]
+        <TValue>(iterable: string): string
+        <TValue>(iterable: Set<TValue>): Set<TValue>
+        <TValue extends unknown[]>(iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
+        <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
+    }
 }

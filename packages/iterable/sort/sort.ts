@@ -34,4 +34,12 @@ export default curry(sort) as unknown as {
     <TValue>(comparator: Comparator<TValue>, iterable: Set<TValue>): Set<TValue>
     <TValue extends unknown[]>(comparator: Comparator<TValue>, iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
     <TIterable extends Iterable<unknown>>(comparator: Comparator<Iterable.ExtractValue<TIterable>>, iterable: TIterable): TIterable
+
+    <TValue>(comparator: Comparator<TValue>): {
+        (iterable: TValue[]): TValue[]
+        (iterable: string): string
+        (iterable: Set<TValue>): Set<TValue>
+        <TValue extends unknown[]>(iterable: Map<TValue[0], TValue[1]>): Map<TValue[0], TValue[1]>
+        <TIterable extends Iterable<unknown>>(iterable: TIterable): TIterable
+    }
 }

@@ -13,6 +13,8 @@ describe("function drop(n, iterable)", () => {
 
                 expect(drop(5, iterable))
                     .toEqual(expected)
+                expect(drop(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -23,6 +25,8 @@ describe("function drop(n, iterable)", () => {
                 const expected: number[] = [ 5, 8, 13 ]
 
                 expect(drop(5, iterable))
+                    .toEqual(expected)
+                expect(drop(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -48,6 +52,8 @@ describe("function drop(n, iterable)", () => {
 
                 expect(drop(5, iterable))
                     .toEqual(expected)
+                expect(drop(5)(iterable))
+                    .toEqual(expected)
             })
         })
     })
@@ -61,6 +67,8 @@ describe("function drop(n, iterable)", () => {
 
                 expect(drop(5, iterable))
                     .toEqual(expected)
+                expect(drop(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -71,6 +79,8 @@ describe("function drop(n, iterable)", () => {
                 const expected: Set<number> = new Set([ 8, 13 ])
 
                 expect(drop(5, iterable))
+                    .toEqual(expected)
+                expect(drop(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -84,6 +94,8 @@ describe("function drop(n, iterable)", () => {
                 const expected: Map<number, number> = new Map()
 
                 expect(drop(5, iterable))
+                    .toEqual(expected)
+                expect(drop(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -100,6 +112,8 @@ describe("function drop(n, iterable)", () => {
 
                 expect(drop(5, iterable))
                     .toEqual(expected)
+                expect(drop(5)(iterable))
+                    .toEqual(expected)
             })
         })
     })
@@ -113,6 +127,8 @@ describe("function drop(n, iterable)", () => {
 
                 expect(drop(5, iterable))
                     .toEqual(expected)
+                expect(drop(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -123,6 +139,8 @@ describe("function drop(n, iterable)", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 5, 8, 13 ])
 
                 expect(drop(5, iterable))
+                    .toEqual(expected)
+                expect(drop(5)(iterable))
                     .toEqual(expected)
             })
         })

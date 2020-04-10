@@ -13,6 +13,8 @@ describe("function take(n, iterable)", () => {
 
                 expect(take(5, iterable))
                     .toEqual(expected)
+                expect(take(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -23,6 +25,8 @@ describe("function take(n, iterable)", () => {
                 const expected: number[] = [ 0, 1, 1, 2, 3 ]
 
                 expect(take(5, iterable))
+                    .toEqual(expected)
+                expect(take(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -37,6 +41,8 @@ describe("function take(n, iterable)", () => {
 
                 expect(take(5, iterable))
                     .toEqual(expected)
+                expect(take(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -47,6 +53,8 @@ describe("function take(n, iterable)", () => {
                 const expected: string = "01123"
 
                 expect(take(5, iterable))
+                    .toEqual(expected)
+                expect(take(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -61,6 +69,8 @@ describe("function take(n, iterable)", () => {
 
                 expect(take(5, iterable))
                     .toEqual(expected)
+                expect(take(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -71,6 +81,8 @@ describe("function take(n, iterable)", () => {
                 const expected: Set<number> = new Set([ 0, 1, 1, 2, 3, 5 ])
 
                 expect(take(5, iterable))
+                    .toEqual(expected)
+                expect(take(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -84,6 +96,8 @@ describe("function take(n, iterable)", () => {
                 const expected: Map<number, number> = new Map()
 
                 expect(take(5, iterable))
+                    .toEqual(expected)
+                expect(take(5)(iterable))
                     .toEqual(expected)
             })
         })
@@ -100,6 +114,8 @@ describe("function take(n, iterable)", () => {
 
                 expect(take(5, iterable))
                     .toEqual(expected)
+                expect(take(5)(iterable))
+                    .toEqual(expected)
             })
         })
     })
@@ -113,6 +129,8 @@ describe("function take(n, iterable)", () => {
 
                 expect(take(5, iterable))
                     .toEqual(expected)
+                expect(take(5)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -123,6 +141,8 @@ describe("function take(n, iterable)", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 0, 1, 1, 2, 3 ])
 
                 expect(take(5, iterable))
+                    .toEqual(expected)
+                expect(take(5)(iterable))
                     .toEqual(expected)
             })
         })

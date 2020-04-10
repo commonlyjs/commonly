@@ -17,6 +17,8 @@ describe("function dropWhile(predicate, iterable)", () => {
 
                 expect(dropWhile(predicate, iterable))
                     .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -27,6 +29,8 @@ describe("function dropWhile(predicate, iterable)", () => {
                 const expected: number[] = [ 5, 8, 13 ]
 
                 expect(dropWhile(predicate, iterable))
+                    .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
                     .toEqual(expected)
             })
         })
@@ -45,6 +49,8 @@ describe("function dropWhile(predicate, iterable)", () => {
 
                 expect(dropWhile(predicate, iterable))
                     .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -55,6 +61,8 @@ describe("function dropWhile(predicate, iterable)", () => {
                 const expected: string = "5813"
 
                 expect(dropWhile(predicate, iterable))
+                    .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
                     .toEqual(expected)
             })
         })
@@ -73,6 +81,8 @@ describe("function dropWhile(predicate, iterable)", () => {
 
                 expect(dropWhile(predicate, iterable))
                     .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -83,6 +93,8 @@ describe("function dropWhile(predicate, iterable)", () => {
                 const expected: Set<number> = new Set([ 5, 8, 13 ])
 
                 expect(dropWhile(predicate, iterable))
+                    .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
                     .toEqual(expected)
             })
         })
@@ -101,6 +113,8 @@ describe("function dropWhile(predicate, iterable)", () => {
 
                 expect(dropWhile(predicate, iterable))
                     .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -115,6 +129,8 @@ describe("function dropWhile(predicate, iterable)", () => {
                 ])
 
                 expect(dropWhile(predicate, iterable))
+                    .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
                     .toEqual(expected)
             })
         })
@@ -133,6 +149,8 @@ describe("function dropWhile(predicate, iterable)", () => {
 
                 expect(dropWhile(predicate, iterable))
                     .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
+                    .toEqual(expected)
             })
         })
 
@@ -143,6 +161,8 @@ describe("function dropWhile(predicate, iterable)", () => {
                 const expected: Matrioshka<number> = new Matrioshka([ 5, 8, 13 ])
 
                 expect(dropWhile(predicate, iterable))
+                    .toEqual(expected)
+                expect(dropWhile(predicate)(iterable))
                     .toEqual(expected)
             })
         })
