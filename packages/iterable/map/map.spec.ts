@@ -58,6 +58,7 @@ describe("function map(mapper, iterable)", () => {
             const iterable: string = "011235813"
 
             it("should return an iterable where each element is raised to the power of two", () => {
+                // TODO: Should be "011492564169"
                 const expected: string = "01149256419"
 
                 expect(map(mapper, iterable))

@@ -1,7 +1,9 @@
 import curry from "../../function/curry/curry"
+import identity from "../../function/identity/identity"
 import isReduced from "../../reflect/isReduced/isReduced"
 import Reducer from "../../type/Reducer/Reducer"
 import delegate from "../../function/delegate/delegate"
+import transduce from "../transduce/transduce"
 
 
 
@@ -25,28 +27,16 @@ import delegate from "../../function/delegate/delegate"
  * reduce((accumulator, value) => accumulator + value, 0, [0, 1, 1, 2, 3])      // -> 7
  * ```
  */
-const reduce = <TAccumulator, TValueA, TValueB = TValueA>
-    (reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, iterable: Iterable<TValueA>): TAccumulator => {
-    for (const value of iterable) {
-            const product = reducer(accumulator, value)
-            if (isReduced(product)) {
-                accumulator = product.value
-                break;
-            } else {
-                accumulator = product
-            }
-        }
-
-        if (reducer.complete) {
-            return reducer.complete(accumulator)
-        } else {
-            return accumulator
-        }
-    }
+const reduce = <TAccumulator, TValueA, TValueB = TValueA>(
+    reducer: Reducer<TAccumulator, TValueA>,
+    accumulator: TAccumulator,
+    iterable: Iterable<TValueA>
+): TAccumulator => {
+    return transduce(identity, iterable, reducer, accumulator)
+}
 
 
-
-export default delegate(reduce, { excluded: [ Array ] }) as {
+export default reduce as unknown as {
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator, xs: Iterable<TValueA>): TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>, accumulator: TAccumulator): (xs: Iterable<TValueA>) => TAccumulator
     <TAccumulator, TValueA, TValueB = TValueA>(reducer: Reducer<TAccumulator, TValueA>): (accumulator: TAccumulator, xs: Iterable<TValueA>) => TAccumulator

@@ -40,7 +40,7 @@ const reducing = <TAccumulator, TValue>(accumulator: unknown): Transduced<Reduce
 }
 
 reducing.pushing = pushing
-reducing.string = joining
+reducing.joining = joining
 reducing.scalar = scalar
 
 

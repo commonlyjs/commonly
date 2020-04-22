@@ -12,6 +12,7 @@ type Reducer<TAccumulator, TValue> =
         & {
             initialize?: () => TAccumulator
             complete?: (accumulator: TAccumulator) => TAccumulator
+            // transduction?: () => void
         }
 
 
