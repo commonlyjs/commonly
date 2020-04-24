@@ -1,9 +1,9 @@
 import Reducer from "../../type/Reducer/Reducer"
 import Transduced from "../../type/Transduced/Transduced"
 import Transducer from "../../type/Transducer/Transducer"
-import reduce from "../reduce/reduce"
 import reducing from "../../function/reducing/reducing"
-import delegate from "../../function/delegate/delegate"
+import transduceIterator from "./transduceIterator/transduceIterator"
+import transduceLazyIterator from "./transduceLazyIterator/transduceLazyIterator"
 
 
 
@@ -28,9 +28,11 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
         return reducer(accumulator, value)
     }
 
-    transduced.initialize = () => {
-        return accumulator
-    }
+    transduced.initialize = reducer.initialize || (
+        () => {
+            return accumulator
+        }
+    )
 
     transduced.complete = reducer.complete || (
         (accumulator: TAccumulator) => {
@@ -38,12 +40,16 @@ const transduce = <TAccumulator, TValueA, TValueB = TValueA>(
         }
     )
 
-    return reduce(transducer(transduced), accumulator, iterable)
+    return transduce.iterator(transducer, iterable, transduced, accumulator)
 }
 
 
+transduce.iterator = transduceIterator
+transduce.lazyIterator = transduceLazyIterator
 
-export default delegate(transduce, { contextualize: (_, iterable) => iterable }) as {
+
+
+export default transduce as unknown as {
     <TAccumulator, TValueA, TValueB = TValueA>(
         transducer: Transducer<TValueA, TValueB>,
         iterable: Iterable<TValueA>,

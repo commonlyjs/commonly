@@ -17,9 +17,8 @@
     "@commonly-buildtools/monorepo": "0.5.13",
     "@commonly-buildtools/publish": "0.5.13",
     "@commonly-buildtools/test": "0.5.13",
-    "@commonly-buildtools/version": "0.5.13"
+    "@commonly-buildtools/version": "0.5.13",
+    "typescript": "3.9.0-dev.20200424"
   },
-  "dependencies": {
-    "typescript": "^3.7.3"
-  }
+  "dependencies": {}
 }

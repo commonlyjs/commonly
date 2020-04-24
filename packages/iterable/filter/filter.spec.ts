@@ -136,6 +136,42 @@ describe("function filter(predicate, iterable)", () => {
         })
     })
 
+    context("iterable is an iterable iterator", () => {
+        const predicate = (value: number): boolean => {
+            return Boolean(value % 2)
+        }
+
+        function* iterator<TValue>(...values: TValue[]): IterableIterator<TValue> {
+            yield* values
+        }
+
+        context("iterable is empty", () => {
+            const iterable: IterableIterator<number> = iterator()
+
+            it("should return an empty iterable", () => {
+                const expected: number[] = []
+
+                for (const value of filter(predicate, iterable)) {
+                    expect(expected)
+                        .toContainEqual(value)
+                }
+            })
+        })
+
+        context("iterable is not empty", () => {
+            const iterable: IterableIterator<number> = iterator(0, 1, 1, 2, 3, 5, 8, 13)
+
+            it("should return an iterable containing only odd elements", () => {
+                const expected: number[] = [ 1, 1, 3, 5, 13 ]
+
+                for (const value of filter(predicate, iterable)) {
+                    expect(expected)
+                        .toContainEqual(value)
+                }
+            })
+        })
+    })
+
     context("iterable is an iterator-based collection", () => {
         const predicate = (value: number): boolean => {
             return Boolean(value % 2)

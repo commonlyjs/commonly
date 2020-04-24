@@ -1,5 +1,4 @@
 import transduce from "../transduce/transduce"
-import delegate from "../../function/delegate/delegate"
 import Predicate from "../../type/Predicate/Predicate"
 import xdropWhile from "../../transducer/xdropWhile/xdropWhile"
 import curry from '../../function/curry/curry'

@@ -1,5 +1,4 @@
 import transduce from "../transduce/transduce"
-import delegate from "../../function/delegate/delegate"
 import xpartitionBy from "../../transducer/xpartitionBy/xpartitionBy"
 import Mapper from "../../type/Mapper/Mapper"
 import curry from "../../function/curry/curry"
