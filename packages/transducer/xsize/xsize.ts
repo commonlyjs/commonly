@@ -23,8 +23,8 @@ const xsize = <TValue>(): Transducer<TValue, number> =>
             return accumulator
         }
 
-        transduced.initialize = () => {
-            return reducer.initialize()
+        transduced.initial = () => {
+            return reducer.initial()
         }
 
         transduced.complete = (accumulator: TAccumulator) => {

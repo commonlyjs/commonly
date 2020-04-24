@@ -8,7 +8,7 @@ const joining = <TAccumulator extends string[], TValue extends string>(accumulat
     return accumulator
 }
 
-joining.initialize = <TAccumulator extends string[]>(): TAccumulator => {
+joining.initial = <TAccumulator extends string[]>(): TAccumulator => {
     return [] as unknown as TAccumulator
 }
 

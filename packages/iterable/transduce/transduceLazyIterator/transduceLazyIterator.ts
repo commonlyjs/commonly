@@ -10,7 +10,7 @@ const transduceLazyIterator = <TValueA, TValueB = TValueA>(
     transducer: Transducer<TValueA, TValueB>,
     iterable: Iterable<TValueA>,
     reducer: Transduced<Reducer<IterableIterator<TValueB>, TValueB>> = reducing(iterable),
-    accumulator: IterableIterator<TValueB> = reducer.initialize()
+    accumulator: IterableIterator<TValueB> = reducer.initial()
 ): IterableIterator<TValueB> => {
     const state = {
         buffer: [] as TValueB[],

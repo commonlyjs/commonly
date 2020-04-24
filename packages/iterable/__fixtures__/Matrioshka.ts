@@ -55,7 +55,7 @@ class Matrioshka<TValue> implements Iterable<TValue>, Reducible<Matrioshka<TValu
             }
         }
 
-        reducer.initialize = (): Matrioshka<TValue> => {
+        reducer.initial = (): Matrioshka<TValue> => {
             return new Matrioshka()
         }
 

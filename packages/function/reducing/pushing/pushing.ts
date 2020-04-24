@@ -8,7 +8,7 @@ const pushing = <TAccumulator extends TValue[], TValue>(accumulator: TAccumulato
     return accumulator
 }
 
-pushing.initialize = <TAccumulator>(): TAccumulator => {
+pushing.initial = <TAccumulator>(): TAccumulator => {
     return [] as unknown as TAccumulator
 }
 

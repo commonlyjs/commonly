@@ -8,7 +8,7 @@ const setting = <TAccumulator extends Map<TValue[0], TValue[1]>, TValue extends 
     return accumulator
 }
 
-setting.initialize = <TAccumulator extends Map<unknown, unknown>>(): TAccumulator => {
+setting.initial = <TAccumulator extends Map<unknown, unknown>>(): TAccumulator => {
     return new Map() as TAccumulator
 }
 

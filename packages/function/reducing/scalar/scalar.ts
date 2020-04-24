@@ -7,7 +7,7 @@ const scalar = <TAccumulator, TValue extends TAccumulator>(accumulator: TAccumul
     return value
 }
 
-scalar.initialize = <TAccumulator extends undefined>(): TAccumulator => {
+scalar.initial = <TAccumulator extends undefined>(): TAccumulator => {
     return undefined as TAccumulator
 }
 

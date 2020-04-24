@@ -10,7 +10,7 @@ const transduceIterator = <TAccumulator, TValueA, TValueB = TValueA>(
     transducer: Transducer<TValueA, TValueB>,
     iterable: Iterable<TValueA>,
     reducer: Transduced<Reducer<TAccumulator, TValueB>> = reducing(iterable),
-    accumulator: TAccumulator = reducer.initialize()
+    accumulator: TAccumulator = reducer.initial()
 ): TAccumulator => {
     const transduced = transducer(reducer)
     for (const value of iterable) {

@@ -24,8 +24,8 @@ const xfind = <TValue>(predicate: Predicate<TValue>): Transducer<TValue> => {
             }
         }
 
-        transduced.initialize = () => {
-            return reducer.initialize()
+        transduced.initial = () => {
+            return reducer.initial()
         }
 
         transduced.complete = (accumulator: TAccumulator) => {

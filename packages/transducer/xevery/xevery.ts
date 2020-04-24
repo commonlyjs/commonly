@@ -25,8 +25,8 @@ const xevery = <TValue>(predicate: Predicate<TValue>): Transducer<TValue, boolea
             return accumulator
         }
 
-        transduced.initialize = () => {
-            return reducer.initialize()
+        transduced.initial = () => {
+            return reducer.initial()
         }
 
         transduced.complete = (accumulator: TAccumulator) => {

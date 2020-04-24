@@ -29,8 +29,8 @@ const xslice = <TValue>(start: number, end: number): Transducer<TValue> =>
             }
         }
 
-        transduced.initialize = () => {
-            return reducer.initialize()
+        transduced.initial = () => {
+            return reducer.initial()
         }
 
         transduced.complete = (accumulator: TAccumulator) => {

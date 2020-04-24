@@ -8,7 +8,7 @@ const adding = <TAccumulator extends Set<TValue>, TValue>(accumulator: TAccumula
     return accumulator
 }
 
-adding.initialize = <TAccumulator extends Set<unknown>>(): TAccumulator => {
+adding.initial = <TAccumulator extends Set<unknown>>(): TAccumulator => {
     return new Set() as TAccumulator
 }
 
