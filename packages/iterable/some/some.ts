@@ -3,6 +3,7 @@ import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xsome from "../../transducer/xsome/xsome"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from '../transduce/transduce'
 
 
@@ -14,7 +15,7 @@ import transduce from '../transduce/transduce'
  * @since 1.0.0
  *
  * @param predicate - is a predicate function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -24,8 +25,9 @@ import transduce from '../transduce/transduce'
  * some(x => x % 2, [ 0, 1, 1, 2, 3, 5, 8 ])      // -> true
  * ```
  */
-const some = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iterable<TValue>) => {
-    return transduce(xsome(predicate), iterable, reducing.scalar)
+const some = <TAccumulator, TValue>(predicate: Predicate<TValue>, sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    return transduce(xsome(predicate), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 

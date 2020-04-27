@@ -33,7 +33,7 @@ describe("function xchain(mapper)", () => {
             )
 
             it("should return a flat array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "1", 2, "5", 13, "34" ])
             })
         })
@@ -44,7 +44,7 @@ describe("function xchain(mapper)", () => {
             )
 
             it("should return an array with injected values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ "0", "1", "1", "2", "3", "5", "8", "13", "21", "34" ])
             })
         })
@@ -56,7 +56,7 @@ describe("function xchain(mapper)", () => {
             )
 
             it("should return an array with injected values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ "0", "1", "3", "5", "8", "13" ])
             })
         })
@@ -69,7 +69,7 @@ describe("function xchain(mapper)", () => {
             )
 
             it("should return an array with injected values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 0, 1, 3, 5, 8, 13 ])
             })
         })

@@ -8,8 +8,8 @@ import Transducer from "../../../type/Transducer/Transducer"
 
 const transduceIterator = <TAccumulator, TValueA, TValueB = TValueA>(
     transducer: Transducer<TValueA, TValueB>,
+    reducer: Transduced<Reducer<TAccumulator, TValueB>>,
     iterable: Iterable<TValueA>,
-    reducer: Transduced<Reducer<TAccumulator, TValueB>> = reducing(iterable),
     accumulator: TAccumulator = reducer.initial()
 ): TAccumulator => {
     const transduced = transducer(reducer)

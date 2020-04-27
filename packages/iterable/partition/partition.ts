@@ -1,3 +1,4 @@
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 import xpartition from "../../transducer/xpartition/xpartition"
 import curry from '../../function/curry/curry'
@@ -11,7 +12,7 @@ import Iterable from "../../type/Iterable/Iterable"
  * @since 1.0.0
  *
  * @param n - is a number of elements to be put into a tuple
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -21,8 +22,9 @@ import Iterable from "../../type/Iterable/Iterable"
  * partition(2, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ [ 0, 1 ], [ 1, 2 ], [ 3, 5 ], [ 8 ] ]
  * ```
  */
-const partition = <TAccumulator, TValue>(n: number, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xpartition(n), iterable)
+const partition = <TAccumulator, TValue>(n: number, sequence: Transducible<TValue>): Transducible<TValue[]> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xpartition(n), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

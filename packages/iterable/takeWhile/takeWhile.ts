@@ -1,3 +1,4 @@
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 import Predicate from "../../type/Predicate/Predicate"
 import xtakeWhile from "../../transducer/xtakeWhile/xtakeWhile"
@@ -12,7 +13,7 @@ import Iterable from "../../type/Iterable/Iterable"
  * @since 1.0.0
  *
  * @param predicate - is a predicate function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -22,8 +23,9 @@ import Iterable from "../../type/Iterable/Iterable"
  * takeWhile(value => value <= 3, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 2, 3 ]
  * ```
  */
-const takeWhile = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xtakeWhile(predicate), iterable)
+const takeWhile = <TAccumulator, TValue>(predicate: Predicate<TValue>, sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xtakeWhile(predicate), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

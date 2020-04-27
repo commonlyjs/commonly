@@ -15,7 +15,7 @@ describe("function xfilter(predicate)", () => {
         }
 
         it("should return an empty array", () => {
-            expect(transduce(xfilter(() => false), iterable, reducer, [] as (number | string)[]))
+            expect(transduce(xfilter(() => false), reducer, iterable, [] as (number | string)[]))
                 .toEqual([])
         })
 
@@ -25,7 +25,7 @@ describe("function xfilter(predicate)", () => {
             )
 
             it("should return an array without even values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 1, "1", "3", 5, 13, "21" ])
             })
         })
@@ -37,7 +37,7 @@ describe("function xfilter(predicate)", () => {
             )
 
             it("should return an array without even values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 1, 1, 3, 5, 13, 21 ])
             })
         })
@@ -50,7 +50,7 @@ describe("function xfilter(predicate)", () => {
             )
 
             it("should return an array without even values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 3, 5, 13, 21 ])
             })
         })

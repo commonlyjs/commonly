@@ -20,7 +20,7 @@ describe("function xlast()", () => {
             )
 
             it("should return an array with a last value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 34 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xlast()", () => {
             )
 
             it("should return an array with a last value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "21" ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xlast()", () => {
             )
 
             it("should return an array with a last value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 21 ])
             })
         })

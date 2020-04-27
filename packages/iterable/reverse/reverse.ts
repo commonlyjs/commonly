@@ -1,6 +1,7 @@
 import Iterable from "../../type/Iterable/Iterable"
 import curry from '../../function/curry/curry'
 import xreverse from "../../transducer/xreverse/xreverse"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -10,7 +11,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -20,8 +21,9 @@ import transduce from "../transduce/transduce"
  * reverse([ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 8, 5, 3, 2, 1, 1, 0 ]
  * ```
  */
-const reverse = <TAccumulator, TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xreverse(), iterable)
+const reverse = <TAccumulator, TValue>(sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xreverse(), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

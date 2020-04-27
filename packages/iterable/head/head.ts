@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xhead from "../../transducer/xhead/xhead"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -11,7 +12,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns a first element of an iterable
  *
  * @example
@@ -21,8 +22,9 @@ import transduce from "../transduce/transduce"
  * head([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 0
  * ```
  */
-const head = <TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xhead(), iterable, reducing.scalar as any)
+const head = <TValue>(sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    return transduce(xhead(), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 

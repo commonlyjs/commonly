@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import Comparator from "../../type/Comparator/Comparator"
 import xsort from "../../transducer/xsort/xsort"
 import curry from "../../function/curry/curry"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -12,7 +13,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param comparator - is a comparator function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -22,8 +23,9 @@ import transduce from "../transduce/transduce"
  * sort((a, b) => b - a, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 8, 5, 3, 2, 1, 1, 0 ]
  * ```
  */
-const sort = <TAccumulator, TValue>(comparator: Comparator<TValue>, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xsort(comparator), iterable)
+const sort = <TAccumulator, TValue>(comparator: Comparator<TValue>, sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xsort(comparator), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

@@ -20,7 +20,7 @@ describe("function xhead()", () => {
             )
 
             it("should return an array with a first value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "0" ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xhead()", () => {
             )
 
             it("should return an array with a first value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 1 ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xhead()", () => {
             )
 
             it("should return an array with a first value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as number[]))
+                expect(transduce(transducer, reducer, iterable, [] as number[]))
                     .toEqual([ 1 ])
             })
         })

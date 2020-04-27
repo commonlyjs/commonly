@@ -1,6 +1,7 @@
 import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import xslice from "../../transducer/xslice/xslice"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -12,7 +13,7 @@ import transduce from "../transduce/transduce"
  *
  * @param start - is a beginning of a slice
  * @param end - is an end of a slice
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -22,8 +23,9 @@ import transduce from "../transduce/transduce"
  * slice(1, 5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 1, 1, 2, 3, 5 ]
  * ```
  */
-const slice = <TValue>(start: number, end: number, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xslice(start, end), iterable)
+const slice = <TValue>(start: number, end: number, sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xslice(start, end), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

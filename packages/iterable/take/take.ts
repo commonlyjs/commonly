@@ -1,6 +1,7 @@
 import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import xtake from "../../transducer/xtake/xtake"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -11,7 +12,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param n - is a number of elements to be taken
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -21,8 +22,9 @@ import transduce from "../transduce/transduce"
  * take(5, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 1, 2, 3 ]
  * ```
  */
-const take = <TAccumulator, TValue>(n: number, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xtake(n), iterable)
+const take = <TAccumulator, TValue>(n: number, sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xtake(n), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xsize from "../../transducer/xsize/xsize"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -11,7 +12,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -21,8 +22,9 @@ import transduce from "../transduce/transduce"
  * size([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 7
  * ```
  */
-const size = <TAccumulator, TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xsize(), iterable, reducing.scalar as any)
+const size = <TAccumulator, TValue>(sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    return transduce(xsize(), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 

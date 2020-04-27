@@ -20,7 +20,7 @@ describe("function xnth(i)", () => {
             )
 
             it("should return an array with a fourth value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "3" ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xnth(i)", () => {
             )
 
             it("should return an array with a fourth value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 13 ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xnth(i)", () => {
             )
 
             it("should return an array with a fourth value", () => {
-                expect(transduce(transducer, iterable, reducer, [] as number[]))
+                expect(transduce(transducer, reducer, iterable, [] as number[]))
                     .toEqual([ 13 ])
             })
         })

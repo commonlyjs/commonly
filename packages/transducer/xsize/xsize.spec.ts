@@ -20,7 +20,7 @@ describe("function xsort()", () => {
             )
 
             it("should return a length of an array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 10 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xsort()", () => {
             )
 
             it("should return a length of an array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 6 ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xsort()", () => {
             )
 
             it("should return a length of an array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 6 ])
             })
         })

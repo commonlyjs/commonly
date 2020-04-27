@@ -20,7 +20,7 @@ describe("function xrepeat()", () => {
             )
 
             it("should return an array where every value is repeated twice", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "0", "0", 1, 1, "1", "1", 2, 2, "3", "3", 5, 5, "8", "8", 13, 13, "21", "21" ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xrepeat()", () => {
             )
 
             it("should return an array where every value is repeated twice", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 1, 1, "1", "1", "3", "3", 5, 5, 13, 13, "21", "21" ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xrepeat()", () => {
             )
 
             it("should return an array where every value is repeated twice", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 1, 1, 1, 1, 3, 3, 5, 5, 13, 13, 21, 21 ])
             })
         })

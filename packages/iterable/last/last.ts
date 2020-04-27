@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xlast from "../../transducer/xlast/xlast"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -11,7 +12,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns a last element of an iterable
  *
  * @example
@@ -21,8 +22,10 @@ import transduce from "../transduce/transduce"
  * last([ 0, 1, 1, 2, 3, 5, 8 ])     // -> 8
  * ```
  */
-const last = <TValue>(iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xlast(), iterable, reducing.scalar as any)
+const last = <TValue>(sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    console.log("sequence", sequence)
+    return transduce(xlast(), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 

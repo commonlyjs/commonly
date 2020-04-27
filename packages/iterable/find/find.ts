@@ -3,6 +3,7 @@ import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xfind from "../../transducer/xfind/xfind"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -14,7 +15,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param predicate - is a predicate function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -24,8 +25,9 @@ import transduce from "../transduce/transduce"
  * find(x => x > 2, [ 0, 1, 1, 2, 3, 5, 8 ])      // -> 3
  * ```
  */
-const find = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iterable<TValue>) => {
-    return transduce(xfind(predicate), iterable, reducing.scalar)
+const find = <TAccumulator, TValue>(predicate: Predicate<TValue>, sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    return transduce(xfind(predicate), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 

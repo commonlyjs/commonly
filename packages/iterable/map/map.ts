@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import Mapper from "../../type/Mapper/Mapper"
 import curry from "../../function/curry/curry"
 import xmap from "../../transducer/xmap/xmap"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -12,7 +13,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param mapper - is a mapping function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -22,8 +23,9 @@ import transduce from "../transduce/transduce"
  * map(x => x * x, [ 0, 1, 1, 2, 3, 5, 8 ])         // -> [ 0, 1, 1, 4, 9, 25, 64 ]
  * ```
  */
-const map = <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, iterable: Iterable<TValueA>): Iterable<TValueB> => {
-    return transduce(xmap(mapper), iterable)
+const map = <TValueA, TValueB>(mapper: Mapper<TValueA, TValueB>, sequence: Transducible<TValueA>): Transducible<TValueB> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xmap(mapper), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

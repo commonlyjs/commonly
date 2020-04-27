@@ -1,6 +1,7 @@
 import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import xdistinct from "../../transducer/xdistinct/xdistinct"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -10,7 +11,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -20,8 +21,9 @@ import transduce from "../transduce/transduce"
  * distinct([ 0, 1, 1, 2, 3, 5, 8 ])     // -> [ 0, 1, 2, 3, 5, 8 ]
  * ```
  */
-const distinct = <TAccumulator, TValueA, TValueB>(iterable: Iterable<TValueA>): Iterable<TValueB> => {
-    return transduce(xdistinct(), iterable)
+const distinct = <TAccumulator, TValue>(sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xdistinct(), sequence[Transducible.reducingSequence]<TValue>(), sequence)
 }
 
 

@@ -1,3 +1,4 @@
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 import xpartitionBy from "../../transducer/xpartitionBy/xpartitionBy"
 import Mapper from "../../type/Mapper/Mapper"
@@ -12,7 +13,7 @@ import Iterable from "../../type/Iterable/Iterable"
  * @since 1.0.0
  *
  * @param mapper - is a mapper function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -23,8 +24,9 @@ import Iterable from "../../type/Iterable/Iterable"
  * ```
  */
 
-const partitionBy = <TAccumulator, TValue, TBy>(mapper: Mapper<TValue, TBy>, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xpartitionBy(mapper), iterable)
+const partitionBy = <TAccumulator, TValue, TBy>(mapper: Mapper<TValue, TBy>, sequence: Transducible<TValue>): Transducible<TValue[]> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xpartitionBy(mapper), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

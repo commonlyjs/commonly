@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import Predicate from "../../type/Predicate/Predicate"
 import curry from "../../function/curry/curry"
 import xfilter from "../../transducer/xfilter/xfilter"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -13,7 +14,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param predicate - is a predicate function
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -23,8 +24,9 @@ import transduce from "../transduce/transduce"
  * filter(x => x % 2, [ 0, 1, 1, 2, 3, 5, 8 ])      // -> [ 1, 1, 2, 3, 5 ]
  * ```
  */
-const filter = <TAccumulator, TValue>(predicate: Predicate<TValue>, iterable: Iterable<TValue>) => {
-    return transduce(xfilter(predicate), iterable)
+const filter = <TAccumulator, TValue>(predicate: Predicate<TValue>, sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xfilter(predicate), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

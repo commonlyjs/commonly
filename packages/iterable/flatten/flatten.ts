@@ -1,5 +1,6 @@
 import Iterable from "../../type/Iterable/Iterable"
 import xflatten from "../../transducer/xflatten/xflatten"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -9,7 +10,7 @@ import transduce from "../transduce/transduce"
  *
  * @since 1.0.0
  *
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an iterable of the same type as the one given
  *
  * @example
@@ -19,8 +20,9 @@ import transduce from "../transduce/transduce"
  * flatten([ 0, [ 1 ], [ 1, 2 ], [ 3 , 5, 8 ] ])     // -> [ 0, 1, 1, 2, 3, 5, 8 ]
  * ```
  */
-const flatten = <TAccumulator, TValueA, TValueB>(iterable: Iterable<TValueA>): Iterable<TValueB> => {
-    return transduce(xflatten(), iterable)
+const flatten = <TAccumulator, TValue>(sequence: Transducible<TValue>): Transducible<TValue> => {
+    sequence = Transducible.from(sequence)
+    return transduce(xflatten(), sequence[Transducible.reducingSequence].apply(sequence), sequence)
 }
 
 

@@ -20,7 +20,7 @@ describe("function xdistinct()", () => {
             )
 
             it("should return a deduplicated array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "0", 1, "1", 2, "3", 5, "8", 13, "21", 34 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xdistinct()", () => {
             )
 
             it("should return a deduplicated array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 1, "1", "3", 5, 13, "21" ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xdistinct()", () => {
             )
 
             it("should return a deduplicated array", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 1, 3, 5, 13, 21 ])
             })
         })

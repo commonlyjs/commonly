@@ -20,7 +20,7 @@ describe("function xtakeWhile(predicate)", () => {
             )
 
             it("should return an array with four first values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ "0", 1, "1", 2, "3", 5 ])
             })
         })
@@ -32,7 +32,7 @@ describe("function xtakeWhile(predicate)", () => {
             )
 
             it("should return an array with four first values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as (number | string)[]))
+                expect(transduce(transducer, reducer, iterable, [] as (number | string)[]))
                     .toEqual([ 1, "1", "3", 5 ])
             })
         })
@@ -45,7 +45,7 @@ describe("function xtakeWhile(predicate)", () => {
             )
 
             it("should return an array with four first values", () => {
-                expect(transduce(transducer, iterable, reducer, [] as string[]))
+                expect(transduce(transducer, reducer, iterable, [] as string[]))
                     .toEqual([ 1, 1, 3, 5 ])
             })
         })

@@ -2,6 +2,7 @@ import Iterable from "../../type/Iterable/Iterable"
 import curry from "../../function/curry/curry"
 import reducing from "../../function/reducing/reducing"
 import xnth from "../../transducer/xnth/xnth"
+import Transducible from "../../type/Transducible/Transducible"
 import transduce from "../transduce/transduce"
 
 
@@ -12,7 +13,7 @@ import transduce from "../transduce/transduce"
  * @since 1.0.0
  *
  * @param i - is a position of an element
- * @param iterable - is an iterable to be iterated over
+ * @param sequence - is an iterable to be iterated over
  * @returns an nth element of an iterable
  *
  * @example
@@ -22,8 +23,9 @@ import transduce from "../transduce/transduce"
  * nth(4, [ 0, 1, 1, 2, 3, 5, 8 ])     // -> 3
  * ```
  */
-const nth = <TValue>(i: number, iterable: Iterable<TValue>): Iterable<TValue> => {
-    return transduce(xnth(i), iterable, reducing.scalar as any)
+const nth = <TValue>(i: number, sequence: Transducible<TValue>): any => {
+    sequence = Transducible.from(sequence)
+    return transduce(xnth(i), sequence[Transducible.reducingValue].apply(sequence), sequence)
 }
 
 
